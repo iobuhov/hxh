@@ -55,6 +55,7 @@ jspm_packages/
 
 # Output of 'npm pack'
 *.tgz
+!pkg/mendix-mpx-*.tgz
 
 # Yarn Integrity file
 .yarn-integrity
