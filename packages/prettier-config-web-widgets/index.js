@@ -77,6 +77,13 @@ module.exports = {
             }
         },
         {
+            files: "pnpm-workspace.yaml",
+            options: {
+                tabWidth: 2,
+                singleQuote: true,
+            }
+        },
+        {
             files: "package.json",
             options: {
                 packageSortOrder: packageJsonFieldsOrder
