@@ -24,13 +24,13 @@ const extendData = (data, plop) => {
   const dashCase = plop.getHelper("dashCase");
   const lowerCaseName = name.toLowerCase();
   const widgetName = pascalCase(name);
-  const packageName = dashCase(name);
+  const packageName = `@mendix/${dashCase(name)}`;
 
   return {
     ...data,
-    packagePath: `com.radixkit.widget`,
-    filePath: `com/radixkit/widget/${lowerCaseName}`,
-    widgetId: `com.radixkit.widget.${lowerCaseName}.${widgetName}`,
+    packagePath: `com.mendix.finch.widget`,
+    filePath: `com/mendix/finch/widget/${lowerCaseName}`,
+    widgetId: `com.mendix.finch.widget.${lowerCaseName}.${widgetName}`,
     packageName,
     widgetName,
   };
