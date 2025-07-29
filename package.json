@@ -1,5 +1,5 @@
 {
-    "name": "@mendix/yuki",
+    "name": "@mendix/finch",
     "private": true,
     "type": "module",
     "scripts": {
@@ -15,5 +15,8 @@
         "turbo": "^2.5.5"
     },
     "prettier": "@mendix/prettier-config-web-widgets",
-    "packageManager": "pnpm@10.13.1"
+    "packageManager": "pnpm@10.13.1",
+    "dependencies": {
+        "@mendix/finch-widget-generator": "workspace:*"
+    }
 }

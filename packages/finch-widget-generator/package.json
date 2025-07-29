@@ -1,0 +1,21 @@
+{
+    "name": "@mendix/finch-widget-generator",
+    "version": "1.0.0",
+    "description": "Finch widget generator",
+    "author": "Mendix",
+    "license": "Apache-2.0",
+    "bin": {
+        "add-widget": "./index.js"
+    },
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "packageManager": "pnpm@10.13.1",
+    "dependencies": {
+        "minimist": "^1.2.8",
+        "plop": "^4.0.1",
+        "zx": "^8.7.1"
+    }
+}

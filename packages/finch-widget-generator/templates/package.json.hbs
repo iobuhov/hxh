@@ -1,0 +1,33 @@
+{
+  "name": "{{packageName}}",
+  "widgetName": "{{widgetName}}",
+  "version": "0.1.0",
+  "description": "{{description}}",
+  "copyright": "© 2025 Illia Obukhau",
+  "author": "Illia Obukhau",
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "Apache-2.0",
+  "config": {},
+  "packagePath": "{{packagePath}}",
+  "scripts": {
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "test": "pluggable-widgets-tools test:unit:web --no-cache --ci",
+    "test:unit": "pluggable-widgets-tools test:unit:web --coverage",
+    "prerelease": "pnpm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "*",
+    "@prettier/plugin-xml": "^3.4.1",
+    "@types/big.js": "^6.0.2",
+    "mendix": "^10.19.57669"
+  },
+  "dependencies": {
+    "radix-ui-themes": "workspace:^",
+    "classnames": "^2.2.6"
+  }
+}
