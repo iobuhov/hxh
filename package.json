@@ -1,16 +1,19 @@
 {
-  "name": "@mendix/yuki",
-  "private": true,  
-  "type": "module",
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "test": "turbo run test",
-    "clean": "turbo run clean"    
-  },
-  "packageManager": "pnpm@10.13.1",
-  "devDependencies": {
-    "turbo": "^2.0.0"
-  }
+    "name": "@mendix/yuki",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "turbo run build",
+        "clean": "turbo run clean",
+        "dev": "turbo run dev",
+        "lint": "turbo run lint",
+        "test": "turbo run test"
+    },
+    "devDependencies": {
+        "@mendix/prettier-config-web-widgets": "workspace:*",
+        "prettier": "catalog:",
+        "turbo": "^2.5.5"
+    },
+    "prettier": "@mendix/prettier-config-web-widgets",
+    "packageManager": "pnpm@10.13.1"
 }
