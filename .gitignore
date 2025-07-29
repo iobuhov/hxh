@@ -100,4 +100,7 @@ ehthumbs.db
 Thumbs.db
 
 # Turbo
-.turbo 
+.turbo
+
+# @go-task/cli
+.task

@@ -12,8 +12,8 @@
     "config": {},
     "packagePath": "{{packagePath}}",
     "scripts": {
-        "dev": "pluggable-widgets-tools start:web",
         "build": "mpx",
+        "dev": "mpx -w",
         "lint": "pluggable-widgets-tools lint",
         "test": "pluggable-widgets-tools test:unit:web --no-cache --ci",
         "test:unit": "pluggable-widgets-tools test:unit:web --coverage"
@@ -23,7 +23,7 @@
         "@mendix/prettier-config-web-widgets": "workspace:*",
         "classnames": "catalog:",
         "mendix": "catalog:",
-        "mpx": "file:../../pkg/mendix-mpx-0.1.0.tgz"
+        "mpx": "*"
     },
     "prettier": "@mendix/prettier-config-web-widgets"
 }
