@@ -14,7 +14,6 @@ catalog:
   classnames: ^2.5.1
   eslint: ^9.32.0
   mendix: ^10.21.2
-  mpx: file:../../pkg/mendix-mpx-0.1.0.tgz
   prettier: ^3.6.2
   react: ^18.0.0
   react-dom: ^18.0.0
