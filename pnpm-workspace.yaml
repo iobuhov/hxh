@@ -5,11 +5,33 @@ packages:
 
 catalog:
   '@eslint/js': ^9.32.0
+  '@mendix/pluggable-widgets-tools': ^10.21.2
   '@prettier/plugin-xml': ^3.4.2
+  '@types/big.js': ^6.2.2
+  '@types/jest': ^29.5.14
+  '@types/node': ^22.13.10
+  '@types/react': '>=18.2.36'
+  classnames: ^2.5.1
   eslint: ^9.32.0
+  mendix: ^10.21.2
+  mpx: file:../../pkg/mendix-mpx-0.1.0.tgz
   prettier: ^3.6.2
+  react: ^18.0.0
+  react-dom: ^18.0.0
 
 enableGlobalVirtualStore: false
 
+overrides:
+  '@types/big.js': 'catalog:'
+  '@types/jest': 'catalog:'
+  '@types/node': 'catalog:'
+  '@types/react': 'catalog:'
+  react: 'catalog:'
+  react-dom: 'catalog:'
+
 publicHoistPattern:
   - '*prettier*'
+  - '@types/big.js'
+  - '@types/jest'
+  - '@types/node'
+  - '@types/react'

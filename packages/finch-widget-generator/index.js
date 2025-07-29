@@ -11,9 +11,19 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-Plop.prepare({
-  cwd: argv.cwd,
-  configPath: path.join(__dirname, 'config.js'),
-  preload: argv.preload || [],
-  completion: argv.completion
-}, env => Plop.execute(env, run));
+Plop.prepare(
+    {
+        cwd: argv.cwd,
+        configPath: path.join(__dirname, "config.js"),
+        preload: argv.preload || [],
+        completion: argv.completion
+    },
+    env =>
+        Plop.execute(env, env => {
+            const options = {
+                ...env,
+                dest: process.cwd() // this will make the destination path to be based on the cwd when calling the wrapper
+            };
+            return run(options, undefined, true);
+        })
+);
