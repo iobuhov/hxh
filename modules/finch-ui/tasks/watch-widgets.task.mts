@@ -1,7 +1,8 @@
 import { fs } from "zx";
 import log from "fancy-log";
 import chokidar from "chokidar";
-import pc from "picocolors";
+import { pc } from "./lib/pc.mjs";
+import { projectPath } from "./lib/env.mjs";
 import { ensureWidgetsDistDir, copyExistingMpks, copySingleMpk } from "./lib/widget-utils.mjs";
 import { onExit } from "signal-exit";
 
@@ -9,7 +10,7 @@ export async function watchWidgets() {
     log("Start mpk watcher...");
 
     try {
-        const widgetsDistPath = await ensureWidgetsDistDir();
+        const widgetsDistPath = await ensureWidgetsDistDir(projectPath);
 
         await copyExistingMpks(widgetsDistPath);
 
