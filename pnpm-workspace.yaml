@@ -25,9 +25,9 @@ overrides:
   '@types/jest': 'catalog:'
   '@types/node': 'catalog:'
   '@types/react': 'catalog:'
+  mpx: file:pkg/mendix-mpx-0.1.1.tgz
   react: 'catalog:'
   react-dom: 'catalog:'
-  mpx: 'file:pkg/mendix-mpx-0.1.1.tgz'
 
 publicHoistPattern:
   - '*prettier*'

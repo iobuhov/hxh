@@ -1,5 +1,4 @@
 import path from "node:path";
-import { $ } from "zx";
 import { spawnSync } from "child_process";
 
 /**
@@ -24,7 +23,6 @@ const extendData = (data, plop) => {
     const dashCase = plop.getHelper("dashCase");
     const lowerCaseName = name.toLowerCase();
     const widgetName = pascalCase(name);
-    const packageName = `@mendix/${dashCase(name)}`;
 
     return {
         ...data,
@@ -41,6 +39,11 @@ const extendData = (data, plop) => {
  * Sets up the widget generator with custom actions and prompts.
  */
 export default function widgetGenerator(plop) {
+    plop.setActionType("install", async data => {
+        const baseDir = path.join("widgets", data.packageDir);
+        spawnSync(`cd ${baseDir} && pnpm install`, { shell: true, stdio: "inherit" });
+    });
+
     plop.setGenerator("widget", {
         description: "Create a new widget",
         prompts: [
@@ -102,12 +105,12 @@ export default function widgetGenerator(plop) {
                 templateFile: "templates/package.xml.hbs"
             };
 
-            // const prettierConfig = {
-            //     type: "add",
-            //     data,
-            //     path: `${baseDir}/prettier.config.js`,
-            //     templateFile: "templates/prettier.config.hbs"
-            // };
+            const prettierConfig = {
+                type: "add",
+                data,
+                path: `${baseDir}/prettier.config.js`,
+                templateFile: "templates/prettier.config.hbs"
+            };
 
             const prettierIgnore = {
                 type: "add",
@@ -136,6 +139,11 @@ export default function widgetGenerator(plop) {
                 templateFile: "templates/widget.xml.hbs"
             };
 
+            const install = {
+                type: "install",
+                data
+            };
+
             return [
                 editorConfig,
                 editorPreview,
@@ -143,10 +151,12 @@ export default function widgetGenerator(plop) {
                 eslintrc,
                 packageJson,
                 packageXML,
+                prettierConfig,
                 prettierIgnore,
                 tsConfig,
                 widget,
-                widgetXML
+                widgetXML,
+                install
             ];
         }
     });
