@@ -12,7 +12,7 @@ interface WidgetPackage {
 export async function syncWidgets() {
     const finchUiPackagePath = join(process.cwd(), "package.json");
     
-    log("🔍 Scanning widgets using pnpm ls...");
+    log("📦 Syncing widgets...");
     
     // Resolve repository root using git
     const rootResult = await $`git rev-parse --show-toplevel`;
