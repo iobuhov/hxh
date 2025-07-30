@@ -21,6 +21,8 @@ cli.command("dev", "Build and watch for changes").action(async () => {
     await syncWidgets();
     await css();
     await watchWidgets();
+    log("Press Ctrl+C to stop watching");
+
 });
 
 cli.command("clean", "Clean dist files").action(async () => {
