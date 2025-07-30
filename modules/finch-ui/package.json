@@ -8,6 +8,7 @@
         "build": "tsx tasks/cli.mts build",
         "clean": "tsx tasks/cli.mts clean",
         "copy-widgets": "tsx tasks/cli.mts copy-widgets",
+        "dev": "tsx tasks/cli.mts dev",
         "sync-widgets": "tsx tasks/cli.mts sync-widgets"
     },
     "dependencies": {
@@ -18,6 +19,7 @@
         "@tsconfig/node22": "^22.0.2",
         "@types/fancy-log": "^2.0.2",
         "cac": "^6.7.14",
+        "chokidar": "^4.0.3",
         "dotenv": "^17.2.1",
         "fancy-log": "^2.0.0",
         "fast-glob": "^3.3.3",
