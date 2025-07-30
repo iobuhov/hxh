@@ -1,6 +1,7 @@
 import { copyFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
 import log from "fancy-log";
+import pc from "picocolors";
 import fg from "fast-glob";
 
 export async function ensureWidgetsDistDir(): Promise<string> {
@@ -25,9 +26,9 @@ export async function copySingleMpk(mpkFile: string, widgetsDistPath: string): P
         const destPath = join(widgetsDistPath, fileName);
         
         await copyFile(mpkFile, destPath);
-        log.info(`✅ Copied: ${fileName}`);
+        log(`${pc.dim("Copied:")} ${pc.bold(fileName)}`);
     } catch (error) {
-        log.error(`❌ Failed to copy ${mpkFile.split('/').pop()}:`, error);
+        log.error(`Failed to copy ${mpkFile.split('/').pop()}:`, error);
     }
 }
 
@@ -35,10 +36,10 @@ export async function copyExistingMpks(widgetsDistPath: string): Promise<void> {
     try {
         const mpkFiles = await findMpkFiles();
         
-        log.info(`🔍 Found ${mpkFiles.length} existing MPK files`);
+        log(`Found ${mpkFiles.length} existing MPK files`);
         
         if (mpkFiles.length === 0) {
-            log.info("🌙 No existing MPK files found");
+            log("No existing MPK files found");
             return;
         }
         
@@ -47,9 +48,9 @@ export async function copyExistingMpks(widgetsDistPath: string): Promise<void> {
             await copySingleMpk(mpkFile, widgetsDistPath);
         }
         
-        log.info(`✅ Successfully copied ${mpkFiles.length} existing MPK files`);
+        log(pc.green(`Successfully copied ${mpkFiles.length} existing MPK files`));
         
     } catch (error) {
-        log.error("❌ Error copying existing MPK files:", error);
+        log.error("Error copying existing MPK files:", error);
     }
 } 

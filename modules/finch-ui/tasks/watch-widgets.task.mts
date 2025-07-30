@@ -1,11 +1,12 @@
 import { $, fs } from "zx";
 import log from "fancy-log";
 import chokidar from "chokidar";
+import pc from "picocolors";
 import { ensureWidgetsDistDir, copyExistingMpks, copySingleMpk, findMpkFiles } from "./lib/widget-utils.mjs";
 import fg from "fast-glob";
 
 export async function watchWidgets() {
-    log.info("👀 Watching widget MPK files...");
+    log("Watching widget MPK files...");
     
     try {
         const widgetsDistPath = await ensureWidgetsDistDir();
@@ -39,45 +40,45 @@ export async function watchWidgets() {
         
         watcher
             .on('add', (filePath) => {
-                log.info(`📁 New MPK file detected: ${filePath.split('/').pop()}`);
+                log(`New MPK file detected: ${filePath.split('/').pop()}`);
                 copySingleMpk(filePath, widgetsDistPath);
             })
             .on('change', (filePath) => {
-                log.info(`📝 MPK file changed: ${filePath.split('/').pop()}`);
+                log(`MPK file changed: ${filePath.split('/').pop()}`);
                 copySingleMpk(filePath, widgetsDistPath);
             })
             .on('unlink', (filePath) => {
-                log.info(`🗑️  MPK file removed: ${filePath.split('/').pop()}`);
+                log(`MPK file removed: ${filePath.split('/').pop()}`);
             })
             .on('error', (error) => {
-                log.error("❌ Watch error:", error);
+                log.error("Watch error:", error);
             })
             .on('ready', () => {
-                log.info("👀 File watcher is ready");
+                log(pc.green("File watcher is ready"));
             })
             // .on('all', (filePath) => {
-            //     log.info(`🔍 File changed: ${filePath}`);
+            //     log(`File changed: ${filePath}`);
             // })
         
-        log.info("✅ Watching for MPK file changes...");
-        log.info("Press Ctrl+C to stop watching");
+        log("Watching for MPK file changes...");
+        log("Press Ctrl+C to stop watching");
         
         // Set up periodic refresh as a fallback
         // const refreshInterval = setInterval(async () => {
         //     try {
         //         await copyExistingMpks(widgetsDistPath);
         //     } catch (error) {
-        //         log.error("❌ Error during periodic refresh:", error);
+        //         log.error("Error during periodic refresh:", error);
         //     }
         // }, 5000); // Refresh every 5 seconds
         
         // Keep the process running
         process.on('SIGINT', () => {
-            log.info("🛑 Stopping watch...");
+            log("Stopping watch...");
             watcher.close();
         });
         
     } catch (error) {
-        log.error("❌ Error setting up widget watch:", error);
+        log.error("Error setting up widget watch:", error);
     }
 } 

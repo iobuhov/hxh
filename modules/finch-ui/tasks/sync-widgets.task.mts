@@ -2,6 +2,7 @@ import { $ } from "zx";
 import { readFile, writeFile, access } from "node:fs/promises";
 import { join } from "node:path";
 import log from "fancy-log";
+import pc from "picocolors";
 
 interface WidgetPackage {
     name: string;
@@ -12,13 +13,13 @@ interface WidgetPackage {
 export async function syncWidgets() {
     const finchUiPackagePath = join(process.cwd(), "package.json");
     
-    log("📦 Syncing widgets...");
+    log("Syncing widgets...");
     
     // Resolve repository root using git
     const rootResult = await $`git rev-parse --show-toplevel`;
     const repositoryRoot = rootResult.stdout.trim();
     
-    log(`📍 Repository root: ${repositoryRoot}`);
+    log(pc.dim(`Repository root: ${repositoryRoot}`));
     
     let widgets: WidgetPackage[] = [];
     
@@ -46,20 +47,20 @@ export async function syncWidgets() {
                         });                        
                     }
                 } catch (error) {
-                    log(`⚠️  Error reading package.json for ${pkg.name}:`, error);
+                    log(`Error reading package.json for ${pkg.name}:`, error);
                 }
             }
         }
         
-        log(`📦 Found ${widgets.length} widget packages`);
+        log(`Found ${widgets.length} widget packages`);
         
     } catch (error) {
-        log("❌ Error scanning widgets:", error);
+        log("Error scanning widgets:", error);
         return;
     }
     
     if (widgets.length === 0) {
-        log("❌ No valid widget packages found");
+        log("No valid widget packages found");
         return;
     }
     
@@ -72,11 +73,10 @@ export async function syncWidgets() {
     let updated = false;
     
     for (const widget of widgets) {
-
         if (!(widget.name in currentDependencies)) {
             currentDependencies[widget.name] = "workspace:*";
             updated = true;
-            log(`🧩 Added dependency: ${widget.name} (${widget.widgetName})`);
+            log(`Added dependency: ${widget.name} (${widget.widgetName})`);
         }
     }
     
@@ -85,13 +85,13 @@ export async function syncWidgets() {
         
         // Write updated package.json
         await writeFile(finchUiPackagePath, JSON.stringify(finchUiPackage, null, 4) + "\n");
-        log("✅ Updated finch-ui package.json with widget dependencies");
+        log(pc.green("Updated finch-ui package.json with widget dependencies"));
         
         // Install dependencies
-        log("📦 Installing dependencies...");
+        log("Installing dependencies...");
         await $`pnpm install`;
-        log("✅ Dependencies installed successfully");
+        log(pc.green("Dependencies installed successfully"));
     } else {
-        log("🌙 No new dependencies to add");
+        log(pc.dim("No new dependencies to add"));
     }
 } 
