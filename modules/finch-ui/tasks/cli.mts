@@ -5,6 +5,7 @@ import { clean } from "./clean.task.mjs";
 import { syncWidgets } from "./sync-widgets.task.mjs";
 import { copyWidgets } from "./copy-widgets.task.mjs";
 import { watchWidgets } from "./watch-widgets.task.mjs";
+import { watchCss } from "./watch-css.task.mjs";
 import log from "fancy-log";
 
 const cli = cac("finch");
@@ -19,7 +20,7 @@ cli.command("build", "Build the module").action(async () => {
 cli.command("dev", "Build and watch for changes").action(async () => {
     await clean();
     await syncWidgets();
-    await css();
+    await watchCss();
     await watchWidgets();
     log("Press Ctrl+C to stop watching");
 });

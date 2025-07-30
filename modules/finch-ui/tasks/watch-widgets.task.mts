@@ -4,7 +4,7 @@ import chokidar from "chokidar";
 import { pc } from "./lib/pc.mjs";
 import { projectPath } from "./lib/env.mjs";
 import { ensureWidgetsDistDir, copyExistingMpks, copySingleMpk } from "./lib/widget-utils.mjs";
-import { onExit } from "signal-exit";
+import { onExit } from "./lib/on-exit.mjs";
 
 export async function watchWidgets() {
     log("Start mpk watcher...");
@@ -50,9 +50,9 @@ export async function watchWidgets() {
 
         log(pc.green("Watching for mpk file changes..."));
 
-        onExit(() => {
-            log("Stopping watch...");
-            watcher.close();
+        onExit(async () => {
+            log(pc.dim("Stopping mpk watcher..."));
+            await watcher.close();
         });
     } catch (error) {
         log.error("Error setting up widget watch:", error);
