@@ -5,12 +5,11 @@ import { ensureWidgetsDistDir, copyExistingMpks } from "./lib/widget-utils.mjs";
 
 export async function copyWidgets() {
     log("Copying widget MPK files...");
-    
+
     try {
         const widgetsDistPath = await ensureWidgetsDistDir();
         await copyExistingMpks(widgetsDistPath);
-        
     } catch (error) {
         log.error("Error copying widget MPK files:", error);
     }
-} 
+}
