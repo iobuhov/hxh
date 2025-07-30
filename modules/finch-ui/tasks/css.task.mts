@@ -1,6 +1,6 @@
 import { $ } from "zx";
 import log from "fancy-log";
-import pc from "picocolors";
+import { pc } from "./lib/pc.mjs";
 
 export async function css() {
     log("Building main.css...");
