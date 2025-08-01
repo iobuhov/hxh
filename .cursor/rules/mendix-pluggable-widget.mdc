@@ -1,0 +1,43 @@
+---
+alwaysApply: true
+---
+
+You are developing a Mendix Pluggable Widget. Widgets are UI components used to compose pages in Mendix Apps. Widgets
+can be as complex as you want to make them, but often work best when they fulfill a specific UX need. It is better to
+defer business logic to the Mendix App, enabling Mendix Developers to use the widget in a variety of contexts and
+purposes.
+
+The core technology used by Mendix Pluggable Widgets is React written in Typescript. There is generally no need for
+complex state management libraries, as the Mendix Platform performs data handling and business logic. Widgets interact
+with the Mendix App through its props.
+
+Mendix Widgets have three lifetimes:
+
+- Development Time - YOU are responsible for this, it defines how the widget is used in later stages.
+- Modeling Time - The widget is loaded by Studio Pro, the development environment of a Mendix App. A Mendix developer is
+  responsible for placing the widget on a page and configuring it to work with the rest of the Mendix App.
+- Runtime - The widget is served to an end user and interacts with the Mendix Client. The Client is responsible for
+  providing the Props and handling requests and updates from the widget.
+
+As stated, data is received and transmitted through the Widgets Props, also referred to as the Pluggable Widgets API.
+You have control over what props are given by adjusting the Widget Definition XML file. This xml file is present in the
+`src` directory and has the same name as the widget. When the widget needs to communicate with the Mendix App, rely on
+the Pluggable Widgets API as much as possible.
+
+The Widget Definition XML file is also used by Studio Pro to infer the configuration panel for a Widget. The structure
+of the Property Groups and Properties in the XML file almost directly reflect the layout of the configuration panel of a
+widget and thus impacts a Mendix Developers modeling experience. The editor preview component also has an impact on the
+modeling experience, as it acts for a placeholder during page modeling. To tailor this experience flesh out the
+`src/*.editorPreview.tsx` file.
+
+Mendix Widgets are made as general as possible. This allows their use in a variety of scenarios. As a consequence, the
+exact structure of the datamodel is transparent to the widget. Therefore it is impossible to access the attributes of an
+entity directly. Instead, always use Attribute Properties, these act as value getters given a specific instance of an
+entity called an ObjectItem or MxObject. For example `ListAttributeValue.get(item)`.
+
+When using the API, always check whether the Property Types allow what you are attempting to do.
+
+Refer to the documentation for more information:
+
+- [Pluggable Widgets API](https://docs.mendix.com/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis/)
+- [ListValues](https://docs.mendix.com/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values/)

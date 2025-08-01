@@ -1,0 +1,27 @@
+---
+globs: src/*.xml
+alwaysApply: false
+---
+
+This is a Widget Definition XML file. It determines what props are given to the widget and how the Mendix Developer
+configures the widget.
+
+Group properties in property groups, so that Mendix Developers have an easier time finding a particular property in the
+configuration panel. You can nest properties in at most two levels of groups. The first level is shown as a tab, the
+second as a fieldset.
+
+When making changes refer to the file's schema. It is located in `node_modules/mendix/custom_widget.xsd`. It will inform
+you what combinations of elements and attributes are allowed.
+
+Be aware that certain property types can be linked to datasources using a `dataSource` attribute. This will explicitly
+link the property to the datasource, giving it access to attributes and associations which are reachable from the
+datasource in question. This is your main mechanism for specifying constraints on your data. Note that datasources must
+have the `isList="true"` attribute.
+
+Actions allow you to trigger other behaviors in the Mendix App. Common usecases are the opening of another page, or the
+triggering of a Microflow -- A Mendix concept which encapsulates business logic for an app. Using Action Variables you
+can provide primitive arguments. To provide entities as arguments you can link the action to a datasource.
+
+For more information refer to the documentation:
+
+- [Property Types](https://docs.mendix.com/apidocs-mxsdk/apidocs/pluggable-widgets-property-types/)
