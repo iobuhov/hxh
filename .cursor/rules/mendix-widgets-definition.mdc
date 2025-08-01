@@ -22,6 +22,8 @@ Actions allow you to trigger other behaviors in the Mendix App. Common usecases 
 triggering of a Microflow -- A Mendix concept which encapsulates business logic for an app. Using Action Variables you
 can provide primitive arguments. To provide entities as arguments you can link the action to a datasource.
 
+When writing prop captions, use sentence case.
+
 For more information refer to the documentation:
 
 - [Property Types](https://docs.mendix.com/apidocs-mxsdk/apidocs/pluggable-widgets-property-types/)
