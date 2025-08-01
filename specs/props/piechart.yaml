@@ -1,0 +1,122 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Additional elements rendered inside PieChart component
+data:
+  originalType: PieChartCell[]
+  group: General
+  caption: Data
+  description: Data used to render chart
+endAngle:
+  originalType: number
+  group: General
+  caption: End Angle
+  description: Controls angle at which charts ends. Set to 0 to render the chart
+    as semicircle.
+  default: "360"
+labelColor:
+  originalType: MantineColor
+  group: General
+  caption: Label Color
+  description: Controls text color of all labels, white by default
+labelsPosition:
+  originalType: '"outside" | "inside"'
+  group: General
+  caption: Labels Position
+  description: Controls labels position relative to the segment
+  default: "'outside'"
+labelsType:
+  originalType: '"value" | "percent"'
+  group: General
+  caption: Labels Type
+  description: Type of labels to display
+  default: "'value'"
+paddingAngle:
+  originalType: number
+  group: General
+  caption: Padding Angle
+  description: Controls padding between segments
+  default: "0"
+pieChartProps:
+  originalType: 'Omit<CategoricalChartProps & RefAttributes<{ readonly
+    eventEmitterSymbol: Symbol; clipPathId: string; accessibilityManager:
+    AccessibilityManager; ... 65 more ...;
+    UNSAFE_componentWillUpdate?(nextProps: Readonly<...>, nextState:
+    Readonly<...>, nextContext: any): void; }>, "ref">'
+  group: General
+  caption: Pie Chart Props
+  description: Props passed down to recharts PieChart component
+pieProps:
+  originalType: Partial<Omit<Props, "ref">>
+  group: General
+  caption: Pie Props
+  description: Props passed down to recharts Pie component
+size:
+  originalType: number
+  group: General
+  caption: Size
+  description: Controls chart width and height, height is increased by 40 if
+    withLabels prop is set. Cannot be less than thickness.
+  default: "80"
+startAngle:
+  originalType: number
+  group: General
+  caption: Start Angle
+  description: Controls angle at which chart starts. Set to 180 to render the
+    chart as semicircle.
+  default: "0"
+strokeColor:
+  originalType: MantineColor
+  group: General
+  caption: Stroke Color
+  description: Controls color of the segments stroke, by default depends on color scheme
+strokeWidth:
+  originalType: number
+  group: General
+  caption: Stroke Width
+  description: Controls width of segments stroke
+  default: "1"
+tooltipAnimationDuration:
+  originalType: number
+  group: General
+  caption: Tooltip Animation Duration
+  description: Tooltip animation duration in ms
+  default: "0"
+tooltipDataSource:
+  originalType: '"all" | "segment"'
+  group: General
+  caption: Tooltip Data Source
+  description: Determines which data is displayed in the tooltip. 'all' – display
+    all values, 'segment' – display only hovered segment.
+  default: "'all'"
+tooltipProps:
+  originalType: RechartsProps
+  group: General
+  caption: Tooltip Props
+  description: Props passed down to Tooltip recharts component
+valueFormatter:
+  originalType: "((value: number) => string)"
+  group: General
+  caption: Value Formatter
+  description: A function to format values inside the tooltip
+withLabels:
+  originalType: boolean
+  group: General
+  caption: With Labels
+  description: Determines whether each segment should have associated label
+  default: "false"
+withLabelsLine:
+  originalType: boolean
+  group: General
+  caption: With Labels Line
+  description: Determines whether segments labels should have lines that connect
+    the segment with the label
+  default: "true"
+withTooltip:
+  originalType: boolean
+  group: General
+  caption: With Tooltip
+  description: Determines whether the tooltip should be displayed when one of the
+    section is hovered
+  default: "true"

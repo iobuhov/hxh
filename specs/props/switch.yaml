@@ -1,0 +1,77 @@
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color to set input color in
+    checked state
+  default: theme.primaryColor
+description:
+  originalType: React.ReactNode
+  group: General
+  caption: Description
+  description: Description displayed below the label
+error:
+  originalType: React.ReactNode
+  group: General
+  caption: Error
+  description: Error displayed below the label
+id:
+  originalType: string
+  group: General
+  caption: Id
+  description: Id used to bind input and label, if not passed, unique id will be
+    generated instead
+label:
+  originalType: React.ReactNode
+  group: General
+  caption: Label
+  description: Content of the label associated with the radio
+labelPosition:
+  originalType: '"left" | "right"'
+  group: General
+  caption: Label Position
+  description: Position of the label relative to the input
+  default: "'right'"
+offLabel:
+  originalType: React.ReactNode
+  group: General
+  caption: Off Label
+  description: Inner label when the Switch is in unchecked state
+onLabel:
+  originalType: React.ReactNode
+  group: General
+  caption: On Label
+  description: Inner label when the Switch is in checked state
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+  default: "'xl'"
+rootRef:
+  originalType: ForwardedRef<HTMLDivElement>
+  group: General
+  caption: Root Ref
+  description: Assigns ref of the root element
+size:
+  originalType: MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls size of all elements
+thumbIcon:
+  originalType: React.ReactNode
+  group: General
+  caption: Thumb Icon
+  description: Icon inside the thumb of the switch
+withThumbIndicator:
+  originalType: boolean
+  group: General
+  caption: With Thumb Indicator
+  description: If set, the indicator will be displayed inside thumb
+  default: "true"
+wrapperProps:
+  originalType: (Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement>, "ref"> & DataAttributes)
+  group: General
+  caption: Wrapper Props
+  description: Props passed down to the root element

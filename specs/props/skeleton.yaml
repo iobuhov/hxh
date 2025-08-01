@@ -1,0 +1,38 @@
+animate:
+  originalType: boolean
+  group: General
+  caption: Animate
+  description: Enables animation
+  default: "true"
+circle:
+  originalType: boolean
+  group: General
+  caption: Circle
+  description: If set, Skeleton width and border-radius are equal to its height
+  default: "false"
+height:
+  originalType: Height<string | number>
+  group: General
+  caption: Height
+  description: Skeleton height, numbers are converted to rem
+  default: auto
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius.
+    Numbers are converted to rem.
+  default: theme.defaultRadius
+visible:
+  originalType: boolean
+  group: General
+  caption: Visible
+  description: Determines whether Skeleton overlay should be displayed
+  default: "true"
+width:
+  originalType: React.CSSProperties["width"]
+  group: General
+  caption: Width
+  description: Skeleton width, numbers are converted to rem, ignored when circle
+    prop is set.
+  default: 100%

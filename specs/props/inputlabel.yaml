@@ -1,0 +1,17 @@
+labelElement:
+  originalType: '"div" | "label"'
+  group: General
+  caption: Label Element
+  description: Root element of the label
+  default: "'label'"
+required:
+  originalType: boolean
+  group: General
+  caption: Required
+  description: If set, the required asterisk is displayed next to the label
+size:
+  originalType: MantineFontSize
+  group: General
+  caption: Size
+  description: Controls label font-size
+  default: "'sm'"

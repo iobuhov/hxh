@@ -1,0 +1,10 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Spotlight.Action components
+label:
+  originalType: string
+  group: General
+  caption: Label
+  description: Group label

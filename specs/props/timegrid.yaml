@@ -1,0 +1,89 @@
+allowDeselect:
+  originalType: boolean
+  group: General
+  caption: Allow Deselect
+  description: Determines whether the value can be deselected when the current
+    active option is clicked or activated with keyboard
+  default: "false"
+amPmLabels:
+  originalType: "{ am: string; pm: string }"
+  group: General
+  caption: Am Pm Labels
+  description: Labels used for am/pm values
+  default: "{ am: 'AM', pm: 'PM' }"
+data:
+  originalType: string[]
+  group: General
+  caption: Data
+  description: Time data in 24h format to be displayed in the grid, for example
+    ['10:00', '18:30', '22:00']. Time values must be unique.
+defaultValue:
+  originalType: string | null
+  group: General
+  caption: Default Value
+  description: Uncontrolled component default value
+disableTime:
+  originalType: "string[] | ((time: string) => boolean)"
+  group: General
+  caption: Disable Time
+  description: Array of time values to disable
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: If set, all controls are disabled
+format:
+  originalType: '"12h" | "24h"'
+  group: General
+  caption: Format
+  description: Time format displayed in the grid
+  default: "'24h'"
+getControlProps:
+  originalType: '(time: string) => React.ComponentPropsWithoutRef<"button">'
+  group: General
+  caption: Get Control Props
+  description: A function to pass props down to control based on the time value
+maxTime:
+  originalType: string
+  group: General
+  caption: Max Time
+  description: All controls after this time are disabled
+minTime:
+  originalType: string
+  group: General
+  caption: Min Time
+  description: All controls before this time are disabled
+onChange:
+  originalType: "((value: string | null) => void)"
+  group: General
+  caption: On Change
+  description: Called when value changes
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: theme.defaultRadius
+simpleGridProps:
+  originalType: SimpleGridProps
+  group: General
+  caption: Simple Grid Props
+  description: Props passed down to the underlying SimpleGrid component
+  default: "{ cols: 3, spacing: 'xs' }"
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Control font-size of controls, key of theme.fontSizes or any valid CSS value
+  default: "'sm'"
+value:
+  originalType: string | null
+  group: General
+  caption: Value
+  description: Controlled component value
+withSeconds:
+  originalType: boolean
+  group: General
+  caption: With Seconds
+  description: Determines whether the seconds part should be displayed
+  default: "false"

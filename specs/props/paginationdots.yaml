@@ -1,0 +1,5 @@
+icon:
+  originalType: FC<PaginationIconProps>
+  group: General
+  caption: Icon
+  description: Custom dots icon component, must accept svg element props and size prop

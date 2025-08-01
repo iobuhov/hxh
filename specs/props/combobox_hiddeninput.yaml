@@ -1,0 +1,11 @@
+value:
+  originalType: string | string[] | null
+  group: General
+  caption: Value
+  description: Input value
+valuesDivider:
+  originalType: string
+  group: General
+  caption: Values Divider
+  description: Divider character to join array values into string
+  default: ","

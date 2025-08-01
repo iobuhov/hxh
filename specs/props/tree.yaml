@@ -1,0 +1,58 @@
+allowRangeSelection:
+  originalType: boolean
+  group: General
+  caption: Allow Range Selection
+  description: If set, tree nodes range can be selected with click when Shift key is pressed
+  default: "true"
+checkOnSpace:
+  originalType: boolean
+  group: General
+  caption: Check On Space
+  description: If set, tree node is checked on space key press
+  default: "false"
+clearSelectionOnOutsideClick:
+  originalType: boolean
+  group: General
+  caption: Clear Selection On Outside Click
+  description: If set, selection is cleared when user clicks outside of the tree
+  default: "false"
+data:
+  originalType: TreeNodeData[]
+  group: General
+  caption: Data
+  description: Data used to render nodes
+expandOnClick:
+  originalType: boolean
+  group: General
+  caption: Expand On Click
+  description: If set, tree node with children is expanded on click
+  default: "true"
+expandOnSpace:
+  originalType: boolean
+  group: General
+  caption: Expand On Space
+  description: If set, tree node with children is expanded on space key press
+  default: "true"
+levelOffset:
+  originalType: MantineSpacing
+  group: General
+  caption: Level Offset
+  description: Horizontal padding of each subtree level, key of theme.spacing or
+    any valid CSS value
+  default: "'lg'"
+renderNode:
+  originalType: RenderNode
+  group: General
+  caption: Render Node
+  description: A function to render tree node label
+selectOnClick:
+  originalType: boolean
+  group: General
+  caption: Select On Click
+  description: If set, tree node is selected on click
+  default: "false"
+tree:
+  originalType: UseTreeReturnType
+  group: General
+  caption: Tree
+  description: Use-tree hook instance that can be used to manipulate component state

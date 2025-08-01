@@ -1,0 +1,16 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Target element
+popupType:
+  originalType: string
+  group: General
+  caption: Popup Type
+  description: Popup accessible type
+  default: "'dialog'"
+refProp:
+  originalType: string
+  group: General
+  caption: Ref Prop
+  description: Key of the prop that should be used to access element ref

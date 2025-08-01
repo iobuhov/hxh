@@ -1,0 +1,30 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Content displayed inside the swatch
+color:
+  originalType: string
+  group: General
+  caption: Color
+  description: Valid CSS color to display
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem.
+  default: "1000"
+size:
+  originalType: React.CSSProperties["width"]
+  group: General
+  caption: Size
+  description: Controls width and height of the swatch, any valid CSS value,
+    numbers are converted to rem.
+  default: "28"
+withShadow:
+  originalType: boolean
+  group: General
+  caption: With Shadow
+  description: Determines whether the swatch should have inner box-shadow
+  default: "true"

@@ -1,0 +1,11 @@
+active:
+  originalType: boolean
+  group: General
+  caption: Active
+  description: Applies active styles, adds data-active attribute
+withPadding:
+  originalType: boolean
+  group: General
+  caption: With Padding
+  description: Applies padding
+  default: "true"

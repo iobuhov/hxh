@@ -1,0 +1,42 @@
+decade:
+  originalType: string
+  group: General
+  caption: Decade
+  description: Decade value to display
+getYearControlProps:
+  originalType: "((date: string) => Partial<PickerControlProps>)"
+  group: General
+  caption: Get Year Control Props
+  description: Passes props down to year picker control based on date
+locale:
+  originalType: string
+  group: General
+  caption: Locale
+  description: Dayjs locale, defaults to value defined in DatesProvider
+maxDate:
+  originalType: string | Date
+  group: General
+  caption: Max Date
+  description: Maximum possible date in YYYY-MM-DD format or Date object
+minDate:
+  originalType: string | Date
+  group: General
+  caption: Min Date
+  description: Minimum possible date in YYYY-MM-DD format or Date object
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Component size
+withCellSpacing:
+  originalType: boolean
+  group: General
+  caption: With Cell Spacing
+  description: Determines whether controls should be separated
+  default: "true"
+yearsListFormat:
+  originalType: string
+  group: General
+  caption: Years List Format
+  description: dayjs format for years list
+  default: "'YYYY'"

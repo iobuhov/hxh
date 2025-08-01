@@ -1,0 +1,126 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Carousel.Slide components
+controlSize:
+  originalType: React.CSSProperties["width"]
+  group: General
+  caption: Control Size
+  description: Controls size of the next and previous controls
+  default: "26"
+controlsOffset:
+  originalType: MantineSpacing
+  group: General
+  caption: Controls Offset
+  description: Controls position of the next and previous controls, key of
+    theme.spacing or any valid CSS value
+  default: "'sm'"
+emblaOptions:
+  originalType: Partial<OptionsType>
+  group: General
+  caption: Embla Options
+  description: Options passed down to embla carousel
+getEmblaApi:
+  originalType: "((embla: EmblaCarouselType) => void)"
+  group: General
+  caption: Get Embla Api
+  description: Get embla API as ref
+height:
+  originalType: Height<string | number>
+  group: General
+  caption: Height
+  description: Slides container height, required for vertical orientation
+includeGapInSize:
+  originalType: boolean
+  group: General
+  caption: Include Gap In Size
+  description: Determines whether gap between slides should be treated as part of
+    the slide size
+  default: "true"
+initialSlide:
+  originalType: number
+  group: General
+  caption: Initial Slide
+  description: Index of initial slide
+nextControlIcon:
+  originalType: React.ReactNode
+  group: General
+  caption: Next Control Icon
+  description: Icon of the next control
+nextControlProps:
+  originalType: React.ComponentPropsWithoutRef<"button">
+  group: General
+  caption: Next Control Props
+  description: Props passed down to next control
+onNextSlide:
+  originalType: (() => void)
+  group: General
+  caption: On Next Slide
+  description: Called when next slide is shown
+onPreviousSlide:
+  originalType: (() => void)
+  group: General
+  caption: On Previous Slide
+  description: Called when previous slider is shown
+onSlideChange:
+  originalType: "((index: number) => void)"
+  group: General
+  caption: On Slide Change
+  description: Called with slide index when slide changes
+orientation:
+  originalType: '"horizontal" | "vertical"'
+  group: General
+  caption: Orientation
+  description: Carousel orientation
+  default: "'horizontal'"
+plugins:
+  originalType: CreatePluginType<LoosePluginType, {}>[]
+  group: General
+  caption: Plugins
+  description: A list of embla plugins
+previousControlIcon:
+  originalType: React.ReactNode
+  group: General
+  caption: Previous Control Icon
+  description: Icon of the previous control
+previousControlProps:
+  originalType: React.ComponentPropsWithoutRef<"button">
+  group: General
+  caption: Previous Control Props
+  description: Props passed down to previous control
+slideGap:
+  originalType: StyleProp<MantineSpacing>
+  group: General
+  caption: Slide Gap
+  description: Key of theme.spacing or number to set gap between slides
+slideSize:
+  originalType: StyleProp<string | number>
+  group: General
+  caption: Slide Size
+  description: Controls slide width based on viewport width
+  default: "'100%'"
+type:
+  originalType: '"media" | "container"'
+  group: General
+  caption: Type
+  description: Determines type of queries used for responsive styles
+  default: "'media'"
+withControls:
+  originalType: boolean
+  group: General
+  caption: With Controls
+  description: Determines whether next/previous controls should be displayed
+  default: "true"
+withIndicators:
+  originalType: boolean
+  group: General
+  caption: With Indicators
+  description: Determines whether indicators should be displayed
+  default: "false"
+withKeyboardEvents:
+  originalType: boolean
+  group: General
+  caption: With Keyboard Events
+  description: Determines whether arrow key should switch slides
+  default: "true"

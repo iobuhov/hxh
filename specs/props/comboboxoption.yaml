@@ -1,0 +1,20 @@
+active:
+  originalType: boolean
+  group: General
+  caption: Active
+  description: Current active state
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Disabled state
+selected:
+  originalType: boolean
+  group: General
+  caption: Selected
+  description: Current selected state
+value:
+  originalType: string
+  group: General
+  caption: Value
+  description: Option value

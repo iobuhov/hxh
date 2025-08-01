@@ -1,0 +1,6 @@
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color
+  default: yellow

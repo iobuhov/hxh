@@ -1,0 +1,43 @@
+autoComplete:
+  originalType: string
+  group: General
+  caption: Auto Complete
+  description: Input autocomplete attribute
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Target element
+refProp:
+  originalType: string
+  group: General
+  caption: Ref Prop
+  description: Key of the prop is used to access element ref
+targetType:
+  originalType: '"button" | "input"'
+  group: General
+  caption: Target Type
+  description: >-
+    Determines which events should be handled by the target element.
+
+    button target type handles Space and Enter keys to toggle dropdown opened
+    state.
+  default: input
+withAriaAttributes:
+  originalType: boolean
+  group: General
+  caption: With Aria Attributes
+  description: If set, the target has aria- attributes
+  default: "true"
+withExpandedAttribute:
+  originalType: boolean
+  group: General
+  caption: With Expanded Attribute
+  description: If set, the target has aria-expanded attribute
+  default: "false"
+withKeyboardNavigation:
+  originalType: boolean
+  group: General
+  caption: With Keyboard Navigation
+  description: If set, the component responds to the keyboard events
+  default: "true"

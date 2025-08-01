@@ -1,0 +1,10 @@
+inheritPadding:
+  originalType: boolean
+  group: General
+  caption: Inherit Padding
+  description: If set, the section inherits padding from the parent Card
+withBorder:
+  originalType: boolean
+  group: General
+  caption: With Border
+  description: Adds border to the root element

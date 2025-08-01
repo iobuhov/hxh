@@ -1,0 +1,27 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Chip components and any other elements
+defaultValue:
+  originalType: string | string[] | null
+  group: General
+  caption: Default Value
+  description: Uncontrolled component initial value
+multiple:
+  originalType: boolean
+  group: General
+  caption: Multiple
+  description: If set, multiple values can be selected
+onChange:
+  originalType: "((value: T extends true ? string[] : string) => void)"
+  group: General
+  caption: On Change
+  description: Called when value changes. If multiple prop is set, called with an
+    array of selected values. If not, called with a string value of selected
+    chip.
+value:
+  originalType: string | string[] | null
+  group: General
+  caption: Value
+  description: Controlled component value

@@ -1,0 +1,56 @@
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Main badge content
+circle:
+  originalType: boolean
+  group: General
+  caption: Circle
+  description: If set, badge min-width becomes equal to its height and horizontal
+    padding is removed
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color
+  default: theme.primaryColor
+fullWidth:
+  originalType: boolean
+  group: General
+  caption: Full Width
+  description: Determines whether Badge should take 100% of its parent width
+  default: "false"
+gradient:
+  originalType: MantineGradient
+  group: General
+  caption: Gradient
+  description: Gradient configuration used when variant=\"gradient\"
+  default: theme.defaultGradient
+leftSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Left Section
+  description: Content displayed on the left side of the badge label
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: "'xl'"
+rightSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Right Section
+  description: Content displayed on the right side of the badge label
+size:
+  originalType: MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls font-size, height and horizontal padding
+  default: "'md'"

@@ -1,0 +1,71 @@
+offsetScrollbars:
+  originalType: boolean | "x" | "y" | "present"
+  group: General
+  caption: Offset Scrollbars
+  description: Determines whether scrollbars should be offset with padding on given axis
+  default: "false"
+onBottomReached:
+  originalType: (() => void)
+  group: General
+  caption: On Bottom Reached
+  description: Called when scrollarea is scrolled all the way to the bottom
+onScrollPositionChange:
+  originalType: "((position: { x: number; y: number; }) => void)"
+  group: General
+  caption: On Scroll Position Change
+  description: Called with current position (x and y coordinates) when viewport is scrolled
+onTopReached:
+  originalType: (() => void)
+  group: General
+  caption: On Top Reached
+  description: Called when scrollarea is scrolled all the way to the top
+overscrollBehavior:
+  originalType: OverscrollBehavior
+  group: General
+  caption: Overscroll Behavior
+  description: Defines overscroll-behavior of the viewport
+scrollHideDelay:
+  originalType: number
+  group: General
+  caption: Scroll Hide Delay
+  description: Scroll hide delay in ms, applicable only when type is set to hover or scroll
+  default: "1000"
+scrollbarSize:
+  originalType: string | number
+  group: General
+  caption: Scrollbar Size
+  description: Scrollbar size, any valid CSS value for width/height, numbers are
+    converted to rem, default value is 0.75rem
+scrollbars:
+  originalType: false | "x" | "y" | "xy"
+  group: General
+  caption: Scrollbars
+  description: Axis at which scrollbars must be rendered
+  default: "'xy'"
+type:
+  originalType: '"auto" | "scroll" | "always" | "hover" | "never"'
+  group: General
+  caption: Type
+  description: >-
+    Defines scrollbars behavior, hover by default
+
+    - hover – scrollbars are visible when mouse is over the scroll area
+
+    - scroll – scrollbars are visible when the scroll area is scrolled
+
+    - always – scrollbars are always visible
+
+    - never – scrollbars are always hidden
+
+    - auto – similar to overflow: auto – scrollbars are always visible when the
+    content is overflowing
+viewportProps:
+  originalType: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+  group: General
+  caption: Viewport Props
+  description: Props passed down to the viewport element
+viewportRef:
+  originalType: ForwardedRef<HTMLDivElement>
+  group: General
+  caption: Viewport Ref
+  description: Assigns viewport element (scrollable container) ref

@@ -1,0 +1,277 @@
+actions:
+  originalType: SpotlightActions[]
+  group: General
+  caption: Actions
+  description: Actions data, passed down to Spotlight.Action component
+centered:
+  originalType: boolean
+  group: General
+  caption: Centered
+  description: If set, the modal is centered vertically
+  default: "false"
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Modal content
+clearQueryOnClose:
+  originalType: boolean
+  group: General
+  caption: Clear Query On Close
+  description: Determines whether the search query should be cleared when the
+    spotlight is closed
+  default: "true"
+closeOnActionTrigger:
+  originalType: boolean
+  group: General
+  caption: Close On Action Trigger
+  description: Determines whether spotlight should be closed when one of the
+    actions is triggered
+  default: "true"
+closeOnClickOutside:
+  originalType: boolean
+  group: General
+  caption: Close On Click Outside
+  description: If set, the modal/drawer is closed when user clicks on the overlay
+  default: "true"
+closeOnEscape:
+  originalType: boolean
+  group: General
+  caption: Close On Escape
+  description: If set, onClose is called when user presses the escape key
+  default: "true"
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: If set, spotlight will not be rendered
+filter:
+  originalType: SpotlightFilterFunction
+  group: General
+  caption: Filter
+  description: Function to filter actions data based on search query, by default
+    actions are filtered by title, description and keywords
+forceOpened:
+  originalType: boolean
+  group: General
+  caption: Force Opened
+  description: Forces opened state, useful for tests
+fullScreen:
+  originalType: boolean
+  group: General
+  caption: Full Screen
+  description: If set, the modal takes the entire screen
+  default: "false"
+highlightQuery:
+  originalType: boolean
+  group: General
+  caption: Highlight Query
+  description: Determines whether search query should be highlighted in action label
+  default: "false"
+id:
+  originalType: string
+  group: General
+  caption: Id
+  description: Id used to connect modal/drawer with body and title
+keepMounted:
+  originalType: boolean
+  group: General
+  caption: Keep Mounted
+  description: "If set modal/drawer is not unmounted from the DOM when hidden.
+    display: none styles are applied instead."
+  default: "false"
+limit:
+  originalType: number
+  group: General
+  caption: Limit
+  description: Maximum number of actions displayed at a time
+  default: Infinity
+lockScroll:
+  originalType: boolean
+  group: General
+  caption: Lock Scroll
+  description: If set, scroll is locked when opened={true}
+  default: "true"
+maxHeight:
+  originalType: MaxHeight<string | number>
+  group: General
+  caption: Max Height
+  description: Spotlight content max-height. Ignored unless scrollable prop is set.
+  default: "400"
+nothingFound:
+  originalType: React.ReactNode
+  group: General
+  caption: Nothing Found
+  description: Message displayed when none of the actions match given filter
+onEnterTransitionEnd:
+  originalType: (() => void)
+  group: General
+  caption: On Enter Transition End
+  description: Called when enter transition ends
+onExitTransitionEnd:
+  originalType: (() => void)
+  group: General
+  caption: On Exit Transition End
+  description: Called when exit transition ends
+onQueryChange:
+  originalType: "((query: string) => void)"
+  group: General
+  caption: On Query Change
+  description: Called when query changes
+onSpotlightClose:
+  originalType: (() => void)
+  group: General
+  caption: On Spotlight Close
+  description: Called when spotlight closes
+onSpotlightOpen:
+  originalType: (() => void)
+  group: General
+  caption: On Spotlight Open
+  description: Called when spotlight opens
+overlayProps:
+  originalType: ModalBaseOverlayProps
+  group: General
+  caption: Overlay Props
+  description: Props passed down to the Overlay component, use to configure
+    opacity, background-color, styles and other properties
+padding:
+  originalType: MantineSpacing
+  group: General
+  caption: Padding
+  description: Key of theme.spacing or any valid CSS value to set content, header
+    and footer padding
+  default: "'md'"
+portalProps:
+  originalType: BasePortalProps
+  group: General
+  caption: Portal Props
+  description: Props passed down to the Portal component when withinPortal is set
+query:
+  originalType: string
+  group: General
+  caption: Query
+  description: Controlled Spotlight search query
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: theme.defaultRadius
+removeScrollProps:
+  originalType: RemoveScrollProps
+  group: General
+  caption: Remove Scroll Props
+  description: Props passed down to react-remove-scroll, can be used to customize
+    scroll lock behavior
+returnFocus:
+  originalType: boolean
+  group: General
+  caption: Return Focus
+  description: If set, focus is returned to the last active element when onClose is called
+  default: "true"
+scrollAreaComponent:
+  originalType: ScrollAreaComponent
+  group: General
+  caption: Scroll Area Component
+  description: Scroll area component
+  default: "'div'"
+scrollable:
+  originalType: boolean
+  group: General
+  caption: Scrollable
+  description: Determines whether the actions list should be scrollable. If not
+    set, maxHeight is ignored
+  default: "false"
+searchProps:
+  originalType: SpotlightSearchProps
+  group: General
+  caption: Search Props
+  description: Props passed down to the Spotlight.Search
+shadow:
+  originalType: MantineShadow
+  group: General
+  caption: Shadow
+  description: Key of theme.shadows or any valid CSS box-shadow value
+  default: "'xl'"
+shortcut:
+  originalType: string | string[] | null
+  group: General
+  caption: Shortcut
+  description: Keyboard shortcut or a list of shortcuts to trigger spotlight
+  default: "'mod + K'"
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls width of the content area
+  default: "'md'"
+stackId:
+  originalType: string
+  group: General
+  caption: Stack Id
+  description: Id of the modal in the Modal.Stack
+store:
+  originalType: SpotlightStore
+  group: General
+  caption: Store
+  description: Spotlight store, can be used to create multiple instances of spotlight
+tagsToIgnore:
+  originalType: string[]
+  group: General
+  caption: Tags To Ignore
+  description: A list of tags which when focused will be ignored by shortcut
+  default: "['input', 'textarea', 'select']"
+title:
+  originalType: React.ReactNode
+  group: General
+  caption: Title
+  description: Modal title
+transitionProps:
+  originalType: TransitionProps
+  group: General
+  caption: Transition Props
+  description: "Props added to the Transition component that used to animate
+    overlay and body, use to configure duration and animation type, { duration:
+    200, transition: 'fade-down' } by default"
+trapFocus:
+  originalType: boolean
+  group: General
+  caption: Trap Focus
+  description: If set, focus is trapped within the modal/drawer
+  default: "true"
+triggerOnContentEditable:
+  originalType: boolean
+  group: General
+  caption: Trigger On Content Editable
+  description: Determines whether shortcut should trigger based in contentEditable
+  default: "false"
+withOverlay:
+  originalType: boolean
+  group: General
+  caption: With Overlay
+  description: If set, the overlay is rendered
+  default: "true"
+withinPortal:
+  originalType: boolean
+  group: General
+  caption: Within Portal
+  description: If set, the component is rendered inside Portal
+  default: "true"
+xOffset:
+  originalType: MarginLeft<string | number>
+  group: General
+  caption: XOffset
+  description: Left/right modal offset
+  default: 5vw
+yOffset:
+  originalType: MarginTop<string | number>
+  group: General
+  caption: YOffset
+  description: Top/bottom modal offset
+  default: 5dvh
+zIndex:
+  originalType: string | number
+  group: General
+  caption: ZIndex
+  description: z-index CSS property of the root element
+  default: "200"

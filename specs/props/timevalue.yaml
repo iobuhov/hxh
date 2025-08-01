@@ -1,0 +1,23 @@
+amPmLabels:
+  originalType: "{ am: string; pm: string }"
+  group: General
+  caption: Am Pm Labels
+  description: AM/PM labels
+  default: "{ am: 'AM', pm: 'PM' }"
+format:
+  originalType: '"12h" | "24h"'
+  group: General
+  caption: Format
+  description: Time format
+  default: 24h
+value:
+  originalType: string | Date
+  group: General
+  caption: Value
+  description: Time to format
+withSeconds:
+  originalType: boolean
+  group: General
+  caption: With Seconds
+  description: Determines whether seconds should be displayed
+  default: "false"

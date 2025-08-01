@@ -1,0 +1,17 @@
+borderWidth:
+  originalType: string | number
+  group: General
+  caption: Border Width
+  description: border-width of the child components.
+  default: "1"
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: ActionIcon and ActionIcon.GroupSection components only
+orientation:
+  originalType: '"horizontal" | "vertical"'
+  group: General
+  caption: Orientation
+  description: Group orientation
+  default: "'horizontal'"

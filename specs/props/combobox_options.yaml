@@ -1,0 +1,5 @@
+labelledBy:
+  originalType: string
+  group: General
+  caption: Labelled By
+  description: Id of the element that labels the options list

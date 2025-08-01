@@ -1,0 +1,5 @@
+settings:
+  originalType: Partial<DatesProviderValue>
+  group: General
+  caption: Settings
+  description: ""

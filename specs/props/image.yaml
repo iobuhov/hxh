@@ -1,0 +1,27 @@
+fallbackSrc:
+  originalType: string
+  group: General
+  caption: Fallback Src
+  description: Image url used as a fallback if the image cannot be loaded
+fit:
+  originalType: ObjectFit
+  group: General
+  caption: Fit
+  description: Controls object-fit style
+  default: "'cover'"
+onError:
+  originalType: "((event: SyntheticEvent<HTMLImageElement, Event>) => void)"
+  group: General
+  caption: On Error
+  description: Called when image fails to load
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: "0"
+src:
+  originalType: any
+  group: General
+  caption: Src
+  description: Image url

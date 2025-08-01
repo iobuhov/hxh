@@ -1,0 +1,249 @@
+clearButtonProps:
+  originalType: React.ComponentPropsWithoutRef<"button">
+  group: General
+  caption: Clear Button Props
+  description: Props passed down to the clear button
+clearable:
+  originalType: boolean
+  group: General
+  caption: Clearable
+  description: If set, clear button is displayed in the rightSection when the
+    component has value. Ignored if rightSection prop is set.
+  default: "false"
+closeOnChange:
+  originalType: boolean
+  group: General
+  caption: Close On Change
+  description: Determines whether the dropdown is closed when date is selected,
+    not applicable with type="multiple"
+  default: "true"
+description:
+  originalType: React.ReactNode
+  group: General
+  caption: Description
+  description: Contents of Input.Description component. If not set, description is
+    not displayed.
+descriptionProps:
+  originalType: (InputDescriptionProps & DataAttributes)
+  group: General
+  caption: Description Props
+  description: Props passed down to the Input.Description component
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Sets disabled attribute on the input element
+dropdownHandlers:
+  originalType: UseDisclosureHandlers
+  group: General
+  caption: Dropdown Handlers
+  description: ""
+dropdownOpened:
+  originalType: boolean
+  group: General
+  caption: Dropdown Opened
+  description: ""
+dropdownType:
+  originalType: '"popover" | "modal"'
+  group: General
+  caption: Dropdown Type
+  description: Type of the dropdown
+  default: "'popover'"
+error:
+  originalType: React.ReactNode
+  group: General
+  caption: Error
+  description: Contents of Input.Error component. If not set, error is not displayed.
+errorProps:
+  originalType: (InputErrorProps & DataAttributes)
+  group: General
+  caption: Error Props
+  description: Props passed down to the Input.Error component
+formattedValue:
+  originalType: string | null
+  group: General
+  caption: Formatted Value
+  description: ""
+inputContainer:
+  originalType: "((children: ReactNode) => ReactNode)"
+  group: General
+  caption: Input Container
+  description: Input container component
+  default: React.Fragment
+inputSize:
+  originalType: string
+  group: General
+  caption: Input Size
+  description: size attribute passed down to the input element
+inputWrapperOrder:
+  originalType: ("input" | "label" | "description" | "error")[]
+  group: General
+  caption: Input Wrapper Order
+  description: Controls order of the elements
+  default: "['label', 'description', 'input', 'error']"
+label:
+  originalType: React.ReactNode
+  group: General
+  caption: Label
+  description: Contents of Input.Label component. If not set, label is not displayed.
+labelProps:
+  originalType: (InputLabelProps & DataAttributes)
+  group: General
+  caption: Label Props
+  description: Props passed down to the Input.Label component
+labelSeparator:
+  originalType: string
+  group: General
+  caption: Label Separator
+  description: Separator between range value
+leftSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Left Section
+  description: Content section displayed on the left side of the input
+leftSectionPointerEvents:
+  originalType: React.CSSProperties["pointerEvents"]
+  group: General
+  caption: Left Section Pointer Events
+  description: Sets pointer-events styles on the leftSection element
+  default: "'none'"
+leftSectionProps:
+  originalType: React.ComponentPropsWithoutRef<"div">
+  group: General
+  caption: Left Section Props
+  description: Props passed down to the leftSection element
+leftSectionWidth:
+  originalType: React.CSSProperties["width"]
+  group: General
+  caption: Left Section Width
+  description: Left section width, used to set width of the section and input
+    padding-left, by default equals to the input height
+modalProps:
+  originalType: Partial<Omit<ModalProps, "children">>
+  group: General
+  caption: Modal Props
+  description: Props passed down to Modal component
+onClear:
+  originalType: () => void
+  group: General
+  caption: On Clear
+  description: ""
+onDropdownClose:
+  originalType: (() => void)
+  group: General
+  caption: On Dropdown Close
+  description: Called when the dropdown is closed
+placeholder:
+  originalType: string
+  group: General
+  caption: Placeholder
+  description: Input placeholder
+pointer:
+  originalType: boolean
+  group: General
+  caption: Pointer
+  description: "Determines whether the input should have cursor: pointer style"
+  default: "false"
+popoverProps:
+  originalType: Partial<Omit<PopoverProps, "children">>
+  group: General
+  caption: Popover Props
+  description: Props passed down to Popover component
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: theme.defaultRadius
+readOnly:
+  originalType: boolean
+  group: General
+  caption: Read Only
+  description: If set, the component value cannot be changed by the user
+required:
+  originalType: boolean
+  group: General
+  caption: Required
+  description: Adds required attribute to the input and a red asterisk on the
+    right side of label
+  default: "false"
+rightSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Right Section
+  description: Content section displayed on the right side of the input
+rightSectionPointerEvents:
+  originalType: React.CSSProperties["pointerEvents"]
+  group: General
+  caption: Right Section Pointer Events
+  description: Sets pointer-events styles on the rightSection element
+  default: "'none'"
+rightSectionProps:
+  originalType: React.ComponentPropsWithoutRef<"div">
+  group: General
+  caption: Right Section Props
+  description: Props passed down to the rightSection element
+rightSectionWidth:
+  originalType: React.CSSProperties["width"]
+  group: General
+  caption: Right Section Width
+  description: Right section width, used to set width of the section and input
+    padding-right, by default equals to the input height
+shouldClear:
+  originalType: boolean
+  group: General
+  caption: Should Clear
+  description: ""
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: ""
+sortDates:
+  originalType: boolean
+  group: General
+  caption: Sort Dates
+  description: Determines whether dates values should be sorted before onChange
+    call, only applicable with type="multiple"
+  default: "true"
+type:
+  originalType: DatePickerType
+  group: General
+  caption: Type
+  description: ""
+value:
+  originalType: HiddenDatesInputValue
+  group: General
+  caption: Value
+  description: ""
+valueFormatter:
+  originalType: DateFormatter
+  group: General
+  caption: Value Formatter
+  description: A function to format selected dates values into a string. By
+    default, date is formatted based on the input type.
+withAsterisk:
+  originalType: boolean
+  group: General
+  caption: With Asterisk
+  description: If set, the required asterisk is displayed next to the label.
+    Overrides required prop. Does not add required attribute to the input.
+  default: "false"
+withErrorStyles:
+  originalType: boolean
+  group: General
+  caption: With Error Styles
+  description: Determines whether the input should have red border and red text
+    color when the error prop is set
+  default: "true"
+withTime:
+  originalType: boolean
+  group: General
+  caption: With Time
+  description: ""
+wrapperProps:
+  originalType: WrapperProps
+  group: General
+  caption: Wrapper Props
+  description: Props passed down to the root element

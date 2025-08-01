@@ -1,0 +1,15 @@
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: ""
+error:
+  originalType: React.ReactNode
+  group: General
+  caption: Error
+  description: ""
+size:
+  originalType: MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: ""

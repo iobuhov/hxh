@@ -1,0 +1,31 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Item label
+closeMenuOnClick:
+  originalType: boolean
+  group: General
+  caption: Close Menu On Click
+  description: If set, the menu is closed when the item is clicked. Overrides
+    closeOnItemClick prop on the Menu component.
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Sets disabled attribute, applies disabled styles
+leftSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Left Section
+  description: Section displayed at the start of the label
+rightSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Right Section
+  description: Section displayed at the end of the label

@@ -1,0 +1,11 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Target element
+refProp:
+  originalType: string
+  group: General
+  caption: Ref Prop
+  description: Key of the prop used to get element ref
+  default: "'ref'"

@@ -1,0 +1,70 @@
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color value
+  default: theme.primaryColor
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: If set, the indicator is hidden
+inline:
+  originalType: boolean
+  group: General
+  caption: Inline
+  description: Determines whether the indicator container should be an inline element
+  default: "false"
+label:
+  originalType: React.ReactNode
+  group: General
+  caption: Label
+  description: Label displayed inside the indicator, for example, notification count
+offset:
+  originalType: number
+  group: General
+  caption: Offset
+  description: Indicator offset relative to the target element, usually used for
+    elements with border-radius
+position:
+  originalType: '"bottom-end" | "bottom-start" | "top-end" | "top-start" |
+    "bottom-center" | "top-center" | "middle-center" | "middle-end" |
+    "middle-start"'
+  group: General
+  caption: Position
+  description: Indicator position relative to the target element
+  default: "'top-end'"
+processing:
+  originalType: boolean
+  group: General
+  caption: Processing
+  description: If set, the indicator has processing animation
+  default: "false"
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: "100"
+size:
+  originalType: string | number
+  group: General
+  caption: Size
+  description: Indicator width and height
+  default: "10"
+withBorder:
+  originalType: boolean
+  group: General
+  caption: With Border
+  description: Adds border to the root element
+zIndex:
+  originalType: string | number
+  group: General
+  caption: ZIndex
+  description: Indicator z-index
+  default: "200"

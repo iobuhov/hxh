@@ -1,0 +1,56 @@
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color value
+  default: theme.primaryColor
+depthOffset:
+  originalType: string | number
+  group: General
+  caption: Depth Offset
+  description: Controls padding on the left side of control, multiplied by (depth
+    - minDepthToOffset), 20px by default
+getControlProps:
+  originalType: '((payload: TableOfContentsGetControlPropsPayload) =>
+    UnstyledButtonProps & ElementProps<"button"> & Record<...>)'
+  group: General
+  caption: Get Control Props
+  description: A function to pass props down to controls, accepts values from
+    use-scroll-spy hook as an argument and active state.
+initialData:
+  originalType: InitialTableOfContentsData[]
+  group: General
+  caption: Initial Data
+  description: Data used to render content until actual values are retrieved from the DOM
+minDepthToOffset:
+  originalType: number
+  group: General
+  caption: Min Depth To Offset
+  description: Minimum depth value that requires offset, 1 by default
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set
+    border-radius@default theme.defaultRadius
+reinitializeRef:
+  originalType: RefObject<() => void>
+  group: General
+  caption: Reinitialize Ref
+  description: A function to reinitialize headings from use-scroll-spy hook
+scrollSpyOptions:
+  originalType: UseScrollSpyOptions
+  group: General
+  caption: Scroll Spy Options
+  description: Options passed down to use-scroll-spy hook
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls font-size and padding of all elements
+  default: "'md'"

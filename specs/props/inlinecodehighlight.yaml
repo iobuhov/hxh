@@ -1,0 +1,28 @@
+background:
+  originalType: MantineColor
+  group: General
+  caption: Background
+  description: Controls background color of the code. By default, the value
+    depends on color scheme.
+code:
+  originalType: string
+  group: General
+  caption: Code
+  description: Code to highlight
+language:
+  originalType: string
+  group: General
+  caption: Language
+  description: Language of the code, used to determine syntax highlighting
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: "'sm'"
+withBorder:
+  originalType: boolean
+  group: General
+  caption: With Border
+  description: Adds border to the root element
+  default: "false"

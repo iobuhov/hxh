@@ -1,0 +1,70 @@
+date:
+  originalType: string
+  group: General
+  caption: Date
+  description: Date that is displayed in YYYY-MM-DD format
+firstInRange:
+  originalType: boolean
+  group: General
+  caption: First In Range
+  description: Determines whether the day is first in range selection
+  default: "false"
+hidden:
+  originalType: boolean
+  group: General
+  caption: Hidden
+  description: Determines whether the day should not be displayed
+  default: "false"
+highlightToday:
+  originalType: boolean
+  group: General
+  caption: Highlight Today
+  description: Determines whether today should be highlighted with a border
+  default: "false"
+inRange:
+  originalType: boolean
+  group: General
+  caption: In Range
+  description: Determines whether the day is selected in range
+  default: "false"
+lastInRange:
+  originalType: boolean
+  group: General
+  caption: Last In Range
+  description: Determines whether the day is last in range selection
+  default: "false"
+outside:
+  originalType: boolean
+  group: General
+  caption: Outside
+  description: Determines whether the day is outside of the current month
+  default: "false"
+renderDay:
+  originalType: "(date: string) => React.ReactNode"
+  group: General
+  caption: Render Day
+  description: Controls day value rendering
+selected:
+  originalType: boolean
+  group: General
+  caption: Selected
+  description: Determines whether the day is selected
+  default: "false"
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Control width and height of the day
+  default: "'sm'"
+static:
+  originalType: boolean
+  group: General
+  caption: Static
+  description: Determines which element is used as root, 'button' by default,
+    'div' if static prop is set
+weekend:
+  originalType: boolean
+  group: General
+  caption: Weekend
+  description: Determines whether the day is considered to be a weekend
+  default: "false"

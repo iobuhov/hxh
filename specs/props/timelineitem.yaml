@@ -1,0 +1,35 @@
+bullet:
+  originalType: React.ReactNode
+  group: General
+  caption: Bullet
+  description: React node that should be rendered inside the bullet – icon, image,
+    avatar, etc. By default, large white dot is displayed.
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Content displayed below the title
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color to control active item colors
+  default: theme.primaryColor
+lineVariant:
+  originalType: '"dashed" | "dotted" | "solid"'
+  group: General
+  caption: Line Variant
+  description: Controls line border style
+  default: "'solid'"
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: "'xl'"
+title:
+  originalType: React.ReactNode
+  group: General
+  caption: Title
+  description: Item title, displayed next to the bullet

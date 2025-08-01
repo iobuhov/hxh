@@ -1,0 +1,12 @@
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: "0"
+src:
+  originalType: string
+  group: General
+  caption: Src
+  description: Image url

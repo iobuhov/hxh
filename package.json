@@ -18,6 +18,7 @@
     "prettier": "@mendix/prettier-config-web-widgets",
     "packageManager": "pnpm@10.13.1",
     "dependencies": {
-        "@mendix/finch-widget-generator": "workspace:*"
+        "@mendix/finch-widget-generator": "workspace:*",
+        "yaml": "^2.8.0"
     }
 }

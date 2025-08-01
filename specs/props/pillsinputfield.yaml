@@ -1,0 +1,12 @@
+pointer:
+  originalType: boolean
+  group: General
+  caption: Pointer
+  description: If set, cursor is changed to pointer
+type:
+  originalType: '"hidden" | "auto" | "visible"'
+  group: General
+  caption: Type
+  description: Controls input styles when focused. If auto the input is hidden
+    when not focused. If visible the input will always remain visible.
+  default: "'visible'"

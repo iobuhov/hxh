@@ -1,0 +1,17 @@
+offset:
+  originalType: StyleProp<number>
+  group: General
+  caption: Offset
+  description: Column offset on the left side – number of columns that are left
+    empty before this column
+order:
+  originalType: StyleProp<number>
+  group: General
+  caption: Order
+  description: Column order, can be used to reorder columns at different viewport sizes
+span:
+  originalType: StyleProp<ColSpan>
+  group: General
+  caption: Span
+  description: Column span
+  default: "12"

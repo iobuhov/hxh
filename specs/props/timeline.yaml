@@ -1,0 +1,51 @@
+active:
+  originalType: number
+  group: General
+  caption: Active
+  description: Index of the active element
+align:
+  originalType: '"left" | "right"'
+  group: General
+  caption: Align
+  description: Position of content relative to the bullet
+  default: "'left'"
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+bulletSize:
+  originalType: string | number
+  group: General
+  caption: Bullet Size
+  description: Size of the bullet
+  default: "20"
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Timeline.Item components
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color to control active item colors
+  default: theme.primaryColor
+lineWidth:
+  originalType: string | number
+  group: General
+  caption: Line Width
+  description: Control width of the line
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: "'xl'"
+reverseActive:
+  originalType: boolean
+  group: General
+  caption: Reverse Active
+  description: If set, the active items direction is reversed without reversing items order
+  default: "false"

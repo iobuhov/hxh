@@ -1,0 +1,17 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Tabs.Tab components
+grow:
+  originalType: boolean
+  group: General
+  caption: Grow
+  description: Determines whether tabs should take all available space
+  default: "false"
+justify:
+  originalType: JustifyContent
+  group: General
+  caption: Justify
+  description: Tabs alignment
+  default: flex-start

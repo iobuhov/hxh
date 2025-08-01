@@ -1,0 +1,17 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Portal children, for example, custom modal or popover
+reuseTargetNode:
+  originalType: boolean
+  group: General
+  caption: Reuse Target Node
+  description: If set, all portals are rendered in the same DOM node
+  default: "true"
+target:
+  originalType: string | HTMLElement
+  group: General
+  caption: Target
+  description: Element inside which portal should be created, by default a new div
+    element is created and appended to the document.body

@@ -1,0 +1,20 @@
+chevron:
+  originalType: React.ReactNode
+  group: General
+  caption: Chevron
+  description: Custom chevron icon
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Control label
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Sets disabled attribute, prevents interactions
+icon:
+  originalType: React.ReactNode
+  group: General
+  caption: Icon
+  description: Icon displayed next to the label

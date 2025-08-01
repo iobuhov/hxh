@@ -1,0 +1,73 @@
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Color of the chart items. Key of theme.colors or any valid CSS color.
+  default: blue.6
+data:
+  originalType: Record<string, any>[]
+  group: General
+  caption: Data
+  description: Chart data
+dataKey:
+  originalType: BubbleChartDataKey
+  group: General
+  caption: Data Key
+  description: Data keys for x, y and z axis
+gridColor:
+  originalType: MantineColor
+  group: General
+  caption: Grid Color
+  description: Color of the grid and cursor lines, by default depends on color scheme
+label:
+  originalType: string
+  group: General
+  caption: Label
+  description: Chart label displayed next to the x axis
+range:
+  originalType: "[number, number]"
+  group: General
+  caption: Range
+  description: Z axis range
+scatterProps:
+  originalType: Partial<Omit<Props, "ref">>
+  group: General
+  caption: Scatter Props
+  description: Props passed down to the Scatter component
+textColor:
+  originalType: MantineColor
+  group: General
+  caption: Text Color
+  description: Color of the text displayed inside the chart
+  default: "'dimmed'"
+tooltipProps:
+  originalType: RechartsProps
+  group: General
+  caption: Tooltip Props
+  description: Props passed down to the Tooltip component
+valueFormatter:
+  originalType: "((value: number) => string)"
+  group: General
+  caption: Value Formatter
+  description: Function to format z axis values
+withTooltip:
+  originalType: boolean
+  group: General
+  caption: With Tooltip
+  description: Determines whether the tooltip should be displayed
+  default: "true"
+xAxisProps:
+  originalType: RechartsProps
+  group: General
+  caption: XAxis Props
+  description: Props passed down to the XAxis recharts component
+yAxisProps:
+  originalType: RechartsProps
+  group: General
+  caption: YAxis Props
+  description: Props passed down to the YAxis recharts component
+zAxisProps:
+  originalType: RechartsProps
+  group: General
+  caption: ZAxis Props
+  description: Props passed down to the ZAxis recharts component

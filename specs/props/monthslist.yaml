@@ -1,0 +1,41 @@
+getMonthControlProps:
+  originalType: "((date: string) => Partial<PickerControlProps>)"
+  group: General
+  caption: Get Month Control Props
+  description: Passes props down month picker control
+locale:
+  originalType: string
+  group: General
+  caption: Locale
+  description: Dayjs locale, defaults to value defined in DatesProvider
+maxDate:
+  originalType: string | Date
+  group: General
+  caption: Max Date
+  description: Maximum possible date in YYYY-MM-DD format or Date object
+minDate:
+  originalType: string | Date
+  group: General
+  caption: Min Date
+  description: Minimum possible date in YYYY-MM-DD format or Date object
+monthsListFormat:
+  originalType: string
+  group: General
+  caption: Months List Format
+  description: dayjs format for months list
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Component size
+withCellSpacing:
+  originalType: boolean
+  group: General
+  caption: With Cell Spacing
+  description: Determines whether controls should be separated
+  default: "true"
+year:
+  originalType: string
+  group: General
+  caption: Year
+  description: Year for which months list should be displayed

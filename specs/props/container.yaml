@@ -1,0 +1,21 @@
+fluid:
+  originalType: boolean
+  group: General
+  caption: Fluid
+  description: If set, the container takes 100% width of its parent and size prop
+    is ignored.
+  default: "false"
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: max-width of the container, value is not responsive – it is the
+    same for all screen sizes. Numbers are converted to rem. Ignored when fluid
+    prop is set.
+  default: "'md'"
+strategy:
+  originalType: '"block" | "grid"'
+  group: General
+  caption: Strategy
+  description: Centering strategy
+  default: "'block'"

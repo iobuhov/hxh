@@ -1,0 +1,11 @@
+withBorder:
+  originalType: boolean
+  group: General
+  caption: With Border
+  description: If set, component haves a border, overrides withBorder prop on
+    AppShell component
+zIndex:
+  originalType: React.CSSProperties["zIndex"]
+  group: General
+  caption: ZIndex
+  description: Sets z-index. Inherited from the AppShell by default.

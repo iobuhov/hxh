@@ -1,0 +1,46 @@
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors of any other valid CSS color
+  default: theme.primaryColor
+initialProgress:
+  originalType: number
+  group: General
+  caption: Initial Progress
+  description: Initial progress value
+  default: "0"
+portalProps:
+  originalType: Omit<BasePortalProps, "withinPortal">
+  group: General
+  caption: Portal Props
+  description: Props to pass down to the Portal when withinPortal is true
+size:
+  originalType: number
+  group: General
+  caption: Size
+  description: Controls height of the progress bar
+  default: "3"
+stepInterval:
+  originalType: number
+  group: General
+  caption: Step Interval
+  description: Step interval in ms
+  default: "500"
+store:
+  originalType: NprogressStore
+  group: General
+  caption: Store
+  description: Component store, controls state
+withinPortal:
+  originalType: boolean
+  group: General
+  caption: Within Portal
+  description: Determines whether the progress bar should be rendered within Portal
+  default: "true"
+zIndex:
+  originalType: React.CSSProperties["zIndex"]
+  group: General
+  caption: ZIndex
+  description: Progressbar z-index
+  default: getDefaultZIndex('max')

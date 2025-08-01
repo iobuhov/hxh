@@ -1,0 +1,209 @@
+barChartProps:
+  originalType: 'Omit<CategoricalChartProps & RefAttributes<{ readonly
+    eventEmitterSymbol: Symbol; clipPathId: string; accessibilityManager:
+    AccessibilityManager; ... 65 more ...;
+    UNSAFE_componentWillUpdate?(nextProps: Readonly<...>, nextState:
+    Readonly<...>, nextContext: any): void; }>, "ref">'
+  group: General
+  caption: Bar Chart Props
+  description: Props passed down to recharts BarChart component
+barLabelColor:
+  originalType: MantineColor
+  group: General
+  caption: Bar Label Color
+  description: Controls color of the bar label, by default the value is determined
+    by the chart orientation
+barProps:
+  originalType: '((series: BarChartSeries) => Partial<Omit<Props, "ref">>) |
+    Partial<Omit<Props, "ref">>'
+  group: General
+  caption: Bar Props
+  description: Props passed down to recharts Bar component
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Additional components that are rendered inside recharts BarChart component
+cursorFill:
+  originalType: MantineColor
+  group: General
+  caption: Cursor Fill
+  description: Fill of hovered bar section, by default value is based on color scheme
+data:
+  originalType: Record<string, any>[]
+  group: General
+  caption: Data
+  description: Data used to display chart.
+dataKey:
+  originalType: string
+  group: General
+  caption: Data Key
+  description: Key of the data object for x-axis values
+fillOpacity:
+  originalType: number
+  group: General
+  caption: Fill Opacity
+  description: Controls fill opacity of all bars
+  default: "1"
+getBarColor:
+  originalType: "((value: number, series: BarChartSeries) => DefaultMantineColor)"
+  group: General
+  caption: Get Bar Color
+  description: A function to assign dynamic bar color based on its value
+gridAxis:
+  originalType: '"none" | "x" | "y" | "xy"'
+  group: General
+  caption: Grid Axis
+  description: Specifies which lines should be displayed in the grid, 'x' by default
+gridColor:
+  originalType: MantineColor
+  group: General
+  caption: Grid Color
+  description: Color of the grid and cursor lines, by default depends on color scheme
+gridProps:
+  originalType: RechartsProps
+  group: General
+  caption: Grid Props
+  description: Props passed down to the CartesianGrid component
+legendProps:
+  originalType: RechartsProps
+  group: General
+  caption: Legend Props
+  description: Props passed down to the Legend component
+maxBarWidth:
+  originalType: number
+  group: General
+  caption: Max Bar Width
+  description: Maximum bar width in px
+minBarSize:
+  originalType: number
+  group: General
+  caption: Min Bar Size
+  description: Sets minimum height of the bar in px
+  default: "0"
+orientation:
+  originalType: '"horizontal" | "vertical"'
+  group: General
+  caption: Orientation
+  description: Chart orientation, 'horizontal' by default
+referenceLines:
+  originalType: ChartReferenceLineProps[]
+  group: General
+  caption: Reference Lines
+  description: Reference lines that should be displayed on the chart
+rightYAxisLabel:
+  originalType: string
+  group: General
+  caption: Right Y Axis Label
+  description: A label to display next to the right y-axis
+rightYAxisProps:
+  originalType: RechartsProps
+  group: General
+  caption: Right Y Axis Props
+  description: Props passed down to the YAxis recharts component rendered on the right side
+series:
+  originalType: BarChartSeries[]
+  group: General
+  caption: Series
+  description: An array of objects with name and color keys. Determines which data
+    should be consumed from the data array.
+strokeDasharray:
+  originalType: string | number
+  group: General
+  caption: Stroke Dasharray
+  description: Dash array for the grid lines and cursor, '5 5' by default
+textColor:
+  originalType: MantineColor
+  group: General
+  caption: Text Color
+  description: Color of the text displayed inside the chart, 'dimmed' by default
+tickLine:
+  originalType: '"none" | "x" | "y" | "xy"'
+  group: General
+  caption: Tick Line
+  description: Specifies which axis should have tick line, 'y' by default
+tooltipAnimationDuration:
+  originalType: number
+  group: General
+  caption: Tooltip Animation Duration
+  description: Tooltip position animation duration in ms, 0 by default
+tooltipProps:
+  originalType: RechartsProps
+  group: General
+  caption: Tooltip Props
+  description: Props passed down to the Tooltip component
+type:
+  originalType: BarChartType
+  group: General
+  caption: Type
+  description: Controls how bars are positioned relative to each other
+  default: "'default'"
+unit:
+  originalType: string
+  group: General
+  caption: Unit
+  description: Unit displayed next to each tick in y-axis
+valueFormatter:
+  originalType: "((value: number) => string)"
+  group: General
+  caption: Value Formatter
+  description: A function to format values on Y axis and inside the tooltip
+valueLabelProps:
+  originalType: '((series: BarChartSeries) => Partial<Omit<Props<Record<string,
+    any>>, "ref">>) | Partial<Props<Record<string, any>>>'
+  group: General
+  caption: Value Label Props
+  description: Props passed down to recharts LabelList component
+withBarValueLabel:
+  originalType: boolean
+  group: General
+  caption: With Bar Value Label
+  description: Determines whether a label with bar value should be displayed on
+    top of each bar, incompatible with type="stacked" and type="percent"
+  default: "false"
+withLegend:
+  originalType: boolean
+  group: General
+  caption: With Legend
+  description: Determines whether chart legend should be displayed, false by default
+withRightYAxis:
+  originalType: boolean
+  group: General
+  caption: With Right Y Axis
+  description: Determines whether additional y-axis should be displayed on the
+    right side of the chart, false by default
+withTooltip:
+  originalType: boolean
+  group: General
+  caption: With Tooltip
+  description: Determines whether chart tooltip should be displayed, true by default
+withXAxis:
+  originalType: boolean
+  group: General
+  caption: With X Axis
+  description: Determines whether x-axis should be displayed, true by default
+withYAxis:
+  originalType: boolean
+  group: General
+  caption: With Y Axis
+  description: Determines whether y-axis should be displayed, true by default
+xAxisLabel:
+  originalType: string
+  group: General
+  caption: XAxis Label
+  description: A label to display below the x-axis
+xAxisProps:
+  originalType: RechartsProps
+  group: General
+  caption: XAxis Props
+  description: Props passed down to the XAxis recharts component
+yAxisLabel:
+  originalType: string
+  group: General
+  caption: YAxis Label
+  description: A label to display next to the y-axis
+yAxisProps:
+  originalType: RechartsProps
+  group: General
+  caption: YAxis Props
+  description: Props passed down to the YAxis recharts component

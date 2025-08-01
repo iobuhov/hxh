@@ -1,0 +1,178 @@
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color, controls color of track and thumb
+  default: theme.primaryColor
+defaultValue:
+  originalType: RangeSliderValue
+  group: General
+  caption: Default Value
+  description: Uncontrolled component default value
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Disables slider
+domain:
+  originalType: "[number, number]"
+  group: General
+  caption: Domain
+  description: Domain of the slider, defines the full range of possible values
+  default: "[min, max]"
+hiddenInputProps:
+  originalType: React.ComponentPropsWithoutRef<"input">
+  group: General
+  caption: Hidden Input Props
+  description: Props passed down to the hidden input
+inverted:
+  originalType: boolean
+  group: General
+  caption: Inverted
+  description: Determines whether track values representation should be inverted
+  default: "false"
+label:
+  originalType: "ReactNode | ((value: number) => ReactNode)"
+  group: General
+  caption: Label
+  description: Function to generate label or any react node to render instead, set
+    to null to disable label
+labelAlwaysOn:
+  originalType: boolean
+  group: General
+  caption: Label Always On
+  description: Determines whether the label should be visible when the slider is
+    not being dragged or hovered
+  default: "false"
+labelTransitionProps:
+  originalType: TransitionProps
+  group: General
+  caption: Label Transition Props
+  description: Props passed down to the Transition component
+  default: "{ transition: 'fade', duration: 0 }"
+marks:
+  originalType: "{ value: number; label?: ReactNode; }[]"
+  group: General
+  caption: Marks
+  description: Marks displayed on the track
+max:
+  originalType: number
+  group: General
+  caption: Max
+  description: Maximum possible value
+  default: "100"
+maxRange:
+  originalType: number
+  group: General
+  caption: Max Range
+  description: Maximum range interval
+  default: Infinity
+min:
+  originalType: number
+  group: General
+  caption: Min
+  description: Minimal possible value
+  default: "0"
+minRange:
+  originalType: number
+  group: General
+  caption: Min Range
+  description: Minimal range interval
+  default: "10"
+name:
+  originalType: string
+  group: General
+  caption: Name
+  description: Hidden input name, use with uncontrolled component
+onChange:
+  originalType: "((value: RangeSliderValue) => void)"
+  group: General
+  caption: On Change
+  description: Called when value changes
+onChangeEnd:
+  originalType: "((value: RangeSliderValue) => void)"
+  group: General
+  caption: On Change End
+  description: Called when user stops dragging slider or changes value with arrows
+precision:
+  originalType: number
+  group: General
+  caption: Precision
+  description: Number of significant digits after the decimal point
+pushOnOverlap:
+  originalType: boolean
+  group: General
+  caption: Push On Overlap
+  description: Determines whether the other thumb should be pushed by the current
+    thumb dragging when minRange/maxRange is reached
+  default: "true"
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: "'xl'"
+restrictToMarks:
+  originalType: boolean
+  group: General
+  caption: Restrict To Marks
+  description: Determines whether the selection should be only allowed from the
+    given marks array
+  default: "false"
+scale:
+  originalType: "((value: number) => number)"
+  group: General
+  caption: Scale
+  description: A transformation function to change the scale of the slider
+showLabelOnHover:
+  originalType: boolean
+  group: General
+  caption: Show Label On Hover
+  description: Determines whether the label should be displayed when the slider is hovered
+  default: "true"
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls size of the track
+  default: "'md'"
+step:
+  originalType: number
+  group: General
+  caption: Step
+  description: Number by which value will be incremented/decremented with thumb
+    drag and arrows
+  default: "1"
+thumbChildren:
+  originalType: React.ReactNode
+  group: General
+  caption: Thumb Children
+  description: Content rendered inside thumb
+thumbFromLabel:
+  originalType: string
+  group: General
+  caption: Thumb From Label
+  description: First thumb aria-label
+thumbProps:
+  originalType: '((index: 0 | 1) =>
+    Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
+    "ref">)'
+  group: General
+  caption: Thumb Props
+  description: Props passed down to thumb element based on the thumb index
+thumbSize:
+  originalType: string | number
+  group: General
+  caption: Thumb Size
+  description: Thumb width and height, by default value is computed based on size prop
+thumbToLabel:
+  originalType: string
+  group: General
+  caption: Thumb To Label
+  description: Second thumb aria-label
+value:
+  originalType: RangeSliderValue
+  group: General
+  caption: Value
+  description: Controlled component value

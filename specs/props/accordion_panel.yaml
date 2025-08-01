@@ -1,0 +1,5 @@
+onTransitionEnd:
+  originalType: (() => void)
+  group: General
+  caption: On Transition End
+  description: Called when the panel animation completes

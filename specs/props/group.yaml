@@ -1,0 +1,38 @@
+align:
+  originalType: AlignItems
+  group: General
+  caption: Align
+  description: Controls align-items CSS property
+  default: "'center'"
+gap:
+  originalType: MantineSpacing
+  group: General
+  caption: Gap
+  description: Key of theme.spacing or any valid CSS value for gap, numbers are
+    converted to rem
+  default: "'md'"
+grow:
+  originalType: boolean
+  group: General
+  caption: Grow
+  description: "Determines whether each child element should have flex-grow: 1 style"
+  default: "false"
+justify:
+  originalType: JustifyContent
+  group: General
+  caption: Justify
+  description: Controls justify-content CSS property
+  default: "'flex-start'"
+preventGrowOverflow:
+  originalType: boolean
+  group: General
+  caption: Prevent Grow Overflow
+  description: Determines whether children should take only dedicated amount of
+    space (max-width style is set based on the number of children)
+  default: "true"
+wrap:
+  originalType: FlexWrap
+  group: General
+  caption: Wrap
+  description: Controls flex-wrap CSS property
+  default: "'wrap'"

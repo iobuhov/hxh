@@ -1,0 +1,84 @@
+hasNextLevel:
+  originalType: boolean
+  group: General
+  caption: Has Next Level
+  description: Determines whether next level button should be enabled
+  default: "true"
+headerControlsOrder:
+  originalType: ("next" | "previous" | "level")[]
+  group: General
+  caption: Header Controls Order
+  description: Controls order
+  default: "['previous', 'level', 'next']"
+label:
+  originalType: React.ReactNode
+  group: General
+  caption: Label
+  description: Label displayed between next and previous buttons
+levelControlAriaLabel:
+  originalType: string
+  group: General
+  caption: Level Control Aria Label
+  description: Level control aria-label
+nextDisabled:
+  originalType: boolean
+  group: General
+  caption: Next Disabled
+  description: Disables next control
+nextIcon:
+  originalType: React.ReactNode
+  group: General
+  caption: Next Icon
+  description: Change next icon
+nextLabel:
+  originalType: string
+  group: General
+  caption: Next Label
+  description: Next button aria-label
+onLevelClick:
+  originalType: (() => void)
+  group: General
+  caption: On Level Click
+  description: Called when the level button is clicked
+onNext:
+  originalType: (() => void)
+  group: General
+  caption: On Next
+  description: Called when the next button is clicked
+onPrevious:
+  originalType: (() => void)
+  group: General
+  caption: On Previous
+  description: Called when the previous button is clicked
+previousDisabled:
+  originalType: boolean
+  group: General
+  caption: Previous Disabled
+  description: Disables previous control
+previousIcon:
+  originalType: React.ReactNode
+  group: General
+  caption: Previous Icon
+  description: Change previous icon
+previousLabel:
+  originalType: string
+  group: General
+  caption: Previous Label
+  description: Previous button aria-label
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Component size
+withNext:
+  originalType: boolean
+  group: General
+  caption: With Next
+  description: Determines whether next control should be rendered
+  default: "true"
+withPrevious:
+  originalType: boolean
+  group: General
+  caption: With Previous
+  description: Determines whether previous control should be rendered
+  default: "true"

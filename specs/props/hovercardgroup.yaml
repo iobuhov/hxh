@@ -1,0 +1,15 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: HoverCard components
+closeDelay:
+  originalType: number
+  group: General
+  caption: Close Delay
+  description: Close delay in ms
+openDelay:
+  originalType: number
+  group: General
+  caption: Open Delay
+  description: Open delay in ms

@@ -1,0 +1,35 @@
+align:
+  originalType: StyleProp<AlignItems>
+  group: General
+  caption: Align
+  description: align-items CSS property
+columnGap:
+  originalType: StyleProp<MantineSpacing>
+  group: General
+  caption: Column Gap
+  description: column-gap CSS property
+direction:
+  originalType: StyleProp<FlexDirection>
+  group: General
+  caption: Direction
+  description: flex-direction CSS property
+gap:
+  originalType: StyleProp<MantineSpacing>
+  group: General
+  caption: Gap
+  description: gap CSS property
+justify:
+  originalType: StyleProp<JustifyContent>
+  group: General
+  caption: Justify
+  description: justify-content CSS property
+rowGap:
+  originalType: StyleProp<MantineSpacing>
+  group: General
+  caption: Row Gap
+  description: row-gap CSS property
+wrap:
+  originalType: StyleProp<FlexWrap>
+  group: General
+  caption: Wrap
+  description: flex-wrap CSS property

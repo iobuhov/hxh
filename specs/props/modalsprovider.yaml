@@ -1,0 +1,20 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Your app
+labels:
+  originalType: ConfirmLabels
+  group: General
+  caption: Labels
+  description: Confirm modal labels
+modalProps:
+  originalType: ModalSettings
+  group: General
+  caption: Modal Props
+  description: Shared Modal component props, applied for every modal
+modals:
+  originalType: Record<string, FC<ContextModalProps<any>>>
+  group: General
+  caption: Modals
+  description: Predefined modals

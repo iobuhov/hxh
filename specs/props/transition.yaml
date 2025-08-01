@@ -1,0 +1,70 @@
+children:
+  originalType: "(styles: CSSProperties) => Element"
+  group: General
+  caption: Children
+  description: Render function with transition styles argument
+duration:
+  originalType: number
+  group: General
+  caption: Duration
+  description: Transition duration in ms
+  default: "250"
+enterDelay:
+  originalType: number
+  group: General
+  caption: Enter Delay
+  description: Delay in ms before enter transition starts
+exitDelay:
+  originalType: number
+  group: General
+  caption: Exit Delay
+  description: Delay in ms before exit transition starts
+exitDuration:
+  originalType: number
+  group: General
+  caption: Exit Duration
+  description: Exit transition duration in ms
+  default: "250"
+keepMounted:
+  originalType: boolean
+  group: General
+  caption: Keep Mounted
+  description: "If set, the element is not unmounted from the DOM when hidden,
+    display: none styles are applied instead"
+mounted:
+  originalType: boolean
+  group: General
+  caption: Mounted
+  description: Determines whether component should be mounted to the DOM
+onEnter:
+  originalType: (() => void)
+  group: General
+  caption: On Enter
+  description: Called when enter transition starts
+onEntered:
+  originalType: (() => void)
+  group: General
+  caption: On Entered
+  description: Called when enter transition ends
+onExit:
+  originalType: (() => void)
+  group: General
+  caption: On Exit
+  description: Called when exit transition starts
+onExited:
+  originalType: (() => void)
+  group: General
+  caption: On Exited
+  description: Called when exit transition ends
+timingFunction:
+  originalType: string
+  group: General
+  caption: Timing Function
+  description: Transition timing function
+  default: ease
+transition:
+  originalType: MantineTransition
+  group: General
+  caption: Transition
+  description: Transition name or object
+  default: fade

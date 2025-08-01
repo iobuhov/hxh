@@ -1,0 +1,120 @@
+colors:
+  originalType: string[]
+  group: General
+  caption: Colors
+  description: Colors array, used to calculate color for each value, by default 4
+    shades of green colors are used
+data:
+  originalType: Record<string, number>
+  group: General
+  caption: Data
+  description: Heatmap data, key is date in YYYY-MM-DD format
+domain:
+  originalType: "[number, number]"
+  group: General
+  caption: Domain
+  description: Heatmap domain, array of 2 numbers, min and max values, calculated
+    from data by default
+endDate:
+  originalType: string | Date
+  group: General
+  caption: End Date
+  description: Heatmap end date. Current date by default.
+firstDayOfWeek:
+  originalType: 0 | 2 | 1 | 3 | 4 | 5 | 6
+  group: General
+  caption: First Day Of Week
+  description: First day of week, 0 – Sunday, 1 – Monday.
+  default: 1 – Monday
+fontSize:
+  originalType: number
+  group: General
+  caption: Font Size
+  description: Font size of month and weekday labels
+  default: "12"
+gap:
+  originalType: number
+  group: General
+  caption: Gap
+  description: Gap between rects in px
+  default: "1"
+getRectProps:
+  originalType: '((input: HeatmapRectData) => Omit<SVGProps<SVGRectElement>, "ref">)'
+  group: General
+  caption: Get Rect Props
+  description: Props passed down to each rect depending on its date and associated value
+getTooltipLabel:
+  originalType: "((input: HeatmapRectData) => ReactNode)"
+  group: General
+  caption: Get Tooltip Label
+  description: A function to generate tooltip label based on the hovered rect date
+    and value, required for the tooltip to be visible
+monthLabels:
+  originalType: string[]
+  group: General
+  caption: Month Labels
+  description: Month labels, array of 12 elements, can be used for localization
+monthsLabelsHeight:
+  originalType: number
+  group: General
+  caption: Months Labels Height
+  description: Height of month labels row
+  default: "30"
+rectRadius:
+  originalType: number
+  group: General
+  caption: Rect Radius
+  description: Rect radius in px
+  default: "2"
+rectSize:
+  originalType: number
+  group: General
+  caption: Rect Size
+  description: Size of day rect in px
+  default: "10"
+startDate:
+  originalType: string | Date
+  group: General
+  caption: Start Date
+  description: Heatmap start date. Current date - 1 year by default.
+tooltipProps:
+  originalType: Partial<TooltipFloatingProps>
+  group: General
+  caption: Tooltip Props
+  description: Props passed down to the Tooltip.Floating component
+weekdayLabels:
+  originalType: string[]
+  group: General
+  caption: Weekday Labels
+  description: Weekday labels, array of 7 elements, can be used for localization
+weekdaysLabelsWidth:
+  originalType: number
+  group: General
+  caption: Weekdays Labels Width
+  description: Width of weekday labels column
+  default: "30"
+withMonthLabels:
+  originalType: boolean
+  group: General
+  caption: With Month Labels
+  description: If set, month labels are displayed
+  default: "false"
+withOutsideDates:
+  originalType: boolean
+  group: General
+  caption: With Outside Dates
+  description: If set, trailing dates that do not fall into the given startDate –
+    endDate range are displayed to fill empty space.
+  default: "true"
+withTooltip:
+  originalType: boolean
+  group: General
+  caption: With Tooltip
+  description: If set, tooltip is displayed on rect hover
+  default: "false"
+withWeekdayLabels:
+  originalType: boolean
+  group: General
+  caption: With Weekday Labels
+  description: If set, weekday labels are displayed
+  default: "false"

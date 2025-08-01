@@ -1,0 +1,89 @@
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color, changes color of
+    indicator, by default color is based on current color scheme
+data:
+  originalType: (string | SegmentedControlItem)[]
+  group: General
+  caption: Data
+  description: Data based on which controls are rendered
+defaultValue:
+  originalType: string
+  group: General
+  caption: Default Value
+  description: Uncontrolled component default value
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Determines whether the component is disabled
+fullWidth:
+  originalType: boolean
+  group: General
+  caption: Full Width
+  description: Determines whether the component should take 100% width of its parent
+  default: "false"
+name:
+  originalType: string
+  group: General
+  caption: Name
+  description: Name of the radio group, by default random name is generated
+onChange:
+  originalType: "((value: string) => void)"
+  group: General
+  caption: On Change
+  description: Called when value changes
+orientation:
+  originalType: '"horizontal" | "vertical"'
+  group: General
+  caption: Orientation
+  description: Component orientation
+  default: "'horizontal'"
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: theme.defaultRadius
+readOnly:
+  originalType: boolean
+  group: General
+  caption: Read Only
+  description: If set to false, prevents changing the value
+size:
+  originalType: MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls font-size, padding and height properties
+  default: "'sm'"
+transitionDuration:
+  originalType: number
+  group: General
+  caption: Transition Duration
+  description: Indicator transition-duration in ms, set 0 to turn off transitions
+  default: "200"
+transitionTimingFunction:
+  originalType: string
+  group: General
+  caption: Transition Timing Function
+  description: Indicator transition-timing-function property
+  default: ease
+value:
+  originalType: string
+  group: General
+  caption: Value
+  description: Controlled component value
+withItemsBorders:
+  originalType: boolean
+  group: General
+  caption: With Items Borders
+  description: Determines whether there should be borders between items
+  default: "true"

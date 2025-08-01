@@ -1,0 +1,181 @@
+allowDeselect:
+  originalType: boolean
+  group: General
+  caption: Allow Deselect
+  description: Determines whether user can deselect the date by clicking on
+    selected item, applicable only when type="default"
+allowSingleDateInRange:
+  originalType: boolean
+  group: General
+  caption: Allow Single Date In Range
+  description: Determines whether a single day can be selected as range,
+    applicable only when type="range"
+ariaLabels:
+  originalType: CalendarAriaLabels
+  group: General
+  caption: Aria Labels
+  description: aria-label attributes for controls on different levels
+columnsToScroll:
+  originalType: number
+  group: General
+  caption: Columns To Scroll
+  description: Number of columns to scroll with next/prev buttons, same as
+    numberOfColumns if not set explicitly
+date:
+  originalType: string | Date
+  group: General
+  caption: Date
+  description: Displayed date in controlled mode
+decadeLabelFormat:
+  originalType: "string | ((startOfDecade: string, endOfDecade: string) => ReactNode)"
+  group: General
+  caption: Decade Label Format
+  description: dayjs format for decade label or a function that returns decade
+    label based on the date value
+  default: '"YYYY"'
+defaultDate:
+  originalType: string | Date
+  group: General
+  caption: Default Date
+  description: Initial displayed date in uncontrolled mode
+defaultLevel:
+  originalType: '"month" | "year" | "decade"'
+  group: General
+  caption: Default Level
+  description: Initial displayed level (uncontrolled)
+defaultValue:
+  originalType: DateValue | DatesRangeValue<DateValue> | DateValue[]
+  group: General
+  caption: Default Value
+  description: Default value for uncontrolled component
+getMonthControlProps:
+  originalType: "((date: string) => Partial<PickerControlProps>)"
+  group: General
+  caption: Get Month Control Props
+  description: Passes props down month picker control
+getYearControlProps:
+  originalType: "((date: string) => Partial<PickerControlProps>)"
+  group: General
+  caption: Get Year Control Props
+  description: Passes props down to year picker control based on date
+level:
+  originalType: '"month" | "year" | "decade"'
+  group: General
+  caption: Level
+  description: Current displayed level (controlled)
+locale:
+  originalType: string
+  group: General
+  caption: Locale
+  description: Dayjs locale, defaults to value defined in DatesProvider
+maxDate:
+  originalType: string | Date
+  group: General
+  caption: Max Date
+  description: Maximum possible date in YYYY-MM-DD format or Date object
+maxLevel:
+  originalType: '"month" | "year" | "decade"'
+  group: General
+  caption: Max Level
+  description: Max level that user can go up to
+  default: "'decade'"
+minDate:
+  originalType: string | Date
+  group: General
+  caption: Min Date
+  description: Minimum possible date in YYYY-MM-DD format or Date object
+monthsListFormat:
+  originalType: string
+  group: General
+  caption: Months List Format
+  description: dayjs format for months list
+nextLabel:
+  originalType: string
+  group: General
+  caption: Next Label
+  description: Next button aria-label
+numberOfColumns:
+  originalType: number
+  group: General
+  caption: Number Of Columns
+  description: Number of columns displayed next to each other
+  default: "1"
+onChange:
+  originalType: "((value: DatePickerValue<Type, string>) => void)"
+  group: General
+  caption: On Change
+  description: Called when value changes
+onDateChange:
+  originalType: "((date: string) => void)"
+  group: General
+  caption: On Date Change
+  description: Called when date changes
+onLevelChange:
+  originalType: "((level: MonthPickerLevel) => void)"
+  group: General
+  caption: On Level Change
+  description: Called when level changes
+onMonthSelect:
+  originalType: "((date: string) => void)"
+  group: General
+  caption: On Month Select
+  description: Called when month is selected
+onNextDecade:
+  originalType: "((date: string) => void)"
+  group: General
+  caption: On Next Decade
+  description: Called when the next decade button is clicked
+onNextYear:
+  originalType: "((date: string) => void)"
+  group: General
+  caption: On Next Year
+  description: Called when the next year button is clicked
+onPreviousDecade:
+  originalType: "((date: string) => void)"
+  group: General
+  caption: On Previous Decade
+  description: Called when the previous decade button is clicked
+onPreviousYear:
+  originalType: "((date: string) => void)"
+  group: General
+  caption: On Previous Year
+  description: Called when the previous year button is clicked
+previousLabel:
+  originalType: string
+  group: General
+  caption: Previous Label
+  description: Previous button aria-label
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Component size
+type:
+  originalType: '"range" | "multiple" | "default"'
+  group: General
+  caption: Type
+  description: "Picker type: range, multiple or default"
+value:
+  originalType: DateValue | DatesRangeValue<DateValue> | DateValue[]
+  group: General
+  caption: Value
+  description: Value for controlled component
+withCellSpacing:
+  originalType: boolean
+  group: General
+  caption: With Cell Spacing
+  description: Determines whether controls should be separated
+  default: "true"
+yearLabelFormat:
+  originalType: "string | ((date: string) => string)"
+  group: General
+  caption: Year Label Format
+  description: dayjs label format to display year label or a function that returns
+    year label based on year value
+  default: '"YYYY"'
+yearsListFormat:
+  originalType: string
+  group: General
+  caption: Years List Format
+  description: dayjs format for years list
+  default: "'YYYY'"

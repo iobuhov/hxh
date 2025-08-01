@@ -1,0 +1,54 @@
+accept:
+  originalType: string
+  group: General
+  caption: Accept
+  description: File input accept attribute, for example, "image/png,image/jpeg"
+capture:
+  originalType: boolean | "user" | "environment"
+  group: General
+  caption: Capture
+  description: Specifies that, optionally, a new file should be captured, and
+    which device should be used to capture that new media of a type defined by
+    the accept attribute.
+children:
+  originalType: "(props: { onClick: () => void; }) => ReactNode"
+  group: General
+  caption: Children
+  description: Function that receives button props and returns react node that
+    should be rendered
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Disables file picker
+form:
+  originalType: string
+  group: General
+  caption: Form
+  description: Input form attribute
+inputProps:
+  originalType: React.ComponentPropsWithoutRef<"input">
+  group: General
+  caption: Input Props
+  description: Passes down props to the input element used to capture files
+multiple:
+  originalType: boolean
+  group: General
+  caption: Multiple
+  description: If set, user can pick more than one file
+name:
+  originalType: string
+  group: General
+  caption: Name
+  description: Input name attribute
+onChange:
+  originalType: "(payload: Multiple extends true ? File[] : File | null) => void"
+  group: General
+  caption: On Change
+  description: Called when files are picked
+resetRef:
+  originalType: ForwardedRef<() => void>
+  group: General
+  caption: Reset Ref
+  description: Reference of the function that should be called when value changes
+    to null or empty array

@@ -1,0 +1,6 @@
+size:
+  originalType: MantineFontSize
+  group: General
+  caption: Size
+  description: Controls error font-size
+  default: "'sm'"

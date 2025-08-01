@@ -1,0 +1,112 @@
+activeTab:
+  originalType: number
+  group: General
+  caption: Active Tab
+  description: Index of controlled active tab state
+background:
+  originalType: MantineColor
+  group: General
+  caption: Background
+  description: Controls background color of the code. By default, the value
+    depends on color scheme.
+code:
+  originalType: CodeHighlightTabsCode[]
+  group: General
+  caption: Code
+  description: Code to highlight with meta data (file name and icon)
+codeColorScheme:
+  originalType: '"dark" | "light"'
+  group: General
+  caption: Code Color Scheme
+  description: Set to change contrast of controls and other elements if you prefer
+    to use dark code color scheme in light mode or light code color scheme in
+    dark mode
+collapseCodeLabel:
+  originalType: string
+  group: General
+  caption: Collapse Code Label
+  description: Label for collapse button
+  default: "'Collapse code'"
+controls:
+  originalType: ReactNode[]
+  group: General
+  caption: Controls
+  description: Extra controls to display in the controls list
+copiedLabel:
+  originalType: string
+  group: General
+  caption: Copied Label
+  description: Label for copy button in copied state
+  default: "'Copied'"
+copyLabel:
+  originalType: string
+  group: General
+  caption: Copy Label
+  description: Label for copy button in default state
+  default: "'Copy'"
+defaultActiveTab:
+  originalType: number
+  group: General
+  caption: Default Active Tab
+  description: Default active tab index
+defaultExpanded:
+  originalType: boolean
+  group: General
+  caption: Default Expanded
+  description: Uncontrolled expanded default state
+expandCodeLabel:
+  originalType: string
+  group: General
+  caption: Expand Code Label
+  description: Label for expand button
+  default: "'Expand code'"
+expanded:
+  originalType: boolean
+  group: General
+  caption: Expanded
+  description: Controlled expanded state
+getFileIcon:
+  originalType: "((fileName: string) => ReactNode)"
+  group: General
+  caption: Get File Icon
+  description: Function that returns icon based on file name
+maxCollapsedHeight:
+  originalType: string | number
+  group: General
+  caption: Max Collapsed Height
+  description: Max height of collapsed state
+  default: 180px
+onExpandedChange:
+  originalType: "((expanded: boolean) => void)"
+  group: General
+  caption: On Expanded Change
+  description: Called when expanded state changes
+onTabChange:
+  originalType: "((tab: number) => void)"
+  group: General
+  caption: On Tab Change
+  description: Called when tab changes
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: "0"
+withBorder:
+  originalType: boolean
+  group: General
+  caption: With Border
+  description: Adds border to the root element
+  default: "false"
+withCopyButton:
+  originalType: boolean
+  group: General
+  caption: With Copy Button
+  description: Determines whether the copy button should be displayed
+  default: "true"
+withExpandButton:
+  originalType: boolean
+  group: General
+  caption: With Expand Button
+  description: Determines whether the expand/collapse button should be displayed
+  default: "false"

@@ -1,0 +1,71 @@
+aside:
+  originalType: AppShellAsideConfiguration
+  group: General
+  caption: Aside
+  description: Aside configuration, controls width, breakpoints and collapsed
+    state. Required if you use Aside component.
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: If set, Navbar, Aside, Header and Footer components are hidden
+footer:
+  originalType: AppShellFooterConfiguration
+  group: General
+  caption: Footer
+  description: Footer configuration, controls height, offset and collapsed state.
+    Required if you use Footer component.
+header:
+  originalType: AppShellHeaderConfiguration
+  group: General
+  caption: Header
+  description: Header configuration, controls height, offset and collapsed state.
+    Required if you use Header component.
+layout:
+  originalType: '"default" | "alt"'
+  group: General
+  caption: Layout
+  description: Determines how Navbar/Aside are arranged relative to Header/Footer
+navbar:
+  originalType: AppShellNavbarConfiguration
+  group: General
+  caption: Navbar
+  description: Navbar configuration, controls width, breakpoints and collapsed
+    state. Required if you use Navbar component.
+offsetScrollbars:
+  originalType: boolean
+  group: General
+  caption: Offset Scrollbars
+  description: If set, Header and Footer components include styles to offset
+    scrollbars. Based on react-remove-scroll.
+  default: true for layout="default", false for layout="alt"
+padding:
+  originalType: MantineSpacing | AppShellResponsiveSize
+  group: General
+  caption: Padding
+  description: "Padding of the main section. Important: use padding prop instead of p."
+  default: "0"
+transitionDuration:
+  originalType: number
+  group: General
+  caption: Transition Duration
+  description: Duration of all transitions in ms
+  default: "200"
+transitionTimingFunction:
+  originalType: TransitionTimingFunction
+  group: General
+  caption: Transition Timing Function
+  description: Timing function of all transitions
+  default: ease
+withBorder:
+  originalType: boolean
+  group: General
+  caption: With Border
+  description: If set, the associated components have a border
+  default: "true"
+zIndex:
+  originalType: string | number
+  group: General
+  caption: ZIndex
+  description: z-index of all associated elements
+  default: "100"

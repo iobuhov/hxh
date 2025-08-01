@@ -1,0 +1,43 @@
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+closeButtonLabel:
+  originalType: string
+  group: General
+  caption: Close Button Label
+  description: Close button aria-label
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color
+  default: theme.primaryColor
+icon:
+  originalType: React.ReactNode
+  group: General
+  caption: Icon
+  description: Icon displayed next to the title
+onClose:
+  originalType: (() => void)
+  group: General
+  caption: On Close
+  description: Called when the close button is clicked
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: theme.defaultRadius
+title:
+  originalType: React.ReactNode
+  group: General
+  caption: Title
+  description: Alert title
+withCloseButton:
+  originalType: boolean
+  group: General
+  caption: With Close Button
+  description: Determines whether close button should be displayed
+  default: "false"

@@ -1,0 +1,71 @@
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+checked:
+  originalType: boolean
+  group: General
+  caption: Checked
+  description: Checked state for controlled component
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: label element associated with the input
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Controls components colors based on variant prop. Key of
+    theme.colors or any valid CSS color.
+  default: theme.primaryColor
+defaultChecked:
+  originalType: boolean
+  group: General
+  caption: Default Checked
+  description: Default checked state for uncontrolled component
+icon:
+  originalType: React.ReactNode
+  group: General
+  caption: Icon
+  description: Any element or component to replace default icon
+id:
+  originalType: string
+  group: General
+  caption: Id
+  description: Unique input id
+onChange:
+  originalType: "((checked: boolean) => void)"
+  group: General
+  caption: On Change
+  description: Calls when checked state changes
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: "'xl'"
+rootRef:
+  originalType: ForwardedRef<HTMLDivElement>
+  group: General
+  caption: Root Ref
+  description: Assigns ref of the root element
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Controls various properties related to component size
+  default: "'sm'"
+type:
+  originalType: '"checkbox" | "radio"'
+  group: General
+  caption: Type
+  description: Chip input type
+  default: "'checkbox'"
+wrapperProps:
+  originalType: (Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement>, "ref"> & DataAttributes)
+  group: General
+  caption: Wrapper Props
+  description: Props passed down to the root element

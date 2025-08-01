@@ -1,0 +1,145 @@
+ariaLabel:
+  originalType: string
+  group: General
+  caption: Aria Label
+  description: aria-label attribute
+autoFocus:
+  originalType: boolean
+  group: General
+  caption: Auto Focus
+  description: If set, the first input is focused when component is mounted
+  default: "false"
+defaultValue:
+  originalType: string
+  group: General
+  caption: Default Value
+  description: Uncontrolled component default value
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Adds disabled attribute to all inputs
+error:
+  originalType: boolean
+  group: General
+  caption: Error
+  description: Sets aria-invalid attribute and applies error styles to all inputs
+form:
+  originalType: string
+  group: General
+  caption: Form
+  description: Hidden input form attribute
+gap:
+  originalType: MantineSpacing
+  group: General
+  caption: Gap
+  description: Key of theme.spacing or any valid CSS value to set gap between
+    inputs, numbers are converted to rem
+  default: "'md'"
+getInputProps:
+  originalType: '((index: number) => InputProps & ElementProps<"input", "size">)'
+  group: General
+  caption: Get Input Props
+  description: Props added to the input element depending on its index
+hiddenInputProps:
+  originalType: React.ComponentPropsWithoutRef<"input">
+  group: General
+  caption: Hidden Input Props
+  description: Props passed down to the hidden input
+id:
+  originalType: string
+  group: General
+  caption: Id
+  description: Base id used to generate unique ids for inputs
+inputMode:
+  originalType: '"search" | "text" | "none" | "tel" | "url" | "email" | "numeric"
+    | "decimal"'
+  group: General
+  caption: Input Mode
+  description: inputmode attribute, inferred from the type prop if not specified
+inputType:
+  originalType: HTMLInputTypeAttribute
+  group: General
+  caption: Input Type
+  description: Inputs type attribute, inferred from the type prop if not specified
+length:
+  originalType: number
+  group: General
+  caption: Length
+  description: Number of inputs
+  default: "4"
+manageFocus:
+  originalType: boolean
+  group: General
+  caption: Manage Focus
+  description: Determines whether focus should be moved automatically to the next
+    input once filled
+  default: "true"
+mask:
+  originalType: boolean
+  group: General
+  caption: Mask
+  description: Changes input type to "password"
+  default: "false"
+name:
+  originalType: string
+  group: General
+  caption: Name
+  description: Hidden input name attribute
+onChange:
+  originalType: "((value: string) => void)"
+  group: General
+  caption: On Change
+  description: Called when value changes
+onComplete:
+  originalType: "((value: string) => void)"
+  group: General
+  caption: On Complete
+  description: Called when all inputs have value
+oneTimeCode:
+  originalType: boolean
+  group: General
+  caption: One Time Code
+  description: Determines whether autocomplete="one-time-code" attribute should be
+    set on all inputs
+  default: "true"
+placeholder:
+  originalType: string
+  group: General
+  caption: Placeholder
+  description: Inputs placeholder
+  default: "'○'"
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: theme.defaultRadius
+readOnly:
+  originalType: boolean
+  group: General
+  caption: Read Only
+  description: If set, the user cannot edit the value
+rootRef:
+  originalType: ForwardedRef<HTMLDivElement>
+  group: General
+  caption: Root Ref
+  description: Assigns ref of the root element
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Controls inputs width and height
+  default: "'sm'"
+type:
+  originalType: '"number" | RegExp | "alphanumeric"'
+  group: General
+  caption: Type
+  description: Determines which values can be entered
+  default: "'alphanumeric'"
+value:
+  originalType: string
+  group: General
+  caption: Value
+  description: Controlled component value

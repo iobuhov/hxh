@@ -1,0 +1,29 @@
+animated:
+  originalType: boolean
+  group: General
+  caption: Animated
+  description: If set, the sections stripes are animated, striped prop is ignored
+  default: "false"
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS value
+  default: theme.primaryColor
+striped:
+  originalType: boolean
+  group: General
+  caption: Striped
+  description: If set, the section has stripes
+  default: "false"
+value:
+  originalType: number
+  group: General
+  caption: Value
+  description: Value of the section in 0–100 range
+withAria:
+  originalType: boolean
+  group: General
+  caption: With Aria
+  description: Determines whether aria-* props should be added to the root element
+  default: "true"

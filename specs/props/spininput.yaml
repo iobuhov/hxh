@@ -1,0 +1,46 @@
+allowTemporaryZero:
+  originalType: boolean
+  group: General
+  caption: Allow Temporary Zero
+  description: ""
+  default: "false"
+focusable:
+  originalType: boolean
+  group: General
+  caption: Focusable
+  description: ""
+max:
+  originalType: number
+  group: General
+  caption: Max
+  description: ""
+min:
+  originalType: number
+  group: General
+  caption: Min
+  description: ""
+onChange:
+  originalType: "(value: number | null) => void"
+  group: General
+  caption: On Change
+  description: ""
+onNextInput:
+  originalType: (() => void)
+  group: General
+  caption: On Next Input
+  description: ""
+onPreviousInput:
+  originalType: (() => void)
+  group: General
+  caption: On Previous Input
+  description: ""
+step:
+  originalType: number
+  group: General
+  caption: Step
+  description: ""
+value:
+  originalType: number | null
+  group: General
+  caption: Value
+  description: ""

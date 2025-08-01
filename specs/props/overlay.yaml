@@ -1,0 +1,52 @@
+backgroundOpacity:
+  originalType: number
+  group: General
+  caption: Background Opacity
+  description: Overlay background-color opacity 0–1, ignored when gradient prop is set
+  default: "0.6"
+blur:
+  originalType: string | number
+  group: General
+  caption: Blur
+  description: Overlay background blur
+  default: "0"
+center:
+  originalType: boolean
+  group: General
+  caption: Center
+  description: Centers content inside the overlay
+  default: "false"
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Content inside overlay
+color:
+  originalType: BackgroundColor
+  group: General
+  caption: Color
+  description: Overlay background-color
+  default: "#000"
+fixed:
+  originalType: boolean
+  group: General
+  caption: Fixed
+  description: Changes position to fixed
+  default: "false"
+gradient:
+  originalType: string
+  group: General
+  caption: Gradient
+  description: Changes overlay to gradient. If set, color prop is ignored.
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: "0"
+zIndex:
+  originalType: string | number
+  group: General
+  caption: ZIndex
+  description: Overlay z-index
+  default: "200"

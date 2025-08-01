@@ -1,0 +1,81 @@
+barSize:
+  originalType: number
+  group: General
+  caption: Bar Size
+  description: Size of bars in px, 20 by default
+data:
+  originalType: Record<string, any>[]
+  group: General
+  caption: Data
+  description: Chart data
+dataKey:
+  originalType: string
+  group: General
+  caption: Data Key
+  description: Key from data object to use as data key
+emptyBackgroundColor:
+  originalType: string
+  group: General
+  caption: Empty Background Color
+  description: Color of the empty background, by default depends on the color scheme
+endAngle:
+  originalType: number
+  group: General
+  caption: End Angle
+  description: Angle at which chart ends
+  default: "-270"
+legendProps:
+  originalType: RechartsProps
+  group: General
+  caption: Legend Props
+  description: Props passed down to recharts Legend component
+radialBarChartProps:
+  originalType: 'Omit<CategoricalChartProps & RefAttributes<{ readonly
+    eventEmitterSymbol: Symbol; clipPathId: string; accessibilityManager:
+    AccessibilityManager; ... 65 more ...;
+    UNSAFE_componentWillUpdate?(nextProps: Readonly<...>, nextState:
+    Readonly<...>, nextContext: any): void; }>, "ref">'
+  group: General
+  caption: Radial Bar Chart Props
+  description: Props passed down to recharts RadarChartChart component
+radialBarProps:
+  originalType: Omit<RadialBarProps, "ref">
+  group: General
+  caption: Radial Bar Props
+  description: Props passed down to recharts RadialBar component
+startAngle:
+  originalType: number
+  group: General
+  caption: Start Angle
+  description: Angle at which chart starts
+  default: "90"
+tooltipProps:
+  originalType: RechartsProps
+  group: General
+  caption: Tooltip Props
+  description: Props passed down to Tooltip recharts component
+withBackground:
+  originalType: boolean
+  group: General
+  caption: With Background
+  description: Determines whether empty bars area should be visible
+  default: "true"
+withLabels:
+  originalType: boolean
+  group: General
+  caption: With Labels
+  description: Determines whether labels should be displayed
+  default: "false"
+withLegend:
+  originalType: boolean
+  group: General
+  caption: With Legend
+  description: Determines whether the legend should be displayed
+  default: "false"
+withTooltip:
+  originalType: boolean
+  group: General
+  caption: With Tooltip
+  description: Determines whether the tooltip should be displayed when one of the
+    bars is hovered
+  default: "true"

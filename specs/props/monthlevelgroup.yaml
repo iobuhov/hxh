@@ -1,0 +1,173 @@
+excludeDate:
+  originalType: "((date: string) => boolean)"
+  group: General
+  caption: Exclude Date
+  description: Callback function to determine whether the day should be disabled
+firstDayOfWeek:
+  originalType: 0 | 1 | 2 | 3 | 4 | 5 | 6
+  group: General
+  caption: First Day Of Week
+  description: Number 0-6, where 0 – Sunday and 6 – Saturday.
+  default: 1 – Monday
+getDayAriaLabel:
+  originalType: "((date: string) => string)"
+  group: General
+  caption: Get Day Aria Label
+  description: Assigns aria-label to Day components based on date
+getDayProps:
+  originalType: '((date: string) => Omit<Partial<DayProps>, "classNames" |
+    "styles" | "vars">)'
+  group: General
+  caption: Get Day Props
+  description: Passes props down to Day components
+hasNextLevel:
+  originalType: boolean
+  group: General
+  caption: Has Next Level
+  description: Determines whether next level button should be enabled
+  default: "true"
+headerControlsOrder:
+  originalType: ("next" | "previous" | "level")[]
+  group: General
+  caption: Header Controls Order
+  description: Controls order
+  default: "['previous', 'level', 'next']"
+hideOutsideDates:
+  originalType: boolean
+  group: General
+  caption: Hide Outside Dates
+  description: Determines whether outside dates should be hidden
+  default: "false"
+hideWeekdays:
+  originalType: boolean
+  group: General
+  caption: Hide Weekdays
+  description: Determines whether weekdays row should be hidden
+  default: "false"
+highlightToday:
+  originalType: boolean
+  group: General
+  caption: Highlight Today
+  description: Determines whether today should be highlighted with a border
+  default: "false"
+levelControlAriaLabel:
+  originalType: "string | ((month: string) => string)"
+  group: General
+  caption: Level Control Aria Label
+  description: Function that returns level control aria-label based on month date
+locale:
+  originalType: string
+  group: General
+  caption: Locale
+  description: dayjs locale, the default value is defined by DatesProvider
+maxDate:
+  originalType: string | Date
+  group: General
+  caption: Max Date
+  description: Maximum possible date, in YYYY-MM-DD format
+minDate:
+  originalType: string | Date
+  group: General
+  caption: Min Date
+  description: Minimum possible date, in YYYY-MM-DD format
+month:
+  originalType: string
+  group: General
+  caption: Month
+  description: Month to display
+monthLabelFormat:
+  originalType: "string | ((date: string) => string)"
+  group: General
+  caption: Month Label Format
+  description: dayjs label format to display month label or a function that
+    returns month label based on month value
+  default: '"MMMM YYYY"'
+nextDisabled:
+  originalType: boolean
+  group: General
+  caption: Next Disabled
+  description: Disables next control
+nextIcon:
+  originalType: React.ReactNode
+  group: General
+  caption: Next Icon
+  description: Change next icon
+nextLabel:
+  originalType: string
+  group: General
+  caption: Next Label
+  description: Next button aria-label
+numberOfColumns:
+  originalType: number
+  group: General
+  caption: Number Of Columns
+  description: Number of columns to display next to each other
+onLevelClick:
+  originalType: (() => void)
+  group: General
+  caption: On Level Click
+  description: Called when the level button is clicked
+onNext:
+  originalType: (() => void)
+  group: General
+  caption: On Next
+  description: Called when the next button is clicked
+onPrevious:
+  originalType: (() => void)
+  group: General
+  caption: On Previous
+  description: Called when the previous button is clicked
+previousDisabled:
+  originalType: boolean
+  group: General
+  caption: Previous Disabled
+  description: Disables previous control
+previousIcon:
+  originalType: React.ReactNode
+  group: General
+  caption: Previous Icon
+  description: Change previous icon
+previousLabel:
+  originalType: string
+  group: General
+  caption: Previous Label
+  description: Previous button aria-label
+renderDay:
+  originalType: "(date: string) => React.ReactNode"
+  group: General
+  caption: Render Day
+  description: Controls day value rendering
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Controls size
+static:
+  originalType: boolean
+  group: General
+  caption: Static
+  description: Passed as isStatic prop to Month component
+weekdayFormat:
+  originalType: "string | ((date: string) => string)"
+  group: General
+  caption: Weekday Format
+  description: dayjs format for weekdays names
+  default: "'dd'"
+weekendDays:
+  originalType: (0 | 1 | 2 | 3 | 4 | 5 | 6)[]
+  group: General
+  caption: Weekend Days
+  description: Indices of weekend days, 0-6, where 0 is Sunday and 6 is Saturday.
+    The default value is defined by DatesProvider.
+withCellSpacing:
+  originalType: boolean
+  group: General
+  caption: With Cell Spacing
+  description: Determines whether controls should be separated by space
+  default: "true"
+withWeekNumbers:
+  originalType: boolean
+  group: General
+  caption: With Week Numbers
+  description: Determines whether week numbers should be displayed
+  default: "false"

@@ -1,0 +1,30 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Overrides default loader with given content
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color
+  default: theme.primaryColor
+loaders:
+  originalType: Partial<Record<(string & {}) | "bars" | "dots" | "oval",
+    MantineLoaderComponent>>
+  group: General
+  caption: Loaders
+  description: Object of loaders components, can be customized via default props or inline.
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls width and height of the loader. Loader has predefined
+    xs-xl values. Numbers are converted to rem.
+  default: "'md'"
+type:
+  originalType: (string & {}) | "bars" | "dots" | "oval"
+  group: General
+  caption: Type
+  description: Loader type, key of loaders prop
+  default: "'oval'"

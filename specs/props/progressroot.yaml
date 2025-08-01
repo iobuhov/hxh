@@ -1,0 +1,23 @@
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: theme.defaultRadius
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls track height
+  default: "'md'"
+transitionDuration:
+  originalType: number
+  group: General
+  caption: Transition Duration
+  description: Controls sections width transition duration, value is specified in ms
+  default: "100"

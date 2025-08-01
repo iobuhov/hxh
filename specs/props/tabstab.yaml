@@ -1,0 +1,31 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Tab label
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color, controls control color
+    based on variant
+leftSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Left Section
+  description: Content displayed on the left side of the label
+rightSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Right Section
+  description: Content displayed on the right side of the label
+size:
+  originalType: string | number
+  group: General
+  caption: Size
+  description: Size passed from parent component, sets data-size if value is not number like
+value:
+  originalType: string
+  group: General
+  caption: Value
+  description: Value of associated panel

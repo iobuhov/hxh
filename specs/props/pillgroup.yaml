@@ -1,0 +1,16 @@
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: If set, adds disabled to all child Pill components
+gap:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Gap
+  description: Controls spacing between pills, by default controlled by size
+size:
+  originalType: MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls size of the child Pill components and gap between them
+  default: "'sm'"

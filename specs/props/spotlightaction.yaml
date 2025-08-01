@@ -1,0 +1,58 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Children override default action elements, if passed, label,
+    description and sections are hidden
+closeSpotlightOnTrigger:
+  originalType: boolean
+  group: General
+  caption: Close Spotlight On Trigger
+  description: Determines whether the spotlight should be closed when action is
+    triggered, overrides closeOnActionTrigger prop set on Spotlight
+description:
+  originalType: string
+  group: General
+  caption: Description
+  description: Action description, pass string to use in default filter
+dimmedSections:
+  originalType: boolean
+  group: General
+  caption: Dimmed Sections
+  description: Determines whether left and right sections should have dimmed styles
+  default: "true"
+highlightColor:
+  originalType: MantineColor
+  group: General
+  caption: Highlight Color
+  description: Key of theme.colors of any valid CSS color that will be used to
+    highlight search query
+  default: "'yellow'"
+highlightQuery:
+  originalType: boolean
+  group: General
+  caption: Highlight Query
+  description: Determines whether search query should be highlighted in action label
+  default: "false"
+keywords:
+  originalType: string | string[]
+  group: General
+  caption: Keywords
+  description: "Keywords that are used for default filtering, not displayed
+    anywhere, can be a string: \"react,router,javascript\" or an array:
+    ['react', 'router', 'javascript']"
+label:
+  originalType: string
+  group: General
+  caption: Label
+  description: Action label, pass string to use in default filter
+leftSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Left Section
+  description: Section displayed on the left side of the label, for example, icon
+rightSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Right Section
+  description: Section displayed on the right side of the label, for example, hotkey

@@ -1,0 +1,5 @@
+value:
+  originalType: string
+  group: General
+  caption: Value
+  description: Value that is used to manage the accordion state

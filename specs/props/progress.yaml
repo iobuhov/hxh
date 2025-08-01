@@ -1,0 +1,46 @@
+animated:
+  originalType: boolean
+  group: General
+  caption: Animated
+  description: If set, the sections stripes are animated, striped prop is ignored
+  default: "false"
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS value
+  default: theme.primaryColor
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: theme.defaultRadius
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls track height
+  default: "'md'"
+striped:
+  originalType: boolean
+  group: General
+  caption: Striped
+  description: If set, the section has stripes
+  default: "false"
+transitionDuration:
+  originalType: number
+  group: General
+  caption: Transition Duration
+  description: Controls sections width transition duration, value is specified in ms
+  default: "100"
+value:
+  originalType: number
+  group: General
+  caption: Value
+  description: Value of the progress

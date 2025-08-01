@@ -1,0 +1,5 @@
+label:
+  originalType: React.ReactNode
+  group: General
+  caption: Label
+  description: Group label

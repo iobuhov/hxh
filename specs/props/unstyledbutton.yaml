@@ -1,0 +1,5 @@
+size:
+  originalType: string | number
+  group: General
+  caption: Size
+  description: Size passed from parent component, sets data-size if value is not number like

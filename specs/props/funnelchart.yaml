@@ -1,0 +1,88 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Additional elements rendered inside FunnelChart component
+data:
+  originalType: FunnelChartCell[]
+  group: General
+  caption: Data
+  description: Data used to render chart
+funnelChartProps:
+  originalType: 'Omit<CategoricalChartProps & RefAttributes<{ readonly
+    eventEmitterSymbol: Symbol; clipPathId: string; accessibilityManager:
+    AccessibilityManager; ... 65 more ...;
+    UNSAFE_componentWillUpdate?(nextProps: Readonly<...>, nextState:
+    Readonly<...>, nextContext: any): void; }>, "ref">'
+  group: General
+  caption: Funnel Chart Props
+  description: Props passed down to recharts FunnelChart component
+funnelProps:
+  originalType: Partial<Omit<FunnelProps, "ref">>
+  group: General
+  caption: Funnel Props
+  description: Props passed down to recharts Pie component
+labelColor:
+  originalType: MantineColor
+  group: General
+  caption: Label Color
+  description: Controls text color of all labels
+  default: "'white'"
+labelsPosition:
+  originalType: '"left" | "right" | "inside"'
+  group: General
+  caption: Labels Position
+  description: Controls labels position relative to the segment
+  default: "'right'"
+size:
+  originalType: number
+  group: General
+  caption: Size
+  description: Controls chart width and height
+  default: "300"
+strokeColor:
+  originalType: MantineColor
+  group: General
+  caption: Stroke Color
+  description: Controls color of the segments stroke, by default depends on color scheme
+strokeWidth:
+  originalType: number
+  group: General
+  caption: Stroke Width
+  description: Controls width of segments stroke
+  default: "1"
+tooltipAnimationDuration:
+  originalType: number
+  group: General
+  caption: Tooltip Animation Duration
+  description: Tooltip animation duration in ms
+  default: "0"
+tooltipDataSource:
+  originalType: '"all" | "segment"'
+  group: General
+  caption: Tooltip Data Source
+  description: Determines which data is displayed in the tooltip. 'all' – display
+    all values, 'segment' – display only hovered segment.
+  default: "'all'"
+tooltipProps:
+  originalType: RechartsProps
+  group: General
+  caption: Tooltip Props
+  description: Props passed down to Tooltip recharts component
+valueFormatter:
+  originalType: "((value: number) => string)"
+  group: General
+  caption: Value Formatter
+  description: A function to format values inside the tooltip and labels
+withLabels:
+  originalType: boolean
+  group: General
+  caption: With Labels
+  description: Determines whether each segment should have associated label
+  default: "false"
+withTooltip:
+  originalType: boolean
+  group: General
+  caption: With Tooltip
+  description: Determines whether the tooltip should be displayed when a section is hovered
+  default: "true"

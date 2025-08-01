@@ -1,0 +1,6 @@
+size:
+  originalType: string | number
+  group: General
+  caption: Size
+  description: Controls width and height of the icon, 16 by default
+  default: "16"

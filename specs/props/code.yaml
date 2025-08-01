@@ -1,0 +1,12 @@
+block:
+  originalType: boolean
+  group: General
+  caption: Block
+  description: If set, code is rendered in pre
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color, controls
+    background-color of the code. By default, calculated based on the color
+    scheme.

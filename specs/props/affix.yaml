@@ -1,0 +1,24 @@
+portalProps:
+  originalType: BasePortalProps
+  group: General
+  caption: Portal Props
+  description: Props passed down to the Portal component. Ignored when
+    withinPortal is false.
+position:
+  originalType: AffixPosition
+  group: General
+  caption: Position
+  description: Affix position on screen
+  default: "{ bottom: 0, right: 0 }"
+withinPortal:
+  originalType: boolean
+  group: General
+  caption: Within Portal
+  description: Determines whether the component is rendered within Portal
+  default: "true"
+zIndex:
+  originalType: React.CSSProperties["zIndex"]
+  group: General
+  caption: ZIndex
+  description: Root element z-index property
+  default: "200"

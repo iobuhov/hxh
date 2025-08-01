@@ -1,0 +1,78 @@
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any CSS color value
+  default: "'yellow'"
+count:
+  originalType: number
+  group: General
+  caption: Count
+  description: Number of controls
+  default: "5"
+defaultValue:
+  originalType: number
+  group: General
+  caption: Default Value
+  description: Uncontrolled component default value
+emptySymbol:
+  originalType: "ReactNode | ((value: number) => ReactNode)"
+  group: General
+  caption: Empty Symbol
+  description: Icon displayed when the symbol is empty
+fractions:
+  originalType: number
+  group: General
+  caption: Fractions
+  description: Number of fractions each item can be divided into
+  default: "1"
+fullSymbol:
+  originalType: "ReactNode | ((value: number) => ReactNode)"
+  group: General
+  caption: Full Symbol
+  description: Icon displayed when the symbol is full
+getSymbolLabel:
+  originalType: "((index: number) => string)"
+  group: General
+  caption: Get Symbol Label
+  description: A function to assign aria-label of the the control at index given
+    in the argument. If not specified, control index is used as aria-label.
+highlightSelectedOnly:
+  originalType: boolean
+  group: General
+  caption: Highlight Selected Only
+  description: If set, only the selected symbol changes to full symbol when selected
+  default: "false"
+name:
+  originalType: string
+  group: General
+  caption: Name
+  description: name attribute passed down to all inputs. By default, name is
+    generated randomly.
+onChange:
+  originalType: "((value: number) => void)"
+  group: General
+  caption: On Change
+  description: Called when value changes
+onHover:
+  originalType: "((value: number) => void)"
+  group: General
+  caption: On Hover
+  description: Called when one of the controls is hovered
+readOnly:
+  originalType: boolean
+  group: General
+  caption: Read Only
+  description: If set, the user cannot interact with the component
+  default: "false"
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls component size
+  default: "'sm'"
+value:
+  originalType: number
+  group: General
+  caption: Value
+  description: Controlled component value

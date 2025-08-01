@@ -1,0 +1,10 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Item content
+icon:
+  originalType: React.ReactNode
+  group: General
+  caption: Icon
+  description: Icon to replace item bullet

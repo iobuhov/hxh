@@ -1,0 +1,16 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Panel content
+keepMounted:
+  originalType: boolean
+  group: General
+  caption: Keep Mounted
+  description: If set, the content is kept mounted, even if keepMounted is set
+    false in the parent Tabs component
+value:
+  originalType: string
+  group: General
+  caption: Value
+  description: Value of associated control

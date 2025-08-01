@@ -1,0 +1,33 @@
+cellComponent:
+  originalType: '"td" | "th"'
+  group: General
+  caption: Cell Component
+  description: Sets cell type that is used for weekdays
+  default: "'th'"
+firstDayOfWeek:
+  originalType: 0 | 1 | 2 | 3 | 4 | 5 | 6
+  group: General
+  caption: First Day Of Week
+  description: Number 0-6, 0 – Sunday, 6 – Saturday
+  default: 1 – Monday
+locale:
+  originalType: string
+  group: General
+  caption: Locale
+  description: dayjs locale
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Controls size
+weekdayFormat:
+  originalType: "string | ((date: string) => string)"
+  group: General
+  caption: Weekday Format
+  description: dayjs format to get weekday name
+  default: "'dd'"
+withWeekNumbers:
+  originalType: boolean
+  group: General
+  caption: With Week Numbers
+  description: If set, heading for week numbers is displayed

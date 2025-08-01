@@ -1,0 +1,50 @@
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+checked:
+  originalType: boolean
+  group: General
+  caption: Checked
+  description: Determines whether the component should have checked styles
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color to set input background
+    color in checked state
+  default: theme.primaryColor
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Determines whether the component should have disabled styles
+icon:
+  originalType: "FC<{ indeterminate: boolean; className: string; }> | undefined"
+  group: General
+  caption: Icon
+  description: Icon displayed when checkbox is in checked or indeterminate state
+iconColor:
+  originalType: MantineColor
+  group: General
+  caption: Icon Color
+  description: Key of theme.colors or any valid CSS color to set icon color, by
+    default value depends on theme.autoContrast
+indeterminate:
+  originalType: boolean
+  group: General
+  caption: Indeterminate
+  description: Indeterminate state of the checkbox. If set, checked prop is ignored.
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: theme.defaultRadius
+size:
+  originalType: MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls size of the component
+  default: "'sm'"

@@ -1,0 +1,33 @@
+animateOpacity:
+  originalType: boolean
+  group: General
+  caption: Animate Opacity
+  description: Determines whether opacity should be animated
+  default: "true"
+in:
+  originalType: boolean
+  group: General
+  caption: In
+  description: Opened state
+keepMounted:
+  originalType: boolean
+  group: General
+  caption: Keep Mounted
+  description: Keep element in DOM when collapsed, useful for nested collapses
+onTransitionEnd:
+  originalType: (() => void)
+  group: General
+  caption: On Transition End
+  description: Called each time transition ends
+transitionDuration:
+  originalType: number
+  group: General
+  caption: Transition Duration
+  description: Transition duration in ms
+  default: "200"
+transitionTimingFunction:
+  originalType: string
+  group: General
+  caption: Transition Timing Function
+  description: Transition timing function
+  default: ease

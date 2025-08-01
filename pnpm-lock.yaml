@@ -41,6 +41,9 @@ importers:
       '@mendix/finch-widget-generator':
         specifier: workspace:*
         version: link:packages/finch-widget-generator
+      yaml:
+        specifier: ^2.8.0
+        version: 2.8.0
     devDependencies:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*

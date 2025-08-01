@@ -1,0 +1,29 @@
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color value, by default value
+    depends on color scheme
+label:
+  originalType: React.ReactNode
+  group: General
+  caption: Label
+  description: Divider label, visible only when orientation is horizontal
+labelPosition:
+  originalType: '"center" | "left" | "right"'
+  group: General
+  caption: Label Position
+  description: Controls label position
+  default: "'center'"
+orientation:
+  originalType: '"horizontal" | "vertical"'
+  group: General
+  caption: Orientation
+  description: Controls orientation
+  default: "'horizontal'"
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls width/height (depends on orientation)
+  default: "'xs'"

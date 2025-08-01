@@ -1,0 +1,5 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Dropdown content

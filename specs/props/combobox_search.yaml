@@ -1,0 +1,127 @@
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Sets disabled attribute on the input element
+error:
+  originalType: React.ReactNode
+  group: General
+  caption: Error
+  description: Determines whether the input should have error styles and
+    aria-invalid attribute
+id:
+  originalType: string
+  group: General
+  caption: Id
+  description: Input element id
+inputSize:
+  originalType: string
+  group: General
+  caption: Input Size
+  description: size attribute passed down to the input element
+leftSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Left Section
+  description: Content section displayed on the left side of the input
+leftSectionPointerEvents:
+  originalType: React.CSSProperties["pointerEvents"]
+  group: General
+  caption: Left Section Pointer Events
+  description: Sets pointer-events styles on the leftSection element
+  default: "'none'"
+leftSectionProps:
+  originalType: React.ComponentPropsWithoutRef<"div">
+  group: General
+  caption: Left Section Props
+  description: Props passed down to the leftSection element
+leftSectionWidth:
+  originalType: React.CSSProperties["width"]
+  group: General
+  caption: Left Section Width
+  description: Left section width, used to set width of the section and input
+    padding-left, by default equals to the input height
+multiline:
+  originalType: boolean
+  group: General
+  caption: Multiline
+  description: Determines whether the input can have multiple lines, for example
+    when component="textarea"
+  default: "false"
+pointer:
+  originalType: boolean
+  group: General
+  caption: Pointer
+  description: "Determines whether the input should have cursor: pointer style"
+  default: "false"
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: theme.defaultRadius
+required:
+  originalType: boolean
+  group: General
+  caption: Required
+  description: Sets required attribute on the input element
+rightSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Right Section
+  description: Content section displayed on the right side of the input
+rightSectionPointerEvents:
+  originalType: React.CSSProperties["pointerEvents"]
+  group: General
+  caption: Right Section Pointer Events
+  description: Sets pointer-events styles on the rightSection element
+  default: "'none'"
+rightSectionProps:
+  originalType: React.ComponentPropsWithoutRef<"div">
+  group: General
+  caption: Right Section Props
+  description: Props passed down to the rightSection element
+rightSectionWidth:
+  originalType: React.CSSProperties["width"]
+  group: General
+  caption: Right Section Width
+  description: Right section width, used to set width of the section and input
+    padding-right, by default equals to the input height
+size:
+  originalType: MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls input height and horizontal padding
+  default: "'sm'"
+withAria:
+  originalType: boolean
+  group: General
+  caption: With Aria
+  description: Determines whether aria- and other accessibility attributes should
+    be added to the input
+  default: "true"
+withAriaAttributes:
+  originalType: boolean
+  group: General
+  caption: With Aria Attributes
+  description: if set, the search input has aria- attribute
+  default: "true"
+withErrorStyles:
+  originalType: boolean
+  group: General
+  caption: With Error Styles
+  description: Determines whether the input should have red border and red text
+    color when the error prop is set
+  default: "true"
+withKeyboardNavigation:
+  originalType: boolean
+  group: General
+  caption: With Keyboard Navigation
+  description: if set, the search input handles keyboard navigation
+  default: "true"
+wrapperProps:
+  originalType: WrapperProps
+  group: General
+  caption: Wrapper Props
+  description: Props passed down to the root element of the Input component

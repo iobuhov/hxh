@@ -1,0 +1,24 @@
+cols:
+  originalType: StyleProp<number>
+  group: General
+  caption: Cols
+  description: Number of columns
+  default: "1"
+spacing:
+  originalType: StyleProp<MantineSpacing>
+  group: General
+  caption: Spacing
+  description: Spacing between columns
+  default: "'md'"
+type:
+  originalType: '"media" | "container"'
+  group: General
+  caption: Type
+  description: Determines typeof of queries that are used for responsive styles
+  default: "'media'"
+verticalSpacing:
+  originalType: StyleProp<MantineSpacing>
+  group: General
+  caption: Vertical Spacing
+  description: Spacing between rows
+  default: "'md'"

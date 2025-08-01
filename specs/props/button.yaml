@@ -1,0 +1,73 @@
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Button content
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color
+  default: theme.primaryColor
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Sets disabled attribute, applies disabled styles
+fullWidth:
+  originalType: boolean
+  group: General
+  caption: Full Width
+  description: If set, the button takes 100% width of its parent container
+  default: "false"
+gradient:
+  originalType: MantineGradient
+  group: General
+  caption: Gradient
+  description: Gradient configuration used when variant="gradient"
+  default: theme.defaultGradient
+justify:
+  originalType: JustifyContent
+  group: General
+  caption: Justify
+  description: Sets justify-content of inner element, can be used to change
+    distribution of sections and label
+  default: "'center'"
+leftSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Left Section
+  description: Content displayed on the left side of the button label
+loaderProps:
+  originalType: LoaderProps
+  group: General
+  caption: Loader Props
+  description: Props added to the Loader component (only visible when loading prop is set)
+loading:
+  originalType: boolean
+  group: General
+  caption: Loading
+  description: If set, the Loader component is displayed over the button
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: theme.defaultRadius
+rightSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Right Section
+  description: Content displayed on the right side of the button label
+size:
+  originalType: MantineSize | (string & {}) | "compact-xs" | "compact-sm" |
+    "compact-md" | "compact-lg" | "compact-xl"
+  group: General
+  caption: Size
+  description: Controls button height, font-size and horizontal padding
+  default: "'sm'"

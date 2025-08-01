@@ -1,0 +1,6 @@
+hidden:
+  originalType: boolean
+  group: General
+  caption: Hidden
+  description: Determines whether the dropdown should be hidden, for example, when
+    there are no options to display

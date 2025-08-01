@@ -1,0 +1,75 @@
+allowStepClick:
+  originalType: boolean
+  group: General
+  caption: Allow Step Click
+  description: Set to false to disable clicks on step
+allowStepSelect:
+  originalType: boolean
+  group: General
+  caption: Allow Step Select
+  description: Should step selection be allowed
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors, by default controlled by Stepper component
+completedIcon:
+  originalType: ReactNode | StepFragmentComponent
+  group: General
+  caption: Completed Icon
+  description: Step icon displayed when step is completed
+description:
+  originalType: ReactNode | StepFragmentComponent
+  group: General
+  caption: Description
+  description: Step description
+icon:
+  originalType: ReactNode | StepFragmentComponent
+  group: General
+  caption: Icon
+  description: Step icon, defaults to step index + 1 when rendered within Stepper
+iconPosition:
+  originalType: '"left" | "right"'
+  group: General
+  caption: Icon Position
+  description: Icon position relative to step body, controlled by Stepper component
+iconSize:
+  originalType: string | number
+  group: General
+  caption: Icon Size
+  description: Icon wrapper size
+label:
+  originalType: ReactNode | StepFragmentComponent
+  group: General
+  caption: Label
+  description: Step label, render after icon
+loading:
+  originalType: boolean
+  group: General
+  caption: Loading
+  description: Indicates loading state of the step
+orientation:
+  originalType: '"horizontal" | "vertical"'
+  group: General
+  caption: Orientation
+  description: Component orientation
+progressIcon:
+  originalType: ReactNode | StepFragmentComponent
+  group: General
+  caption: Progress Icon
+  description: Step icon displayed when step is in progress
+state:
+  originalType: '"stepInactive" | "stepProgress" | "stepCompleted"'
+  group: General
+  caption: State
+  description: Step state, controlled by Stepper component
+step:
+  originalType: number
+  group: General
+  caption: Step
+  description: Step index, controlled by Stepper component
+withIcon:
+  originalType: boolean
+  group: General
+  caption: With Icon
+  description: Determines whether the icon should be displayed

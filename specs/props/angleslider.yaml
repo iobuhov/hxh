@@ -1,0 +1,84 @@
+defaultValue:
+  originalType: number
+  group: General
+  caption: Default Value
+  description: Uncontrolled component default value
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Sets data-disabled attribute, disables interactions
+formatLabel:
+  originalType: "((value: number) => ReactNode)"
+  group: General
+  caption: Format Label
+  description: A function to format label based on the current value
+hiddenInputProps:
+  originalType: React.ComponentPropsWithoutRef<"input">
+  group: General
+  caption: Hidden Input Props
+  description: Props passed down to the hidden input
+marks:
+  originalType: "{ value: number; label?: string; }[] | undefined"
+  group: General
+  caption: Marks
+  description: Array of marks displayed on the slider
+name:
+  originalType: string
+  group: General
+  caption: Name
+  description: Hidden input name, use with uncontrolled component
+onChange:
+  originalType: "((value: number) => void)"
+  group: General
+  caption: On Change
+  description: Called on value change
+onChangeEnd:
+  originalType: "((value: number) => void)"
+  group: General
+  caption: On Change End
+  description: Called after the selection is finished
+onScrubEnd:
+  originalType: (() => void)
+  group: General
+  caption: On Scrub End
+  description: Called in onMouseUp and onTouchEnd
+onScrubStart:
+  originalType: (() => void)
+  group: General
+  caption: On Scrub Start
+  description: Called in onMouseDown and onTouchStart
+restrictToMarks:
+  originalType: boolean
+  group: General
+  caption: Restrict To Marks
+  description: If set, the selection is allowed only from the given marks array
+  default: "false"
+size:
+  originalType: number
+  group: General
+  caption: Size
+  description: Slider size in px
+  default: 60px
+step:
+  originalType: number
+  group: General
+  caption: Step
+  description: Step between values
+  default: "1"
+thumbSize:
+  originalType: number
+  group: General
+  caption: Thumb Size
+  description: Size of the thumb in px. Calculated based on the size value by default.
+value:
+  originalType: number
+  group: General
+  caption: Value
+  description: Controlled component value
+withLabel:
+  originalType: boolean
+  group: General
+  caption: With Label
+  description: If set, the label is displayed inside the slider
+  default: "true"

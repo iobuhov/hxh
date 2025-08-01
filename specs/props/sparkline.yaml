@@ -1,0 +1,52 @@
+areaProps:
+  originalType: Omit<Props, "ref" | "data" | "dataKey">
+  group: General
+  caption: Area Props
+  description: Props passed down to the underlying recharts Area component
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color
+  default: theme.primaryColor
+connectNulls:
+  originalType: boolean
+  group: General
+  caption: Connect Nulls
+  description: Determines whether null values should be connected with other values
+  default: "true"
+curveType:
+  originalType: AreaChartCurveType
+  group: General
+  caption: Curve Type
+  description: Type of the curve
+  default: "'linear'"
+data:
+  originalType: (number | null)[]
+  group: General
+  caption: Data
+  description: Data used to render the chart
+fillOpacity:
+  originalType: number
+  group: General
+  caption: Fill Opacity
+  description: Controls fill opacity of the area
+  default: "0.6"
+strokeWidth:
+  originalType: number
+  group: General
+  caption: Stroke Width
+  description: Area stroke width
+  default: "2"
+trendColors:
+  originalType: SparklineTrendColors
+  group: General
+  caption: Trend Colors
+  description: If set, color prop is ignored and chart color is determined by the
+    difference between first and last value.
+withGradient:
+  originalType: boolean
+  group: General
+  caption: With Gradient
+  description: Determines whether the chart fill should be a gradient
+  default: "true"

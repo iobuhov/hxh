@@ -1,0 +1,20 @@
+action:
+  originalType: '"onNext" | "onPrevious" | "onFirst" | "onLast"'
+  group: General
+  caption: Action
+  description: ""
+icon:
+  originalType: FC<PaginationIconProps>
+  group: General
+  caption: Icon
+  description: ""
+name:
+  originalType: string
+  group: General
+  caption: Name
+  description: ""
+type:
+  originalType: '"next" | "previous"'
+  group: General
+  caption: Type
+  description: ""

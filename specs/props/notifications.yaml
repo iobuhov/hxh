@@ -1,0 +1,62 @@
+autoClose:
+  originalType: number | false
+  group: General
+  caption: Auto Close
+  description: Auto close timeout for all notifications in ms, false to disable
+    auto close, can be overwritten for individual notifications in
+    notifications.show function
+  default: "4000"
+containerWidth:
+  originalType: string | number
+  group: General
+  caption: Container Width
+  description: Notification width, cannot exceed 100%
+  default: "440"
+limit:
+  originalType: number
+  group: General
+  caption: Limit
+  description: Maximum number of notifications displayed at a time, other new
+    notifications will be added to queue
+  default: "5"
+notificationMaxHeight:
+  originalType: string | number
+  group: General
+  caption: Notification Max Height
+  description: Notification max-height, used for transitions
+  default: "200"
+portalProps:
+  originalType: BasePortalProps
+  group: General
+  caption: Portal Props
+  description: Props passed down to the Portal component
+position:
+  originalType: NotificationPosition
+  group: General
+  caption: Position
+  description: Notifications default position
+  default: "'bottom-right'"
+store:
+  originalType: NotificationsStore
+  group: General
+  caption: Store
+  description: Store for notifications state, can be used to create multiple
+    instances of notifications system in your application
+transitionDuration:
+  originalType: number
+  group: General
+  caption: Transition Duration
+  description: Notification transition duration in ms
+  default: "250"
+withinPortal:
+  originalType: boolean
+  group: General
+  caption: Within Portal
+  description: Determines whether notifications container should be rendered inside Portal
+  default: "true"
+zIndex:
+  originalType: string | number
+  group: General
+  caption: ZIndex
+  description: Notifications container z-index
+  default: "400"

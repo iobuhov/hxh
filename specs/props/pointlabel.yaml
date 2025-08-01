@@ -1,0 +1,20 @@
+value:
+  originalType: number
+  group: General
+  caption: Value
+  description: ""
+valueFormatter:
+  originalType: "((value: number) => string)"
+  group: General
+  caption: Value Formatter
+  description: ""
+x:
+  originalType: number
+  group: General
+  caption: X
+  description: ""
+y:
+  originalType: number
+  group: General
+  caption: Y
+  description: ""

@@ -1,0 +1,22 @@
+active:
+  originalType: boolean
+  group: General
+  caption: Active
+  description: If set to false, disables focus trap
+  default: "true"
+children:
+  originalType: any
+  group: General
+  caption: Children
+  description: Element to trap focus at, must support ref prop
+innerRef:
+  originalType: ForwardedRef<any>
+  group: General
+  caption: Inner Ref
+  description: Ref to combine with the focus trap ref
+refProp:
+  originalType: string
+  group: General
+  caption: Ref Prop
+  description: Prop that is used to access element ref
+  default: ref

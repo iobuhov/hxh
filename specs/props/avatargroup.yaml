@@ -1,0 +1,6 @@
+spacing:
+  originalType: MantineSpacing
+  group: General
+  caption: Spacing
+  description: Negative space between Avatar components
+  default: "'sm'"

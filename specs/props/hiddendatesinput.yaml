@@ -1,0 +1,26 @@
+form:
+  originalType: string
+  group: General
+  caption: Form
+  description: ""
+name:
+  originalType: string
+  group: General
+  caption: Name
+  description: ""
+type:
+  originalType: DatePickerType
+  group: General
+  caption: Type
+  description: ""
+value:
+  originalType: HiddenDatesInputValue
+  group: General
+  caption: Value
+  description: ""
+withTime:
+  originalType: boolean
+  group: General
+  caption: With Time
+  description: ""
+  default: "false"

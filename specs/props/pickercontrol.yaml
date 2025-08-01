@@ -1,0 +1,35 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Control children
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Disables control
+firstInRange:
+  originalType: boolean
+  group: General
+  caption: First In Range
+  description: Assigns first in range styles
+inRange:
+  originalType: boolean
+  group: General
+  caption: In Range
+  description: Assigns in range styles
+lastInRange:
+  originalType: boolean
+  group: General
+  caption: Last In Range
+  description: Assigns last in range styles
+selected:
+  originalType: boolean
+  group: General
+  caption: Selected
+  description: Assigns selected styles
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Component size

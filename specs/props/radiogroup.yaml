@@ -1,0 +1,110 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Radio components and any other elements
+defaultValue:
+  originalType: string | null
+  group: General
+  caption: Default Value
+  description: Uncontrolled component default value
+description:
+  originalType: React.ReactNode
+  group: General
+  caption: Description
+  description: Contents of Input.Description component. If not set, description is
+    not displayed.
+descriptionProps:
+  originalType: (InputDescriptionProps & DataAttributes)
+  group: General
+  caption: Description Props
+  description: Props passed down to the Input.Description component
+error:
+  originalType: React.ReactNode
+  group: General
+  caption: Error
+  description: Contents of Input.Error component. If not set, error is not displayed.
+errorProps:
+  originalType: (InputErrorProps & DataAttributes)
+  group: General
+  caption: Error Props
+  description: Props passed down to the Input.Error component
+id:
+  originalType: string
+  group: General
+  caption: Id
+  description: Static id used as base to generate aria- attributes, by default
+    generates random id
+inputContainer:
+  originalType: "((children: ReactNode) => ReactNode)"
+  group: General
+  caption: Input Container
+  description: Input container component
+  default: React.Fragment
+inputWrapperOrder:
+  originalType: ("input" | "label" | "description" | "error")[]
+  group: General
+  caption: Input Wrapper Order
+  description: Controls order of the elements
+  default: "['label', 'description', 'input', 'error']"
+label:
+  originalType: React.ReactNode
+  group: General
+  caption: Label
+  description: Contents of Input.Label component. If not set, label is not displayed.
+labelElement:
+  originalType: '"div" | "label"'
+  group: General
+  caption: Label Element
+  description: Input.Label root element, 'label' by default
+labelProps:
+  originalType: (InputLabelProps & DataAttributes)
+  group: General
+  caption: Label Props
+  description: Props passed down to the Input.Label component
+name:
+  originalType: string
+  group: General
+  caption: Name
+  description: name attribute of child radio inputs. By default, name is generated randomly.
+onChange:
+  originalType: "((value: string) => void)"
+  group: General
+  caption: On Change
+  description: Called when value changes
+readOnly:
+  originalType: boolean
+  group: General
+  caption: Read Only
+  description: If set, value cannot be changed
+required:
+  originalType: boolean
+  group: General
+  caption: Required
+  description: Adds required attribute to the input and a red asterisk on the
+    right side of label
+  default: "false"
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Controls size of the Input.Wrapper
+  default: "'sm'"
+value:
+  originalType: string | null
+  group: General
+  caption: Value
+  description: Controlled component value
+withAsterisk:
+  originalType: boolean
+  group: General
+  caption: With Asterisk
+  description: If set, the required asterisk is displayed next to the label.
+    Overrides required prop. Does not add required attribute to the input.
+  default: "false"
+wrapperProps:
+  originalType: (Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement>, "ref"> & DataAttributes)
+  group: General
+  caption: Wrapper Props
+  description: Props passed down to the Input.Wrapper

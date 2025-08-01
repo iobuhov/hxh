@@ -1,0 +1,5 @@
+icon:
+  originalType: FC<PaginationIconProps>
+  group: General
+  caption: Icon
+  description: An icon component to replace the default icon

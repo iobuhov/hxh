@@ -1,0 +1,17 @@
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: theme.defaultRadius
+shadow:
+  originalType: MantineShadow
+  group: General
+  caption: Shadow
+  description: Key of theme.shadows or any valid CSS value to set box-shadow
+withBorder:
+  originalType: boolean
+  group: General
+  caption: With Border
+  description: Adds border to the root element

@@ -1,0 +1,192 @@
+accept:
+  originalType: string[] | Accept
+  group: General
+  caption: Accept
+  description: Mime types of the files that dropzone can accepts. By default,
+    dropzone accepts all file types.
+acceptColor:
+  originalType: MantineColor
+  group: General
+  caption: Accept Color
+  description: Key of theme.colors or any valid CSS color to set colors of Dropzone.Accept
+  default: theme.primaryColor
+activateOnClick:
+  originalType: boolean
+  group: General
+  caption: Activate On Click
+  description: If false, disables click to open the native file selection dialog
+activateOnDrag:
+  originalType: boolean
+  group: General
+  caption: Activate On Drag
+  description: If false, disables drag 'n' drop
+activateOnKeyboard:
+  originalType: boolean
+  group: General
+  caption: Activate On Keyboard
+  description: If false, disables Space/Enter to open the native file selection
+    dialog. Note that it also stops tracking the focus state.
+active:
+  originalType: boolean
+  group: General
+  caption: Active
+  description: Determines whether user can drop files to browser window
+  default: "true"
+autoFocus:
+  originalType: boolean
+  group: General
+  caption: Auto Focus
+  description: Set to autofocus the root element
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Determines whether files capturing should be disabled
+  default: "false"
+dragEventsBubbling:
+  originalType: boolean
+  group: General
+  caption: Drag Events Bubbling
+  description: If false, stops drag event propagation to parents
+enablePointerEvents:
+  originalType: boolean
+  group: General
+  caption: Enable Pointer Events
+  description: Determines whether pointer events should be enabled on the inner element
+  default: "false"
+getFilesFromEvent:
+  originalType: "((event: DropEvent) => Promise<(File | DataTransferItem)[]>)"
+  group: General
+  caption: Get Files From Event
+  description: Use this to provide a custom file aggregator
+inputProps:
+  originalType: InputHTMLAttributes<HTMLInputElement>
+  group: General
+  caption: Input Props
+  description: Props passed down to the internal Input component
+loaderProps:
+  originalType: LoaderProps
+  group: General
+  caption: Loader Props
+  description: Props passed down to the Loader component
+loading:
+  originalType: boolean
+  group: General
+  caption: Loading
+  description: Determines whether a loading overlay should be displayed over the dropzone
+  default: "false"
+maxFiles:
+  originalType: number
+  group: General
+  caption: Max Files
+  description: Maximum number of files that can be picked at once
+maxSize:
+  originalType: number
+  group: General
+  caption: Max Size
+  description: Maximum file size in bytes
+multiple:
+  originalType: boolean
+  group: General
+  caption: Multiple
+  description: Determines whether multiple files can be dropped to the dropzone or
+    selected from file system picker
+  default: "true"
+name:
+  originalType: string
+  group: General
+  caption: Name
+  description: Name of the form control. Submitted with the form as part of a
+    name/value pair.
+onDragEnter:
+  originalType: "((event: DragEvent<HTMLElement>) => void)"
+  group: General
+  caption: On Drag Enter
+  description: Called when the dragenter event occurs
+onDragLeave:
+  originalType: "((event: DragEvent<HTMLElement>) => void)"
+  group: General
+  caption: On Drag Leave
+  description: Called when the dragleave event occurs
+onDragOver:
+  originalType: "((event: DragEvent<HTMLElement>) => void)"
+  group: General
+  caption: On Drag Over
+  description: Called when the dragover event occurs
+onDrop:
+  originalType: "(files: FileWithPath[]) => void"
+  group: General
+  caption: On Drop
+  description: Called when valid files are dropped to the dropzone
+onDropAny:
+  originalType: "((files: FileWithPath[], fileRejections: FileRejection[]) => void)"
+  group: General
+  caption: On Drop Any
+  description: Called when any files are dropped to the dropzone
+onFileDialogCancel:
+  originalType: (() => void)
+  group: General
+  caption: On File Dialog Cancel
+  description: Called when user closes the file selection dialog with no selection
+onFileDialogOpen:
+  originalType: (() => void)
+  group: General
+  caption: On File Dialog Open
+  description: Called when user opens the file selection dialog
+onReject:
+  originalType: "((fileRejections: FileRejection[]) => void)"
+  group: General
+  caption: On Reject
+  description: Called when dropped files do not meet file restrictions
+openRef:
+  originalType: ForwardedRef<() => void> | undefined
+  group: General
+  caption: Open Ref
+  description: A ref function which when called opens the file system file picker
+portalProps:
+  originalType: Omit<BasePortalProps, "withinPortal">
+  group: General
+  caption: Portal Props
+  description: Props to pass down to the portal when withinPortal is true
+preventDropOnDocument:
+  originalType: boolean
+  group: General
+  caption: Prevent Drop On Document
+  description: If false, allow dropped items to take over the current browser window
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: theme.defaultRadius
+rejectColor:
+  originalType: MantineColor
+  group: General
+  caption: Reject Color
+  description: Key of theme.colors or any valid CSS color to set colors of Dropzone.Reject
+  default: "'red'"
+useFsAccessApi:
+  originalType: boolean
+  group: General
+  caption: Use Fs Access Api
+  description: Set to true to use the File System Access API to open the file
+    picker instead of using an <input type="file"> click event
+  default: "true"
+validator:
+  originalType: "(<T extends File>(file: T) => FileError | FileError[] | null)"
+  group: General
+  caption: Validator
+  description: Custom validation function. It must return null if there's no errors.
+withinPortal:
+  originalType: boolean
+  group: General
+  caption: Within Portal
+  description: Determines whether component should be rendered within Portal
+  default: "true"
+zIndex:
+  originalType: React.CSSProperties["zIndex"]
+  group: General
+  caption: ZIndex
+  description: Z-index value
+  default: "9999"

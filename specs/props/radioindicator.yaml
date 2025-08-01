@@ -1,0 +1,45 @@
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+checked:
+  originalType: boolean
+  group: General
+  caption: Checked
+  description: Checked state
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color to set input background
+    color in checked state
+  default: theme.primaryColor
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Disabled state
+icon:
+  originalType: FC<RadioIconProps>
+  group: General
+  caption: Icon
+  description: A component that replaces default check icon
+iconColor:
+  originalType: MantineColor
+  group: General
+  caption: Icon Color
+  description: Key of theme.colors or any valid CSS color to set icon color, by
+    default value depends on theme.autoContrast
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+  default: theme.defaultRadius
+size:
+  originalType: MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls size of the component
+  default: "'sm'"

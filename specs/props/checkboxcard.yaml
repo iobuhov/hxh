@@ -1,0 +1,32 @@
+checked:
+  originalType: boolean
+  group: General
+  caption: Checked
+  description: Controlled component value
+defaultChecked:
+  originalType: boolean
+  group: General
+  caption: Default Checked
+  description: Uncontrolled component default value
+onChange:
+  originalType: "((checked: boolean) => void)"
+  group: General
+  caption: On Change
+  description: Called when value changes
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: theme.defaultRadius
+value:
+  originalType: string
+  group: General
+  caption: Value
+  description: Value of the checkbox, used with Checkbox.Group
+withBorder:
+  originalType: boolean
+  group: General
+  caption: With Border
+  description: Adds border to the root element

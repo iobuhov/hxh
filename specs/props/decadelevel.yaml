@@ -1,0 +1,112 @@
+decade:
+  originalType: string
+  group: General
+  caption: Decade
+  description: Displayed decade
+decadeLabelFormat:
+  originalType: "string | ((startOfDecade: string, endOfDecade: string) => ReactNode)"
+  group: General
+  caption: Decade Label Format
+  description: dayjs format for decade label or a function that returns decade
+    label based on the date value
+  default: '"YYYY"'
+getYearControlProps:
+  originalType: "((date: string) => Partial<PickerControlProps>)"
+  group: General
+  caption: Get Year Control Props
+  description: Passes props down to year picker control based on date
+headerControlsOrder:
+  originalType: ("next" | "previous" | "level")[]
+  group: General
+  caption: Header Controls Order
+  description: Controls order
+  default: "['previous', 'level', 'next']"
+levelControlAriaLabel:
+  originalType: string
+  group: General
+  caption: Level Control Aria Label
+  description: Level control aria-label
+locale:
+  originalType: string
+  group: General
+  caption: Locale
+  description: Dayjs locale, defaults to value defined in DatesProvider
+maxDate:
+  originalType: string | Date
+  group: General
+  caption: Max Date
+  description: Maximum possible date in YYYY-MM-DD format or Date object
+minDate:
+  originalType: string | Date
+  group: General
+  caption: Min Date
+  description: Minimum possible date in YYYY-MM-DD format or Date object
+nextDisabled:
+  originalType: boolean
+  group: General
+  caption: Next Disabled
+  description: Disables next control
+nextIcon:
+  originalType: React.ReactNode
+  group: General
+  caption: Next Icon
+  description: Change next icon
+nextLabel:
+  originalType: string
+  group: General
+  caption: Next Label
+  description: Next button aria-label
+onNext:
+  originalType: (() => void)
+  group: General
+  caption: On Next
+  description: Called when the next button is clicked
+onPrevious:
+  originalType: (() => void)
+  group: General
+  caption: On Previous
+  description: Called when the previous button is clicked
+previousDisabled:
+  originalType: boolean
+  group: General
+  caption: Previous Disabled
+  description: Disables previous control
+previousIcon:
+  originalType: React.ReactNode
+  group: General
+  caption: Previous Icon
+  description: Change previous icon
+previousLabel:
+  originalType: string
+  group: General
+  caption: Previous Label
+  description: Previous button aria-label
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Component size
+withCellSpacing:
+  originalType: boolean
+  group: General
+  caption: With Cell Spacing
+  description: Determines whether controls should be separated
+  default: "true"
+withNext:
+  originalType: boolean
+  group: General
+  caption: With Next
+  description: Determines whether next control should be rendered
+  default: "true"
+withPrevious:
+  originalType: boolean
+  group: General
+  caption: With Previous
+  description: Determines whether previous control should be rendered
+  default: "true"
+yearsListFormat:
+  originalType: string
+  group: General
+  caption: Years List Format
+  description: dayjs format for years list
+  default: "'YYYY'"

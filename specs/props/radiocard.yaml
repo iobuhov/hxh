@@ -1,0 +1,28 @@
+checked:
+  originalType: boolean
+  group: General
+  caption: Checked
+  description: Checked state
+name:
+  originalType: string
+  group: General
+  caption: Name
+  description: Value used to associate all related radio cards, required for
+    accessibility if used outside of Radio.Group
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: theme.defaultRadius
+value:
+  originalType: string
+  group: General
+  caption: Value
+  description: Value of the checkbox, used with Radio.Group
+withBorder:
+  originalType: boolean
+  group: General
+  caption: With Border
+  description: Adds border to the root element

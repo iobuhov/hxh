@@ -1,0 +1,5 @@
+grow:
+  originalType: boolean
+  group: General
+  caption: Grow
+  description: If set, the section expands to take all available space

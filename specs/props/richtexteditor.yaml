@@ -1,0 +1,32 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Child editor components
+editor:
+  originalType: Editor | null
+  group: General
+  caption: Editor
+  description: Tiptap editor instance
+labels:
+  originalType: Partial<RichTextEditorLabels>
+  group: General
+  caption: Labels
+  description: Labels that are used in controls
+onSourceCodeTextSwitch:
+  originalType: "((isSourceCodeModeActive: boolean) => void)"
+  group: General
+  caption: On Source Code Text Switch
+  description: Called if RichTextEditor.SourceCode clicked.
+withCodeHighlightStyles:
+  originalType: boolean
+  group: General
+  caption: With Code Highlight Styles
+  description: Determines whether code highlight styles should be added
+  default: "true"
+withTypographyStyles:
+  originalType: boolean
+  group: General
+  caption: With Typography Styles
+  description: Determines whether typography styles should be added
+  default: "true"
