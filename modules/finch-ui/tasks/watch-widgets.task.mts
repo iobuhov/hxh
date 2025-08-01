@@ -16,13 +16,20 @@ export async function watchWidgets() {
 
         const pkg = await fs.readJSON("package.json");
         const widgetDists = Object.entries<string>(pkg.dependencies).flatMap(([dep, version]) =>
-            version.startsWith("workspace:") ? [`./node_modules/${dep}`] : []
+            version.startsWith("workspace:") ? [`./node_modules/${dep}/dist`] : []
         );
 
         const watcher = chokidar.watch(widgetDists, {
-            ignored: (path, stats) => !!(stats?.isFile() && !path.endsWith(".mpk")),
+            ignored: (path, stats) => {
+                if (stats?.isDirectory()) {
+                    return path.endsWith("tmp");
+                }
+
+                return !!(stats?.isFile() && !path.endsWith(".mpk"));
+            },
             persistent: true,
             ignoreInitial: true,
+            usePolling: true,
             awaitWriteFinish: {
                 stabilityThreshold: 300,
                 pollInterval: 100
@@ -43,16 +50,18 @@ export async function watchWidgets() {
             })
             .on("error", error => {
                 log.error("Watch error:", error);
-            })
-            .on("ready", () => {
-                log(pc.dim("File watcher is ready"));
             });
 
         log(pc.green("Watching for mpk file changes..."));
 
         onExit(async () => {
             log(pc.dim("Stopping mpk watcher..."));
-            await watcher.close();
+            try {
+                await watcher.close();
+            } catch (error) {
+                log.error("Error stopping mpk watcher:", error);
+            }
+            log(pc.dim("mpk watcher stopped"));
         });
     } catch (error) {
         log.error("Error setting up widget watch:", error);

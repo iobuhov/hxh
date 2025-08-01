@@ -42,6 +42,7 @@ export async function watchCss() {
         onExit(async () => {
             log(pc.dim("Stopping CSS watch..."));
             await watcher.close();
+            log(pc.dim("CSS watch stopped"));
         });
     } catch (error) {
         log.error("Error setting up CSS watch:", error);
