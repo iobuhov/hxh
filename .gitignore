@@ -104,3 +104,6 @@ Thumbs.db
 
 # @go-task/cli
 .task
+
+# Mantine repository
+mantine/
