@@ -1,0 +1,366 @@
+{
+    "AppShell": {
+        "name": "AppShell",
+        "description": "Responsive shell for your application with header, navbar, aside and footer"
+    },
+    "AspectRatio": {
+        "name": "AspectRatio",
+        "description": "Maintain responsive consistent width/height ratio"
+    },
+    "Center": {
+        "name": "Center",
+        "description": "Centers content vertically and horizontally"
+    },
+    "Container": {
+        "name": "Container",
+        "description": "Center content with padding and max-width"
+    },
+    "Flex": {
+        "name": "Flex",
+        "description": "Compose elements in a flex container"
+    },
+    "Grid": {
+        "name": "Grid",
+        "description": "Responsive 12 columns grid system"
+    },
+    "Group": {
+        "name": "Group",
+        "description": "Compose elements and components in a horizontal flex container"
+    },
+    "SimpleGrid": {
+        "name": "SimpleGrid",
+        "description": "Responsive grid in which each item takes equal amount of space"
+    },
+    "Stack": {
+        "name": "Stack",
+        "description": "Compose elements and components in a vertical flex container"
+    },
+    "AngleSlider": {
+        "name": "AngleSlider",
+        "description": "Slider component"
+    },
+    "Checkbox": {
+        "name": "Checkbox",
+        "description": "Capture boolean input from user"
+    },
+    "Chip": {
+        "name": "Chip",
+        "description": "Removable and non-removable tags"
+    },
+    "ColorInput": {
+        "name": "ColorInput",
+        "description": "Capture color from user"
+    },
+    "ColorPicker": {
+        "name": "ColorPicker",
+        "description": "Pick colors in hex(a), rgb(a), hsl(a) and hsv(a) formats"
+    },
+    "Fieldset": {
+        "name": "Fieldset",
+        "description": "Group related elements in a form"
+    },
+    "FileInput": {
+        "name": "FileInput",
+        "description": "Capture files from user"
+    },
+    "Input": {
+        "name": "Input",
+        "description": "Base component to create custom inputs"
+    },
+    "JsonInput": {
+        "name": "JsonInput",
+        "description": "Capture json data from user"
+    },
+    "NativeSelect": {
+        "name": "NativeSelect",
+        "description": "Native select element based on Input"
+    },
+    "NumberInput": {
+        "name": "NumberInput",
+        "description": "Capture number from user"
+    },
+    "PasswordInput": {
+        "name": "PasswordInput",
+        "description": "Capture password data from user"
+    },
+    "PinInput": {
+        "name": "PinInput",
+        "description": "Capture pin code or one time password from the user"
+    },
+    "Radio": {
+        "name": "Radio",
+        "description": "Wrapper for input type radio"
+    },
+    "RangeSlider": {
+        "name": "RangeSlider",
+        "description": "RangeSlider component"
+    },
+    "Rating": {
+        "name": "Rating",
+        "description": "Pick and display rating"
+    },
+    "SegmentedControl": {
+        "name": "SegmentedControl",
+        "description": "A linear set of two or more segments"
+    },
+    "Slider": {
+        "name": "Slider",
+        "description": "Slider component"
+    },
+    "Switch": {
+        "name": "Switch",
+        "description": "Capture boolean input from user"
+    },
+    "Textarea": {
+        "name": "Textarea",
+        "description": "Autosize or regular textarea"
+    },
+    "TextInput": {
+        "name": "TextInput",
+        "description": "Capture string input from user"
+    },
+    "Autocomplete": {
+        "name": "Autocomplete",
+        "description": "Autocomplete user input with any list of options"
+    },
+    "Combobox": {
+        "name": "Combobox",
+        "description": "Create custom select, autocomplete or multiselect inputs"
+    },
+    "MultiSelect": {
+        "name": "MultiSelect",
+        "description": "Custom searchable multi select"
+    },
+    "Pill": {
+        "name": "Pill",
+        "description": "Display badge, pill or tag"
+    },
+    "PillsInput": {
+        "name": "PillsInput",
+        "description": "Base component for custom tags inputs and multi selects"
+    },
+    "Select": {
+        "name": "Select",
+        "description": "Custom searchable select"
+    },
+    "TagsInput": {
+        "name": "TagsInput",
+        "description": "Capture a list of values from user with free input and suggestions"
+    },
+    "ActionIcon": {
+        "name": "ActionIcon",
+        "description": "Icon button"
+    },
+    "Button": {
+        "name": "Button",
+        "description": "Button component to render button or link"
+    },
+    "CloseButton": {
+        "name": "CloseButton",
+        "description": "Button with close icon"
+    },
+    "CopyButton": {
+        "name": "CopyButton",
+        "description": "Copies given text to clipboard"
+    },
+    "FileButton": {
+        "name": "FileButton",
+        "description": "Open file picker with a button click"
+    },
+    "Anchor": {
+        "name": "Anchor",
+        "description": "Display link with theme styles"
+    },
+    "Breadcrumbs": {
+        "name": "Breadcrumbs",
+        "description": "Separates list of react nodes with given separator"
+    },
+    "Burger": {
+        "name": "Burger",
+        "description": "Open/close navigation button"
+    },
+    "NavLink": {
+        "name": "NavLink",
+        "description": "Navigation link"
+    },
+    "Pagination": {
+        "name": "Pagination",
+        "description": "Display active page and navigate between multiple pages"
+    },
+    "Stepper": {
+        "name": "Stepper",
+        "description": "Display content divided into a steps sequence"
+    },
+    "TableOfContents": {
+        "name": "TableOfContents",
+        "description": "Display table with theme styles"
+    },
+    "Tabs": {
+        "name": "Tabs",
+        "description": "Switch between different views"
+    },
+    "Tree": {
+        "name": "Tree",
+        "description": "Display a Tree structure"
+    },
+    "Alert": {
+        "name": "Alert",
+        "description": "Attract user attention with important static message"
+    },
+    "Loader": {
+        "name": "Loader",
+        "description": "Indicate loading state"
+    },
+    "Notification": {
+        "name": "Notification",
+        "description": "Show dynamic notifications and alerts to user, part of notifications system"
+    },
+    "Progress": {
+        "name": "Progress",
+        "description": "Give user feedback for status of the task"
+    },
+    "RingProgress": {
+        "name": "RingProgress",
+        "description": "Give user feedback for status of the task with circle diagram"
+    },
+    "SemiCircleProgress": {
+        "name": "SemiCircleProgress",
+        "description": "Represent progress with semi circle diagram"
+    },
+    "Skeleton": {
+        "name": "Skeleton",
+        "description": "Indicate content loading state"
+    },
+    "Affix": {
+        "name": "Affix",
+        "description": "Renders children inside portal at fixed position"
+    },
+    "Dialog": {
+        "name": "Dialog",
+        "description": "An accessible overlay dialog"
+    },
+    "Drawer": {
+        "name": "Drawer",
+        "description": "Display overlay area at any side of the screen"
+    },
+    "FloatingIndicator": {
+        "name": "FloatingIndicator",
+        "description": "Display a floating indicator over a group of elements"
+    },
+    "HoverCard": {
+        "name": "HoverCard",
+        "description": "Display popover section when target element is hovered"
+    },
+    "LoadingOverlay": {
+        "name": "LoadingOverlay",
+        "description": "An overlay with centered loader"
+    },
+    "Menu": {
+        "name": "Menu",
+        "description": "Combine a list of secondary actions into single interactive area"
+    },
+    "Modal": {
+        "name": "Modal",
+        "description": "Display a fixed overlay dialog at any side of the screen"
+    },
+    "Overlay": {
+        "name": "Overlay",
+        "description": "Overlays parent element with div element with any color and opacity"
+    },
+    "Popover": {
+        "name": "Popover",
+        "description": "Display popover section relative to given target element"
+    },
+    "Tooltip": {
+        "name": "Tooltip",
+        "description": "Renders tooltip at given element on mouse over or other event"
+    },
+    "Accordion": {
+        "name": "Accordion",
+        "description": "Divide content into collapsible sections"
+    },
+    "Avatar": {
+        "name": "Avatar",
+        "description": "Display user profile image, initials or fallback icon"
+    },
+    "BackgroundImage": {
+        "name": "BackgroundImage",
+        "description": "Displays image as background"
+    },
+    "Badge": {
+        "name": "Badge",
+        "description": "Display badge, pill or tag"
+    },
+    "Card": {
+        "name": "Card",
+        "description": "Card with sections"
+    },
+    "ColorSwatch": {
+        "name": "ColorSwatch",
+        "description": "Displays color"
+    },
+    "Image": {
+        "name": "Image",
+        "description": "Image with optional fallback"
+    },
+    "Indicator": {
+        "name": "Indicator",
+        "description": "Display element at the corner of another element"
+    },
+    "Kbd": {
+        "name": "Kbd",
+        "description": "Display keyboard key"
+    },
+    "NumberFormatter": {
+        "name": "NumberFormatter",
+        "description": "Format number with thousands/decimal separators and suffix/prefix"
+    },
+    "Spoiler": {
+        "name": "Spoiler",
+        "description": "Hide long sections of content under a spoiler"
+    },
+    "ThemeIcon": {
+        "name": "ThemeIcon",
+        "description": "Render icon inside element with theme colors"
+    },
+    "Timeline": {
+        "name": "Timeline",
+        "description": "Display list of events in chronological order"
+    },
+    "Blockquote": {
+        "name": "Blockquote",
+        "description": "Blockquote with optional cite"
+    },
+    "Code": {
+        "name": "Code",
+        "description": "Inline and block code"
+    },
+    "Highlight": {
+        "name": "Highlight",
+        "description": "Highlight part of the text"
+    },
+    "List": {
+        "name": "List",
+        "description": "Display ordered or unordered list"
+    },
+    "Mark": {
+        "name": "Mark",
+        "description": "Highlight given part of a string with mark"
+    },
+    "Table": {
+        "name": "Table",
+        "description": "Render table with theme styles"
+    },
+    "Text": {
+        "name": "Text",
+        "description": "Display text"
+    },
+    "Title": {
+        "name": "Title",
+        "description": "h1-h6 heading"
+    },
+    "Typography": {
+        "name": "Typography",
+        "description": "Styles provider for html content"
+    }
+}
