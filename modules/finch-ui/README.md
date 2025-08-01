@@ -1,102 +1,39 @@
-# Finch UI Build Tools
+# Finch UI Module
 
-This module contains build tools for the Finch UI system, including CSS compilation using PostCSS.
+This module provides build tools and utilities for the Finch UI component toolkit.
 
-## Available Commands
+## Documentation
 
-### CSS Compilation
+📖 **For complete documentation, see [docs/finch-ui.md](../../docs/finch-ui.md)**
 
-Compile `main.css` using PostCSS with autoprefixer and minification:
+The documentation includes:
 
-```bash
-# Build CSS once
-pnpm run build:css
+- Available scripts and commands
+- CSS processing details
+- Development workflow
+- Troubleshooting guide
+- File structure overview
 
-# Or using the script directly
-node scripts/run.mts css
-```
-
-### All Build Tasks
-
-Run all build tasks (themesource, widgets, and CSS):
+## Quick Start
 
 ```bash
-node scripts/run.mts build
+# Install dependencies
+pnpm install
+
+# Start development mode
+pnpm dev
+
+# Build for production
+pnpm build
 ```
 
-## CSS Processing
+## Available Scripts
 
-The CSS task processes `src/css/main.css` and outputs the compiled file to `themesource/radixkit/web/css/main.css`.
+- `pnpm build` - Build the complete module
+- `pnpm dev` - Start development mode with file watching
+- `pnpm clean` - Clean build artifacts
+- `pnpm sync-widgets` - Sync widget dependencies
+- `pnpm copy-widgets` - Copy widget MPK files
+- `pnpm watch-css` - Watch CSS files for changes
 
-### PostCSS Plugins
-
-The CSS compilation uses the following PostCSS plugins:
-
-- **Autoprefixer**: Automatically adds vendor prefixes for better browser compatibility
-- **CSSnano**: Minifies and optimizes the CSS output
-
-### Configuration
-
-PostCSS configuration is defined in `postcss.config.js`:
-
-```javascript
-module.exports = {
-    plugins: [
-        require("autoprefixer")({
-            overrideBrowserslist: ["> 1%", "last 2 versions", "not dead"]
-        }),
-        require("cssnano")({
-            preset: [
-                "default",
-                {
-                    discardComments: {
-                        removeAll: true
-                    },
-                    normalizeWhitespace: true,
-                    colormin: true,
-                    minifyFontValues: true,
-                    minifySelectors: true
-                }
-            ]
-        })
-    ]
-};
-```
-
-## File Structure
-
-```
-modules/finch-ui/
-├── scripts/
-│   ├── run.mts              # Main script runner
-│   ├── tasks/
-│   │   ├── css.task.mts     # CSS compilation task
-│   │   ├── themesource.task.mts
-│   │   ├── widgets.task.mts
-│   │   └── design-props.task.mts
-│   └── lib/
-├── src/
-│   └── css/
-│       └── main.css         # Source CSS file
-├── postcss.config.js        # PostCSS configuration
-└── package.json
-```
-
-## Environment Variables
-
-Set the `MX_PROJECT_PATH` environment variable to specify the target project path:
-
-```bash
-export MX_PROJECT_PATH="/path/to/your/mendix/project"
-```
-
-## Dependencies
-
-The CSS build task requires the following dependencies:
-
-- `gulp`: Task runner
-- `gulp-postcss`: Gulp plugin for PostCSS
-- `postcss`: CSS transformation tool
-- `autoprefixer`: Vendor prefix automation
-- `cssnano`: CSS minification
-- `task-utils`: Utility functions for build tasks
+For detailed information about each script and the development workflow, please refer to the [main documentation](../../docs/finch-ui.md).

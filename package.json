@@ -12,6 +12,7 @@
     "devDependencies": {
         "@mendix/prettier-config-web-widgets": "workspace:*",
         "prettier": "catalog:",
+        "tsx": "^4.20.3",
         "turbo": "^2.5.5"
     },
     "prettier": "@mendix/prettier-config-web-widgets",

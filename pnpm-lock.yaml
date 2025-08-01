@@ -48,6 +48,9 @@ importers:
       prettier:
         specifier: 'catalog:'
         version: 3.6.2
+      tsx:
+        specifier: ^4.20.3
+        version: 4.20.3
       turbo:
         specifier: ^2.5.5
         version: 2.5.5
@@ -143,7 +146,1627 @@ importers:
         specifier: ^2.5.10
         version: 2.5.19(prettier@3.6.2)
 
+  widgets/accordion:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/action-icon:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/affix:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/alert:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/anchor:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/angle-slider:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/app-shell:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/aspect-ratio:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/autocomplete:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/avatar:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/background-image:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/badge:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/blockquote:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/breadcrumbs:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/burger:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
   widgets/button:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/card:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/center:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/checkbox:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/chip:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/close-button:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/code:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/color-input:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/color-picker:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/color-swatch:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/combobox:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/container:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/copy-button:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/dialog:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/drawer:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/fieldset:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/file-button:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/file-input:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/flex:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/floating-indicator:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/grid:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/group:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/highlight:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/hover-card:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/image:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/indicator:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/input:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/json-input:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/kbd:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/list:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/loader:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/loading-overlay:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/mark:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/menu:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/modal:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/multi-select:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/native-select:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/nav-link:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/notification:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/number-formatter:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/number-input:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/overlay:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/pagination:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/password-input:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/pill:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/pills-input:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/pin-input:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/popover:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/progress:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/radio:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/range-slider:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/rating:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/ring-progress:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/segmented-control:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/select:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/semi-circle-progress:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/simple-grid:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/skeleton:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/slider:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/spoiler:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/stack:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/stepper:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/switch:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/table:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/table-of-contents:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/tabs:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/tags-input:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/text:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/text-input:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/textarea:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/theme-icon:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/timeline:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/title:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/tooltip:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/tree:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/typography:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
