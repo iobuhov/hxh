@@ -1,23 +1,73 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.accordion.Accordion"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<widget id="com.mendix.finch.widget.accordion.Accordion" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Accordion</name>
     <description>Divide content into collapsible sections</description>
     <studioProCategory>Finch</studioProCategory>
     <icon />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="chevron" type="icon" required="false">
+                <caption>Chevron</caption>
+                <description>Custom chevron icon</description>
+            </property>
+            <property key="chevronIconSize" type="string" required="false" defaultValue="16">
+                <caption>Chevron Icon Size</caption>
+                <description>Size of the default chevron icon. Ignored when chevron prop is set.</description>
+            </property>
+            <property key="chevronPosition" type="enumeration" required="false" defaultValue="right">
+                <caption>Chevron Position</caption>
+                <description>Position of the chevron relative to the item label</description>
+                <enumerationValues>
+                    <enumerationValue key="left">left</enumerationValue>
+                    <enumerationValue key="right">right</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="chevronSize" type="string" required="false" defaultValue="auto">
+                <caption>Chevron Size</caption>
+                <description>Size of the chevron icon container</description>
+            </property>
+            <property key="defaultValue" type="attribute" required="false">
+                <caption>Default Value</caption>
+                <description>Uncontrolled component default value</description>
+            </property>
+            <property key="disableChevronRotation" type="boolean" required="false">
+                <caption>Disable Chevron Rotation</caption>
+                <description>If set, chevron rotation is disabled</description>
+            </property>
+            <property key="loop" type="boolean" required="false" defaultValue="true">
+                <caption>Loop</caption>
+                <description>If set, arrow keys loop though items (first to last and last to first)</description>
+            </property>
+            <property key="multiple" type="boolean" required="false">
+                <caption>Multiple</caption>
+                <description>If set, multiple items can be opened at the same time</description>
+            </property>
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Called when value changes, payload type depends on multiple prop</description>
+            </property>
+            <property key="order" type="enumeration" required="false">
+                <caption>Order</caption>
+                <description>Heading order, has no effect on visuals</description>
+                <enumerationValues>
+                    <enumerationValue key="2">2</enumerationValue>
+                    <enumerationValue key="3">3</enumerationValue>
+                    <enumerationValue key="4">4</enumerationValue>
+                    <enumerationValue key="5">5</enumerationValue>
+                    <enumerationValue key="6">6</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="radius" type="string" required="false">
+                <caption>Radius</caption>
+                <description>Key of theme.radius or any valid CSS value to set border-radius. Numbers are converted to rem.</description>
+            </property>
+            <property key="transitionDuration" type="integer" required="false" defaultValue="200">
+                <caption>Transition Duration</caption>
+                <description>Transition duration in ms</description>
+            </property>
+            <property key="value" type="attribute" required="false">
+                <caption>Value</caption>
+                <description>Controlled component value</description>
             </property>
         </propertyGroup>
     </properties>
