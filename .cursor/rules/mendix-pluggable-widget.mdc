@@ -1,5 +1,5 @@
 ---
-alwaysApply: false
+alwaysApply: true
 ---
 
 You are developing a Mendix Pluggable Widget. Widgets are UI components used to compose pages in Mendix Apps. Widgets

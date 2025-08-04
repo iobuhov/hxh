@@ -1,72 +1,120 @@
 chevron:
-  originalType: React.ReactNode
-  group: General
-  caption: Chevron
-  description: Custom chevron icon
+    originalType: React.ReactNode
+    group: General
+    caption: Chevron
+    description: Custom chevron icon
+    xml:
+        type: icon
+        required: false
 chevronIconSize:
-  originalType: string | number
-  group: General
-  caption: Chevron Icon Size
-  description: Size of the default chevron icon. Ignored when chevron prop is set.
-  default: "16"
+    originalType: string | number
+    group: General
+    caption: Chevron Icon Size
+    description: Size of the default chevron icon. Ignored when chevron prop is set.
+    default: "16"
+    xml:
+        type: string
+        required: false
 chevronPosition:
-  originalType: AccordionChevronPosition
-  group: General
-  caption: Chevron Position
-  description: Position of the chevron relative to the item label
-  default: right
+    originalType: AccordionChevronPosition
+    group: General
+    caption: Chevron Position
+    description: Position of the chevron relative to the item label
+    default: right
+    xml:
+        type: enumeration
+        required: false
+        enumerationValues:
+            - key: left
+            - key: right
 chevronSize:
-  originalType: string | number
-  group: General
-  caption: Chevron Size
-  description: Size of the chevron icon container
-  default: auto
+    originalType: string | number
+    group: General
+    caption: Chevron Size
+    description: Size of the chevron icon container
+    default: auto
+    xml:
+        type: string
+        required: false
 defaultValue:
-  originalType: string | string[] | null
-  group: General
-  caption: Default Value
-  description: Uncontrolled component default value
+    originalType: string | string[] | null
+    group: General
+    caption: Default Value
+    description: Uncontrolled component default value
+    xml:
+        type: attribute
+        required: false
+
 disableChevronRotation:
-  originalType: boolean
-  group: General
-  caption: Disable Chevron Rotation
-  description: If set, chevron rotation is disabled
+    originalType: boolean
+    group: General
+    caption: Disable Chevron Rotation
+    description: If set, chevron rotation is disabled
+    xml:
+        type: boolean
+        required: false
 loop:
-  originalType: boolean
-  group: General
-  caption: Loop
-  description: If set, arrow keys loop though items (first to last and last to first)
-  default: "true"
+    originalType: boolean
+    group: General
+    caption: Loop
+    description: If set, arrow keys loop though items (first to last and last to first)
+    default: "true"
+    xml:
+        type: boolean
+        required: false
 multiple:
-  originalType: boolean
-  group: General
-  caption: Multiple
-  description: If set, multiple items can be opened at the same time
+    originalType: boolean
+    group: General
+    caption: Multiple
+    description: If set, multiple items can be opened at the same time
+    xml:
+        type: boolean
+        required: false
 onChange:
-  originalType: "((value: AccordionValue<Multiple>) => void)"
-  group: General
-  caption: On Change
-  description: Called when value changes, payload type depends on multiple prop
+    originalType: "((value: AccordionValue<Multiple>) => void)"
+    group: General
+    caption: On Change
+    description: Called when value changes, payload type depends on multiple prop
+    xml:
+        type: action
+        required: false
 order:
-  originalType: 2 | 3 | 4 | 5 | 6
-  group: General
-  caption: Order
-  description: Heading order, has no effect on visuals
+    originalType: 2 | 3 | 4 | 5 | 6
+    group: General
+    caption: Order
+    description: Heading order, has no effect on visuals
+    xml:
+        type: enumeration
+        required: false
+        enumerationValues:
+            - key: "2"
+            - key: "3"
+            - key: "4"
+            - key: "5"
+            - key: "6"
 radius:
-  originalType: MantineRadius | number
-  group: General
-  caption: Radius
-  description: Key of theme.radius or any valid CSS value to set border-radius.
-    Numbers are converted to rem.
-  default: theme.defaultRadius
+    originalType: MantineRadius | number
+    group: General
+    caption: Radius
+    description: Key of theme.radius or any valid CSS value to set border-radius. Numbers are converted to rem.
+    default: theme.defaultRadius
+    xml:
+        type: string
+        required: false
 transitionDuration:
-  originalType: number
-  group: General
-  caption: Transition Duration
-  description: Transition duration in ms
-  default: "200"
+    originalType: number
+    group: General
+    caption: Transition Duration
+    description: Transition duration in ms
+    default: "200"
+    xml:
+        type: integer
+        required: false
 value:
-  originalType: string | string[] | null
-  group: General
-  caption: Value
-  description: Controlled component value
+    originalType: string | string[] | null
+    group: General
+    caption: Value
+    description: Controlled component value
+    xml:
+        type: attribute
+        required: false
