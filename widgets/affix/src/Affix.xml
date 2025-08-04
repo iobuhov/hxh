@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.affix.Affix"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<widget id="com.mendix.finch.widget.affix.Affix" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Affix</name>
     <description>Renders children inside portal at fixed position</description>
     <studioProCategory>Finch</studioProCategory>
     <icon />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="portalProps" type="string" required="false">
+                <caption>Portal Props</caption>
+                <description>Props passed down to the Portal component. Ignored when withinPortal is false.</description>
+            </property>
+            <property key="position" type="string" required="false" defaultValue="{ bottom: 0, right: 0 }">
+                <caption>Position</caption>
+                <description>Affix position on screen</description>
+            </property>
+            <property key="withinPortal" type="boolean" required="false" defaultValue="true">
+                <caption>Within Portal</caption>
+                <description>Determines whether the component is rendered within Portal</description>
+            </property>
+            <property key="zIndex" type="string" required="false" defaultValue="200">
+                <caption>ZIndex</caption>
+                <description>Root element z-index property</description>
             </property>
         </propertyGroup>
     </properties>

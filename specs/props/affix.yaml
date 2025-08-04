@@ -4,21 +4,34 @@ portalProps:
   caption: Portal Props
   description: Props passed down to the Portal component. Ignored when
     withinPortal is false.
+  xml:
+    type: string
+    required: false
 position:
   originalType: AffixPosition
   group: General
   caption: Position
   description: Affix position on screen
   default: "{ bottom: 0, right: 0 }"
+  xml:
+    type: string
+    required: false
 withinPortal:
   originalType: boolean
   group: General
   caption: Within Portal
   description: Determines whether the component is rendered within Portal
   default: "true"
+  xml:
+    type: boolean
+    required: false
+    required: false
 zIndex:
   originalType: React.CSSProperties["zIndex"]
   group: General
   caption: ZIndex
   description: Root element z-index property
   default: "200"
+  xml:
+    type: string
+    required: false

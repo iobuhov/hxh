@@ -15,9 +15,41 @@
     <icon />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="autoContrast" type="boolean" required="false">
+                <caption>Auto Contrast</caption>
+                <description>If set, adjusts text color based on background color for filled variant</description>
+            </property>
+            <property key="children" type="string" required="false">
+                <caption>Children</caption>
+                <description>Icon element</description>
+            </property>
+            <property key="color" type="string" required="false" defaultValue="theme.primaryColor">
+                <caption>Color</caption>
+                <description>Key of theme.colors or any valid CSS color.</description>
+            </property>
+            <property key="disabled" type="boolean" required="false">
+                <caption>Disabled</caption>
+                <description>Sets disabled attribute, prevents interactions</description>
+            </property>
+            <property key="gradient" type="string" required="false">
+                <caption>Gradient</caption>
+                <description>Gradient values used with variant="gradient".</description>
+            </property>
+            <property key="loaderProps" type="string" required="false">
+                <caption>Loader Props</caption>
+                <description>Props passed down to the Loader component. Ignored when loading prop is not set.</description>
+            </property>
+            <property key="loading" type="boolean" required="false">
+                <caption>Loading</caption>
+                <description>If set, Loader component is displayed instead of the children</description>
+            </property>
+            <property key="radius" type="string" required="false">
+                <caption>Radius</caption>
+                <description>Key of theme.radius or any valid CSS value to set border-radius. Numbers are converted to rem.</description>
+            </property>
+            <property key="size" type="string" required="false" defaultValue="md">
+                <caption>Size</caption>
+                <description>Controls width and height of the button. Numbers are converted to rem.</description>
             </property>
         </propertyGroup>
     </properties>

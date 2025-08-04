@@ -3,46 +3,69 @@ autoContrast:
   group: General
   caption: Auto Contrast
   description: If set, adjusts text color based on background color for filled variant
+  xml:
+    type: boolean
+    required: false
 children:
   originalType: React.ReactNode
   group: General
   caption: Children
   description: Icon element
+  xml:
+    type: string
+    required: false
 color:
   originalType: MantineColor
   group: General
   caption: Color
   description: Key of theme.colors or any valid CSS color.
   default: theme.primaryColor.
+  xml:
+    type: string
+    required: false
 disabled:
   originalType: boolean
   group: General
   caption: Disabled
   description: Sets disabled attribute, prevents interactions
+  xml:
+    type: boolean
+    required: false
 gradient:
   originalType: MantineGradient
   group: General
   caption: Gradient
   description: Gradient values used with variant="gradient".
   default: theme.defaultGradient.
+  xml:
+    type: string
+    required: false
 loaderProps:
   originalType: LoaderProps
   group: General
   caption: Loader Props
   description: Props passed down to the Loader component. Ignored when loading
     prop is not set.
+  xml:
+    type: string
+    required: false
 loading:
   originalType: boolean
   group: General
   caption: Loading
   description: If set, Loader component is displayed instead of the children
+  xml:
+    type: boolean
+    required: false
 radius:
   originalType: MantineRadius | number
   group: General
   caption: Radius
-  description: Key of theme.radius or any valid CSS value to set border-radius.
-    Numbers are converted to rem.
+  description: Key of theme.radius or any valid CSS value to set border-radius. Numbers are converted to rem.
   default: theme.defaultRadius
+  xml:
+    type: string
+    required: false
 size:
   originalType: number | MantineSize | (string & {}) | "input-xs" | "input-sm" |
     "input-md" | "input-lg" | "input-xl"
@@ -50,3 +73,6 @@ size:
   caption: Size
   description: Controls width and height of the button. Numbers are converted to rem.
   default: "'md'."
+  xml:
+    type: string
+    required: false

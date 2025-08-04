@@ -1,23 +1,74 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.angleslider.AngleSlider"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<widget id="com.mendix.finch.widget.angleslider.AngleSlider" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>AngleSlider</name>
     <description>Slider component</description>
     <studioProCategory>Finch</studioProCategory>
     <icon />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="defaultValue" type="integer" required="false">
+                <caption>Default Value</caption>
+                <description>Uncontrolled component default value</description>
+            </property>
+            <property key="disabled" type="boolean" required="false">
+                <caption>Disabled</caption>
+                <description>Sets data-disabled attribute, disables interactions</description>
+            </property>
+            <property key="formatLabel" type="action" required="false">
+                <caption>Format Label</caption>
+                <description>A function to format label based on the current value</description>
+            </property>
+            <property key="hiddenInputProps" type="string" required="false">
+                <caption>Hidden Input Props</caption>
+                <description>Props passed down to the hidden input</description>
+            </property>
+            <property key="marks" type="string" required="false">
+                <caption>Marks</caption>
+                <description>Array of marks displayed on the slider</description>
+            </property>
+            <property key="name" type="string" required="false">
+                <caption>Name</caption>
+                <description>Hidden input name, use with uncontrolled component</description>
+            </property>
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Called on value change</description>
+            </property>
+            <property key="onChangeEnd" type="action" required="false">
+                <caption>On Change End</caption>
+                <description>Called after the selection is finished</description>
+            </property>
+            <property key="onScrubEnd" type="action" required="false">
+                <caption>On Scrub End</caption>
+                <description>Called in onMouseUp and onTouchEnd</description>
+            </property>
+            <property key="onScrubStart" type="action" required="false">
+                <caption>On Scrub Start</caption>
+                <description>Called in onMouseDown and onTouchStart</description>
+            </property>
+            <property key="restrictToMarks" type="boolean" required="false" defaultValue="false">
+                <caption>Restrict To Marks</caption>
+                <description>If set, the selection is allowed only from the given marks array</description>
+            </property>
+            <property key="size" type="integer" required="false" defaultValue="60">
+                <caption>Size</caption>
+                <description>Slider size in px</description>
+            </property>
+            <property key="step" type="integer" required="false" defaultValue="1">
+                <caption>Step</caption>
+                <description>Step between values</description>
+            </property>
+            <property key="thumbSize" type="integer" required="false">
+                <caption>Thumb Size</caption>
+                <description>Size of the thumb in px. Calculated based on the size value by default.</description>
+            </property>
+            <property key="value" type="integer" required="false">
+                <caption>Value</caption>
+                <description>Controlled component value</description>
+            </property>
+            <property key="withLabel" type="boolean" required="false" defaultValue="true">
+                <caption>With Label</caption>
+                <description>If set, the label is displayed inside the slider</description>
             </property>
         </propertyGroup>
     </properties>

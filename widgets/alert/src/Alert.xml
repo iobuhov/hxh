@@ -1,23 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.alert.Alert"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<widget id="com.mendix.finch.widget.alert.Alert" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Alert</name>
     <description>Attract user attention with important static message</description>
     <studioProCategory>Finch</studioProCategory>
     <icon />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="autoContrast" type="boolean" required="false">
+                <caption>Auto Contrast</caption>
+                <description>If set, adjusts text color based on background color for filled variant</description>
+            </property>
+            <property key="closeButtonLabel" type="string" required="false">
+                <caption>Close Button Label</caption>
+                <description>Close button aria-label</description>
+            </property>
+            <property key="color" type="string" required="false" defaultValue="theme.primaryColor">
+                <caption>Color</caption>
+                <description>Key of theme.colors or any valid CSS color</description>
+            </property>
+            <property key="icon" type="icon" required="false">
+                <caption>Icon</caption>
+                <description>Icon displayed next to the title</description>
+            </property>
+            <property key="onClose" type="action" required="false">
+                <caption>On Close</caption>
+                <description>Called when the close button is clicked</description>
+            </property>
+            <property key="radius" type="string" required="false">
+                <caption>Radius</caption>
+                <description>Key of theme.radius or any valid CSS value to set border-radius</description>
+            </property>
+            <property key="title" type="string" required="false">
+                <caption>Title</caption>
+                <description>Alert title</description>
+            </property>
+            <property key="withCloseButton" type="boolean" required="false" defaultValue="false">
+                <caption>With Close Button</caption>
+                <description>Determines whether close button should be displayed</description>
             </property>
         </propertyGroup>
     </properties>

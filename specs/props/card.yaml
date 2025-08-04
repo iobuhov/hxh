@@ -1,28 +1,42 @@
 children:
-  originalType: React.ReactNode
-  group: General
-  caption: Children
-  description: Card content
+    originalType: React.ReactNode
+    group: General
+    caption: Children
+    description: Card content
+    xml:
+        type: string
+        required: false
 padding:
-  originalType: MantineSpacing
-  group: General
-  caption: Padding
-  description: Key of theme.spacing or any valid CSS value to set padding
-  default: "'md'"
+    originalType: MantineSpacing
+    group: General
+    caption: Padding
+    description: Key of theme.spacing or any valid CSS value to set padding
+    default: "'md'"
+    xml:
+        type: string
+        required: false
 radius:
-  originalType: MantineRadius | number
-  group: General
-  caption: Radius
-  description: Key of theme.radius or any valid CSS value to set border-radius,
-    numbers are converted to rem
-  default: theme.defaultRadius
+    originalType: MantineRadius | number
+    group: General
+    caption: Radius
+    description: Key of theme.radius or any valid CSS value to set border-radius, numbers are converted to rem
+    default: theme.defaultRadius
+    xml:
+        type: string
+        required: false
 shadow:
-  originalType: MantineShadow
-  group: General
-  caption: Shadow
-  description: Key of theme.shadows or any valid CSS value to set box-shadow
+    originalType: MantineShadow
+    group: General
+    caption: Shadow
+    description: Key of theme.shadows or any valid CSS value to set box-shadow
+    xml:
+        type: string
+        required: false
 withBorder:
-  originalType: boolean
-  group: General
-  caption: With Border
-  description: Adds border to the card
+    originalType: boolean
+    group: General
+    caption: With Border
+    description: Adds border to the card
+    xml:
+        type: boolean
+        required: false

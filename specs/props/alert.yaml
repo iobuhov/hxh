@@ -1,43 +1,67 @@
 autoContrast:
-  originalType: boolean
-  group: General
-  caption: Auto Contrast
-  description: If set, adjusts text color based on background color for filled variant
+    originalType: boolean
+    group: General
+    caption: Auto Contrast
+    description: If set, adjusts text color based on background color for filled variant
+    xml:
+        type: boolean
+        required: false
 closeButtonLabel:
-  originalType: string
-  group: General
-  caption: Close Button Label
-  description: Close button aria-label
+    originalType: string
+    group: General
+    caption: Close Button Label
+    description: Close button aria-label
+    xml:
+        type: string
+        required: false
 color:
-  originalType: MantineColor
-  group: General
-  caption: Color
-  description: Key of theme.colors or any valid CSS color
-  default: theme.primaryColor
+    originalType: MantineColor
+    group: General
+    caption: Color
+    description: Key of theme.colors or any valid CSS color
+    default: theme.primaryColor
+    xml:
+        type: string
+        required: false
 icon:
-  originalType: React.ReactNode
-  group: General
-  caption: Icon
-  description: Icon displayed next to the title
+    originalType: React.ReactNode
+    group: General
+    caption: Icon
+    description: Icon displayed next to the title
+    xml:
+        type: icon
+        required: false
 onClose:
-  originalType: (() => void)
-  group: General
-  caption: On Close
-  description: Called when the close button is clicked
+    originalType: (() => void)
+    group: General
+    caption: On Close
+    description: Called when the close button is clicked
+    xml:
+        type: action
+        required: false
 radius:
-  originalType: MantineRadius | number
-  group: General
-  caption: Radius
-  description: Key of theme.radius or any valid CSS value to set border-radius
-  default: theme.defaultRadius
+    originalType: MantineRadius | number
+    group: General
+    caption: Radius
+    description: Key of theme.radius or any valid CSS value to set border-radius
+    default: theme.defaultRadius
+    xml:
+        type: string
+        required: false
 title:
-  originalType: React.ReactNode
-  group: General
-  caption: Title
-  description: Alert title
+    originalType: React.ReactNode
+    group: General
+    caption: Title
+    description: Alert title
+    xml:
+        type: string
+        required: false
 withCloseButton:
-  originalType: boolean
-  group: General
-  caption: With Close Button
-  description: Determines whether close button should be displayed
-  default: "false"
+    originalType: boolean
+    group: General
+    caption: With Close Button
+    description: Determines whether close button should be displayed
+    default: "false"
+    xml:
+        type: boolean
+        required: false

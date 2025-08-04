@@ -1,23 +1,62 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.button.Button"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<widget id="com.mendix.finch.widget.button.Button" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Button</name>
     <description>Button widget</description>
     <studioProCategory>Finch</studioProCategory>
     <icon />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="autoContrast" type="boolean" required="false">
+                <caption>Auto Contrast</caption>
+                <description>If set, adjusts text color based on background color for filled variant</description>
+            </property>
+            <property key="children" type="string" required="false">
+                <caption>Children</caption>
+                <description>Button content</description>
+            </property>
+            <property key="color" type="string" required="false" defaultValue="theme.primaryColor">
+                <caption>Color</caption>
+                <description>Key of theme.colors or any valid CSS color</description>
+            </property>
+            <property key="disabled" type="boolean" required="false">
+                <caption>Disabled</caption>
+                <description>Sets disabled attribute, applies disabled styles</description>
+            </property>
+            <property key="fullWidth" type="boolean" required="false" defaultValue="false">
+                <caption>Full Width</caption>
+                <description>If set, the button takes 100% width of its parent container</description>
+            </property>
+            <property key="gradient" type="string" required="false">
+                <caption>Gradient</caption>
+                <description>Gradient configuration used when variant="gradient"</description>
+            </property>
+            <property key="justify" type="string" required="false" defaultValue="center">
+                <caption>Justify</caption>
+                <description>Sets justify-content of inner element, can be used to change distribution of sections and label</description>
+            </property>
+            <property key="leftSection" type="string" required="false">
+                <caption>Left Section</caption>
+                <description>Content displayed on the left side of the button label</description>
+            </property>
+            <property key="loaderProps" type="string" required="false">
+                <caption>Loader Props</caption>
+                <description>Props added to the Loader component (only visible when loading prop is set)</description>
+            </property>
+            <property key="loading" type="boolean" required="false">
+                <caption>Loading</caption>
+                <description>If set, the Loader component is displayed over the button</description>
+            </property>
+            <property key="radius" type="string" required="false">
+                <caption>Radius</caption>
+                <description>Key of theme.radius or any valid CSS value to set border-radius</description>
+            </property>
+            <property key="rightSection" type="string" required="false">
+                <caption>Right Section</caption>
+                <description>Content displayed on the right side of the button label</description>
+            </property>
+            <property key="size" type="string" required="false" defaultValue="sm">
+                <caption>Size</caption>
+                <description>Controls button height, font-size and horizontal padding</description>
             </property>
         </propertyGroup>
     </properties>
