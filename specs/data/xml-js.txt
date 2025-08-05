@@ -1,0 +1,10 @@
+<a/> 	{"a":{}} 	{"elements":[{"type":"element","name":"a"}]}
+<a/><b/> 	{"a":{},"b":{}} 	{"elements":[{"type":"element","name":"a"},{"type":"element","name":"b"}]}
+<a><b/></a> 	{"a":{"b":{}}} 	{"elements":[{"type":"element","name":"a","elements":[{"type":"element","name":"b"}]}]}
+<a> Hi </a> 	{"a":{"_text":" Hi "}} 	{"elements":[{"type":"element","name":"a","elements":[{"type":"text","text":" Hi "}]}]}
+<a x="1.234" y="It's"/> 	{"a":{"_attributes":{"x":"1.234","y":"It's"}}} 	{"elements":[{"type":"element","name":"a","attributes":{"x":"1.234","y":"It's"}}]}
+<?xml?> 	{"_declaration":{}} 	{"declaration":{}}
+<?go there?> 	{"_instruction":{"go":"there"}} 	{"elements":[{"type":"instruction","name":"go","instruction":"there"}]}
+<?xml version="1.0" encoding="utf-8"?> 	{"_declaration":{"_attributes":{"version":"1.0","encoding":"utf-8"}}} 	{"declaration":{"attributes":{"version":"1.0","encoding":"utf-8"}}}
+<!--Hello, World!--> 	{"_comment":"Hello, World!"} 	{"elements":[{"type":"comment","comment":"Hello, World!"}]}
+<![CDATA[<foo></bar>]]> 	{"_cdata":"<foo></bar>"} 	{"elements":[{"type":"cdata","cdata":"<foo></bar>"}]}

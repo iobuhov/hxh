@@ -19,6 +19,7 @@
     "packageManager": "pnpm@10.13.1",
     "dependencies": {
         "@mendix/finch-widget-generator": "workspace:*",
+        "xml-js": "^1.6.11",
         "yaml": "^2.8.0"
     }
 }

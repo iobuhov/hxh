@@ -1,0 +1,31 @@
+widget:
+  id: com.mendix.widget.web.simple.Simple
+  name: Simple Widget
+  description: 'A simple test widget'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      label:
+        type: string
+        caption: Label
+        description: 'The label text to display'
+        default: 'Hello World'
+        required: false
+
+      enabled:
+        type: boolean
+        caption: Enabled
+        description: 'Whether the widget is enabled'
+        default: true
+
+      size:
+        type: enumeration
+        caption: Size
+        description: 'The size of the widget'
+        default: medium
+        enumerationValues:
+          small: Small
+          medium: Medium
+          large: Large

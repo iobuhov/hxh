@@ -71,16 +71,15 @@ module.exports = {
         {
             files: ["*.yaml", "*.yml"],
             options: {
-                tabWidth: 4,
-                // Disable line wrapping in .yml files
-                printWidth: 99999
+                tabWidth: 2,
+                singleQuote: true
             }
         },
         {
             files: "pnpm-workspace.yaml",
             options: {
                 tabWidth: 2,
-                singleQuote: true,
+                singleQuote: true
             }
         },
         {

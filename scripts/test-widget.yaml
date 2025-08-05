@@ -1,0 +1,454 @@
+widget:
+  id: com.mendix.widget.web.datagrid.Datagrid
+  name: Data grid 2
+  description: ''
+  pluginWidget: true
+  offlineCapable: true
+  studioProCategory: Data containers
+  studioCategory: Data Containers
+  helpUrl: https://docs.mendix.com/appstore/modules/data-grid-2
+
+  properties:
+    General:
+      General:
+        advanced:
+          type: boolean
+          default: false
+          caption: Enable advanced options
+          description: ''
+
+        datasource:
+          type: datasource
+          isList: true
+          caption: Data source
+          description: ''
+
+        refreshInterval:
+          type: integer
+          default: 0
+          caption: Refresh time (in seconds)
+          description: ''
+
+        itemSelection:
+          type: selection
+          dataSource: datasource
+          caption: Selection
+          description: ''
+          selectionTypes: [None, Single, Multi]
+
+        itemSelectionMethod:
+          type: enumeration
+          default: checkbox
+          caption: Selection method
+          description: ''
+          enumerationValues:
+            checkbox: Checkbox
+            rowClick: Row click
+
+        itemSelectionMode:
+          type: enumeration
+          default: clear
+          caption: Toggle on click
+          description: Defines item selection behavior.
+          enumerationValues:
+            toggle: Yes
+            clear: No
+
+        showSelectAllToggle:
+          type: boolean
+          default: true
+          caption: Show (un)check all toggle
+          description: Show a checkbox in the grid header to check or uncheck multiple items.
+
+        loadingType:
+          type: enumeration
+          default: spinner
+          required: true
+          caption: Loading type
+          description: ''
+          enumerationValues:
+            spinner: Spinner
+            skeleton: Skeleton
+
+        refreshIndicator:
+          type: boolean
+          default: false
+          caption: Show refresh indicator
+          description: Show a refresh indicator when the data is being loaded.
+
+      Columns:
+        columns:
+          type: object
+          isList: true
+          caption: Columns
+          description: ''
+          properties:
+            General:
+              showContentAs:
+                type: enumeration
+                default: attribute
+                caption: Show
+                description: ''
+                enumerationValues:
+                  attribute: Attribute
+                  dynamicText: Dynamic text
+                  customContent: Custom content
+
+              attribute:
+                type: attribute
+                dataSource: ../datasource
+                required: false
+                caption: Attribute
+                description: Attribute is required if the column can be sorted or filtered
+                attributeTypes: [String, AutoNumber, Boolean, DateTime, Decimal, Enum, Integer, Long]
+                associationTypes: [Reference, ReferenceSet]
+
+              content:
+                type: widgets
+                dataSource: ../datasource
+                required: false
+                caption: Custom content
+                description: ''
+
+              dynamicText:
+                type: textTemplate
+                dataSource: ../datasource
+                required: false
+                caption: Dynamic text
+                description: ''
+
+              exportValue:
+                type: textTemplate
+                dataSource: ../datasource
+                required: false
+                caption: Export value
+                description: ''
+
+              header:
+                type: textTemplate
+                required: false
+                caption: Caption
+                description: ''
+
+              tooltip:
+                type: textTemplate
+                required: false
+                dataSource: ../datasource
+                caption: Tooltip
+                description: ''
+
+              filter:
+                type: widgets
+                required: false
+                caption: Filter
+                description: ''
+
+              visible:
+                type: expression
+                required: true
+                default: true
+                caption: Visible
+                description: ''
+                returnType: Boolean
+
+            'Column capabilities':
+              sortable:
+                type: boolean
+                default: true
+                caption: Can sort
+                description: ''
+
+              resizable:
+                type: boolean
+                default: true
+                caption: Can resize
+                description: ''
+
+              draggable:
+                type: boolean
+                default: true
+                caption: Can reorder
+                description: ''
+
+              hidable:
+                type: enumeration
+                default: yes
+                caption: Can hide
+                description: ''
+                enumerationValues:
+                  yes: Yes
+                  hidden: Yes, hidden by default
+                  no: No
+
+              allowEventPropagation:
+                type: boolean
+                default: true
+                caption: Allow row events
+                description:
+                  If set to yes, then all default events on the row, such as "on click" or selection, will be triggered
+                  when the user interacts with custom content.
+
+            Appearance:
+              width:
+                type: enumeration
+                default: autoFill
+                caption: Column width
+                description: ''
+                enumerationValues:
+                  autoFill: Auto-fill
+                  autoFit: Auto-fit content
+                  manual: Manual
+
+              minWidth:
+                type: enumeration
+                default: auto
+                caption: Min width
+                description: ''
+                enumerationValues:
+                  auto: Auto
+                  minContent: Set by content
+                  manual: Manual
+
+              minWidthLimit:
+                type: integer
+                default: 100
+                caption: Min width value (px)
+                description: ''
+
+              size:
+                type: integer
+                default: 1
+                caption: Column size
+                description: ''
+
+              alignment:
+                type: enumeration
+                default: left
+                caption: Alignment
+                description: ''
+                enumerationValues:
+                  left: Left
+                  center: Center
+                  right: Right
+
+              columnClass:
+                type: expression
+                required: false
+                dataSource: ../datasource
+                caption: Dynamic cell class
+                description: ''
+                returnType: String
+
+              wrapText:
+                type: boolean
+                default: false
+                caption: Wrap text
+                description: ''
+
+        columnsFilterable:
+          type: boolean
+          default: true
+          caption: Show column filters
+          description: ''
+
+      Rows:
+        pageSize:
+          type: integer
+          default: 20
+          caption: Page size
+          description: ''
+
+        pagination:
+          type: enumeration
+          default: buttons
+          caption: Pagination
+          description: ''
+          enumerationValues:
+            buttons: Paging buttons
+            virtualScrolling: Virtual scrolling
+            loadMore: Load more
+
+        showPagingButtons:
+          type: enumeration
+          default: always
+          caption: Show paging buttons
+          description: ''
+          enumerationValues:
+            always: Always
+            auto: Auto
+
+        showNumberOfRows:
+          type: boolean
+          default: false
+          caption: Show number of rows
+          description: ''
+
+        pagingPosition:
+          type: enumeration
+          default: bottom
+          caption: Position of pagination
+          description: ''
+          enumerationValues:
+            bottom: Below grid
+            top: Above grid
+            both: Both
+
+        loadMoreButtonCaption:
+          type: textTemplate
+          required: false
+          caption: Load more caption
+          description: ''
+          translations:
+            en_US: Load More
+
+        showEmptyPlaceholder:
+          type: enumeration
+          default: none
+          caption: Empty list message
+          description: ''
+          enumerationValues:
+            none: None
+            custom: Custom
+
+        emptyPlaceholder:
+          type: widgets
+          required: false
+          caption: Empty placeholder
+          description: ''
+
+        rowClass:
+          type: expression
+          required: false
+          dataSource: datasource
+          caption: Dynamic row class
+          description: ''
+          returnType: String
+
+      Events:
+        onClickTrigger:
+          type: enumeration
+          default: single
+          caption: On click trigger
+          description: ''
+          enumerationValues:
+            single: Single click
+            double: Double click
+
+        onClick:
+          type: action
+          required: false
+          dataSource: datasource
+          caption: On click action
+          description: ''
+
+        onSelectionChange:
+          type: action
+          required: false
+          caption: On selection change
+          description: ''
+
+        filtersPlaceholder:
+          type: widgets
+          required: false
+          caption: Filters placeholder
+          description: ''
+
+    Personalization:
+      'Column capabilities':
+        columnsSortable:
+          type: boolean
+          default: true
+          caption: Sorting
+          description: Enable sorting for all columns unless specified otherwise in the column setting
+
+        columnsResizable:
+          type: boolean
+          default: true
+          caption: Resizing
+          description: Enable resizing for all columns unless specified otherwise in the column setting
+
+        columnsDraggable:
+          type: boolean
+          default: true
+          caption: Reordering
+          description: Enable reordering for all columns unless specified otherwise in the column setting
+
+        columnsHidable:
+          type: boolean
+          default: true
+          caption: Hiding
+          description: Enable hiding for all columns unless specified otherwise in the column setting
+
+      Configuration:
+        configurationStorageType:
+          type: enumeration
+          default: attribute
+          caption: Store configuration in
+          description:
+            When Browser local storage is selected, the configuration is scoped to a browser profile. This configuration
+            is not tied to a Mendix user.
+          enumerationValues:
+            attribute: Attribute
+            localStorage: Browser local storage
+
+        configurationAttribute:
+          type: attribute
+          required: false
+          onChange: onConfigurationChange
+          caption: Attribute
+          description:
+            Attribute containing the personalized configuration of the capabilities. This configuration is automatically
+            stored and loaded. The attribute requires Unlimited String.
+          attributeTypes: [String]
+
+        storeFiltersInPersonalization:
+          type: boolean
+          default: true
+          caption: Store filters
+          description: ''
+
+        onConfigurationChange:
+          type: action
+          required: false
+          caption: On change
+          description: ''
+
+    Accessibility:
+      'Aria labels':
+        filterSectionTitle:
+          type: textTemplate
+          required: false
+          caption: Filter section
+          description: Assistive technology will read this upon reaching a filtering or sorting section.
+
+        exportDialogLabel:
+          type: textTemplate
+          required: false
+          caption: Export progress
+          description: Assistive technology will read this upon reaching a export dialog.
+          translations:
+            en_US: Export progress
+
+        cancelExportLabel:
+          type: textTemplate
+          required: false
+          caption: Cancel data export
+          description: Assistive technology will read this upon reaching a cancel button.
+          translations:
+            en_US: Cancel data export
+
+        selectRowLabel:
+          type: textTemplate
+          required: false
+          caption: Select row
+          description: If selection is enabled, assistive technology will read this upon reaching a checkbox.
+          translations:
+            en_US: Select row
+
+        selectAllRowsLabel:
+          type: textTemplate
+          required: false
+          caption: Select all row
+          description: If selection is enabled, assistive technology will read this upon reaching 'Select all' checkbox.
+          translations:
+            en_US: Select all rows

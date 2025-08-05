@@ -1,74 +1,68 @@
-color:
-    originalType: MantineColor
-    group: General
-    caption: Color
-    description: "@deprecated Use c prop instead"
-    xml:
+widget:
+  id: com.mendix.widget.web.anchor.Anchor
+  name: Anchor
+  description: 'Mantine Anchor component'
+  pluginWidget: true
+  offlineCapable: false
+  studioProCategory: 'Data containers'
+  studioCategory: 'Data Containers'
+
+  properties:
+    General:
+      color:
         type: string
+        caption: Color
+        description: '@deprecated Use c prop instead'
         required: false
-gradient:
-    originalType: MantineGradient
-    group: General
-    caption: Gradient
-    description: Gradient configuration, ignored when variant is not gradient
-    default: theme.defaultGradient
-    xml:
+
+      gradient:
         type: string
+        caption: Gradient
+        description: Gradient configuration, ignored when variant is not gradient
+        default: theme.defaultGradient
         required: false
-inherit:
-    originalType: boolean
-    group: General
-    caption: Inherit
-    description: Determines whether font properties should be inherited from the parent
-    default: "false"
-    xml:
+
+      inherit:
         type: boolean
+        caption: Inherit
+        description: Determines whether font properties should be inherited from the parent
+        default: false
         required: false
-inline:
-    originalType: boolean
-    group: General
-    caption: Inline
-    description: Sets line-height to 1 for centering
-    default: "false"
-    xml:
+
+      inline:
         type: boolean
+        caption: Inline
+        description: Sets line-height to 1 for centering
+        default: false
         required: false
-lineClamp:
-    originalType: number
-    group: General
-    caption: Line Clamp
-    description: Number of lines after which Text will be truncated
-    xml:
+
+      lineClamp:
         type: integer
+        caption: Line Clamp
+        description: Number of lines after which Text will be truncated
         required: false
-size:
-    originalType: MantineSize | (string & {})
-    group: General
-    caption: Size
-    description: Controls font-size and line-height
-    default: "'md'"
-    xml:
+
+      size:
         type: string
+        caption: Size
+        description: Controls font-size and line-height
+        default: md
         required: false
-truncate:
-    originalType: TextTruncate
-    group: General
-    caption: Truncate
-    description: Side on which Text must be truncated, if true, text is truncated from the start
-    xml:
+
+      truncate:
         type: string
+        caption: Truncate
+        description: Side on which Text must be truncated, if true, text is truncated from the start
         required: false
-underline:
-    originalType: '"always" | "hover" | "not-hover" | "never"'
-    group: General
-    caption: Underline
-    description: "Defines when text-decoration: underline styles are applied."
-    default: hover
-    xml:
+
+      underline:
         type: enumeration
+        caption: Underline
+        description: 'Defines when text-decoration: underline styles are applied.'
+        default: hover
         required: false
         enumerationValues:
-            - key: always
-            - key: hover
-            - key: not-hover
-            - key: never
+          always: Always
+          hover: Hover
+          'not-hover': Not Hover
+          never: Never
