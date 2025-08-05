@@ -264,6 +264,19 @@ test("should include auto-generated comment in XML output", t => {
     t.true(lines[1].includes("<!--This is an auto-generated XML file. Do not edit manually.-->"));
 });
 
+test("should use correct schema location path", t => {
+    const yaml = loadFixture("string");
+    const xml = convertYamlStringToXml(yaml);
+
+    // Check that the schema location uses the correct path
+    t.true(
+        xml.includes('xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"')
+    );
+
+    // Ensure it doesn't use the old path
+    t.false(xml.includes("../../../../node_modules/mendix/custom_widget.xsd"));
+});
+
 // Edge case tests with inline YAML
 test("inline multiline attribute snapshot", t => {
     const yaml = `

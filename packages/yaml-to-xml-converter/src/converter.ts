@@ -20,8 +20,7 @@ export function convertYamlToXmlStructure(yamlData: YamlData): any {
                 offlineCapable: widget.offlineCapable || false,
                 xmlns: "http://www.mendix.com/widget/1.0/",
                 "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
-                "xsi:schemaLocation":
-                    "http://www.mendix.com/widget/1.0/ ../../../../node_modules/mendix/custom_widget.xsd"
+                "xsi:schemaLocation": "http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
             } as any,
             name: widget.name,
             description: widget.description || "",
