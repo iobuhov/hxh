@@ -422,6 +422,22 @@ importers:
         specifier: ^2.5.10
         version: 2.5.19(prettier@3.6.2)
 
+  packages/yaml-to-xml-converter:
+    dependencies:
+      xml-js:
+        specifier: ^1.6.11
+        version: 1.6.11
+      yaml:
+        specifier: ^2.4.1
+        version: 2.8.0
+    devDependencies:
+      '@types/node':
+        specifier: ^22.13.10
+        version: 22.16.5
+      typescript:
+        specifier: ^5.7.2
+        version: 5.8.3
+
   widgets/accordion:
     dependencies:
       '@mendix/pluggable-widgets-tools':

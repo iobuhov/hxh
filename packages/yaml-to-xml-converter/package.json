@@ -1,0 +1,38 @@
+{
+    "name": "@mendix/yaml-to-xml-converter",
+    "version": "1.0.0",
+    "description": "Convert YAML widget definitions to Mendix XML format",
+    "author": "Mendix",
+    "license": "Apache-2.0",
+    "bin": {
+        "yaml-to-xml": "./dist/cli.js"
+    },
+    "type": "module",
+    "types": "dist/index.d.ts",
+    "main": "dist/index.js",
+    "files": [
+        "dist/**/*"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "clean": "rm -rf dist",
+        "dev": "tsc --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "xml-js": "^1.6.11",
+        "yaml": "^2.4.1"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.2",
+        "typescript": "^5.7.2"
+    },
+    "keywords": [
+        "mendix",
+        "widget",
+        "yaml",
+        "xml",
+        "converter"
+    ],
+    "packageManager": "pnpm@10.13.1"
+}
