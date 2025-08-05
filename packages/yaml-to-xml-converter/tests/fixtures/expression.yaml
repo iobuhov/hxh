@@ -1,0 +1,15 @@
+widget:
+  id: com.mendix.widget.web.test.Expression
+  name: Expression Test
+  description: 'Test widget with expression property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myExpression:
+        type: expression
+        caption: My Expression
+        description: 'A test expression property'
+        required: false
+        returnType: Boolean

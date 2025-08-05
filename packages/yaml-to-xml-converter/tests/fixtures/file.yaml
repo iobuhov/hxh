@@ -1,0 +1,14 @@
+widget:
+  id: com.mendix.widget.web.test.File
+  name: File Test
+  description: 'Test widget with file property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myFile:
+        type: file
+        caption: My File
+        description: 'A test file property'
+        required: false

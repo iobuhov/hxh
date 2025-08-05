@@ -1,0 +1,14 @@
+widget:
+  id: com.mendix.widget.web.test.Icon
+  name: Icon Test
+  description: 'Test widget with icon property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myIcon:
+        type: icon
+        caption: My Icon
+        description: 'A test icon property'
+        required: false

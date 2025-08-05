@@ -1,0 +1,17 @@
+widget:
+  id: com.mendix.widget.web.test.Attribute
+  name: Attribute Test
+  description: 'Test widget with attribute property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myAttribute:
+        type: attribute
+        caption: My Attribute
+        description: 'A test attribute property'
+        required: false
+        dataSource: datasource
+        attributeTypes: [String, Boolean, Integer]
+        associationTypes: [Reference, ReferenceSet]

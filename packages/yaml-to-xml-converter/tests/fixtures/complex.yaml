@@ -1,0 +1,76 @@
+widget:
+  id: com.mendix.widget.web.test.Complex
+  name: Complex Test
+  description: 'Test widget with complex properties'
+  pluginWidget: true
+  offlineCapable: true
+  studioProCategory: 'Data containers'
+  studioCategory: 'Data Containers'
+  helpUrl: 'https://docs.mendix.com/test'
+
+  properties:
+    General:
+      basicString:
+        type: string
+        caption: Basic String
+        description: 'A basic string property'
+        default: 'Default Value'
+        required: false
+
+      basicBoolean:
+        type: boolean
+        caption: Basic Boolean
+        description: 'A basic boolean property'
+        default: true
+        required: false
+
+      basicInteger:
+        type: integer
+        caption: Basic Integer
+        description: 'A basic integer property'
+        default: 42
+        required: false
+
+      basicEnumeration:
+        type: enumeration
+        caption: Basic Enumeration
+        description: 'A basic enumeration property'
+        default: option1
+        required: false
+        enumerationValues:
+          option1: Option 1
+          option2: Option 2
+          option3: Option 3
+
+    Advanced:
+      complexObject:
+        type: object
+        caption: Complex Object
+        description: 'A complex object property'
+        isList: true
+        required: false
+        properties:
+          General:
+            name:
+              type: string
+              caption: Name
+              description: 'Object name'
+            value:
+              type: integer
+              caption: Value
+              description: 'Object value'
+            enabled:
+              type: boolean
+              caption: Enabled
+              description: 'Object enabled state'
+              default: true
+          Settings:
+            size:
+              type: enumeration
+              caption: Size
+              description: 'Object size'
+              default: medium
+              enumerationValues:
+                small: Small
+                medium: Medium
+                large: Large

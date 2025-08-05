@@ -1,0 +1,25 @@
+widget:
+  id: com.mendix.widget.web.test.Object
+  name: Object Test
+  description: 'Test widget with object property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myObject:
+        type: object
+        caption: My Object
+        description: 'A test object property'
+        isList: true
+        required: false
+        properties:
+          General:
+            name:
+              type: string
+              caption: Name
+              description: 'Object name'
+            value:
+              type: integer
+              caption: Value
+              description: 'Object value'

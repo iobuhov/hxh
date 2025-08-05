@@ -1,0 +1,15 @@
+widget:
+  id: com.mendix.widget.web.test.Decimal
+  name: Decimal Test
+  description: 'Test widget with decimal property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myDecimal:
+        type: decimal
+        caption: My Decimal
+        description: 'A test decimal property'
+        default: 3.14
+        required: false

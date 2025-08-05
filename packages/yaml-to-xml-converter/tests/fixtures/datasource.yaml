@@ -1,0 +1,15 @@
+widget:
+  id: com.mendix.widget.web.test.Datasource
+  name: Datasource Test
+  description: 'Test widget with datasource property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myDatasource:
+        type: datasource
+        caption: My Datasource
+        description: 'A test datasource property'
+        isList: true
+        required: false

@@ -1,0 +1,15 @@
+widget:
+  id: com.mendix.widget.web.test.Action
+  name: Action Test
+  description: 'Test widget with action property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myAction:
+        type: action
+        caption: My Action
+        description: 'A test action property'
+        required: false
+        dataSource: datasource

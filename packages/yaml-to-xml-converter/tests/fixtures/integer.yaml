@@ -1,0 +1,15 @@
+widget:
+  id: com.mendix.widget.web.test.Integer
+  name: Integer Test
+  description: 'Test widget with integer property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myInteger:
+        type: integer
+        caption: My Integer
+        description: 'A test integer property'
+        default: 42
+        required: false

@@ -1,0 +1,14 @@
+widget:
+  id: com.mendix.widget.web.test.Nanoflow
+  name: Nanoflow Test
+  description: 'Test widget with nanoflow property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myNanoflow:
+        type: nanoflow
+        caption: My Nanoflow
+        description: 'A test nanoflow property'
+        required: false

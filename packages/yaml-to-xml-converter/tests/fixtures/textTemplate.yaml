@@ -1,0 +1,18 @@
+widget:
+  id: com.mendix.widget.web.test.TextTemplate
+  name: Text Template Test
+  description: 'Test widget with text template property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myTextTemplate:
+        type: textTemplate
+        caption: My Text Template
+        description: 'A test text template property'
+        required: false
+        dataSource: datasource
+        translations:
+          en_US: English text
+          nl_NL: Dutch text

@@ -1,0 +1,19 @@
+widget:
+  id: com.mendix.widget.web.test.Enumeration
+  name: Enumeration Test
+  description: 'Test widget with enumeration property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myEnumeration:
+        type: enumeration
+        caption: My Enumeration
+        description: 'A test enumeration property'
+        default: option1
+        required: false
+        enumerationValues:
+          option1: Option 1
+          option2: Option 2
+          option3: Option 3

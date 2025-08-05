@@ -1,0 +1,14 @@
+widget:
+  id: com.mendix.widget.web.test.Image
+  name: Image Test
+  description: 'Test widget with image property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myImage:
+        type: image
+        caption: My Image
+        description: 'A test image property'
+        required: false

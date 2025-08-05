@@ -1,0 +1,14 @@
+widget:
+  id: com.mendix.widget.web.test.Microflow
+  name: Microflow Test
+  description: 'Test widget with microflow property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myMicroflow:
+        type: microflow
+        caption: My Microflow
+        description: 'A test microflow property'
+        required: false

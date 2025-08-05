@@ -1,0 +1,15 @@
+widget:
+  id: com.mendix.widget.web.test.Boolean
+  name: Boolean Test
+  description: 'Test widget with boolean property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myBoolean:
+        type: boolean
+        caption: My Boolean
+        description: 'A test boolean property'
+        default: true
+        required: false

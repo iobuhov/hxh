@@ -1,0 +1,130 @@
+widget:
+  id: com.mendix.widget.web.test.NestedGroups
+  name: Nested Groups Test
+  description: 'Test widget with nested property groups'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      basicString:
+        type: string
+        caption: Basic String
+        description: 'A basic string property'
+        default: 'Hello World'
+        required: false
+
+      basicBoolean:
+        type: boolean
+        caption: Basic Boolean
+        description: 'A basic boolean property'
+        default: true
+        required: false
+
+    Advanced:
+      complexObject:
+        type: object
+        caption: Complex Object
+        description: 'A complex object with nested groups'
+        isList: true
+        required: false
+        properties:
+          General:
+            name:
+              type: string
+              caption: Name
+              description: 'Object name'
+              required: true
+
+            description:
+              type: string
+              caption: Description
+              description: 'Object description'
+              multiline: true
+              required: false
+
+          Configuration:
+            enabled:
+              type: boolean
+              caption: Enabled
+              description: 'Whether the object is enabled'
+              default: true
+              required: false
+
+            priority:
+              type: enumeration
+              caption: Priority
+              description: 'Object priority level'
+              default: medium
+              required: false
+              enumerationValues:
+                low: Low Priority
+                medium: Medium Priority
+                high: High Priority
+                critical: Critical Priority
+
+          Actions:
+            onClickAction:
+              type: action
+              caption: On Click Action
+              description: 'Action to execute when clicked'
+              required: false
+              actionVariables:
+                - key: item
+                  type: Object
+                  caption: Current Item
+                - key: index
+                  type: Integer
+                  caption: Item Index
+
+            onChangeAction:
+              type: action
+              caption: On Change Action
+              description: 'Action to execute when changed'
+              required: false
+
+    Styling:
+      appearance:
+        type: object
+        caption: Appearance Settings
+        description: 'Visual appearance configuration'
+        required: false
+        properties:
+          Colors:
+            primaryColor:
+              type: string
+              caption: Primary Color
+              description: 'Main color theme'
+              default: '#007bff'
+              required: false
+
+            secondaryColor:
+              type: string
+              caption: Secondary Color
+              description: 'Secondary color theme'
+              default: '#6c757d'
+              required: false
+
+          Typography:
+            fontSize:
+              type: enumeration
+              caption: Font Size
+              description: 'Text size setting'
+              default: medium
+              required: false
+              enumerationValues:
+                small: Small
+                medium: Medium
+                large: Large
+                xlarge: Extra Large
+
+            fontWeight:
+              type: enumeration
+              caption: Font Weight
+              description: 'Text weight setting'
+              default: normal
+              required: false
+              enumerationValues:
+                light: Light
+                normal: Normal
+                bold: Bold

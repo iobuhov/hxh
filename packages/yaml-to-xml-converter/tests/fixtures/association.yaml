@@ -1,0 +1,15 @@
+widget:
+  id: com.mendix.widget.web.test.Association
+  name: Association Test
+  description: 'Test widget with association property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myAssociation:
+        type: association
+        caption: My Association
+        description: 'A test association property'
+        required: false
+        dataSource: datasource

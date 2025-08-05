@@ -1,0 +1,15 @@
+widget:
+  id: com.mendix.widget.web.test.Widgets
+  name: Widgets Test
+  description: 'Test widget with widgets property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myWidgets:
+        type: widgets
+        caption: My Widgets
+        description: 'A test widgets property'
+        required: false
+        dataSource: datasource

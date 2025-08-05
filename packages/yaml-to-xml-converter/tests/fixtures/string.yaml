@@ -1,0 +1,15 @@
+widget:
+  id: com.mendix.widget.web.test.String
+  name: String Test
+  description: 'Test widget with string property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myString:
+        type: string
+        caption: My String
+        description: 'A test string property'
+        default: 'Hello World'
+        required: false

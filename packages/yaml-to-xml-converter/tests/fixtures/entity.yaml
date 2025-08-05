@@ -1,0 +1,14 @@
+widget:
+  id: com.mendix.widget.web.test.Entity
+  name: Entity Test
+  description: 'Test widget with entity property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myEntity:
+        type: entity
+        caption: My Entity
+        description: 'A test entity property'
+        required: false

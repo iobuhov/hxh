@@ -17,7 +17,7 @@
         "build": "tsc",
         "clean": "rm -rf dist",
         "dev": "tsc --watch",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "ava"
     },
     "dependencies": {
         "xml-js": "^1.6.11",
@@ -25,6 +25,7 @@
     },
     "devDependencies": {
         "@types/node": "^22.10.2",
+        "ava": "^6.0.0",
         "typescript": "^5.7.2"
     },
     "keywords": [

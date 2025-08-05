@@ -1,0 +1,14 @@
+widget:
+  id: com.mendix.widget.web.test.TranslatableString
+  name: Translatable String Test
+  description: 'Test widget with translatable string property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myTranslatableString:
+        type: translatableString
+        caption: My Translatable String
+        description: 'A test translatable string property'
+        required: false

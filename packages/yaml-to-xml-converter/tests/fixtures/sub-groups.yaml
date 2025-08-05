@@ -1,0 +1,227 @@
+widget:
+  id: com.mendix.widget.web.test.SubGroups
+  name: Sub Groups Test
+  description: 'Test widget with nested sub-groups within main property groups'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      # Direct properties in General group
+      widgetTitle:
+        type: string
+        caption: Widget Title
+        description: 'Title displayed on the widget'
+        default: 'My Widget'
+        required: false
+
+      # Sub-group within General
+      BasicSettings:
+        enabled:
+          type: boolean
+          caption: Enabled
+          description: 'Whether the widget is enabled'
+          default: true
+          required: false
+
+        visible:
+          type: boolean
+          caption: Visible
+          description: 'Whether the widget is visible'
+          default: true
+          required: false
+
+        readOnly:
+          type: boolean
+          caption: Read Only
+          description: 'Whether the widget is read-only'
+          default: false
+          required: false
+
+      # Another sub-group within General
+      DataSource:
+        entity:
+          type: entity
+          caption: Data Entity
+          description: 'Entity to bind data to'
+          required: false
+
+        attribute:
+          type: attribute
+          caption: Data Attribute
+          description: 'Attribute to display'
+          dataSource: entity
+          required: false
+          attributeTypes:
+            - String
+            - Integer
+            - Boolean
+            - DateTime
+
+    Appearance:
+      # Sub-group for styling
+      Layout:
+        width:
+          type: enumeration
+          caption: Width
+          description: 'Widget width setting'
+          default: auto
+          required: false
+          enumerationValues:
+            auto: Auto
+            small: Small (25%)
+            medium: Medium (50%)
+            large: Large (75%)
+            full: Full Width (100%)
+
+        height:
+          type: enumeration
+          caption: Height
+          description: 'Widget height setting'
+          default: auto
+          required: false
+          enumerationValues:
+            auto: Auto
+            small: Small (100px)
+            medium: Medium (200px)
+            large: Large (400px)
+
+        alignment:
+          type: enumeration
+          caption: Alignment
+          description: 'Content alignment'
+          default: left
+          required: false
+          enumerationValues:
+            left: Left
+            center: Center
+            right: Right
+            justify: Justify
+
+      # Sub-group for colors and themes
+      Theme:
+        colorScheme:
+          type: enumeration
+          caption: Color Scheme
+          description: 'Widget color scheme'
+          default: default
+          required: false
+          enumerationValues:
+            default: Default
+            primary: Primary
+            secondary: Secondary
+            success: Success
+            warning: Warning
+            danger: Danger
+            info: Info
+
+        customColor:
+          type: string
+          caption: Custom Color
+          description: 'Custom color override (hex format)'
+          default: '#ffffff'
+          required: false
+
+        backgroundTransparent:
+          type: boolean
+          caption: Transparent Background
+          description: 'Use transparent background'
+          default: false
+          required: false
+
+    Behavior:
+      # Sub-group for events
+      Events:
+        onClick:
+          type: action
+          caption: On Click
+          description: 'Action when widget is clicked'
+          required: false
+          actionVariables:
+            - key: clickEvent
+              type: String
+              caption: Click Event Type
+
+        onHover:
+          type: action
+          caption: On Hover
+          description: 'Action when widget is hovered'
+          required: false
+
+        onFocus:
+          type: action
+          caption: On Focus
+          description: 'Action when widget receives focus'
+          required: false
+
+      # Sub-group for validation
+      Validation:
+        required:
+          type: boolean
+          caption: Required Field
+          description: 'Whether input is required'
+          default: false
+          required: false
+
+        validationMessage:
+          type: translatableString
+          caption: Validation Message
+          description: 'Message shown when validation fails'
+          required: false
+          translations:
+            en_US: This field is required
+            nl_NL: Dit veld is verplicht
+            de_DE: Dieses Feld ist erforderlich
+
+        validationExpression:
+          type: expression
+          caption: Validation Expression
+          description: 'Custom validation expression'
+          required: false
+          returnType: Boolean
+
+    Advanced:
+      # Sub-group for technical settings
+      Performance:
+        cacheEnabled:
+          type: boolean
+          caption: Enable Caching
+          description: 'Enable result caching for better performance'
+          default: true
+          required: false
+
+        lazyLoading:
+          type: boolean
+          caption: Lazy Loading
+          description: 'Load content only when needed'
+          default: false
+          required: false
+
+        batchSize:
+          type: integer
+          caption: Batch Size
+          description: 'Number of items to process at once'
+          default: 50
+          required: false
+
+      # Sub-group for debugging
+      Debug:
+        debugMode:
+          type: boolean
+          caption: Debug Mode
+          description: 'Enable debug logging'
+          default: false
+          required: false
+
+        logLevel:
+          type: enumeration
+          caption: Log Level
+          description: 'Logging verbosity level'
+          default: info
+          required: false
+          enumerationValues:
+            error: Error
+            warn: Warning
+            info: Information
+            debug: Debug
+            trace: Trace

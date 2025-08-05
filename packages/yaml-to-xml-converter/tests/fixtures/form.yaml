@@ -1,0 +1,14 @@
+widget:
+  id: com.mendix.widget.web.test.Form
+  name: Form Test
+  description: 'Test widget with form property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myForm:
+        type: form
+        caption: My Form
+        description: 'A test form property'
+        required: false

@@ -1,0 +1,14 @@
+widget:
+  id: com.mendix.widget.web.test.EntityConstraint
+  name: Entity Constraint Test
+  description: 'Test widget with entity constraint property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      myEntityConstraint:
+        type: entityConstraint
+        caption: My Entity Constraint
+        description: 'A test entity constraint property'
+        required: false

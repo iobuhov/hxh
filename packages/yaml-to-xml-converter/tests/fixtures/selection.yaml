@@ -1,0 +1,16 @@
+widget:
+  id: com.mendix.widget.web.test.Selection
+  name: Selection Test
+  description: 'Test widget with selection property'
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      mySelection:
+        type: selection
+        caption: My Selection
+        description: 'A test selection property'
+        dataSource: datasource
+        required: false
+        selectionTypes: [None, Single, Multi]
