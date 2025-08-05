@@ -63,7 +63,7 @@ module.exports = {
         {
             files: "*.xml",
             options: {
-                printWidth: 500,
+                printWidth: 120,
                 xmlSelfClosingSpace: true,
                 xmlWhitespaceSensitivity: "preserve"
             }

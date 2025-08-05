@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget id="com.mendix.finch.widget.anchor.Anchor" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+<widget
+    id="com.mendix.finch.widget.anchor.Anchor"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
     <name>Anchor</name>
     <description>Display link with theme styles</description>
     <studioProCategory>Finch</studioProCategory>
@@ -32,7 +41,8 @@
             </property>
             <property key="truncate" type="string" required="false">
                 <caption>Truncate</caption>
-                <description>Side on which Text must be truncated, if true, text is truncated from the start</description>
+                <description
+                >Side on which Text must be truncated, if true, text is truncated from the start</description>
             </property>
             <property key="underline" type="enumeration" required="false" defaultValue="hover">
                 <caption>Underline</caption>
