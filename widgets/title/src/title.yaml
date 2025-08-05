@@ -1,0 +1,22 @@
+lineClamp:
+  originalType: number
+  group: General
+  caption: Line Clamp
+  description: Number of lines after which heading will be truncated
+order:
+  originalType: TitleOrder
+  group: General
+  caption: Order
+  description: Heading order (1-6), controls font-size style if size prop is not set
+  default: "1"
+size:
+  originalType: TitleSize
+  group: General
+  caption: Size
+  description: Changes title size, if not set, then size is controlled by order prop
+textWrap:
+  originalType: '"wrap" | "nowrap" | "balance" | "pretty" | "stable"'
+  group: General
+  caption: Text Wrap
+  description: Heading text-wrap CSS property
+  default: "'wrap'"

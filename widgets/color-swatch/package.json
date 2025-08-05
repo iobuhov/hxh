@@ -16,7 +16,8 @@
         "dev": "mpx -w",
         "lint": "pluggable-widgets-tools lint",
         "test": "pluggable-widgets-tools test:unit:web --no-cache --ci",
-        "test:unit": "pluggable-widgets-tools test:unit:web --coverage"
+        "test:unit": "pluggable-widgets-tools test:unit:web --coverage",
+        "update-xml": "yaml-to-xml src/colorswatch.yaml src/ColorSwatch.xml"
     },
     "dependencies": {
         "@mendix/pluggable-widgets-tools": "catalog:",

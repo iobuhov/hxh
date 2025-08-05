@@ -1,0 +1,38 @@
+label:
+  originalType: React.ReactNode
+  group: General
+  caption: Label
+  description: Label displayed in the center of the ring
+rootColor:
+  originalType: MantineColor
+  group: General
+  caption: Root Color
+  description: Color of the root section, key of theme.colors or CSS color value
+roundCaps:
+  originalType: boolean
+  group: General
+  caption: Round Caps
+  description: Sets whether the edges of the progress circle are rounded
+sections:
+  originalType: RingProgressSection[]
+  group: General
+  caption: Sections
+  description: Ring sections
+size:
+  originalType: number
+  group: General
+  caption: Size
+  description: Width and height of the progress ring
+  default: "120"
+thickness:
+  originalType: number
+  group: General
+  caption: Thickness
+  description: Ring thickness
+  default: "12"
+transitionDuration:
+  originalType: number
+  group: General
+  caption: Transition Duration
+  description: Transition duration of filled section styles changes in ms
+  default: "0"

@@ -1,0 +1,11 @@
+legend:
+  originalType: React.ReactNode
+  group: General
+  caption: Legend
+  description: Fieldset legend
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: theme.defaultRadius

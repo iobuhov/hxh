@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget id="com.mendix.finch.widget.button.Button" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.Button" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Button</name>
     <description>Button widget</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioProCategory />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
             <property key="autoContrast" type="boolean" required="false">
@@ -26,7 +28,7 @@
                 <caption>Full Width</caption>
                 <description>If set, the button takes 100% width of its parent container</description>
             </property>
-            <property key="gradient" type="string" required="false">
+            <property key="gradient" type="string" required="false" defaultValue="theme.defaultGradient">
                 <caption>Gradient</caption>
                 <description>Gradient configuration used when variant="gradient"</description>
             </property>
@@ -46,7 +48,7 @@
                 <caption>Loading</caption>
                 <description>If set, the Loader component is displayed over the button</description>
             </property>
-            <property key="radius" type="string" required="false">
+            <property key="radius" type="string" required="false" defaultValue="theme.defaultRadius">
                 <caption>Radius</caption>
                 <description>Key of theme.radius or any valid CSS value to set border-radius</description>
             </property>

@@ -1,23 +1,79 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.checkbox.Checkbox"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.Checkbox" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Checkbox</name>
     <description>Capture boolean input from user</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioProCategory />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="autoContrast" type="boolean" required="false">
+                <caption>Auto Contrast</caption>
+                <description>If set, adjusts text color based on background color for filled variant</description>
+            </property>
+            <property key="color" type="string" required="false" defaultValue="theme.primaryColor">
+                <caption>Color</caption>
+                <description>Key of theme.colors or any valid CSS color to set input background color in checked state</description>
+            </property>
+            <property key="description" type="string" required="false">
+                <caption>Description</caption>
+                <description>Description displayed below the label</description>
+            </property>
+            <property key="error" type="string" required="false">
+                <caption>Error</caption>
+                <description>Error message displayed below the label</description>
+            </property>
+            <property key="icon" type="icon" required="false">
+                <caption>Icon</caption>
+                <description>Icon displayed when checkbox is in checked or indeterminate state</description>
+            </property>
+            <property key="iconColor" type="string" required="false">
+                <caption>Icon Color</caption>
+                <description>Key of theme.colors or any valid CSS color to set icon color. By default, depends on theme.autoContrast.</description>
+            </property>
+            <property key="id" type="string" required="false">
+                <caption>Id</caption>
+                <description>Unique input id</description>
+            </property>
+            <property key="indeterminate" type="boolean" required="false">
+                <caption>Indeterminate</caption>
+                <description>Indeterminate state of the checkbox. If set, checked prop is ignored.</description>
+            </property>
+            <property key="label" type="string" required="false">
+                <caption>Label</caption>
+                <description>label associated with the checkbox</description>
+            </property>
+            <property key="labelPosition" type="enumeration" required="false" defaultValue="right">
+                <caption>Label Position</caption>
+                <description>Position of the label relative to the input</description>
+                <enumerationValues>
+                    <enumerationValue key="left">left</enumerationValue>
+                    <enumerationValue key="right">right</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="radius" type="string" required="false" defaultValue="theme.defaultRadius">
+                <caption>Radius</caption>
+                <description>Key of theme.radius or any valid CSS value to set border-radius</description>
+            </property>
+            <property key="rootRef" type="string" required="false">
+                <caption>Root Ref</caption>
+                <description>Root element ref</description>
+            </property>
+            <property key="size" type="enumeration" required="false" defaultValue="sm">
+                <caption>Size</caption>
+                <description>Controls size of the component</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">xs</enumerationValue>
+                    <enumerationValue key="sm">sm</enumerationValue>
+                    <enumerationValue key="md">md</enumerationValue>
+                    <enumerationValue key="lg">lg</enumerationValue>
+                    <enumerationValue key="xl">xl</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="wrapperProps" type="string" required="false">
+                <caption>Wrapper Props</caption>
+                <description>Props passed down to the root element</description>
             </property>
         </propertyGroup>
     </properties>

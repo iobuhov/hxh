@@ -1,0 +1,99 @@
+widget:
+  id: com.mendix.finch.widget.Chip
+  name: Chip
+  description: Removable and non-removable tags
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      autoContrast:
+        type: boolean
+        caption: Auto Contrast
+        description: If set, adjusts text color based on background color for filled variant
+        required: false
+
+      checked:
+        type: boolean
+        caption: Checked
+        description: Checked state for controlled component
+        required: false
+
+      children:
+        type: string
+        caption: Children
+        description: label element associated with the input
+        required: false
+
+      color:
+        type: string
+        caption: Color
+        description: Controls components colors based on variant prop. Key of theme.colors or any valid CSS color.
+        required: false
+        default: theme.primaryColor
+
+      defaultChecked:
+        type: boolean
+        caption: Default Checked
+        description: Default checked state for uncontrolled component
+        required: false
+
+      icon:
+        type: icon
+        caption: Icon
+        description: Any element or component to replace default icon
+        required: false
+
+      id:
+        type: string
+        caption: Id
+        description: Unique input id
+        required: false
+
+      onChange:
+        type: action
+        caption: On Change
+        description: Calls when checked state changes
+        required: false
+
+      radius:
+        type: string
+        caption: Radius
+        description: Key of theme.radius or any valid CSS value to set border-radius
+        required: false
+        default: xl
+
+      rootRef:
+        type: string
+        caption: Root Ref
+        description: Assigns ref of the root element
+        required: false
+
+      size:
+        type: enumeration
+        caption: Size
+        description: Controls various properties related to component size
+        required: false
+        default: sm
+        enumerationValues:
+          xs: xs
+          sm: sm
+          md: md
+          lg: lg
+          xl: xl
+
+      type:
+        type: enumeration
+        caption: Type
+        description: Chip input type
+        required: false
+        default: checkbox
+        enumerationValues:
+          checkbox: checkbox
+          radio: radio
+
+      wrapperProps:
+        type: string
+        caption: Wrapper Props
+        description: Props passed down to the root element
+        required: false

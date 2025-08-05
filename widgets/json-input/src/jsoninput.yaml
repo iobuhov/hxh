@@ -1,0 +1,208 @@
+autosize:
+  originalType: boolean
+  group: General
+  caption: Autosize
+  description: If set, enables textarea height growing with its content
+  default: "false"
+defaultValue:
+  originalType: string
+  group: General
+  caption: Default Value
+  description: Uncontrolled component default value
+description:
+  originalType: React.ReactNode
+  group: General
+  caption: Description
+  description: Contents of Input.Description component. If not set, description is
+    not displayed.
+descriptionProps:
+  originalType: (InputDescriptionProps & DataAttributes)
+  group: General
+  caption: Description Props
+  description: Props passed down to the Input.Description component
+deserialize:
+  originalType: "((text: string, reviver?: ((this: any, key: string, value: any)
+    => any)) => any) | undefined"
+  group: General
+  caption: Deserialize
+  description: Function to deserialize string value, used for value formatting and
+    input JSON validation, must throw error if string cannot be processed
+  default: JSON.parse
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Sets disabled attribute on the input element
+error:
+  originalType: React.ReactNode
+  group: General
+  caption: Error
+  description: Contents of Input.Error component. If not set, error is not displayed.
+errorProps:
+  originalType: (InputErrorProps & DataAttributes)
+  group: General
+  caption: Error Props
+  description: Props passed down to the Input.Error component
+formatOnBlur:
+  originalType: boolean
+  group: General
+  caption: Format On Blur
+  description: Determines whether the value should be formatted on blur
+  default: "false"
+inputContainer:
+  originalType: "((children: ReactNode) => ReactNode)"
+  group: General
+  caption: Input Container
+  description: Input container component
+  default: React.Fragment
+inputSize:
+  originalType: string
+  group: General
+  caption: Input Size
+  description: size attribute passed down to the input element
+inputWrapperOrder:
+  originalType: ("input" | "label" | "description" | "error")[]
+  group: General
+  caption: Input Wrapper Order
+  description: Controls order of the elements
+  default: "['label', 'description', 'input', 'error']"
+label:
+  originalType: React.ReactNode
+  group: General
+  caption: Label
+  description: Contents of Input.Label component. If not set, label is not displayed.
+labelProps:
+  originalType: (InputLabelProps & DataAttributes)
+  group: General
+  caption: Label Props
+  description: Props passed down to the Input.Label component
+leftSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Left Section
+  description: Content section displayed on the left side of the input
+leftSectionPointerEvents:
+  originalType: React.CSSProperties["pointerEvents"]
+  group: General
+  caption: Left Section Pointer Events
+  description: Sets pointer-events styles on the leftSection element
+  default: "'none'"
+leftSectionProps:
+  originalType: React.ComponentPropsWithoutRef<"div">
+  group: General
+  caption: Left Section Props
+  description: Props passed down to the leftSection element
+leftSectionWidth:
+  originalType: React.CSSProperties["width"]
+  group: General
+  caption: Left Section Width
+  description: Left section width, used to set width of the section and input
+    padding-left, by default equals to the input height
+maxRows:
+  originalType: number
+  group: General
+  caption: Max Rows
+  description: Maximum rows for autosize textarea to grow, ignored if autosize
+    prop is not set
+minRows:
+  originalType: number
+  group: General
+  caption: Min Rows
+  description: Minimum rows of autosize textarea, ignored if autosize prop is not set
+onChange:
+  originalType: "((value: string) => void)"
+  group: General
+  caption: On Change
+  description: Called when value changes
+pointer:
+  originalType: boolean
+  group: General
+  caption: Pointer
+  description: "Determines whether the input should have cursor: pointer style"
+  default: "false"
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: theme.defaultRadius
+required:
+  originalType: boolean
+  group: General
+  caption: Required
+  description: Adds required attribute to the input and a red asterisk on the
+    right side of label
+  default: "false"
+resize:
+  originalType: Resize
+  group: General
+  caption: Resize
+  description: Controls resize CSS property
+  default: "'none'"
+rightSection:
+  originalType: React.ReactNode
+  group: General
+  caption: Right Section
+  description: Content section displayed on the right side of the input
+rightSectionPointerEvents:
+  originalType: React.CSSProperties["pointerEvents"]
+  group: General
+  caption: Right Section Pointer Events
+  description: Sets pointer-events styles on the rightSection element
+  default: "'none'"
+rightSectionProps:
+  originalType: React.ComponentPropsWithoutRef<"div">
+  group: General
+  caption: Right Section Props
+  description: Props passed down to the rightSection element
+rightSectionWidth:
+  originalType: React.CSSProperties["width"]
+  group: General
+  caption: Right Section Width
+  description: Right section width, used to set width of the section and input
+    padding-right, by default equals to the input height
+serialize:
+  originalType: "{ (value: any, replacer?: ((this: any, key: string, value: any)
+    => any), space?: string | number | undefined): string; (value: any,
+    replacer?: (string | number)[] | null | undefined, space?: string | ... 1
+    more ... | undefined): string; } | undefined"
+  group: General
+  caption: Serialize
+  description: Function to serialize value into a string, used for value formatting
+  default: JSON.stringify
+size:
+  originalType: MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls input height and horizontal padding
+  default: "'sm'"
+validationError:
+  originalType: React.ReactNode
+  group: General
+  caption: Validation Error
+  description: Error message displayed when value is not valid JSON
+value:
+  originalType: string
+  group: General
+  caption: Value
+  description: Controlled component value
+withAsterisk:
+  originalType: boolean
+  group: General
+  caption: With Asterisk
+  description: If set, the required asterisk is displayed next to the label.
+    Overrides required prop. Does not add required attribute to the input.
+  default: "false"
+withErrorStyles:
+  originalType: boolean
+  group: General
+  caption: With Error Styles
+  description: Determines whether the input should have red border and red text
+    color when the error prop is set
+  default: "true"
+wrapperProps:
+  originalType: WrapperProps
+  group: General
+  caption: Wrapper Props
+  description: Props passed down to the root element

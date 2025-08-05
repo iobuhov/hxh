@@ -1,0 +1,34 @@
+widget:
+  id: com.mendix.finch.widget.Container
+  name: Container
+  description: Center content with padding and max-width
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      fluid:
+        type: boolean
+        caption: Fluid
+        description: If set, the container takes 100% width of its parent and size prop is ignored.
+        required: false
+        default: false
+
+      size:
+        type: string
+        caption: Size
+        description:
+          max-width of the container, value is not responsive – it is the same for all screen sizes. Numbers are
+          converted to rem. Ignored when fluid prop is set.
+        required: false
+        default: md
+
+      strategy:
+        type: enumeration
+        caption: Strategy
+        description: Centering strategy
+        required: false
+        default: block
+        enumerationValues:
+          block: block
+          grid: grid

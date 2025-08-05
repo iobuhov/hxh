@@ -1,0 +1,21 @@
+widget:
+  id: com.mendix.finch.widget.BackgroundImage
+  name: BackgroundImage
+  description: Displays image as background
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      radius:
+        type: string
+        caption: Radius
+        description: Key of theme.radius or any valid CSS value to set border-radius, numbers are converted to rem
+        required: false
+        default: 0
+
+      src:
+        type: string
+        caption: Src
+        description: Image url
+        required: false

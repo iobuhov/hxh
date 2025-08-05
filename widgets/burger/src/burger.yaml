@@ -1,0 +1,35 @@
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors of any valid CSS value, by default theme.white
+    in dark color scheme and theme.black in light
+lineSize:
+  originalType: string | number
+  group: General
+  caption: Line Size
+  description: Controls height of lines, by default calculated based on size prop
+opened:
+  originalType: boolean
+  group: General
+  caption: Opened
+  description: State of the burger, when true burger is transformed into X
+  default: "false"
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls burger width and height, numbers are converted to rem
+  default: "'md'"
+transitionDuration:
+  originalType: number
+  group: General
+  caption: Transition Duration
+  description: transition-duration property value in ms
+  default: "300"
+transitionTimingFunction:
+  originalType: string
+  group: General
+  caption: Transition Timing Function
+  description: transition-timing-function property value
+  default: "'ease'"

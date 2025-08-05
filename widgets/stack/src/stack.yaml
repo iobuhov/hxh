@@ -1,0 +1,19 @@
+align:
+  originalType: AlignItems
+  group: General
+  caption: Align
+  description: Controls align-items CSS property
+  default: "'stretch'"
+gap:
+  originalType: MantineSpacing
+  group: General
+  caption: Gap
+  description: Key of theme.spacing or any valid CSS value to set gap property,
+    numbers are converted to rem
+  default: "'md'"
+justify:
+  originalType: JustifyContent
+  group: General
+  caption: Justify
+  description: Controls justify-content CSS property
+  default: "'flex-start'"

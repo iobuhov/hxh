@@ -1,0 +1,87 @@
+activateTabWithKeyboard:
+  originalType: boolean
+  group: General
+  caption: Activate Tab With Keyboard
+  description: If set, tab is activated with arrow key press
+  default: "true"
+allowTabDeactivation:
+  originalType: boolean
+  group: General
+  caption: Allow Tab Deactivation
+  description: If set, tab can be deactivated
+  default: "false"
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for pills variant
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Tabs content
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Changes colors of Tabs.Tab components when variant is pills or
+    default, does nothing for other variants
+defaultValue:
+  originalType: string | null
+  group: General
+  caption: Default Value
+  description: Uncontrolled component default value
+id:
+  originalType: string
+  group: General
+  caption: Id
+  description: Base id, used to generate ids to connect labels with controls,
+    generated randomly by default
+inverted:
+  originalType: boolean
+  group: General
+  caption: Inverted
+  description: Determines whether tabs should have inverted styles
+  default: "false"
+keepMounted:
+  originalType: boolean
+  group: General
+  caption: Keep Mounted
+  description: If set to false, Tabs.Panel content will be unmounted when the
+    associated tab is not active
+  default: "true"
+loop:
+  originalType: boolean
+  group: General
+  caption: Loop
+  description: If set, arrow key presses loop though items (first to last and last to first)
+  default: "true"
+onChange:
+  originalType: "((value: string | null) => void)"
+  group: General
+  caption: On Change
+  description: Called when value changes
+orientation:
+  originalType: '"horizontal" | "vertical"'
+  group: General
+  caption: Orientation
+  description: Tabs orientation
+  default: "'horizontal'"
+placement:
+  originalType: '"left" | "right"'
+  group: General
+  caption: Placement
+  description: Tabs.List placement relative to Tabs.Panel, applicable only when
+    orientation="vertical"
+  default: "'left'"
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set
+    border-radius@default theme.defaultRadius
+value:
+  originalType: string | null
+  group: General
+  caption: Value
+  description: Controlled component value

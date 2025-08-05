@@ -1,0 +1,45 @@
+center:
+  originalType: boolean
+  group: General
+  caption: Center
+  description: Determines whether items must be centered with their icon
+  default: "false"
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: List.Item components
+icon:
+  originalType: React.ReactNode
+  group: General
+  caption: Icon
+  description: Icon to replace list item dot
+listStyleType:
+  originalType: ListStyleType
+  group: General
+  caption: List Style Type
+  description: Controls list-style-type, by default inferred from type
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Controls font-size and line-height
+  default: "'md'"
+spacing:
+  originalType: MantineSpacing
+  group: General
+  caption: Spacing
+  description: Key of theme.spacing or any valid CSS value to set spacing between items
+  default: "0"
+type:
+  originalType: '"ordered" | "unordered"'
+  group: General
+  caption: Type
+  description: List type
+  default: "'unordered'"
+withPadding:
+  originalType: boolean
+  group: General
+  caption: With Padding
+  description: Determines whether list items should be offset with padding
+  default: "false"

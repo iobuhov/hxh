@@ -1,0 +1,58 @@
+emptySegmentColor:
+  originalType: MantineColor
+  group: General
+  caption: Empty Segment Color
+  description: Key of theme.colors or any valid CSS color value, by default the
+    value is determined based on the color scheme value
+fillDirection:
+  originalType: '"right-to-left" | "left-to-right"'
+  group: General
+  caption: Fill Direction
+  description: Direction from which the circle is filled
+  default: "'left-to-right'"
+filledSegmentColor:
+  originalType: MantineColor
+  group: General
+  caption: Filled Segment Color
+  description: Key of theme.colors or any valid CSS color value
+  default: theme.primaryColor
+label:
+  originalType: React.ReactNode
+  group: General
+  caption: Label
+  description: Label rendered inside the circle
+labelPosition:
+  originalType: '"center" | "bottom"'
+  group: General
+  caption: Label Position
+  description: Label position relative to the circle center
+  default: "'bottom'"
+orientation:
+  originalType: '"up" | "down"'
+  group: General
+  caption: Orientation
+  description: Orientation of the circle
+  default: "'up'"
+size:
+  originalType: number
+  group: General
+  caption: Size
+  description: Diameter of the svg in px
+  default: "200"
+thickness:
+  originalType: number
+  group: General
+  caption: Thickness
+  description: Circle thickness in px
+  default: "12"
+transitionDuration:
+  originalType: number
+  group: General
+  caption: Transition Duration
+  description: Transition duration of filled section styles changes in ms
+  default: "0"
+value:
+  originalType: number
+  group: General
+  caption: Value
+  description: Progress value from 0 to 100

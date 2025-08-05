@@ -1,0 +1,47 @@
+align:
+  originalType: AlignItems
+  group: General
+  caption: Align
+  description: Sets align-items
+  default: stretch
+breakpoints:
+  originalType: GridBreakpoints
+  group: General
+  caption: Breakpoints
+  description: Breakpoints values, only used with type="container"
+columns:
+  originalType: number
+  group: General
+  caption: Columns
+  description: Number of columns in each row
+  default: "12"
+grow:
+  originalType: boolean
+  group: General
+  caption: Grow
+  description: If set, columns in the last row expand to fill all available space
+  default: "false"
+gutter:
+  originalType: StyleProp<MantineSpacing>
+  group: General
+  caption: Gutter
+  description: Gutter between columns, key of theme.spacing or any valid CSS value
+  default: "'md'"
+justify:
+  originalType: JustifyContent
+  group: General
+  caption: Justify
+  description: Sets justify-content
+  default: flex-start
+overflow:
+  originalType: Overflow
+  group: General
+  caption: Overflow
+  description: Sets overflow CSS property on the root element
+  default: "'visible'"
+type:
+  originalType: '"media" | "container"'
+  group: General
+  caption: Type
+  description: Type of queries used for responsive styles
+  default: "'media'"

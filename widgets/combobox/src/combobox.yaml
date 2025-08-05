@@ -1,0 +1,276 @@
+widget:
+  id: com.mendix.finch.widget.Combobox
+  name: Combobox
+  description: Create custom select, autocomplete or multiselect inputs
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      arrowOffset:
+        type: integer
+        caption: Arrow Offset
+        description: Arrow offset in px
+        required: false
+        default: 5
+
+      arrowPosition:
+        type: string
+        caption: Arrow Position
+        description: Arrow position
+        required: false
+
+      arrowRadius:
+        type: integer
+        caption: Arrow Radius
+        description: Arrow border-radius in px
+        required: false
+        default: 0
+
+      arrowSize:
+        type: integer
+        caption: Arrow Size
+        description: Arrow size in px
+        required: false
+        default: 7
+
+      children:
+        type: string
+        caption: Children
+        description: Combobox content
+        required: false
+
+      disabled:
+        type: boolean
+        caption: Disabled
+        description: If set, popover dropdown will not be rendered
+        required: false
+
+      dropdownPadding:
+        type: string
+        caption: Dropdown Padding
+        description: Controls padding of the dropdown
+        required: false
+        default: 4
+
+      floatingStrategy:
+        type: enumeration
+        caption: Floating Strategy
+        description: Changes floating ui position strategy
+        required: false
+        default: absolute
+        enumerationValues:
+          absolute: absolute
+          fixed: fixed
+
+      hideDetached:
+        type: boolean
+        caption: Hide Detached
+        description: If set, the dropdown is hidden when the element is hidden with styles or not visible on the screen
+        required: false
+        default: true
+
+      keepMounted:
+        type: boolean
+        caption: Keep Mounted
+        description:
+          If set, the dropdown is not unmounted from the DOM when hidden. display none styles are added instead.
+        required: false
+
+      middlewares:
+        type: string
+        caption: Middlewares
+        description: Floating ui middlewares to configure position handling
+        required: false
+        default: '{ flip: true, shift: true, inline: false }'
+
+      offset:
+        type: string
+        caption: Offset
+        description: Offset of the dropdown element
+        required: false
+        default: 8
+
+      onClose:
+        type: action
+        caption: On Close
+        description: Called when dropdown closes
+        required: false
+
+      onDismiss:
+        type: action
+        caption: On Dismiss
+        description: Called when the popover is dismissed by clicking outside or by pressing escape
+        required: false
+
+      onEnterTransitionEnd:
+        type: action
+        caption: On Enter Transition End
+        description: Called when enter transition ends
+        required: false
+
+      onExitTransitionEnd:
+        type: action
+        caption: On Exit Transition End
+        description: Called when exit transition ends
+        required: false
+
+      onOpen:
+        type: action
+        caption: On Open
+        description: Called when dropdown opens
+        required: false
+
+      onOptionSubmit:
+        type: action
+        caption: On Option Submit
+        description: Called when item is selected with the Enter key or by clicking it
+        required: false
+
+      onPositionChange:
+        type: action
+        caption: On Position Change
+        description: Called when dropdown position changes
+        required: false
+
+      overlayProps:
+        type: string
+        caption: Overlay Props
+        description: Props passed down to Overlay component
+        required: false
+
+      portalProps:
+        type: string
+        caption: Portal Props
+        description: Props to pass down to the Portal when withinPortal is true
+        required: false
+
+      position:
+        type: enumeration
+        caption: Position
+        description: Dropdown position relative to the target element
+        required: false
+        default: bottom
+        enumerationValues:
+          top: top
+          bottom: bottom
+          left: left
+          right: right
+          top-start: top-start
+          top-end: top-end
+          bottom-start: bottom-start
+          bottom-end: bottom-end
+          left-start: left-start
+          left-end: left-end
+          right-start: right-start
+          right-end: right-end
+
+      positionDependencies:
+        type: string
+        caption: Position Dependencies
+        description: '@deprecated : Do not use, will be removed in 9.0'
+        required: false
+
+      preventPositionChangeWhenVisible:
+        type: boolean
+        caption: Prevent Position Change When Visible
+        description: Prevents popover from flipping/shifting when it the dropdown is visible
+        required: false
+
+      radius:
+        type: string
+        caption: Radius
+        description: Key of theme.radius or any valid CSS value to set border-radius
+        required: false
+        default: theme.defaultRadius
+
+      readOnly:
+        type: boolean
+        caption: Read Only
+        description: Determines whether the Combobox value can be changed
+        required: false
+
+      resetSelectionOnOptionHover:
+        type: boolean
+        caption: Reset Selection On Option Hover
+        description: Determines whether selection should be reset when option is hovered
+        required: false
+        default: false
+
+      returnFocus:
+        type: boolean
+        caption: Return Focus
+        description: Determines whether focus should be automatically returned to control when dropdown closes
+        required: false
+        default: false
+
+      shadow:
+        type: string
+        caption: Shadow
+        description: Key of theme.shadows or any other valid CSS box-shadow value
+        required: false
+
+      size:
+        type: enumeration
+        caption: Size
+        description: Controls items font-size and padding
+        required: false
+        default: sm
+        enumerationValues:
+          xs: xs
+          sm: sm
+          md: md
+          lg: lg
+          xl: xl
+
+      store:
+        type: string
+        caption: Store
+        description: Combobox store, can be used to control combobox state
+        required: false
+
+      transitionProps:
+        type: string
+        caption: Transition Props
+        description: Props passed down to the Transition component. Use to configure duration and animation type.
+        required: false
+        default: "{ duration: 150, transition: 'fade' }"
+
+      width:
+        type: enumeration
+        caption: Width
+        description: Dropdown width, or 'target' to make dropdown width the same as target element
+        required: false
+        default: max-content
+        enumerationValues:
+          target: target
+          max-content: max-content
+          min-content: min-content
+
+      withArrow:
+        type: boolean
+        caption: With Arrow
+        description: Determines whether component should have an arrow
+        required: false
+        default: false
+
+      withOverlay:
+        type: boolean
+        caption: With Overlay
+        description: Determines whether the overlay should be displayed when the dropdown is opened
+        required: false
+        default: false
+
+      withinPortal:
+        type: boolean
+        caption: Within Portal
+        description: Determines whether dropdown should be rendered within the Portal
+        required: false
+        default: true
+
+      zIndex:
+        type: string
+        caption: ZIndex
+        description: Dropdown z-index
+        required: false
+        default: 300

@@ -1,0 +1,28 @@
+cite:
+  originalType: React.ReactNode
+  group: General
+  caption: Cite
+  description: Reference to a cited quote
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color
+  default: theme.primaryColor
+icon:
+  originalType: React.ReactNode
+  group: General
+  caption: Icon
+  description: Blockquote icon, displayed at the top left side
+iconSize:
+  originalType: string | number
+  group: General
+  caption: Icon Size
+  description: Controls icon width and height, numbers are converted to rem
+  default: "40"
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: theme.defaultRadius

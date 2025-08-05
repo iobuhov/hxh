@@ -4,7 +4,7 @@ widget:
   description: Divide content into collapsible sections
   pluginWidget: true
   offlineCapable: false
-
+  
   properties:
     General:
       chevron:
@@ -12,14 +12,14 @@ widget:
         caption: Chevron
         description: Custom chevron icon
         required: false
-
+        
       chevronIconSize:
         type: string
         caption: Chevron Icon Size
         description: Size of the default chevron icon. Ignored when chevron prop is set.
         required: false
         default: 16
-
+        
       chevronPosition:
         type: enumeration
         caption: Chevron Position
@@ -29,45 +29,45 @@ widget:
         enumerationValues:
           left: left
           right: right
-
+        
       chevronSize:
         type: string
         caption: Chevron Size
         description: Size of the chevron icon container
         required: false
         default: auto
-
+        
       defaultValue:
         type: attribute
         caption: Default Value
         description: Uncontrolled component default value
         required: false
-
+        
       disableChevronRotation:
         type: boolean
         caption: Disable Chevron Rotation
         description: If set, chevron rotation is disabled
         required: false
-
+        
       loop:
         type: boolean
         caption: Loop
         description: If set, arrow keys loop though items (first to last and last to first)
         required: false
         default: true
-
+        
       multiple:
         type: boolean
         caption: Multiple
         description: If set, multiple items can be opened at the same time
         required: false
-
+        
       onChange:
         type: action
         caption: On Change
         description: Called when value changes, payload type depends on multiple prop
         required: false
-
+        
       order:
         type: enumeration
         caption: Order
@@ -79,21 +79,21 @@ widget:
           4: 4
           5: 5
           6: 6
-
+        
       radius:
         type: string
         caption: Radius
         description: Key of theme.radius or any valid CSS value to set border-radius. Numbers are converted to rem.
         required: false
         default: theme.defaultRadius
-
+        
       transitionDuration:
         type: integer
         caption: Transition Duration
         description: Transition duration in ms
         required: false
         default: 200
-
+        
       value:
         type: attribute
         caption: Value

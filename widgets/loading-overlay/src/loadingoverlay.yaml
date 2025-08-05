@@ -1,0 +1,28 @@
+loaderProps:
+  originalType: LoaderProps
+  group: General
+  caption: Loader Props
+  description: Props passed down to Loader component
+overlayProps:
+  originalType: OverlayProps
+  group: General
+  caption: Overlay Props
+  description: Props passed down to Overlay component
+transitionProps:
+  originalType: TransitionProps
+  group: General
+  caption: Transition Props
+  description: Props passed down to Transition component
+  default: "{ transition: 'fade', duration: 0 }"
+visible:
+  originalType: boolean
+  group: General
+  caption: Visible
+  description: Determines whether the overlay should be visible
+  default: "false"
+zIndex:
+  originalType: string | number
+  group: General
+  caption: ZIndex
+  description: Controls overlay z-index
+  default: "400"

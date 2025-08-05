@@ -1,0 +1,40 @@
+widget:
+  id: com.mendix.finch.widget.Card
+  name: Card
+  description: Card with sections
+  pluginWidget: true
+  offlineCapable: false
+  
+  properties:
+    General:
+      children:
+        type: string
+        caption: Children
+        description: Card content
+        required: false
+        
+      padding:
+        type: string
+        caption: Padding
+        description: Key of theme.spacing or any valid CSS value to set padding
+        required: false
+        default: 'md'
+        
+      radius:
+        type: string
+        caption: Radius
+        description: Key of theme.radius or any valid CSS value to set border-radius, numbers are converted to rem
+        required: false
+        default: theme.defaultRadius
+        
+      shadow:
+        type: string
+        caption: Shadow
+        description: Key of theme.shadows or any valid CSS value to set box-shadow
+        required: false
+        
+      withBorder:
+        type: boolean
+        caption: With Border
+        description: Adds border to the card
+        required: false

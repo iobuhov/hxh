@@ -22,6 +22,7 @@
     "dependencies": {
         "@mendix/pluggable-widgets-tools": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
+        "@mendix/yaml-to-xml-converter": "workspace:*",
         "classnames": "catalog:",
         "mendix": "catalog:",
         "mpx": "*"

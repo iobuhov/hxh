@@ -1,0 +1,92 @@
+widget:
+  id: com.mendix.finch.widget.Button
+  name: Button
+  description: Button widget
+  pluginWidget: true
+  offlineCapable: false
+  
+  properties:
+    General:
+      autoContrast:
+        type: boolean
+        caption: Auto Contrast
+        description: If set, adjusts text color based on background color for filled variant
+        required: false
+        
+      children:
+        type: string
+        caption: Children
+        description: Button content
+        required: false
+        
+      color:
+        type: string
+        caption: Color
+        description: Key of theme.colors or any valid CSS color
+        required: false
+        default: theme.primaryColor
+        
+      disabled:
+        type: boolean
+        caption: Disabled
+        description: Sets disabled attribute, applies disabled styles
+        required: false
+        
+      fullWidth:
+        type: boolean
+        caption: Full Width
+        description: If set, the button takes 100% width of its parent container
+        required: false
+        default: false
+        
+      gradient:
+        type: string
+        caption: Gradient
+        description: Gradient configuration used when variant="gradient"
+        required: false
+        default: theme.defaultGradient
+        
+      justify:
+        type: string
+        caption: Justify
+        description: Sets justify-content of inner element, can be used to change distribution of sections and label
+        required: false
+        default: 'center'
+        
+      leftSection:
+        type: string
+        caption: Left Section
+        description: Content displayed on the left side of the button label
+        required: false
+        
+      loaderProps:
+        type: string
+        caption: Loader Props
+        description: Props added to the Loader component (only visible when loading prop is set)
+        required: false
+        
+      loading:
+        type: boolean
+        caption: Loading
+        description: If set, the Loader component is displayed over the button
+        required: false
+        
+      radius:
+        type: string
+        caption: Radius
+        description: Key of theme.radius or any valid CSS value to set border-radius
+        required: false
+        default: theme.defaultRadius
+        
+      rightSection:
+        type: string
+        caption: Right Section
+        description: Content displayed on the right side of the button label
+        required: false
+        
+      size:
+        type: string
+        caption: Size
+        description: Controls button height, font-size and horizontal padding
+        required: false
+        default: 'sm'

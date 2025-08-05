@@ -1,0 +1,20 @@
+widget:
+  id: com.mendix.finch.widget.Center
+  name: Center
+  description: Centers content vertically and horizontally
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      children:
+        type: string
+        caption: Children
+        description: Content to center
+        required: false
+
+      inline:
+        type: boolean
+        caption: Inline
+        description: If set, inline-flex is used instead of flex
+        required: false

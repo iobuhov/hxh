@@ -1,0 +1,106 @@
+widget:
+  id: com.mendix.finch.widget.Checkbox
+  name: Checkbox
+  description: Capture boolean input from user
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      autoContrast:
+        type: boolean
+        caption: Auto Contrast
+        description: If set, adjusts text color based on background color for filled variant
+        required: false
+
+      color:
+        type: string
+        caption: Color
+        description: Key of theme.colors or any valid CSS color to set input background color in checked state
+        required: false
+        default: theme.primaryColor
+
+      description:
+        type: string
+        caption: Description
+        description: Description displayed below the label
+        required: false
+
+      error:
+        type: string
+        caption: Error
+        description: Error message displayed below the label
+        required: false
+
+      icon:
+        type: icon
+        caption: Icon
+        description: Icon displayed when checkbox is in checked or indeterminate state
+        required: false
+
+      iconColor:
+        type: string
+        caption: Icon Color
+        description:
+          Key of theme.colors or any valid CSS color to set icon color. By default, depends on theme.autoContrast.
+        required: false
+
+      id:
+        type: string
+        caption: Id
+        description: Unique input id
+        required: false
+
+      indeterminate:
+        type: boolean
+        caption: Indeterminate
+        description: Indeterminate state of the checkbox. If set, checked prop is ignored.
+        required: false
+
+      label:
+        type: string
+        caption: Label
+        description: label associated with the checkbox
+        required: false
+
+      labelPosition:
+        type: enumeration
+        caption: Label Position
+        description: Position of the label relative to the input
+        required: false
+        default: right
+        enumerationValues:
+          left: left
+          right: right
+
+      radius:
+        type: string
+        caption: Radius
+        description: Key of theme.radius or any valid CSS value to set border-radius
+        required: false
+        default: theme.defaultRadius
+
+      rootRef:
+        type: string
+        caption: Root Ref
+        description: Root element ref
+        required: false
+
+      size:
+        type: enumeration
+        caption: Size
+        description: Controls size of the component
+        required: false
+        default: sm
+        enumerationValues:
+          xs: xs
+          sm: sm
+          md: md
+          lg: lg
+          xl: xl
+
+      wrapperProps:
+        type: string
+        caption: Wrapper Props
+        description: Props passed down to the root element
+        required: false

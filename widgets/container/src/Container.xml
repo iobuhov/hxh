@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.container.Container"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.Container" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Container</name>
     <description>Center content with padding and max-width</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioProCategory />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="fluid" type="boolean" required="false" defaultValue="false">
+                <caption>Fluid</caption>
+                <description>If set, the container takes 100% width of its parent and size prop is ignored.</description>
+            </property>
+            <property key="size" type="string" required="false" defaultValue="md">
+                <caption>Size</caption>
+                <description>max-width of the container, value is not responsive – it is the same for all screen sizes. Numbers are converted to rem. Ignored when fluid prop is set.</description>
+            </property>
+            <property key="strategy" type="enumeration" required="false" defaultValue="block">
+                <caption>Strategy</caption>
+                <description>Centering strategy</description>
+                <enumerationValues>
+                    <enumerationValue key="block">block</enumerationValue>
+                    <enumerationValue key="grid">grid</enumerationValue>
+                </enumerationValues>
             </property>
         </propertyGroup>
     </properties>

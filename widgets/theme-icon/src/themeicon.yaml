@@ -1,0 +1,35 @@
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Icon displayed inside the component
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color.
+  default: theme.primaryColor
+gradient:
+  originalType: MantineGradient
+  group: General
+  caption: Gradient
+  description: Gradient data used when variant="gradient"
+  default: theme.defaultGradient
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius.
+    Numbers are converted to rem.
+  default: theme.defaultRadius
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls width and height of the button. Numbers are converted to rem.
+  default: "'md'"

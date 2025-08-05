@@ -1,0 +1,49 @@
+allowNegative:
+  originalType: boolean
+  group: General
+  caption: Allow Negative
+  description: If set, negative values are allowed
+  default: "true"
+decimalScale:
+  originalType: number
+  group: General
+  caption: Decimal Scale
+  description: Limits the number of digits that are displayed after the decimal point
+  default: Infinity
+decimalSeparator:
+  originalType: string
+  group: General
+  caption: Decimal Separator
+  description: Character used as a decimal separator, '.' by default
+fixedDecimalScale:
+  originalType: boolean
+  group: General
+  caption: Fixed Decimal Scale
+  description: If set, zeros are added after decimalSeparator to match given decimalScale.
+  default: "false"
+prefix:
+  originalType: string
+  group: General
+  caption: Prefix
+  description: Prefix added before the value
+suffix:
+  originalType: string
+  group: General
+  caption: Suffix
+  description: Suffix added after the value
+thousandSeparator:
+  originalType: string | boolean
+  group: General
+  caption: Thousand Separator
+  description: A character used to separate thousands
+  default: "','"
+thousandsGroupStyle:
+  originalType: '"none" | "thousand" | "lakh" | "wan"'
+  group: General
+  caption: Thousands Group Style
+  description: Defines the thousand grouping style
+value:
+  originalType: string | number
+  group: General
+  caption: Value
+  description: Value to format

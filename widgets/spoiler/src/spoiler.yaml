@@ -1,0 +1,45 @@
+controlRef:
+  originalType: ForwardedRef<HTMLButtonElement>
+  group: General
+  caption: Control Ref
+  description: Get ref of spoiler toggle button
+expanded:
+  originalType: boolean
+  group: General
+  caption: Expanded
+  description: Controlled expanded state value
+hideLabel:
+  originalType: React.ReactNode
+  group: General
+  caption: Hide Label
+  description: Label for close spoiler action
+initialState:
+  originalType: boolean
+  group: General
+  caption: Initial State
+  description: Initial spoiler state, true to wrap content in spoiler, false to
+    show content without spoiler, opened state is updated on mount
+maxHeight:
+  originalType: number
+  group: General
+  caption: Max Height
+  description: Maximum height of the visible content, when this point is reached
+    spoiler appears
+  default: "100"
+onExpandedChange:
+  originalType: "((expanded: boolean) => void)"
+  group: General
+  caption: On Expanded Change
+  description: Called when expanded state changes (when spoiler visibility is
+    toggled by the user)
+showLabel:
+  originalType: React.ReactNode
+  group: General
+  caption: Show Label
+  description: Label for open spoiler action
+transitionDuration:
+  originalType: number
+  group: General
+  caption: Transition Duration
+  description: Spoiler reveal transition duration in ms, set 0 or null to turn off animation
+  default: "200"

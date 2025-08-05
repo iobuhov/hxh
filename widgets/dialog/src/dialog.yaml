@@ -1,0 +1,80 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Dialog content
+keepMounted:
+  originalType: boolean
+  group: General
+  caption: Keep Mounted
+  description: "If set, dialog is not unmounted from the DOM when hidden, display:
+    none styles are applied instead"
+onClose:
+  originalType: (() => void)
+  group: General
+  caption: On Close
+  description: Called when the close button is clicked
+opened:
+  originalType: boolean
+  group: General
+  caption: Opened
+  description: Opened state
+portalProps:
+  originalType: BasePortalProps
+  group: General
+  caption: Portal Props
+  description: Props passed down to the Portal component. Ignored when
+    withinPortal is false.
+position:
+  originalType: AffixPosition
+  group: General
+  caption: Position
+  description: Affix position on screen
+  default: "{ bottom: 0, right: 0 }"
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: theme.defaultRadius
+shadow:
+  originalType: MantineShadow
+  group: General
+  caption: Shadow
+  description: Key of theme.shadows or any valid CSS value to set box-shadow
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls width of the dialog
+  default: "'md'"
+transitionProps:
+  originalType: TransitionProps
+  group: General
+  caption: Transition Props
+  description: Props passed down to the underlying Transition component
+  default: "{ transition: 'pop-top-right', duration: 200 }"
+withBorder:
+  originalType: boolean
+  group: General
+  caption: With Border
+  description: Adds border to the root element
+withCloseButton:
+  originalType: boolean
+  group: General
+  caption: With Close Button
+  description: If set, the close button is displayed
+  default: "true"
+withinPortal:
+  originalType: boolean
+  group: General
+  caption: Within Portal
+  description: Determines whether the component is rendered within Portal
+  default: "true"
+zIndex:
+  originalType: React.CSSProperties["zIndex"]
+  group: General
+  caption: ZIndex
+  description: Root element z-index property
+  default: "200"

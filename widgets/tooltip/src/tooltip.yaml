@@ -1,0 +1,174 @@
+arrowOffset:
+  originalType: number
+  group: General
+  caption: Arrow Offset
+  description: Arrow offset in px
+  default: "5"
+arrowPosition:
+  originalType: ArrowPosition
+  group: General
+  caption: Arrow Position
+  description: Arrow position relative to the tooltip
+  default: side
+arrowRadius:
+  originalType: number
+  group: General
+  caption: Arrow Radius
+  description: Arrow border-radius in px
+  default: "0"
+arrowSize:
+  originalType: number
+  group: General
+  caption: Arrow Size
+  description: Arrow size in px
+  default: "4"
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Target element, must support ref prop and ...others
+closeDelay:
+  originalType: number
+  group: General
+  caption: Close Delay
+  description: Close delay in ms
+  default: "0"
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color, controls tooltip
+    background, by default set based on current color scheme
+defaultOpened:
+  originalType: boolean
+  group: General
+  caption: Default Opened
+  description: Uncontrolled tooltip initial opened state
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: If set, tooltip element will not be rendered
+events:
+  originalType: "{ hover: boolean; focus: boolean; touch: boolean; }"
+  group: General
+  caption: Events
+  description: Determines which events will be used to show tooltip
+  default: "{ hover: true, focus: false, touch: false }"
+floatingStrategy:
+  originalType: FloatingStrategy
+  group: General
+  caption: Floating Strategy
+  description: Changes floating ui [position
+    strategy](https://floating-ui.com/docs/usefloating#strategy)
+  default: "'absolute'"
+inline:
+  originalType: boolean
+  group: General
+  caption: Inline
+  description: Must be set if the tooltip target is an inline element
+keepMounted:
+  originalType: boolean
+  group: General
+  caption: Keep Mounted
+  description: "If set, the tooltip is not unmounted from the DOM when hidden,
+    display: none styles are applied instead"
+label:
+  originalType: React.ReactNode
+  group: General
+  caption: Label
+  description: Tooltip content
+middlewares:
+  originalType: TooltipMiddlewares
+  group: General
+  caption: Middlewares
+  description: "Floating ui middlewares to configure position handling, { flip:
+    true, shift: true, inline: false } by default"
+multiline:
+  originalType: boolean
+  group: General
+  caption: Multiline
+  description: Determines whether content should be wrapped on to the next line,
+    false by default
+offset:
+  originalType: number | FloatingAxesOffsets
+  group: General
+  caption: Offset
+  description: Space between target element and tooltip in px
+  default: "5"
+onPositionChange:
+  originalType: "((position: FloatingPosition) => void)"
+  group: General
+  caption: On Position Change
+  description: Called when tooltip position changes
+openDelay:
+  originalType: number
+  group: General
+  caption: Open Delay
+  description: Open delay in ms
+opened:
+  originalType: boolean
+  group: General
+  caption: Opened
+  description: Controlled opened state
+portalProps:
+  originalType: Omit<BasePortalProps, "withinPortal">
+  group: General
+  caption: Portal Props
+  description: Props to pass down to the portal when withinPortal is true
+position:
+  originalType: FloatingPosition
+  group: General
+  caption: Position
+  description: Tooltip position relative to target element (Tooltip component) or
+    mouse (Tooltip.Floating component)
+positionDependencies:
+  originalType: any[]
+  group: General
+  caption: Position Dependencies
+  description: "@deprecated : Do not use, will be removed in 9.0"
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem@default theme.defaultRadius
+refProp:
+  originalType: string
+  group: General
+  caption: Ref Prop
+  description: Key of the prop that can be used to access element ref, ref by default
+target:
+  originalType: string | HTMLElement | RefObject<HTMLElement | null> | null
+  group: General
+  caption: Target
+  description: Selector, ref of an element or element itself that should be used
+    for positioning
+transitionProps:
+  originalType: TransitionProps
+  group: General
+  caption: Transition Props
+  description: Props passed down to the Transition component that used to animate
+    tooltip presence, use to configure duration and animation type
+  default: "{ duration: 100, transition: 'fade' }"
+withArrow:
+  originalType: boolean
+  group: General
+  caption: With Arrow
+  description: If set, the tooltip has an arrow
+  default: "false"
+withinPortal:
+  originalType: boolean
+  group: General
+  caption: Within Portal
+  description: Determines whether tooltip should be rendered within Portal, true by default
+zIndex:
+  originalType: string | number
+  group: General
+  caption: ZIndex
+  description: Tooltip z-index, 300 by default

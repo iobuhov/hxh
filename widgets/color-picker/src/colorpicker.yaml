@@ -1,0 +1,83 @@
+alphaLabel:
+  originalType: string
+  group: General
+  caption: Alpha Label
+  description: Alpha slider aria-label
+defaultValue:
+  originalType: string
+  group: General
+  caption: Default Value
+  description: Uncontrolled component default value
+focusable:
+  originalType: boolean
+  group: General
+  caption: Focusable
+  description: If set, interactive elements (sliders thumbs and swatches) are
+    focusable with keyboard
+  default: "true"
+format:
+  originalType: ColorFormat
+  group: General
+  caption: Format
+  description: Color format
+  default: "'hex'"
+fullWidth:
+  originalType: boolean
+  group: General
+  caption: Full Width
+  description: If set, the component takes 100% width of its container
+  default: "false"
+hueLabel:
+  originalType: string
+  group: General
+  caption: Hue Label
+  description: Hue slider aria-label
+onChange:
+  originalType: "((value: string) => void)"
+  group: General
+  caption: On Change
+  description: Called when value changes
+onChangeEnd:
+  originalType: "((value: string) => void)"
+  group: General
+  caption: On Change End
+  description: Called when the user stops dragging one of the sliders or changes
+    the value with keyboard
+onColorSwatchClick:
+  originalType: "((color: string) => void)"
+  group: General
+  caption: On Color Swatch Click
+  description: Called when one of the color swatches is clicked
+saturationLabel:
+  originalType: string
+  group: General
+  caption: Saturation Label
+  description: Saturation slider aria-label
+size:
+  originalType: MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls size of hue, alpha and saturation sliders
+  default: "'md'"
+swatches:
+  originalType: string[]
+  group: General
+  caption: Swatches
+  description: A list of colors used to display swatches list below the color picker
+swatchesPerRow:
+  originalType: number
+  group: General
+  caption: Swatches Per Row
+  description: Number of swatches per row
+  default: "7"
+value:
+  originalType: string
+  group: General
+  caption: Value
+  description: Controlled component value
+withPicker:
+  originalType: boolean
+  group: General
+  caption: With Picker
+  description: Determines whether the color picker should be displayed
+  default: "true"

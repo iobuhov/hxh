@@ -1,23 +1,75 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.chip.Chip"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.Chip" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Chip</name>
     <description>Removable and non-removable tags</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioProCategory />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="autoContrast" type="boolean" required="false">
+                <caption>Auto Contrast</caption>
+                <description>If set, adjusts text color based on background color for filled variant</description>
+            </property>
+            <property key="checked" type="boolean" required="false">
+                <caption>Checked</caption>
+                <description>Checked state for controlled component</description>
+            </property>
+            <property key="children" type="string" required="false">
+                <caption>Children</caption>
+                <description>label element associated with the input</description>
+            </property>
+            <property key="color" type="string" required="false" defaultValue="theme.primaryColor">
+                <caption>Color</caption>
+                <description>Controls components colors based on variant prop. Key of theme.colors or any valid CSS color.</description>
+            </property>
+            <property key="defaultChecked" type="boolean" required="false">
+                <caption>Default Checked</caption>
+                <description>Default checked state for uncontrolled component</description>
+            </property>
+            <property key="icon" type="icon" required="false">
+                <caption>Icon</caption>
+                <description>Any element or component to replace default icon</description>
+            </property>
+            <property key="id" type="string" required="false">
+                <caption>Id</caption>
+                <description>Unique input id</description>
+            </property>
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Calls when checked state changes</description>
+            </property>
+            <property key="radius" type="string" required="false" defaultValue="xl">
+                <caption>Radius</caption>
+                <description>Key of theme.radius or any valid CSS value to set border-radius</description>
+            </property>
+            <property key="rootRef" type="string" required="false">
+                <caption>Root Ref</caption>
+                <description>Assigns ref of the root element</description>
+            </property>
+            <property key="size" type="enumeration" required="false" defaultValue="sm">
+                <caption>Size</caption>
+                <description>Controls various properties related to component size</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">xs</enumerationValue>
+                    <enumerationValue key="sm">sm</enumerationValue>
+                    <enumerationValue key="md">md</enumerationValue>
+                    <enumerationValue key="lg">lg</enumerationValue>
+                    <enumerationValue key="xl">xl</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="type" type="enumeration" required="false" defaultValue="checkbox">
+                <caption>Type</caption>
+                <description>Chip input type</description>
+                <enumerationValues>
+                    <enumerationValue key="checkbox">checkbox</enumerationValue>
+                    <enumerationValue key="radio">radio</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="wrapperProps" type="string" required="false">
+                <caption>Wrapper Props</caption>
+                <description>Props passed down to the root element</description>
             </property>
         </propertyGroup>
     </properties>

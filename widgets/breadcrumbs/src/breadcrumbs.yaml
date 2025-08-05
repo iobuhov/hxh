@@ -1,0 +1,17 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: React nodes that should be separated with separator
+separator:
+  originalType: React.ReactNode
+  group: General
+  caption: Separator
+  description: Separator between children
+  default: "'/'"
+separatorMargin:
+  originalType: MantineSpacing
+  group: General
+  caption: Separator Margin
+  description: Controls spacing between separator and breadcrumb
+  default: "'xs'"

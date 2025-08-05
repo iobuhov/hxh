@@ -1,0 +1,96 @@
+borderColor:
+  originalType: MantineColor
+  group: General
+  caption: Border Color
+  description: Color of table borders, key of theme.colors or any valid CSS color
+captionSide:
+  originalType: '"bottom" | "top"'
+  group: General
+  caption: Caption Side
+  description: Side of the Table.Caption
+  default: bottom
+data:
+  originalType: TableData
+  group: General
+  caption: Data
+  description: Data used to generate table, ignored if children prop is set
+highlightOnHover:
+  originalType: boolean
+  group: General
+  caption: Highlight On Hover
+  description: If set, table rows background changes to highlightOnHoverColor when hovered
+  default: "false"
+highlightOnHoverColor:
+  originalType: MantineColor
+  group: General
+  caption: Highlight On Hover Color
+  description: Background color of table rows when hovered, key of theme.colors or
+    any valid CSS color
+horizontalSpacing:
+  originalType: MantineSpacing
+  group: General
+  caption: Horizontal Spacing
+  description: Horizontal cells spacing, key of theme.spacing or any valid CSS
+    value for padding, numbers are converted to rem
+  default: xs
+layout:
+  originalType: TableLayout
+  group: General
+  caption: Layout
+  description: Value of table-layout style
+  default: auto
+stickyHeader:
+  originalType: boolean
+  group: General
+  caption: Sticky Header
+  description: If set, Table.Thead is sticky
+  default: "false"
+stickyHeaderOffset:
+  originalType: string | number
+  group: General
+  caption: Sticky Header Offset
+  description: Offset from top at which Table.Thead should become sticky
+  default: "0"
+striped:
+  originalType: boolean | "odd" | "even"
+  group: General
+  caption: Striped
+  description: If set, every odd/even row background changes to strippedColor, if
+    set to true, then odd value will be used
+  default: "false"
+stripedColor:
+  originalType: MantineColor
+  group: General
+  caption: Striped Color
+  description: Background color of striped rows, key of theme.colors or any valid CSS color
+tabularNums:
+  originalType: boolean
+  group: General
+  caption: Tabular Nums
+  description: "If set, font-variant-numeric: tabular-nums style is applied"
+  default: "false"
+verticalSpacing:
+  originalType: MantineSpacing
+  group: General
+  caption: Vertical Spacing
+  description: Vertical cells spacing, key of theme.spacing or any valid CSS value
+    for padding, numbers are converted to rem
+  default: xs
+withColumnBorders:
+  originalType: boolean
+  group: General
+  caption: With Column Borders
+  description: If set, the table has borders between columns
+  default: "false"
+withRowBorders:
+  originalType: boolean
+  group: General
+  caption: With Row Borders
+  description: If set, the table has borders between rows
+  default: "true"
+withTableBorder:
+  originalType: boolean
+  group: General
+  caption: With Table Border
+  description: If set, the table has the outer border
+  default: "false"

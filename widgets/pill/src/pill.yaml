@@ -1,0 +1,36 @@
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Adds disabled attribute, applies disabled styles
+onRemove:
+  originalType: (() => void)
+  group: General
+  caption: On Remove
+  description: Called when the remove button is clicked
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius.
+    Numbers are converted to rem.
+  default: "'xl'"
+removeButtonProps:
+  originalType: (CloseButtonProps &
+    Omit<DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement>, "ref">)
+  group: General
+  caption: Remove Button Props
+  description: Props passed down to the remove button
+size:
+  originalType: MantineSize
+  group: General
+  caption: Size
+  description: Controls pill font-size and padding
+  default: "'sm'"
+withRemoveButton:
+  originalType: boolean
+  group: General
+  caption: With Remove Button
+  description: Controls visibility of the remove button
+  default: "false"

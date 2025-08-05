@@ -1,0 +1,9 @@
+widget:
+  id: com.mendix.finch.widget.Typography
+  name: Typography
+  description: Styles provider for html content
+  pluginWidget: true
+  offlineCapable: false
+  
+  properties:
+    General:

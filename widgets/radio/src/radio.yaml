@@ -1,0 +1,67 @@
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color to set input color in
+    checked state
+  default: theme.primaryColor
+description:
+  originalType: React.ReactNode
+  group: General
+  caption: Description
+  description: Description displayed below the label
+error:
+  originalType: React.ReactNode
+  group: General
+  caption: Error
+  description: Error displayed below the label
+icon:
+  originalType: FC<RadioIconProps>
+  group: General
+  caption: Icon
+  description: A component that replaces default check icon
+iconColor:
+  originalType: MantineColor
+  group: General
+  caption: Icon Color
+  description: Key of theme.colors or any valid CSS color to set icon color, by
+    default value depends on theme.autoContrast
+label:
+  originalType: React.ReactNode
+  group: General
+  caption: Label
+  description: Content of the label associated with the radio
+labelPosition:
+  originalType: '"left" | "right"'
+  group: General
+  caption: Label Position
+  description: Position of the label relative to the input
+  default: "'right'"
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+  default: "'xl'"
+rootRef:
+  originalType: ForwardedRef<HTMLDivElement>
+  group: General
+  caption: Root Ref
+  description: Assigns ref of the root element
+size:
+  originalType: MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls size of the component
+  default: "'sm'"
+wrapperProps:
+  originalType: (Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement>, "ref"> & DataAttributes)
+  group: General
+  caption: Wrapper Props
+  description: Props passed down to the root element

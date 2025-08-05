@@ -1,6 +1,15 @@
-ratio:
-  originalType: number
-  group: General
-  caption: Ratio
-  description: Aspect ratio, for example, 16 / 9, 4 / 3, 1920 / 1080
-  default: "1"
+widget:
+  id: com.mendix.finch.widget.AspectRatio
+  name: AspectRatio
+  description: Maintain responsive consistent width/height ratio
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      ratio:
+        type: decimal
+        caption: Ratio
+        description: Aspect ratio, for example, 16 / 9, 4 / 3, 1920 / 1080
+        required: false
+        default: 1

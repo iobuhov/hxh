@@ -1,0 +1,62 @@
+children:
+  originalType: string
+  group: General
+  caption: Children
+  description: String parts of which must be highlighted
+color:
+  originalType: string | (string & {})
+  group: General
+  caption: Color
+  description: Key of theme.colors or any valid CSS color, passed to Mark
+    component color prop
+  default: yellow
+gradient:
+  originalType: MantineGradient
+  group: General
+  caption: Gradient
+  description: Gradient configuration, ignored when variant is not gradient
+  default: theme.defaultGradient
+highlight:
+  originalType: string | string[]
+  group: General
+  caption: Highlight
+  description: Substring or a list of substrings to highlight in children
+highlightStyles:
+  originalType: "CSSProperties | ((theme: MantineTheme) => CSSProperties)"
+  group: General
+  caption: Highlight Styles
+  description: Styles applied to mark elements
+inherit:
+  originalType: boolean
+  group: General
+  caption: Inherit
+  description: Determines whether font properties should be inherited from the parent
+  default: "false"
+inline:
+  originalType: boolean
+  group: General
+  caption: Inline
+  description: Sets line-height to 1 for centering
+  default: "false"
+lineClamp:
+  originalType: number
+  group: General
+  caption: Line Clamp
+  description: Number of lines after which Text will be truncated
+size:
+  originalType: MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls font-size and line-height
+  default: "'md'"
+span:
+  originalType: boolean
+  group: General
+  caption: Span
+  description: Shorthand for component="span"
+truncate:
+  originalType: TextTruncate
+  group: General
+  caption: Truncate
+  description: Side on which Text must be truncated, if true, text is truncated
+    from the start

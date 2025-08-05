@@ -1,23 +1,190 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.combobox.Combobox"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.Combobox" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Combobox</name>
     <description>Create custom select, autocomplete or multiselect inputs</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioProCategory />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="arrowOffset" type="integer" required="false" defaultValue="5">
+                <caption>Arrow Offset</caption>
+                <description>Arrow offset in px</description>
+            </property>
+            <property key="arrowPosition" type="string" required="false">
+                <caption>Arrow Position</caption>
+                <description>Arrow position</description>
+            </property>
+            <property key="arrowRadius" type="integer" required="false" defaultValue="0">
+                <caption>Arrow Radius</caption>
+                <description>Arrow border-radius in px</description>
+            </property>
+            <property key="arrowSize" type="integer" required="false" defaultValue="7">
+                <caption>Arrow Size</caption>
+                <description>Arrow size in px</description>
+            </property>
+            <property key="children" type="string" required="false">
+                <caption>Children</caption>
+                <description>Combobox content</description>
+            </property>
+            <property key="disabled" type="boolean" required="false">
+                <caption>Disabled</caption>
+                <description>If set, popover dropdown will not be rendered</description>
+            </property>
+            <property key="dropdownPadding" type="string" required="false" defaultValue="4">
+                <caption>Dropdown Padding</caption>
+                <description>Controls padding of the dropdown</description>
+            </property>
+            <property key="floatingStrategy" type="enumeration" required="false" defaultValue="absolute">
+                <caption>Floating Strategy</caption>
+                <description>Changes floating ui position strategy</description>
+                <enumerationValues>
+                    <enumerationValue key="absolute">absolute</enumerationValue>
+                    <enumerationValue key="fixed">fixed</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="hideDetached" type="boolean" required="false" defaultValue="true">
+                <caption>Hide Detached</caption>
+                <description>If set, the dropdown is hidden when the element is hidden with styles or not visible on the screen</description>
+            </property>
+            <property key="keepMounted" type="boolean" required="false">
+                <caption>Keep Mounted</caption>
+                <description>If set, the dropdown is not unmounted from the DOM when hidden. display none styles are added instead.</description>
+            </property>
+            <property key="middlewares" type="string" required="false" defaultValue="{ flip: true, shift: true, inline: false }">
+                <caption>Middlewares</caption>
+                <description>Floating ui middlewares to configure position handling</description>
+            </property>
+            <property key="offset" type="string" required="false" defaultValue="8">
+                <caption>Offset</caption>
+                <description>Offset of the dropdown element</description>
+            </property>
+            <property key="onClose" type="action" required="false">
+                <caption>On Close</caption>
+                <description>Called when dropdown closes</description>
+            </property>
+            <property key="onDismiss" type="action" required="false">
+                <caption>On Dismiss</caption>
+                <description>Called when the popover is dismissed by clicking outside or by pressing escape</description>
+            </property>
+            <property key="onEnterTransitionEnd" type="action" required="false">
+                <caption>On Enter Transition End</caption>
+                <description>Called when enter transition ends</description>
+            </property>
+            <property key="onExitTransitionEnd" type="action" required="false">
+                <caption>On Exit Transition End</caption>
+                <description>Called when exit transition ends</description>
+            </property>
+            <property key="onOpen" type="action" required="false">
+                <caption>On Open</caption>
+                <description>Called when dropdown opens</description>
+            </property>
+            <property key="onOptionSubmit" type="action" required="false">
+                <caption>On Option Submit</caption>
+                <description>Called when item is selected with the Enter key or by clicking it</description>
+            </property>
+            <property key="onPositionChange" type="action" required="false">
+                <caption>On Position Change</caption>
+                <description>Called when dropdown position changes</description>
+            </property>
+            <property key="overlayProps" type="string" required="false">
+                <caption>Overlay Props</caption>
+                <description>Props passed down to Overlay component</description>
+            </property>
+            <property key="portalProps" type="string" required="false">
+                <caption>Portal Props</caption>
+                <description>Props to pass down to the Portal when withinPortal is true</description>
+            </property>
+            <property key="position" type="enumeration" required="false" defaultValue="bottom">
+                <caption>Position</caption>
+                <description>Dropdown position relative to the target element</description>
+                <enumerationValues>
+                    <enumerationValue key="top">top</enumerationValue>
+                    <enumerationValue key="bottom">bottom</enumerationValue>
+                    <enumerationValue key="left">left</enumerationValue>
+                    <enumerationValue key="right">right</enumerationValue>
+                    <enumerationValue key="top-start">top-start</enumerationValue>
+                    <enumerationValue key="top-end">top-end</enumerationValue>
+                    <enumerationValue key="bottom-start">bottom-start</enumerationValue>
+                    <enumerationValue key="bottom-end">bottom-end</enumerationValue>
+                    <enumerationValue key="left-start">left-start</enumerationValue>
+                    <enumerationValue key="left-end">left-end</enumerationValue>
+                    <enumerationValue key="right-start">right-start</enumerationValue>
+                    <enumerationValue key="right-end">right-end</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="positionDependencies" type="string" required="false">
+                <caption>Position Dependencies</caption>
+                <description>@deprecated : Do not use, will be removed in 9.0</description>
+            </property>
+            <property key="preventPositionChangeWhenVisible" type="boolean" required="false">
+                <caption>Prevent Position Change When Visible</caption>
+                <description>Prevents popover from flipping/shifting when it the dropdown is visible</description>
+            </property>
+            <property key="radius" type="string" required="false" defaultValue="theme.defaultRadius">
+                <caption>Radius</caption>
+                <description>Key of theme.radius or any valid CSS value to set border-radius</description>
+            </property>
+            <property key="readOnly" type="boolean" required="false">
+                <caption>Read Only</caption>
+                <description>Determines whether the Combobox value can be changed</description>
+            </property>
+            <property key="resetSelectionOnOptionHover" type="boolean" required="false" defaultValue="false">
+                <caption>Reset Selection On Option Hover</caption>
+                <description>Determines whether selection should be reset when option is hovered</description>
+            </property>
+            <property key="returnFocus" type="boolean" required="false" defaultValue="false">
+                <caption>Return Focus</caption>
+                <description>Determines whether focus should be automatically returned to control when dropdown closes</description>
+            </property>
+            <property key="shadow" type="string" required="false">
+                <caption>Shadow</caption>
+                <description>Key of theme.shadows or any other valid CSS box-shadow value</description>
+            </property>
+            <property key="size" type="enumeration" required="false" defaultValue="sm">
+                <caption>Size</caption>
+                <description>Controls items font-size and padding</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">xs</enumerationValue>
+                    <enumerationValue key="sm">sm</enumerationValue>
+                    <enumerationValue key="md">md</enumerationValue>
+                    <enumerationValue key="lg">lg</enumerationValue>
+                    <enumerationValue key="xl">xl</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="store" type="string" required="false">
+                <caption>Store</caption>
+                <description>Combobox store, can be used to control combobox state</description>
+            </property>
+            <property key="transitionProps" type="string" required="false" defaultValue="{ duration: 150, transition: 'fade' }">
+                <caption>Transition Props</caption>
+                <description>Props passed down to the Transition component. Use to configure duration and animation type.</description>
+            </property>
+            <property key="width" type="enumeration" required="false" defaultValue="max-content">
+                <caption>Width</caption>
+                <description>Dropdown width, or 'target' to make dropdown width the same as target element</description>
+                <enumerationValues>
+                    <enumerationValue key="target">target</enumerationValue>
+                    <enumerationValue key="max-content">max-content</enumerationValue>
+                    <enumerationValue key="min-content">min-content</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="withArrow" type="boolean" required="false" defaultValue="false">
+                <caption>With Arrow</caption>
+                <description>Determines whether component should have an arrow</description>
+            </property>
+            <property key="withOverlay" type="boolean" required="false" defaultValue="false">
+                <caption>With Overlay</caption>
+                <description>Determines whether the overlay should be displayed when the dropdown is opened</description>
+            </property>
+            <property key="withinPortal" type="boolean" required="false" defaultValue="true">
+                <caption>Within Portal</caption>
+                <description>Determines whether dropdown should be rendered within the Portal</description>
+            </property>
+            <property key="zIndex" type="string" required="false" defaultValue="300">
+                <caption>ZIndex</caption>
+                <description>Dropdown z-index</description>
             </property>
         </propertyGroup>
     </properties>

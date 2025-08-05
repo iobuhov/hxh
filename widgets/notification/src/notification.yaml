@@ -1,0 +1,59 @@
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Main notification message
+closeButtonProps:
+  originalType: Record<string, any>
+  group: General
+  caption: Close Button Props
+  description: Props passed down to the close button
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Controls notification line or icon color, key of theme.colors or
+    any valid CSS color
+  default: theme.primaryColor
+icon:
+  originalType: React.ReactNode
+  group: General
+  caption: Icon
+  description: Notification icon, replaces color line
+loaderProps:
+  originalType: LoaderProps
+  group: General
+  caption: Loader Props
+  description: Props passed down to the Loader component
+loading:
+  originalType: boolean
+  group: General
+  caption: Loading
+  description: If set, the Loader component is displayed instead of the icon
+onClose:
+  originalType: (() => void)
+  group: General
+  caption: On Close
+  description: Called when the close button is clicked
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: theme.defaultRadius
+title:
+  originalType: React.ReactNode
+  group: General
+  caption: Title
+  description: Notification title, displayed above the message body
+withBorder:
+  originalType: boolean
+  group: General
+  caption: With Border
+  description: Adds border to the root element
+withCloseButton:
+  originalType: boolean
+  group: General
+  caption: With Close Button
+  description: If set, the close button is visible
+  default: "true"

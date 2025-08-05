@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.colorswatch.ColorSwatch"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.ColorSwatch" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>ColorSwatch</name>
     <description>Displays color</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioProCategory />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="children" type="string" required="false">
+                <caption>Children</caption>
+                <description>Content displayed inside the swatch</description>
+            </property>
+            <property key="color" type="string" required="false">
+                <caption>Color</caption>
+                <description>Valid CSS color to display</description>
+            </property>
+            <property key="radius" type="string" required="false" defaultValue="1000">
+                <caption>Radius</caption>
+                <description>Key of theme.radius or any valid CSS value to set border-radius, numbers are converted to rem.</description>
+            </property>
+            <property key="size" type="string" required="false" defaultValue="28">
+                <caption>Size</caption>
+                <description>Controls width and height of the swatch, any valid CSS value, numbers are converted to rem.</description>
+            </property>
+            <property key="withShadow" type="boolean" required="false" defaultValue="true">
+                <caption>With Shadow</caption>
+                <description>Determines whether the swatch should have inner box-shadow</description>
             </property>
         </propertyGroup>
     </properties>

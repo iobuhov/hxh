@@ -1,0 +1,6 @@
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: Controls font-size and padding
+  default: "'sm'"

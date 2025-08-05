@@ -1,0 +1,148 @@
+autoContrast:
+  originalType: boolean
+  group: General
+  caption: Auto Contrast
+  description: If set, adjusts text color based on background color for filled variant
+boundaries:
+  originalType: number
+  group: General
+  caption: Boundaries
+  description: Number of elements visible on the left/right edges
+  default: "1"
+color:
+  originalType: MantineColor
+  group: General
+  caption: Color
+  description: Key of theme.colors, active item color
+  default: theme.primaryColor
+defaultValue:
+  originalType: number
+  group: General
+  caption: Default Value
+  description: Active page for uncontrolled component, must be an integer in [0,
+    total] interval
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: Disables all controls, applies disabled styles
+dotsIcon:
+  originalType: PaginationIcon
+  group: General
+  caption: Dots Icon
+  description: Dots icon component
+firstIcon:
+  originalType: PaginationIcon
+  group: General
+  caption: First Icon
+  description: First control icon component
+gap:
+  originalType: MantineSpacing
+  group: General
+  caption: Gap
+  description: Key of theme.spacing, gap between controls
+  default: "8"
+getControlProps:
+  originalType: '((control: "next" | "previous" | "first" | "last") => Record<string, any>)'
+  group: General
+  caption: Get Control Props
+  description: Props passed down to next/previous/first/last controls
+getItemProps:
+  originalType: "((page: number) => Record<string, any>)"
+  group: General
+  caption: Get Item Props
+  description: Additional props passed down to controls
+hideWithOnePage:
+  originalType: boolean
+  group: General
+  caption: Hide With One Page
+  description: If set, the pagination is hidden when only one page is available (total={1})
+  default: "false"
+lastIcon:
+  originalType: PaginationIcon
+  group: General
+  caption: Last Icon
+  description: Last control icon component
+nextIcon:
+  originalType: PaginationIcon
+  group: General
+  caption: Next Icon
+  description: Next control icon component
+onChange:
+  originalType: "((value: number) => void)"
+  group: General
+  caption: On Change
+  description: Called when page changes
+onFirstPage:
+  originalType: (() => void)
+  group: General
+  caption: On First Page
+  description: Called when first page control is clicked
+onLastPage:
+  originalType: (() => void)
+  group: General
+  caption: On Last Page
+  description: Called when last page control is clicked
+onNextPage:
+  originalType: (() => void)
+  group: General
+  caption: On Next Page
+  description: Called when next page control is clicked
+onPreviousPage:
+  originalType: (() => void)
+  group: General
+  caption: On Previous Page
+  description: Called when previous page control is clicked
+previousIcon:
+  originalType: PaginationIcon
+  group: General
+  caption: Previous Icon
+  description: Previous control icon component
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius,
+    numbers are converted to rem
+  default: theme.defaultRadius
+siblings:
+  originalType: number
+  group: General
+  caption: Siblings
+  description: Number of siblings displayed on the left/right side of the selected page
+  default: "1"
+size:
+  originalType: number | MantineSize | (string & {})
+  group: General
+  caption: Size
+  description: height and min-width of controls
+  default: "'md'"
+total:
+  originalType: number
+  group: General
+  caption: Total
+  description: Total number of pages, must be an integer
+value:
+  originalType: number
+  group: General
+  caption: Value
+  description: Active page for controlled component, must be an integer in [0,
+    total] interval
+withControls:
+  originalType: boolean
+  group: General
+  caption: With Controls
+  description: If set, next/previous controls are displayed
+  default: "true"
+withEdges:
+  originalType: boolean
+  group: General
+  caption: With Edges
+  description: If set, first/last controls are displayed
+  default: "false"
+withPages:
+  originalType: boolean
+  group: General
+  caption: With Pages
+  description: If set to false, pages controls are hidden
+  default: "true"

@@ -1,0 +1,16 @@
+children:
+  originalType: "(payload: { copied: boolean; copy: () => void; }) => ReactNode"
+  group: General
+  caption: Children
+  description: Children callback, provides current status and copy function as an argument
+timeout:
+  originalType: number
+  group: General
+  caption: Timeout
+  description: Copied status timeout in ms
+  default: "1000"
+value:
+  originalType: string
+  group: General
+  caption: Value
+  description: Value that is copied to the clipboard when the button is clicked

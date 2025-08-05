@@ -1,0 +1,227 @@
+arrowOffset:
+  originalType: number
+  group: General
+  caption: Arrow Offset
+  description: Arrow offset in px
+  default: "5"
+arrowPosition:
+  originalType: ArrowPosition
+  group: General
+  caption: Arrow Position
+  description: Arrow position
+arrowRadius:
+  originalType: number
+  group: General
+  caption: Arrow Radius
+  description: Arrow border-radius in px
+  default: "0"
+arrowSize:
+  originalType: number
+  group: General
+  caption: Arrow Size
+  description: Arrow size in px
+  default: "7"
+children:
+  originalType: React.ReactNode
+  group: General
+  caption: Children
+  description: Popover.Target and Popover.Dropdown components
+clickOutsideEvents:
+  originalType: string[]
+  group: General
+  caption: Click Outside Events
+  description: Events that trigger outside clicks
+closeOnClickOutside:
+  originalType: boolean
+  group: General
+  caption: Close On Click Outside
+  description: Determines whether dropdown should be closed on outside clicks
+  default: "true"
+closeOnEscape:
+  originalType: boolean
+  group: General
+  caption: Close On Escape
+  description: Determines whether dropdown should be closed when Escape key is pressed
+  default: "true"
+defaultOpened:
+  originalType: boolean
+  group: General
+  caption: Default Opened
+  description: Initial opened state for uncontrolled component
+disabled:
+  originalType: boolean
+  group: General
+  caption: Disabled
+  description: If set, popover dropdown will not be rendered
+floatingStrategy:
+  originalType: FloatingStrategy
+  group: General
+  caption: Floating Strategy
+  description: Changes floating ui [position
+    strategy](https://floating-ui.com/docs/usefloating#strategy)
+  default: "'absolute'"
+hideDetached:
+  originalType: boolean
+  group: General
+  caption: Hide Detached
+  description: If set, the dropdown is hidden when the element is hidden with
+    styles or not visible on the screen
+  default: "true"
+id:
+  originalType: string
+  group: General
+  caption: Id
+  description: Id base to create accessibility connections
+keepMounted:
+  originalType: boolean
+  group: General
+  caption: Keep Mounted
+  description: "If set, the dropdown is not unmounted from the DOM when hidden.
+    display: none styles are added instead."
+middlewares:
+  originalType: PopoverMiddlewares
+  group: General
+  caption: Middlewares
+  description: Floating ui middlewares to configure position handling
+  default: "{ flip: true, shift: true, inline: false }"
+offset:
+  originalType: number | FloatingAxesOffsets
+  group: General
+  caption: Offset
+  description: Offset of the dropdown element
+  default: "8"
+onChange:
+  originalType: "((opened: boolean) => void)"
+  group: General
+  caption: On Change
+  description: Called with current state when dropdown opens or closes
+onClose:
+  originalType: (() => void)
+  group: General
+  caption: On Close
+  description: Called when dropdown closes
+onDismiss:
+  originalType: (() => void)
+  group: General
+  caption: On Dismiss
+  description: Called when the popover is dismissed by clicking outside or by
+    pressing escape
+onEnterTransitionEnd:
+  originalType: (() => void)
+  group: General
+  caption: On Enter Transition End
+  description: Called when enter transition ends
+onExitTransitionEnd:
+  originalType: (() => void)
+  group: General
+  caption: On Exit Transition End
+  description: Called when exit transition ends
+onOpen:
+  originalType: (() => void)
+  group: General
+  caption: On Open
+  description: Called when dropdown opens
+onPositionChange:
+  originalType: "((position: FloatingPosition) => void)"
+  group: General
+  caption: On Position Change
+  description: Called when dropdown position changes
+opened:
+  originalType: boolean
+  group: General
+  caption: Opened
+  description: Controlled dropdown opened state
+overlayProps:
+  originalType: (OverlayProps & ElementProps<"div">)
+  group: General
+  caption: Overlay Props
+  description: Props passed down to Overlay component
+portalProps:
+  originalType: BasePortalProps
+  group: General
+  caption: Portal Props
+  description: Props to pass down to the Portal when withinPortal is true
+position:
+  originalType: FloatingPosition
+  group: General
+  caption: Position
+  description: Dropdown position relative to the target element
+  default: "'bottom'"
+positionDependencies:
+  originalType: any[]
+  group: General
+  caption: Position Dependencies
+  description: "@deprecated : Do not use, will be removed in 9.0"
+preventPositionChangeWhenVisible:
+  originalType: boolean
+  group: General
+  caption: Prevent Position Change When Visible
+  description: Prevents popover from flipping/shifting when it the dropdown is visible
+radius:
+  originalType: MantineRadius | number
+  group: General
+  caption: Radius
+  description: Key of theme.radius or any valid CSS value to set border-radius
+  default: theme.defaultRadius
+returnFocus:
+  originalType: boolean
+  group: General
+  caption: Return Focus
+  description: Determines whether focus should be automatically returned to
+    control when dropdown closes
+  default: "false"
+shadow:
+  originalType: MantineShadow
+  group: General
+  caption: Shadow
+  description: Key of theme.shadows or any other valid CSS box-shadow value
+transitionProps:
+  originalType: TransitionProps
+  group: General
+  caption: Transition Props
+  description: Props passed down to the Transition component. Use to configure
+    duration and animation type.
+  default: "{ duration: 150, transition: 'fade' }"
+trapFocus:
+  originalType: boolean
+  group: General
+  caption: Trap Focus
+  description: Determines whether focus should be trapped within dropdown
+  default: "false"
+width:
+  originalType: PopoverWidth
+  group: General
+  caption: Width
+  description: Dropdown width, or 'target' to make dropdown width the same as target element
+  default: "'max-content'"
+withArrow:
+  originalType: boolean
+  group: General
+  caption: With Arrow
+  description: Determines whether component should have an arrow
+  default: "false"
+withOverlay:
+  originalType: boolean
+  group: General
+  caption: With Overlay
+  description: Determines whether the overlay should be displayed when the
+    dropdown is opened
+  default: "false"
+withRoles:
+  originalType: boolean
+  group: General
+  caption: With Roles
+  description: Determines whether dropdown and target elements should have accessible roles
+  default: "true"
+withinPortal:
+  originalType: boolean
+  group: General
+  caption: Within Portal
+  description: Determines whether dropdown should be rendered within the Portal
+  default: "true"
+zIndex:
+  originalType: string | number
+  group: General
+  caption: ZIndex
+  description: Dropdown z-index
+  default: "300"

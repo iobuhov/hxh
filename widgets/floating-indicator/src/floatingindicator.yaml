@@ -1,0 +1,26 @@
+displayAfterTransitionEnd:
+  originalType: boolean
+  group: General
+  caption: Display After Transition End
+  description: >-
+    If set, the indicator is displayed after transition ends.
+
+    Should be set if the component is used inside a container that has
+    transform: scale(n) styles.
+parent:
+  originalType: HTMLElement | null
+  group: General
+  caption: Parent
+  description: Parent element with relative position based on which indicator
+    position is calculated
+target:
+  originalType: HTMLElement | null
+  group: General
+  caption: Target
+  description: Target element over which indicator is displayed
+transitionDuration:
+  originalType: string | number
+  group: General
+  caption: Transition Duration
+  description: Transition duration in ms
+  default: "150"
