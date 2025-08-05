@@ -449,6 +449,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -467,6 +470,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -485,6 +491,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -503,6 +512,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -521,6 +533,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -611,6 +626,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1

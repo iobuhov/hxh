@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget id="com.mendix.finch.widget.angleslider.AngleSlider" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.AngleSlider" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>AngleSlider</name>
     <description>Slider component</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioProCategory />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
             <property key="defaultValue" type="integer" required="false">
@@ -50,7 +52,7 @@
                 <caption>Restrict To Marks</caption>
                 <description>If set, the selection is allowed only from the given marks array</description>
             </property>
-            <property key="size" type="integer" required="false" defaultValue="60">
+            <property key="size" type="integer" required="false" defaultValue="60px">
                 <caption>Size</caption>
                 <description>Slider size in px</description>
             </property>

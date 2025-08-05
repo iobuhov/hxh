@@ -1,0 +1,6 @@
+ratio:
+  originalType: number
+  group: General
+  caption: Ratio
+  description: Aspect ratio, for example, 16 / 9, 4 / 3, 1920 / 1080
+  default: "1"

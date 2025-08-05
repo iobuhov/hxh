@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.anchor.Anchor"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.Anchor" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Anchor</name>
     <description>Display link with theme styles</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioProCategory>Data containers</studioProCategory>
+    <studioCategory>Data Containers</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
             <property key="color" type="string" required="false">
                 <caption>Color</caption>
                 <description>@deprecated Use c prop instead</description>
             </property>
-            <property key="gradient" type="string" required="false">
+            <property key="gradient" type="string" required="false" defaultValue="theme.defaultGradient">
                 <caption>Gradient</caption>
                 <description>Gradient configuration, ignored when variant is not gradient</description>
             </property>
@@ -41,17 +34,16 @@
             </property>
             <property key="truncate" type="string" required="false">
                 <caption>Truncate</caption>
-                <description
-                >Side on which Text must be truncated, if true, text is truncated from the start</description>
+                <description>Side on which Text must be truncated, if true, text is truncated from the start</description>
             </property>
             <property key="underline" type="enumeration" required="false" defaultValue="hover">
                 <caption>Underline</caption>
                 <description>Defines when text-decoration: underline styles are applied.</description>
                 <enumerationValues>
-                    <enumerationValue key="always">always</enumerationValue>
-                    <enumerationValue key="hover">hover</enumerationValue>
-                    <enumerationValue key="not-hover">not-hover</enumerationValue>
-                    <enumerationValue key="never">never</enumerationValue>
+                    <enumerationValue key="always">Always</enumerationValue>
+                    <enumerationValue key="hover">Hover</enumerationValue>
+                    <enumerationValue key="not-hover">Not Hover</enumerationValue>
+                    <enumerationValue key="never">Never</enumerationValue>
                 </enumerationValues>
             </property>
         </propertyGroup>

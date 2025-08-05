@@ -1,0 +1,66 @@
+widget:
+  id: com.mendix.finch.widget.ActionIcon
+  name: ActionIcon
+  description: Icon button
+  pluginWidget: true
+  offlineCapable: false
+  
+  properties:
+    General:
+      autoContrast:
+        type: boolean
+        caption: Auto Contrast
+        description: If set, adjusts text color based on background color for filled variant
+        required: false
+        
+      children:
+        type: string
+        caption: Children
+        description: Icon element
+        required: false
+        
+      color:
+        type: string
+        caption: Color
+        description: Key of theme.colors or any valid CSS color.
+        required: false
+        default: theme.primaryColor.
+        
+      disabled:
+        type: boolean
+        caption: Disabled
+        description: Sets disabled attribute, prevents interactions
+        required: false
+        
+      gradient:
+        type: string
+        caption: Gradient
+        description: Gradient values used with variant="gradient".
+        required: false
+        default: theme.defaultGradient.
+        
+      loaderProps:
+        type: string
+        caption: Loader Props
+        description: Props passed down to the Loader component. Ignored when loading prop is not set.
+        required: false
+        
+      loading:
+        type: boolean
+        caption: Loading
+        description: If set, Loader component is displayed instead of the children
+        required: false
+        
+      radius:
+        type: string
+        caption: Radius
+        description: Key of theme.radius or any valid CSS value to set border-radius. Numbers are converted to rem.
+        required: false
+        default: theme.defaultRadius
+        
+      size:
+        type: string
+        caption: Size
+        description: Controls width and height of the button. Numbers are converted to rem.
+        required: false
+        default: 'md'.

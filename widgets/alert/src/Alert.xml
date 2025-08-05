@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget id="com.mendix.finch.widget.alert.Alert" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.Alert" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Alert</name>
     <description>Attract user attention with important static message</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioProCategory />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
             <property key="autoContrast" type="boolean" required="false">
@@ -26,7 +28,7 @@
                 <caption>On Close</caption>
                 <description>Called when the close button is clicked</description>
             </property>
-            <property key="radius" type="string" required="false">
+            <property key="radius" type="string" required="false" defaultValue="theme.defaultRadius">
                 <caption>Radius</caption>
                 <description>Key of theme.radius or any valid CSS value to set border-radius</description>
             </property>

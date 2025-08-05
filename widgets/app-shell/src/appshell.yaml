@@ -1,0 +1,89 @@
+widget:
+  id: com.mendix.finch.widget.AppShell
+  name: AppShell
+  description: Responsive shell for your application with header, navbar, aside and footer
+  pluginWidget: true
+  offlineCapable: false
+  
+  properties:
+    General:
+      aside:
+        type: string
+        caption: Aside
+        description: Aside configuration, controls width, breakpoints and collapsed state. Required if you use Aside component.
+        required: false
+        
+      disabled:
+        type: boolean
+        caption: Disabled
+        description: If set, Navbar, Aside, Header and Footer components are hidden
+        required: false
+        
+      footer:
+        type: string
+        caption: Footer
+        description: Footer configuration, controls height, offset and collapsed state. Required if you use Footer component.
+        required: false
+        
+      header:
+        type: string
+        caption: Header
+        description: Header configuration, controls height, offset and collapsed state. Required if you use Header component.
+        required: false
+        
+      layout:
+        type: enumeration
+        caption: Layout
+        description: Determines how Navbar/Aside are arranged relative to Header/Footer
+        required: false
+        enumerationValues:
+          default: default
+          alt: alt
+        
+      navbar:
+        type: string
+        caption: Navbar
+        description: Navbar configuration, controls width, breakpoints and collapsed state. Required if you use Navbar component.
+        required: false
+        
+      offsetScrollbars:
+        type: boolean
+        caption: Offset Scrollbars
+        description: If set, Header and Footer components include styles to offset scrollbars. Based on react-remove-scroll.
+        required: false
+        default: true for layout="default", false for layout="alt"
+        
+      padding:
+        type: string
+        caption: Padding
+        description: Padding of the main section. Important: use padding prop instead of p.
+        required: false
+        default: 0
+        
+      transitionDuration:
+        type: integer
+        caption: Transition Duration
+        description: Duration of all transitions in ms
+        required: false
+        default: 200
+        
+      transitionTimingFunction:
+        type: string
+        caption: Transition Timing Function
+        description: Timing function of all transitions
+        required: false
+        default: ease
+        
+      withBorder:
+        type: boolean
+        caption: With Border
+        description: If set, the associated components have a border
+        required: false
+        default: true
+        
+      zIndex:
+        type: string
+        caption: ZIndex
+        description: z-index of all associated elements
+        required: false
+        default: 100

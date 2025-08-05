@@ -1,0 +1,59 @@
+widget:
+  id: com.mendix.finch.widget.Alert
+  name: Alert
+  description: Attract user attention with important static message
+  pluginWidget: true
+  offlineCapable: false
+  
+  properties:
+    General:
+      autoContrast:
+        type: boolean
+        caption: Auto Contrast
+        description: If set, adjusts text color based on background color for filled variant
+        required: false
+        
+      closeButtonLabel:
+        type: string
+        caption: Close Button Label
+        description: Close button aria-label
+        required: false
+        
+      color:
+        type: string
+        caption: Color
+        description: Key of theme.colors or any valid CSS color
+        required: false
+        default: theme.primaryColor
+        
+      icon:
+        type: icon
+        caption: Icon
+        description: Icon displayed next to the title
+        required: false
+        
+      onClose:
+        type: action
+        caption: On Close
+        description: Called when the close button is clicked
+        required: false
+        
+      radius:
+        type: string
+        caption: Radius
+        description: Key of theme.radius or any valid CSS value to set border-radius
+        required: false
+        default: theme.defaultRadius
+        
+      title:
+        type: string
+        caption: Title
+        description: Alert title
+        required: false
+        
+      withCloseButton:
+        type: boolean
+        caption: With Close Button
+        description: Determines whether close button should be displayed
+        required: false
+        default: false

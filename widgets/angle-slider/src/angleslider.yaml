@@ -1,0 +1,108 @@
+widget:
+  id: com.mendix.finch.widget.AngleSlider
+  name: AngleSlider
+  description: Slider component
+  pluginWidget: true
+  offlineCapable: false
+  
+  properties:
+    General:
+      defaultValue:
+        type: integer
+        caption: Default Value
+        description: Uncontrolled component default value
+        required: false
+        
+      disabled:
+        type: boolean
+        caption: Disabled
+        description: Sets data-disabled attribute, disables interactions
+        required: false
+        
+      formatLabel:
+        type: action
+        caption: Format Label
+        description: A function to format label based on the current value
+        required: false
+        
+      hiddenInputProps:
+        type: string
+        caption: Hidden Input Props
+        description: Props passed down to the hidden input
+        required: false
+        
+      marks:
+        type: string
+        caption: Marks
+        description: Array of marks displayed on the slider
+        required: false
+        
+      name:
+        type: string
+        caption: Name
+        description: Hidden input name, use with uncontrolled component
+        required: false
+        
+      onChange:
+        type: action
+        caption: On Change
+        description: Called on value change
+        required: false
+        
+      onChangeEnd:
+        type: action
+        caption: On Change End
+        description: Called after the selection is finished
+        required: false
+        
+      onScrubEnd:
+        type: action
+        caption: On Scrub End
+        description: Called in onMouseUp and onTouchEnd
+        required: false
+        
+      onScrubStart:
+        type: action
+        caption: On Scrub Start
+        description: Called in onMouseDown and onTouchStart
+        required: false
+        
+      restrictToMarks:
+        type: boolean
+        caption: Restrict To Marks
+        description: If set, the selection is allowed only from the given marks array
+        required: false
+        default: false
+        
+      size:
+        type: integer
+        caption: Size
+        description: Slider size in px
+        required: false
+        default: 60px
+        
+      step:
+        type: integer
+        caption: Step
+        description: Step between values
+        required: false
+        default: 1
+        
+      thumbSize:
+        type: integer
+        caption: Thumb Size
+        description: Size of the thumb in px. Calculated based on the size value by default.
+        required: false
+        
+      value:
+        type: integer
+        caption: Value
+        description: Controlled component value
+        required: false
+        
+      withLabel:
+        type: boolean
+        caption: With Label
+        description: If set, the label is displayed inside the slider
+        required: false
+        default: true

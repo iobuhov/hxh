@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.actionicon.ActionIcon"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.ActionIcon" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>ActionIcon</name>
     <description>Icon button</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioProCategory />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
             <property key="autoContrast" type="boolean" required="false">
@@ -23,7 +16,7 @@
                 <caption>Children</caption>
                 <description>Icon element</description>
             </property>
-            <property key="color" type="string" required="false" defaultValue="theme.primaryColor">
+            <property key="color" type="string" required="false" defaultValue="theme.primaryColor.">
                 <caption>Color</caption>
                 <description>Key of theme.colors or any valid CSS color.</description>
             </property>
@@ -31,7 +24,7 @@
                 <caption>Disabled</caption>
                 <description>Sets disabled attribute, prevents interactions</description>
             </property>
-            <property key="gradient" type="string" required="false">
+            <property key="gradient" type="string" required="false" defaultValue="theme.defaultGradient.">
                 <caption>Gradient</caption>
                 <description>Gradient values used with variant="gradient".</description>
             </property>
@@ -43,11 +36,11 @@
                 <caption>Loading</caption>
                 <description>If set, Loader component is displayed instead of the children</description>
             </property>
-            <property key="radius" type="string" required="false">
+            <property key="radius" type="string" required="false" defaultValue="theme.defaultRadius">
                 <caption>Radius</caption>
                 <description>Key of theme.radius or any valid CSS value to set border-radius. Numbers are converted to rem.</description>
             </property>
-            <property key="size" type="string" required="false" defaultValue="md">
+            <property key="size" type="string" required="false" defaultValue="'md'.">
                 <caption>Size</caption>
                 <description>Controls width and height of the button. Numbers are converted to rem.</description>
             </property>

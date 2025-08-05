@@ -1,0 +1,61 @@
+widget:
+  id: com.mendix.finch.widget.Anchor
+  name: Anchor
+  description: Display link with theme styles
+  pluginWidget: true
+  offlineCapable: false
+  studioProCategory: Data containers
+  studioCategory: Data Containers
+  properties:
+    General:
+      color:
+        type: string
+        caption: Color
+        description: "@deprecated Use c prop instead"
+        required: false
+      gradient:
+        type: string
+        caption: Gradient
+        description: Gradient configuration, ignored when variant is not gradient
+        default: theme.defaultGradient
+        required: false
+      inherit:
+        type: boolean
+        caption: Inherit
+        description: Determines whether font properties should be inherited from the parent
+        default: false
+        required: false
+      inline:
+        type: boolean
+        caption: Inline
+        description: Sets line-height to 1 for centering
+        default: false
+        required: false
+      lineClamp:
+        type: integer
+        caption: Line Clamp
+        description: Number of lines after which Text will be truncated
+        required: false
+      size:
+        type: string
+        caption: Size
+        description: Controls font-size and line-height
+        default: md
+        required: false
+      truncate:
+        type: string
+        caption: Truncate
+        description: Side on which Text must be truncated, if true, text is truncated
+          from the start
+        required: false
+      underline:
+        type: enumeration
+        caption: Underline
+        description: "Defines when text-decoration: underline styles are applied."
+        default: hover
+        required: false
+        enumerationValues:
+          always: Always
+          hover: Hover
+          not-hover: Not Hover
+          never: Never
