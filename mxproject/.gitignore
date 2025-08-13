@@ -1,0 +1,15 @@
+# Ignore everything by default.
+# This to make sure we include only needed files and don't ship any garbage.
+# If you need to include a file, make sure it's parent directories also included.
+*
+!.gitignore
+!Finch_Base.mpr
+
+!theme
+!theme/web
+!theme/web/main.scss
+!theme/web/settings.json
+
+!themesource
+!themesource/finch_web
+!themesource/finch_web/settings.json
