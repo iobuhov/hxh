@@ -7,9 +7,11 @@
 
 !theme
 !theme/web
-!theme/web/main.scss
 !theme/web/settings.json
 
 !themesource
 !themesource/finch_web
-!themesource/finch_web/settings.json
+!themesource/finch_web/web
+!themesource/finch_web/web/main.css
+!themesource/finch_web/web/main.scss
+!themesource/finch_web/web/settings.json
