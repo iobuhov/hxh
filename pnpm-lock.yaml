@@ -2016,6 +2016,24 @@ importers:
         specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
         version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
 
+  widgets/theme-provider:
+    dependencies:
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
   widgets/timeline:
     dependencies:
       '@mendix/pluggable-widgets-tools':
