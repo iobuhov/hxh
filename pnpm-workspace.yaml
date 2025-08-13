@@ -5,12 +5,13 @@ packages:
 
 catalog:
   '@eslint/js': ^9.32.0
+  '@mantine/core': 8.2.1
   '@mendix/pluggable-widgets-tools': ^10.21.2
   '@prettier/plugin-xml': ^3.4.2
   '@types/big.js': ^6.2.2
   '@types/jest': ^29.5.14
   '@types/node': ^22.13.10
-  '@types/react': '>=18.2.36'
+  '@types/react': ^18.0.0
   classnames: ^2.5.1
   eslint: ^9.32.0
   mendix: ^10.21.2

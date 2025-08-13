@@ -9,6 +9,9 @@ catalogs:
     '@eslint/js':
       specifier: ^9.32.0
       version: 9.32.0
+    '@mantine/core':
+      specifier: 8.2.1
+      version: 8.2.1
     '@mendix/pluggable-widgets-tools':
       specifier: ^10.21.2
       version: 10.21.2
@@ -29,10 +32,10 @@ overrides:
   '@types/big.js': ^6.2.2
   '@types/jest': ^29.5.14
   '@types/node': ^22.13.10
-  '@types/react': '>=18.2.36'
+  '@types/react': ^18.0.0
+  mpx: file:pkg/mendix-mpx-0.1.1.tgz
   react: ^18.0.0
   react-dom: ^18.0.0
-  mpx: file:pkg/mendix-mpx-0.1.1.tgz
 
 importers:
 
@@ -64,8 +67,8 @@ importers:
   modules/finch-web:
     dependencies:
       '@mantine/core':
-        specifier: ^8.2.1
-        version: 8.2.1(@mantine/hooks@8.2.1(react@18.3.1))(@types/react@19.1.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 'catalog:'
+        version: 8.2.1(@mantine/hooks@8.2.1(react@18.3.1))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mendix/accordion':
         specifier: workspace:*
         version: link:../../widgets/accordion
@@ -324,6 +327,9 @@ importers:
       '@mendix/theme-icon':
         specifier: workspace:*
         version: link:../../widgets/theme-icon
+      '@mendix/theme-provider':
+        specifier: workspace:*
+        version: link:../../widgets/theme-provider
       '@mendix/timeline':
         specifier: workspace:*
         version: link:../../widgets/timeline
@@ -442,7 +448,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -463,7 +469,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -484,7 +490,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -505,7 +511,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -526,7 +532,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -547,7 +553,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -568,7 +574,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -589,7 +595,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -610,7 +616,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -631,7 +637,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -652,7 +658,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -670,7 +676,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -688,7 +694,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -706,7 +712,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -724,7 +730,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -742,7 +748,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -760,7 +766,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -778,7 +784,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -796,7 +802,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -814,7 +820,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -832,7 +838,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -850,7 +856,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -868,7 +874,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -886,7 +892,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -904,7 +910,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -922,7 +928,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -940,7 +946,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -958,7 +964,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -976,7 +982,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -994,7 +1000,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1012,7 +1018,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1030,7 +1036,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1048,7 +1054,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1066,7 +1072,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1084,7 +1090,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1102,7 +1108,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1120,7 +1126,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1138,7 +1144,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1156,7 +1162,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1174,7 +1180,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1192,7 +1198,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1210,7 +1216,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1228,7 +1234,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1246,7 +1252,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1264,7 +1270,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1282,7 +1288,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1300,7 +1306,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1318,7 +1324,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1336,7 +1342,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1354,7 +1360,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1372,7 +1378,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1390,7 +1396,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1408,7 +1414,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1426,7 +1432,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1444,7 +1450,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1462,7 +1468,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1480,7 +1486,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1498,7 +1504,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1516,7 +1522,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1534,7 +1540,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1552,7 +1558,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1570,7 +1576,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1588,7 +1594,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1606,7 +1612,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1624,7 +1630,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1642,7 +1648,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1660,7 +1666,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1678,7 +1684,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1696,7 +1702,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1714,7 +1720,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1732,7 +1738,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1750,7 +1756,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1768,7 +1774,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1786,7 +1792,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1804,7 +1810,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1822,7 +1828,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1840,7 +1846,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1858,7 +1864,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1876,7 +1882,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1894,7 +1900,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1912,7 +1918,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1930,7 +1936,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1948,7 +1954,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1966,7 +1972,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1984,7 +1990,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -2002,7 +2008,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -2018,12 +2024,18 @@ importers:
 
   widgets/theme-provider:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 8.2.1(@mantine/hooks@8.2.1(react@18.3.1))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2038,7 +2050,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -2056,7 +2068,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -2074,7 +2086,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -2092,7 +2104,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -2110,7 +2122,7 @@ importers:
     dependencies:
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
-        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -3434,7 +3446,7 @@ packages:
     resolution: {integrity: sha512-kXsIV2eB73QClbbH/z/lRhZkyj3Dke4tarM5w2yXSNwJthMPMfj4KqLZ6Lnf0nmPPjz7qo/voKtlrGqlM822Rg==}
     engines: {node: '>=18'}
     peerDependencies:
-      '@types/react': '>=18.2.36'
+      '@types/react': ^18.0.0
       react: ^18.0.0
       react-native: '*'
     peerDependenciesMeta:
@@ -3722,16 +3734,19 @@ packages:
   '@types/node@22.16.5':
     resolution: {integrity: sha512-bJFoMATwIGaxxx8VJPeM8TonI8t579oRvgAuT8zFugJsJZgzqv0Fu8Mhp68iecjzG7cnN3mO2dJQ5uUM2EFrgQ==}
 
+  '@types/prop-types@15.7.15':
+    resolution: {integrity: sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==}
+
   '@types/react-dom@18.3.7':
     resolution: {integrity: sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==}
     peerDependencies:
-      '@types/react': '>=18.2.36'
+      '@types/react': ^18.0.0
 
   '@types/react-native@0.72.8':
     resolution: {integrity: sha512-St6xA7+EoHN5mEYfdWnfYt0e8u6k2FR0P9s2arYgakQGFgU1f9FlPrIEcj0X24pLCF5c5i3WVuLCUdiCYHmOoA==}
 
-  '@types/react@19.1.9':
-    resolution: {integrity: sha512-WmdoynAX8Stew/36uTSVMcLJJ1KRh6L3IZRx1PZ7qJtBqT3dYTgyDTx8H1qoRghErydW7xw9mSJ3wS//tCRpFA==}
+  '@types/react@18.3.23':
+    resolution: {integrity: sha512-/LDXMQh55EzZQ0uVAZmKKhfENivEvWz6E+EYzh+/MCjMhNsotd+ZHhBGIjFDTi6+fz0OhQQQLbTgdQIxxCsC0w==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -7187,7 +7202,7 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
-      '@types/react': '>=18.2.36'
+      '@types/react': ^18.0.0
       react: ^18.0.0
     peerDependenciesMeta:
       '@types/react':
@@ -7211,7 +7226,7 @@ packages:
     resolution: {integrity: sha512-9r+yi9+mgU33AKcj6IbT9oRCO78WriSj6t/cF8DWBZJ9aOGPOTEDvdUDz1FwKim7QXWwmHqtdHnRJfhAxEG46Q==}
     engines: {node: '>=10'}
     peerDependencies:
-      '@types/react': '>=18.2.36'
+      '@types/react': ^18.0.0
       react: ^18.0.0
     peerDependenciesMeta:
       '@types/react':
@@ -7221,7 +7236,7 @@ packages:
     resolution: {integrity: sha512-HpMh8+oahmIdOuS5aFKKY6Pyog+FNaZV/XyJOq7b4YFwsFHe5yYfdbIalI4k3vU2nSDql7YskmUseHsRrJqIPA==}
     engines: {node: '>=10'}
     peerDependencies:
-      '@types/react': '>=18.2.36'
+      '@types/react': ^18.0.0
       react: ^18.0.0
     peerDependenciesMeta:
       '@types/react':
@@ -7236,7 +7251,7 @@ packages:
     resolution: {integrity: sha512-b6jSvxvVnyptAiLjbkWLE/lOnR4lfTtDAl+eUC7RZy+QQWc6wRzIV2CE6xBuMmDxc2qIihtDCZD5NPOFl7fRBQ==}
     engines: {node: '>=10'}
     peerDependencies:
-      '@types/react': '>=18.2.36'
+      '@types/react': ^18.0.0
       react: ^18.0.0
     peerDependenciesMeta:
       '@types/react':
@@ -8108,7 +8123,7 @@ packages:
     resolution: {integrity: sha512-jQL3lRnocaFtu3V00JToYz/4QkNWswxijDaCVNZRiRTO3HQDLsdu1ZtmIUvV4yPp+rvWm5j0y0TG/S61cuijTg==}
     engines: {node: '>=10'}
     peerDependencies:
-      '@types/react': '>=18.2.36'
+      '@types/react': ^18.0.0
       react: ^18.0.0
     peerDependenciesMeta:
       '@types/react':
@@ -8145,7 +8160,7 @@ packages:
     resolution: {integrity: sha512-Fedw0aZvkhynoPYlA5WXrMCAMm+nSWdZt6lzJQ7Ok8S6Q+VsHmHpRWndVRJ8Be0ZbkfPc5LRYH+5XrzXcEeLRQ==}
     engines: {node: '>=10'}
     peerDependencies:
-      '@types/react': '>=18.2.36'
+      '@types/react': ^18.0.0
       react: ^18.0.0
     peerDependenciesMeta:
       '@types/react':
@@ -9753,7 +9768,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.4
 
-  '@mantine/core@8.2.1(@mantine/hooks@8.2.1(react@18.3.1))(@types/react@19.1.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@mantine/core@8.2.1(@mantine/hooks@8.2.1(react@18.3.1))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@floating-ui/react': 0.26.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mantine/hooks': 8.2.1(react@18.3.1)
@@ -9761,8 +9776,8 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-number-format: 5.4.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-remove-scroll: 2.7.1(@types/react@19.1.9)(react@18.3.1)
-      react-textarea-autosize: 8.5.9(@types/react@19.1.9)(react@18.3.1)
+      react-remove-scroll: 2.7.1(@types/react@18.3.23)(react@18.3.1)
+      react-textarea-autosize: 8.5.9(@types/react@18.3.23)(react@18.3.1)
       type-fest: 4.41.0
     transitivePeerDependencies:
       - '@types/react'
@@ -9801,7 +9816,7 @@ snapshots:
       - rollup
       - ts-node
 
-  '@mendix/pluggable-widgets-tools@10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)':
+  '@mendix/pluggable-widgets-tools@10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)':
     dependencies:
       '@babel/core': 7.28.0
       '@babel/plugin-transform-class-properties': 7.27.1(@babel/core@7.28.0)
@@ -9823,11 +9838,11 @@ snapshots:
       '@rollup/pluginutils': 5.2.0(rollup@3.29.5)
       '@testing-library/dom': 8.20.1
       '@testing-library/jest-dom': 5.17.0
-      '@testing-library/react': 13.4.0(@types/react@19.1.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@testing-library/react': 13.4.0(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@testing-library/user-event': 14.6.1(@testing-library/dom@8.20.1)
-      '@types/react': 19.1.9
-      '@types/react-dom': 18.3.7(@types/react@19.1.9)
-      '@types/react-native': 0.72.8(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))
+      '@types/react': 18.3.23
+      '@types/react-dom': 18.3.7(@types/react@18.3.23)
+      '@types/react-native': 0.72.8(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))
       '@types/testing-library__jest-dom': 5.14.9
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@7.32.0)(typescript@5.8.3))(eslint@7.32.0)(typescript@5.8.3)
       '@typescript-eslint/parser': 5.62.0(eslint@7.32.0)(typescript@5.8.3)
@@ -10059,20 +10074,20 @@ snapshots:
 
   '@react-native/normalize-colors@0.80.2': {}
 
-  '@react-native/virtualized-lists@0.72.8(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))':
+  '@react-native/virtualized-lists@0.72.8(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))':
     dependencies:
       invariant: 2.2.4
       nullthrows: 1.1.1
-      react-native: 0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1)
+      react-native: 0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1)
 
-  '@react-native/virtualized-lists@0.80.2(@types/react@19.1.9)(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)':
+  '@react-native/virtualized-lists@0.80.2(@types/react@18.3.23)(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)':
     dependencies:
       invariant: 2.2.4
       nullthrows: 1.1.1
       react: 18.3.1
-      react-native: 0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1)
+      react-native: 0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1)
     optionalDependencies:
-      '@types/react': 19.1.9
+      '@types/react': 18.3.23
 
   '@rolldown/binding-darwin-arm64@1.0.0-beta.26':
     optional: true
@@ -10232,11 +10247,11 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
 
-  '@testing-library/react@13.4.0(@types/react@19.1.9)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@testing-library/react@13.4.0(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.2
       '@testing-library/dom': 8.20.1
-      '@types/react-dom': 18.3.7(@types/react@19.1.9)
+      '@types/react-dom': 18.3.7(@types/react@18.3.23)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
@@ -10341,19 +10356,22 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
-  '@types/react-dom@18.3.7(@types/react@19.1.9)':
-    dependencies:
-      '@types/react': 19.1.9
+  '@types/prop-types@15.7.15': {}
 
-  '@types/react-native@0.72.8(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))':
+  '@types/react-dom@18.3.7(@types/react@18.3.23)':
     dependencies:
-      '@react-native/virtualized-lists': 0.72.8(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))
-      '@types/react': 19.1.9
+      '@types/react': 18.3.23
+
+  '@types/react-native@0.72.8(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))':
+    dependencies:
+      '@react-native/virtualized-lists': 0.72.8(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))
+      '@types/react': 18.3.23
     transitivePeerDependencies:
       - react-native
 
-  '@types/react@19.1.9':
+  '@types/react@18.3.23':
     dependencies:
+      '@types/prop-types': 15.7.15
       csstype: 3.1.3
 
   '@types/resolve@1.20.2': {}
@@ -13458,7 +13476,7 @@ snapshots:
   mendix@10.24.75382:
     dependencies:
       '@types/big.js': 6.2.2
-      '@types/react': 19.1.9
+      '@types/react': 18.3.23
 
   merge-stream@2.0.0: {}
 
@@ -14524,7 +14542,7 @@ snapshots:
 
   react-is@18.3.1: {}
 
-  react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1):
+  react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       '@jest/create-cache-key-function': 29.7.0
       '@react-native/assets-registry': 0.80.2
@@ -14533,7 +14551,7 @@ snapshots:
       '@react-native/gradle-plugin': 0.80.2
       '@react-native/js-polyfills': 0.80.2
       '@react-native/normalize-colors': 0.80.2
-      '@react-native/virtualized-lists': 0.80.2(@types/react@19.1.9)(react-native@0.80.2(@babel/core@7.28.0)(@types/react@19.1.9)(react@18.3.1))(react@18.3.1)
+      '@react-native/virtualized-lists': 0.80.2(@types/react@18.3.23)(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)
       abort-controller: 3.0.0
       anser: 1.4.10
       ansi-regex: 5.0.1
@@ -14563,7 +14581,7 @@ snapshots:
       ws: 6.2.3
       yargs: 17.7.2
     optionalDependencies:
-      '@types/react': 19.1.9
+      '@types/react': 18.3.23
     transitivePeerDependencies:
       - '@babel/core'
       - '@react-native-community/cli'
@@ -14580,24 +14598,24 @@ snapshots:
 
   react-refresh@0.4.3: {}
 
-  react-remove-scroll-bar@2.3.8(@types/react@19.1.9)(react@18.3.1):
+  react-remove-scroll-bar@2.3.8(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       react: 18.3.1
-      react-style-singleton: 2.2.3(@types/react@19.1.9)(react@18.3.1)
+      react-style-singleton: 2.2.3(@types/react@18.3.23)(react@18.3.1)
       tslib: 2.8.1
     optionalDependencies:
-      '@types/react': 19.1.9
+      '@types/react': 18.3.23
 
-  react-remove-scroll@2.7.1(@types/react@19.1.9)(react@18.3.1):
+  react-remove-scroll@2.7.1(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       react: 18.3.1
-      react-remove-scroll-bar: 2.3.8(@types/react@19.1.9)(react@18.3.1)
-      react-style-singleton: 2.2.3(@types/react@19.1.9)(react@18.3.1)
+      react-remove-scroll-bar: 2.3.8(@types/react@18.3.23)(react@18.3.1)
+      react-style-singleton: 2.2.3(@types/react@18.3.23)(react@18.3.1)
       tslib: 2.8.1
-      use-callback-ref: 1.3.3(@types/react@19.1.9)(react@18.3.1)
-      use-sidecar: 1.1.3(@types/react@19.1.9)(react@18.3.1)
+      use-callback-ref: 1.3.3(@types/react@18.3.23)(react@18.3.1)
+      use-sidecar: 1.1.3(@types/react@18.3.23)(react@18.3.1)
     optionalDependencies:
-      '@types/react': 19.1.9
+      '@types/react': 18.3.23
 
   react-shallow-renderer@16.15.0(react@18.3.1):
     dependencies:
@@ -14605,13 +14623,13 @@ snapshots:
       react: 18.3.1
       react-is: 18.3.1
 
-  react-style-singleton@2.2.3(@types/react@19.1.9)(react@18.3.1):
+  react-style-singleton@2.2.3(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       get-nonce: 1.0.1
       react: 18.3.1
       tslib: 2.8.1
     optionalDependencies:
-      '@types/react': 19.1.9
+      '@types/react': 18.3.23
 
   react-test-renderer@18.2.0(react@18.3.1):
     dependencies:
@@ -14620,12 +14638,12 @@ snapshots:
       react-shallow-renderer: 16.15.0(react@18.3.1)
       scheduler: 0.23.2
 
-  react-textarea-autosize@8.5.9(@types/react@19.1.9)(react@18.3.1):
+  react-textarea-autosize@8.5.9(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.28.2
       react: 18.3.1
-      use-composed-ref: 1.4.0(@types/react@19.1.9)(react@18.3.1)
-      use-latest: 1.3.0(@types/react@19.1.9)(react@18.3.1)
+      use-composed-ref: 1.4.0(@types/react@18.3.23)(react@18.3.1)
+      use-latest: 1.3.0(@types/react@18.3.23)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
 
@@ -15582,39 +15600,39 @@ snapshots:
       querystringify: 2.2.0
       requires-port: 1.0.0
 
-  use-callback-ref@1.3.3(@types/react@19.1.9)(react@18.3.1):
+  use-callback-ref@1.3.3(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       react: 18.3.1
       tslib: 2.8.1
     optionalDependencies:
-      '@types/react': 19.1.9
+      '@types/react': 18.3.23
 
-  use-composed-ref@1.4.0(@types/react@19.1.9)(react@18.3.1):
+  use-composed-ref@1.4.0(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 19.1.9
+      '@types/react': 18.3.23
 
-  use-isomorphic-layout-effect@1.2.1(@types/react@19.1.9)(react@18.3.1):
+  use-isomorphic-layout-effect@1.2.1(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       react: 18.3.1
     optionalDependencies:
-      '@types/react': 19.1.9
+      '@types/react': 18.3.23
 
-  use-latest@1.3.0(@types/react@19.1.9)(react@18.3.1):
+  use-latest@1.3.0(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       react: 18.3.1
-      use-isomorphic-layout-effect: 1.2.1(@types/react@19.1.9)(react@18.3.1)
+      use-isomorphic-layout-effect: 1.2.1(@types/react@18.3.23)(react@18.3.1)
     optionalDependencies:
-      '@types/react': 19.1.9
+      '@types/react': 18.3.23
 
-  use-sidecar@1.1.3(@types/react@19.1.9)(react@18.3.1):
+  use-sidecar@1.1.3(@types/react@18.3.23)(react@18.3.1):
     dependencies:
       detect-node-es: 1.1.0
       react: 18.3.1
       tslib: 2.8.1
     optionalDependencies:
-      '@types/react': 19.1.9
+      '@types/react': 18.3.23
 
   util-deprecate@1.0.2: {}
 

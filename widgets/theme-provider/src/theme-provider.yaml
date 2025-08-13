@@ -1,0 +1,13 @@
+widget:
+  id: com.mendix.finch.widget.themeprovider.ThemeProvider
+  name: Theme provider
+  description: Provide theme object for widgets
+  pluginWidget: true
+  offlineCapable: false
+
+  properties:
+    General:
+      children:
+        type: widgets
+        caption: Content
+        required: false

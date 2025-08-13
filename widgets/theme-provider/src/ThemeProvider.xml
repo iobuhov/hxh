@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
 <widget
     id="com.mendix.finch.widget.themeprovider.ThemeProvider"
     pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
+    offlineCapable="false"
     xmlns="http://www.mendix.com/widget/1.0/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
 >
-    <name>ThemeProvider</name>
-    <description>Provides a theme object context value, manages color scheme changes and injects CSS variables.</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <name>Theme provider</name>
+    <description>Provide theme object for widgets</description>
+    <studioProCategory />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
+            <property key="children" type="widgets" required="false">
+                <caption>Content</caption>
                 <description />
             </property>
         </propertyGroup>
