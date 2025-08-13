@@ -1,5 +1,5 @@
 {
-    "name": "@mendix/finch-ui",
+    "name": "@mendix/finch-web",
     "version": "0.1.0",
     "description": "Finch UI component toolkit",
     "license": "Apache-2.0",
@@ -14,8 +14,6 @@
     },
     "dependencies": {
         "@mantine/core": "^8.2.1",
-        "@mendix/button": "workspace:*",
-        "@mendix/finch-ui": "link:",
         "@mendix/accordion": "workspace:*",
         "@mendix/action-icon": "workspace:*",
         "@mendix/affix": "workspace:*",
@@ -31,6 +29,7 @@
         "@mendix/blockquote": "workspace:*",
         "@mendix/breadcrumbs": "workspace:*",
         "@mendix/burger": "workspace:*",
+        "@mendix/button": "workspace:*",
         "@mendix/card": "workspace:*",
         "@mendix/center": "workspace:*",
         "@mendix/checkbox": "workspace:*",
@@ -48,6 +47,7 @@
         "@mendix/fieldset": "workspace:*",
         "@mendix/file-button": "workspace:*",
         "@mendix/file-input": "workspace:*",
+        "@mendix/finch-ui": "link:",
         "@mendix/flex": "workspace:*",
         "@mendix/floating-indicator": "workspace:*",
         "@mendix/grid": "workspace:*",
