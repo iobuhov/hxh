@@ -4,7 +4,7 @@ The Finch UI module provides build tools and utilities for the Finch UI componen
 
 ## Overview
 
-The `@mendix/finch-ui` module is a build toolkit that manages:
+The `@mendix/finch-web` module is a build toolkit that manages:
 
 - CSS compilation with PostCSS
 - Widget dependency synchronization
@@ -25,7 +25,7 @@ Builds the complete module with all assets:
 - Copies widget MPK files
 
 ```bash
-cd modules/finch-ui
+cd modules/finch-web
 pnpm build
 ```
 
@@ -40,7 +40,7 @@ Starts development mode with file watching:
 - Runs continuously until stopped with Ctrl+C
 
 ```bash
-cd modules/finch-ui
+cd modules/finch-web
 pnpm dev
 ```
 
@@ -51,7 +51,7 @@ pnpm dev
 Removes all build artifacts and temporary files:
 
 ```bash
-cd modules/finch-ui
+cd modules/finch-web
 pnpm clean
 ```
 
@@ -60,7 +60,7 @@ pnpm clean
 Synchronizes widget dependencies and ensures all required files are in place:
 
 ```bash
-cd modules/finch-ui
+cd modules/finch-web
 pnpm sync-widgets
 ```
 
@@ -69,7 +69,7 @@ pnpm sync-widgets
 Copies widget MPK files to the appropriate distribution location:
 
 ```bash
-cd modules/finch-ui
+cd modules/finch-web
 pnpm copy-widgets
 ```
 
@@ -78,7 +78,7 @@ pnpm copy-widgets
 Watches CSS files for changes and automatically recompiles:
 
 ```bash
-cd modules/finch-ui
+cd modules/finch-web
 pnpm watch-css
 ```
 
@@ -118,7 +118,7 @@ module.exports = {
 ## File Structure
 
 ```
-modules/finch-ui/
+modules/finch-web/
 ├── tasks/
 │   ├── cli.mts              # Main CLI entry point
 │   ├── css.task.mts         # CSS compilation task
@@ -158,7 +158,7 @@ modules/finch-ui/
 1. **Start Development Mode**:
 
     ```bash
-    cd modules/finch-ui
+    cd modules/finch-web
     pnpm dev
     ```
 

@@ -165,9 +165,6 @@ importers:
       '@mendix/file-input':
         specifier: workspace:*
         version: link:../../widgets/file-input
-      '@mendix/finch-ui':
-        specifier: 'link:'
-        version: 'link:'
       '@mendix/flex':
         specifier: workspace:*
         version: link:../../widgets/flex

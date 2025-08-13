@@ -1,8 +1,9 @@
-import { $ } from "zx";
-import { readFile, writeFile, access } from "node:fs/promises";
-import { join } from "node:path";
 import log from "fancy-log";
+import { access, readFile, writeFile } from "node:fs/promises";
+import { join } from "node:path";
 import pc from "picocolors";
+import { $ } from "zx";
+import { __name } from "./lib/consts.mjs";
 
 interface WidgetPackage {
     name: string;
@@ -63,7 +64,7 @@ export async function syncWidgets() {
         return;
     }
 
-    // Read finch-ui package.json
+    // Read finch-web package.json
     const finchUiPackageContent = await readFile(finchUiPackagePath, "utf-8");
     const finchUiPackage = JSON.parse(finchUiPackageContent);
 
@@ -84,7 +85,7 @@ export async function syncWidgets() {
 
         // Write updated package.json
         await writeFile(finchUiPackagePath, JSON.stringify(finchUiPackage, null, 4) + "\n");
-        log(pc.green("Updated finch-ui package.json with widget dependencies"));
+        log(pc.green(`Updated ${__name} package.json with widget dependencies`));
 
         // Install dependencies
         log("Installing dependencies...");

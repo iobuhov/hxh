@@ -47,7 +47,6 @@
         "@mendix/fieldset": "workspace:*",
         "@mendix/file-button": "workspace:*",
         "@mendix/file-input": "workspace:*",
-        "@mendix/finch-ui": "link:",
         "@mendix/flex": "workspace:*",
         "@mendix/floating-indicator": "workspace:*",
         "@mendix/grid": "workspace:*",

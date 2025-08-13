@@ -1,14 +1,14 @@
-import { $ } from "zx";
-import { rm } from "node:fs/promises";
-import { existsSync } from "node:fs";
-import { join } from "node:path";
 import log from "fancy-log";
-import { pc } from "./lib/pc.mjs";
+import { existsSync } from "node:fs";
+import { rm } from "node:fs/promises";
+import { join } from "node:path";
+import { __name } from "./lib/consts.mjs";
 import { projectPath } from "./lib/env.mjs";
+import { pc } from "./lib/pc.mjs";
 
 export async function clean() {
     if (projectPath) {
-        let themeSourcePath = join(projectPath, "themesource", "finch-ui");
+        let themeSourcePath = join(projectPath, "themesource", __name);
         if (existsSync(themeSourcePath)) {
             await rm(themeSourcePath, { recursive: true, force: true });
             log.info(pc.green("Cleaned theme source directory"));

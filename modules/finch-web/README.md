@@ -4,7 +4,7 @@ This module provides build tools and utilities for the Finch UI component toolki
 
 ## Documentation
 
-📖 **For complete documentation, see [docs/finch-ui.md](../../docs/finch-ui.md)**
+📖 **For complete documentation, see [docs/finch-web.md](../../docs/finch-web.md)**
 
 The documentation includes:
 
@@ -36,4 +36,4 @@ pnpm build
 - `pnpm copy-widgets` - Copy widget MPK files
 - `pnpm watch-css` - Watch CSS files for changes
 
-For detailed information about each script and the development workflow, please refer to the [main documentation](../../docs/finch-ui.md).
+For detailed information about each script and the development workflow, please refer to the [main documentation](../../docs/finch-web.md).
