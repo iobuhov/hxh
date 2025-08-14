@@ -20,6 +20,7 @@
     },
     "dependencies": {
         "@mantine/core": "catalog:",
+        "@mantine/hooks": "catalog:",
         "@mendix/pluggable-widgets-tools": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
         "@mendix/yaml-to-xml-converter": "workspace:*",

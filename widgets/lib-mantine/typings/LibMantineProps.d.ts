@@ -1,19 +1,20 @@
 /**
- * This file was generated from AppShell.xml
+ * This file was generated from LibMantine.xml
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Framework Team
  */
-import { ComponentType, CSSProperties, ReactNode } from "react";
+import { CSSProperties } from "react";
+import { DynamicValue } from "mendix";
 
-export interface AppShellContainerProps {
+export interface LibMantineContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    children?: ReactNode;
+    unused?: DynamicValue<string>;
 }
 
-export interface AppShellPreviewProps {
+export interface LibMantinePreviewProps {
     /**
      * @deprecated Deprecated since version 9.18.0. Please use class property instead.
      */
@@ -24,5 +25,5 @@ export interface AppShellPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    children: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
+    unused: string;
 }

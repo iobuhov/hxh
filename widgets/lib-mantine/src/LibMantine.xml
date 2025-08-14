@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="com.mendix.finch.widget.libmantine.LibMantine"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
+    <name>LibMantine</name>
+    <description>This is transitive widget that just used to host mantine code</description>
+    <studioProCategory>Finch</studioProCategory>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="unused" type="textTemplate" multiline="true" required="false">
+                <caption>Text</caption>
+                <description>This is transitive widget that just used to host mantine code</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

@@ -4,12 +4,14 @@ import { ThemeProviderPreviewProps } from "../typings/ThemeProviderProps";
 
 export function preview({ children }: ThemeProviderPreviewProps): ReactElement {
     const Placeholder = children.renderer;
-    const [theme] = useState(() =>
-        createTheme({
+    const [theme] = useState(() => {
+        const theme = createTheme({
             fontFamily: "Open Sans, sans-serif",
             primaryColor: "cyan"
-        })
-    );
+        });
+        (window as any).mantineSharedTheme = theme;
+        return theme;
+    });
     return (
         <MantineProvider theme={theme}>
             <Placeholder caption="Content">

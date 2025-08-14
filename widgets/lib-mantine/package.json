@@ -1,8 +1,8 @@
 {
-    "name": "@mendix/app-shell",
-    "widgetName": "AppShell",
+    "name": "@mendix/lib-mantine",
+    "widgetName": "LibMantine",
     "version": "0.1.0",
-    "description": "Responsive shell for your application with header, navbar, aside and footer",
+    "description": "This is transitive widget that just used to host mantine code",
     "copyright": "© 2025 Illia Obukhau",
     "author": "Illia Obukhau",
     "engines": {
@@ -16,15 +16,13 @@
         "dev": "mpx -w",
         "lint": "pluggable-widgets-tools lint",
         "test": "pluggable-widgets-tools test:unit:web --no-cache --ci",
-        "test:unit": "pluggable-widgets-tools test:unit:web --coverage",
-        "update-xml": "yaml-to-xml src/appshell.yaml src/AppShell.xml"
+        "test:unit": "pluggable-widgets-tools test:unit:web --coverage"
     },
     "dependencies": {
         "@mantine/core": "catalog:",
         "@mantine/hooks": "catalog:",
         "@mendix/pluggable-widgets-tools": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
-        "@mendix/yaml-to-xml-converter": "workspace:*",
         "classnames": "catalog:",
         "mendix": "catalog:",
         "mpx": "*"

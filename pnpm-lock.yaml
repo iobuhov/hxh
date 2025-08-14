@@ -12,6 +12,9 @@ catalogs:
     '@mantine/core':
       specifier: 8.2.1
       version: 8.2.1
+    '@mantine/hooks':
+      specifier: 8.2.1
+      version: 8.2.1
     '@mendix/pluggable-widgets-tools':
       specifier: ^10.21.2
       version: 10.21.2
@@ -68,7 +71,7 @@ importers:
     dependencies:
       '@mantine/core':
         specifier: 'catalog:'
-        version: 8.2.1(@mantine/hooks@8.2.1(react@18.3.1))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 8.2.1(@mantine/hooks@8.2.4(react@18.3.1))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@mendix/accordion':
         specifier: workspace:*
         version: link:../../widgets/accordion
@@ -572,6 +575,12 @@ importers:
 
   widgets/app-shell:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 8.2.1(@mantine/hooks@8.2.1(react@18.3.1))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 8.2.1(react@18.3.1)
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
         version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
@@ -1266,6 +1275,30 @@ importers:
         specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
         version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
 
+  widgets/lib-mantine:
+    dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 8.2.1(@mantine/hooks@8.2.1(react@18.3.1))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 8.2.1(react@18.3.1)
+      '@mendix/pluggable-widgets-tools':
+        specifier: 'catalog:'
+        version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
   widgets/list:
     dependencies:
       '@mendix/pluggable-widgets-tools':
@@ -1319,6 +1352,15 @@ importers:
       mpx:
         specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
         version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.3)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@5.8.3))'
+
+  widgets/mantine:
+    dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 8.2.1(@mantine/hooks@8.2.1(react@18.3.1))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 8.2.1(react@18.3.1)
 
   widgets/mark:
     dependencies:
@@ -2027,6 +2069,9 @@ importers:
       '@mantine/core':
         specifier: 'catalog:'
         version: 8.2.1(@mantine/hooks@8.2.1(react@18.3.1))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 8.2.1(react@18.3.1)
       '@mendix/pluggable-widgets-tools':
         specifier: 'catalog:'
         version: 10.21.2(@jest/transform@29.7.0)(@jest/types@29.6.3)(@types/babel__core@7.20.5)(@types/node@22.16.5)(jest-util@29.7.0)(picomatch@4.0.3)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.2(@babel/core@7.28.0)(@types/react@18.3.23)(react@18.3.1))(react@18.3.1)(tslib@2.8.1)
@@ -3261,6 +3306,11 @@ packages:
 
   '@mantine/hooks@8.2.1':
     resolution: {integrity: sha512-gnRDk5FXCD9fa0AjlAj9otCsZL9QJzVrpYZk9KjOEoP5XR1TEE2F9/rGbajh1UVjPnD3jUlNLRJMH0YHTlA65A==}
+    peerDependencies:
+      react: ^18.0.0
+
+  '@mantine/hooks@8.2.4':
+    resolution: {integrity: sha512-ZXQ0uk6UtJa6Gl+ZWMBh4wC7UqCAoWWvau1TOoe05sBrkyGcXSVrTfoCVzjEQaB/h8VEOUWLGtJokkiMQKcMzA==}
     peerDependencies:
       react: ^18.0.0
 
@@ -9782,7 +9832,25 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
+  '@mantine/core@8.2.1(@mantine/hooks@8.2.4(react@18.3.1))(@types/react@18.3.23)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@floating-ui/react': 0.26.28(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@mantine/hooks': 8.2.4(react@18.3.1)
+      clsx: 2.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-number-format: 5.4.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-remove-scroll: 2.7.1(@types/react@18.3.23)(react@18.3.1)
+      react-textarea-autosize: 8.5.9(@types/react@18.3.23)(react@18.3.1)
+      type-fest: 4.41.0
+    transitivePeerDependencies:
+      - '@types/react'
+
   '@mantine/hooks@8.2.1(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
+  '@mantine/hooks@8.2.4(react@18.3.1)':
     dependencies:
       react: 18.3.1
 

@@ -1,5 +1,7 @@
 import { ReactElement, createElement } from "react";
+import { AppShellContainerProps } from "../typings/AppShellProps";
+import { Shell } from "./AppShellView";
 
-export function AppShell(): ReactElement {
-    return <div>Widget</div>;
+export function AppShell(props: AppShellContainerProps): ReactElement {
+    return <Shell>{props.children}</Shell>;
 }

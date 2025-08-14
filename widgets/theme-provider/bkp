@@ -1,0 +1,88 @@
+import { join, format, parse, relative } from "node:path";
+
+export default function mantineAsShared(args) {
+    let [widgetESM, , editorPreview, editorConfig] = args.configDefaultConfig;
+    const external = [...widgetESM.external];
+    const sharedDir = join("dist", "tmp", "widgets", "com", "finch", "mantine", "core");
+
+    const bundle = {
+        mantineCore: {
+            input: "@mantine/core",
+            file: {
+                umd: "mantine.core.min.js",
+                esm: "mantine.core.min.mjs"
+            }
+        },
+        external,
+        umdDir: join(sharedDir, "umd"),
+        esmDir: join(sharedDir, "esm")
+    };
+
+    // const entries = [widgetESM].map(inputOptions => {
+    //     // Plotly and shared marked as external
+    //     inputOptions.external = [...external, bundle.mantineCore.input];
+
+    //     const format = inputOptions.output.format;
+    //     const paths = {};
+
+    //     paths[bundle.mantineCore.input] =
+    //         format === "es"
+    //             ? `../../../mantine/core/esm/${bundle.mantineCore.file.esm}`
+    //             : `../../../mantine/core/umd/${bundle.mantineCore.file.umd}`;
+
+    //     inputOptions.output = {
+    //         ...inputOptions.output,
+    //         paths
+    //     };
+
+    //     if (format === "umd") {
+    //         inputOptions.output.globals = {
+    //             ...inputOptions.output.globals,
+    //             [bundle.mantineCore.input]: "mantine_core"
+    //         };
+    //     }
+    //     return inputOptions;
+    // });
+    const entries = [widgetESM].map(config => {
+        const file = parse(config.output.file);
+        delete config.output.file;
+
+        config.output.dir = join("dist", "tmp", "widgets", "com", "mendix", "finch");
+        config.output.entryFileNames = join(relative(config.output.dir, file.dir), "[name].mjs");
+        config.output.chunkFileNames = join("mantine", "[name].mjs");
+        config.output.advancedChunks = {
+            groups: [
+                {
+                    test: /node_modules\/@mantine\/core/,
+                    name: "core"
+                },
+                {
+                    test: /node_modules\/@mantine\/hooks/,
+                    name: "hooks"
+                }
+            ]
+        };
+
+        return config;
+    });
+
+    return [...entries, editorConfig, editorPreview];
+}
+
+function mantineCore(bundle) {
+    const esmOutput = {
+        format: "es",
+        file: format({ dir: bundle.esmDir, base: bundle.mantineCore.file.esm })
+    };
+
+    const umdOutput = {
+        format: "umd",
+        file: format({ dir: bundle.umdDir, base: bundle.mantineCore.file.umd })
+    };
+
+    return {
+        input: bundle.mantineCore.input,
+        external: [...bundle.external],
+        output: [esmOutput, umdOutput]
+    };
+}

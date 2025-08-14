@@ -1,62 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget id="com.mendix.finch.widget.appshell.AppShell" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Web" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget
+    id="com.mendix.finch.widget.appshell.AppShell"
+    pluginWidget="true"
+    offlineCapable="false"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
     <name>AppShell</name>
     <description>Responsive shell for your application with header, navbar, aside and footer</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioProCategory />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="aside" type="string" required="false">
-                <caption>Aside</caption>
-                <description>Aside configuration, controls width, breakpoints and collapsed state. Required if you use Aside component.</description>
-            </property>
-            <property key="disabled" type="boolean" required="false">
-                <caption>Disabled</caption>
-                <description>If set, Navbar, Aside, Header and Footer components are hidden</description>
-            </property>
-            <property key="footer" type="string" required="false">
-                <caption>Footer</caption>
-                <description>Footer configuration, controls height, offset and collapsed state. Required if you use Footer component.</description>
-            </property>
-            <property key="header" type="string" required="false">
-                <caption>Header</caption>
-                <description>Header configuration, controls height, offset and collapsed state. Required if you use Header component.</description>
-            </property>
-            <property key="layout" type="enumeration" required="false">
-                <caption>Layout</caption>
-                <description>Determines how Navbar/Aside are arranged relative to Header/Footer</description>
-                <enumerationValues>
-                    <enumerationValue key="default">default</enumerationValue>
-                    <enumerationValue key="alt">alt</enumerationValue>
-                </enumerationValues>
-            </property>
-            <property key="navbar" type="string" required="false">
-                <caption>Navbar</caption>
-                <description>Navbar configuration, controls width, breakpoints and collapsed state. Required if you use Navbar component.</description>
-            </property>
-            <property key="offsetScrollbars" type="boolean" required="false">
-                <caption>Offset Scrollbars</caption>
-                <description>If set, Header and Footer components include styles to offset scrollbars. Based on react-remove-scroll.</description>
-            </property>
-            <property key="padding" type="string" required="false" defaultValue="0">
-                <caption>Padding</caption>
-                <description>Padding of the main section. Important: use padding prop instead of p.</description>
-            </property>
-            <property key="transitionDuration" type="integer" required="false" defaultValue="200">
-                <caption>Transition Duration</caption>
-                <description>Duration of all transitions in ms</description>
-            </property>
-            <property key="transitionTimingFunction" type="string" required="false" defaultValue="ease">
-                <caption>Transition Timing Function</caption>
-                <description>Timing function of all transitions</description>
-            </property>
-            <property key="withBorder" type="boolean" required="false" defaultValue="true">
-                <caption>With Border</caption>
-                <description>If set, the associated components have a border</description>
-            </property>
-            <property key="zIndex" type="string" required="false" defaultValue="100">
-                <caption>ZIndex</caption>
-                <description>z-index of all associated elements</description>
+            <property key="children" type="widgets" required="false">
+                <caption>Main</caption>
+                <description />
             </property>
         </propertyGroup>
     </properties>
