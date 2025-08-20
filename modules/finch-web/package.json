@@ -105,7 +105,8 @@
         "@mendix/tooltip": "workspace:*",
         "@mendix/tree": "workspace:*",
         "@mendix/typography": "workspace:*",
-        "@mendix/theme-provider": "workspace:*"
+        "@mendix/theme-provider": "workspace:*",
+        "@mendix/lib-mantine": "workspace:*"
     },
     "devDependencies": {
         "@tsconfig/node22": "^22.0.2",

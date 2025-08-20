@@ -1,12 +1,11 @@
-import * as zx from "zx";
 import { cac } from "cac";
-import { css } from "./css.task.mjs";
-import { clean } from "./clean.task.mjs";
-import { syncWidgets } from "./sync-widgets.task.mjs";
-import { copyWidgets } from "./copy-widgets.task.mjs";
-import { watchWidgets } from "./watch-widgets.task.mjs";
-import { watchCss } from "./watch-css.task.mjs";
 import log from "fancy-log";
+import { clean } from "./clean.task.mjs";
+import { copyWidgets } from "./copy-widgets.task.mjs";
+import { css } from "./css.task.mjs";
+import { syncWidgets } from "./sync-widgets.task.mjs";
+import { watchCss } from "./watch-css.task.mjs";
+import { watchWidgets } from "./watch-widgets.task.mjs";
 
 const cli = cac("finch");
 
@@ -35,6 +34,10 @@ cli.command("sync-widgets", "Sync widget dependencies").action(async () => {
 
 cli.command("copy-widgets", "Copy widget MPK files").action(async () => {
     await copyWidgets();
+});
+
+cli.command("watch-css", "Watch CSS files for changes").action(async () => {
+    await watchCss();
 });
 
 cli.parse();

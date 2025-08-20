@@ -204,6 +204,9 @@ importers:
       '@mendix/kbd':
         specifier: workspace:*
         version: link:../../widgets/kbd
+      '@mendix/lib-mantine':
+        specifier: workspace:*
+        version: link:../../widgets/lib-mantine
       '@mendix/list':
         specifier: workspace:*
         version: link:../../widgets/list

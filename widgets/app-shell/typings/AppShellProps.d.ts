@@ -11,6 +11,8 @@ export interface AppShellContainerProps {
     style?: CSSProperties;
     tabIndex?: number;
     children?: ReactNode;
+    navbar?: ReactNode;
+    header?: ReactNode;
 }
 
 export interface AppShellPreviewProps {
@@ -25,4 +27,6 @@ export interface AppShellPreviewProps {
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
     children: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
+    navbar: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
+    header: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
 }

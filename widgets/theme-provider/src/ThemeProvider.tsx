@@ -1,5 +1,5 @@
-import { MantineProvider, createTheme } from "@mantine/core";
-import { ReactElement, createElement, useState } from "react";
+import { Fragment, ReactElement, createElement, useState } from "react";
+import { ColorSchemeScript, MantineProvider, createTheme } from "../../mantine/mantine.main.mjs";
 import { ThemeProviderContainerProps } from "../typings/ThemeProviderProps";
 
 export function ThemeProvider(props: ThemeProviderContainerProps): ReactElement {
@@ -10,5 +10,12 @@ export function ThemeProvider(props: ThemeProviderContainerProps): ReactElement 
         });
         return theme;
     });
-    return <MantineProvider theme={theme}>{props.children}</MantineProvider>;
+    return (
+        <Fragment>
+            <ColorSchemeScript defaultColorScheme="auto" />
+            <MantineProvider theme={theme} defaultColorScheme="auto">
+                {props.children}
+            </MantineProvider>
+        </Fragment>
+    );
 }

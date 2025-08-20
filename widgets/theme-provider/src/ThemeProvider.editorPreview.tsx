@@ -1,8 +1,9 @@
 import { MantineProvider, createTheme } from "@mantine/core";
-import { ReactElement, createElement, useState } from "react";
+import { Fragment, ReactElement, createElement, useRef, useState } from "react";
 import { ThemeProviderPreviewProps } from "../typings/ThemeProviderProps";
 
 export function preview({ children }: ThemeProviderPreviewProps): ReactElement {
+    const pageRef = useRef<HTMLDivElement>(null);
     const Placeholder = children.renderer;
     const [theme] = useState(() => {
         const theme = createTheme({
@@ -12,11 +13,17 @@ export function preview({ children }: ThemeProviderPreviewProps): ReactElement {
         (window as any).mantineSharedTheme = theme;
         return theme;
     });
+    const getRootElement = () => pageRef.current ?? undefined;
+
     return (
-        <MantineProvider theme={theme}>
-            <Placeholder caption="Content">
-                <div />
-            </Placeholder>
-        </MantineProvider>
+        <Fragment>
+            <div className="mantine-root preview" ref={pageRef}>
+                <MantineProvider theme={theme} defaultColorScheme="auto" getRootElement={getRootElement}>
+                    <Placeholder caption="Content">
+                        <div />
+                    </Placeholder>
+                </MantineProvider>
+            </div>
+        </Fragment>
     );
 }

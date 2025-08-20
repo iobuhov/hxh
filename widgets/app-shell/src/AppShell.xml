@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--This is an auto-generated XML file. Do not edit manually.-->
-<widget
-    id="com.mendix.finch.widget.appshell.AppShell"
-    pluginWidget="true"
-    offlineCapable="false"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<widget id="com.mendix.finch.widget.appshell.AppShell" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>AppShell</name>
     <description>Responsive shell for your application with header, navbar, aside and footer</description>
     <studioProCategory />
@@ -17,6 +10,14 @@
         <propertyGroup caption="General">
             <property key="children" type="widgets" required="false">
                 <caption>Main</caption>
+                <description />
+            </property>
+            <property key="navbar" type="widgets" required="false">
+                <caption>navbar</caption>
+                <description />
+            </property>
+            <property key="header" type="widgets" required="false">
+                <caption>Header</caption>
                 <description />
             </property>
         </propertyGroup>
