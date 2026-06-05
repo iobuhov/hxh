@@ -5,6 +5,9 @@
 !.gitignore
 !Finch_Base.mpr
 
+!mprcontents
+!mprcontents/**
+
 !theme
 !theme/web
 !theme/web/settings.json
