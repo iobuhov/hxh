@@ -1,18 +1,17 @@
 import "dotenv/config";
 import { access } from "node:fs/promises";
+import { resolve } from "node:path";
 import log from "fancy-log";
 import { tokens } from "./formatMsg.mjs";
 
-const mxp = process.env.MX_PROJECT_PATH;
+const mxp = process.env.MX_PROJECT_PATH ?? resolve("../../mxproject");
 
-if (mxp) {
-    try {
-        await access(mxp);
-        log.info(tokens.mxp, mxp);
-    } catch (error) {
-        log.error(tokens.err, tokens.mxp, "Error accessing project path:", error);
-        process.exit(1);
-    }
+try {
+    await access(mxp);
+    log.info(tokens.mxp, mxp);
+} catch (error) {
+    log.error(tokens.err, tokens.mxp, "Error accessing project path:", error);
+    process.exit(1);
 }
 
 export const projectPath = mxp;

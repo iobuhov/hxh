@@ -23,6 +23,10 @@ catalog:
 
 enableGlobalVirtualStore: false
 
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - core-js
+
 overrides:
   '@types/big.js': 'catalog:'
   '@types/jest': 'catalog:'
