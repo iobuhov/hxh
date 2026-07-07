@@ -15,7 +15,9 @@ import {
     Badge,
     Flex,
     ActionIcon,
-    Tooltip
+    Tooltip,
+    Button,
+    TextInput
 } from "@mantine/core";
 import { AreaChart, BarChart } from "@mantine/charts";
 import {
@@ -31,7 +33,18 @@ import {
     Zap,
     DollarSign,
     PanelLeft,
-    PanelLeftClose
+    PanelLeftClose,
+    FileText,
+    Plus,
+    Search,
+    Calendar,
+    Download,
+    MoreHorizontal,
+    Upload,
+    ChevronLeft,
+    ChevronRight,
+    ChevronsLeft,
+    ChevronsRight
 } from "lucide-react";
 
 const revenueData = [
@@ -60,6 +73,7 @@ const recentSales = [
 const navItems = [
     { icon: LayoutDashboard, label: "Dashboard", active: true },
     { icon: ShoppingCart, label: "Orders", badge: "6" },
+    { icon: FileText, label: "Invoices" },
     { icon: Package, label: "Products" },
     { icon: Users, label: "Customers" },
     { icon: Settings, label: "Settings" }
@@ -243,6 +257,267 @@ function OrdersPage() {
     );
 }
 
+const invoices = [
+    {
+        id: "INV-#4544321",
+        customer: "Yaga Masamichi",
+        email: "yaga.masamichi@gmail.com",
+        order: "#4544321",
+        date: "04 February, 2024",
+        amount: "$2,584.00",
+        status: "Paid"
+    },
+    {
+        id: "INV-#1644322",
+        customer: "Manami Suda",
+        email: "manami.suda@gmail.com",
+        order: "#1644322",
+        date: "05 February, 2024",
+        amount: "$327.00",
+        status: "Paid"
+    },
+    {
+        id: "INV-#8244323",
+        customer: "Okkotsu Yuta",
+        email: "okkotsu.yuta@gmail.com",
+        order: "#8244323",
+        date: "06 February, 2024",
+        amount: "$1,164.00",
+        status: "Refunded"
+    },
+    {
+        id: "INV-#6944324",
+        customer: "Kugisaki Nobara",
+        email: "kugisaki.nobara@gmail.com",
+        order: "#6944324",
+        date: "07 February, 2024",
+        amount: "$1,504.00",
+        status: "Paid"
+    },
+    {
+        id: "INV-#1244325",
+        customer: "Nanami Kento",
+        email: "nanami.kento@gmail.com",
+        order: "#1244325",
+        date: "07 February, 2024",
+        amount: "$1,183.00",
+        status: "Cancelled"
+    },
+    {
+        id: "INV-#4844326",
+        customer: "Fushiguro Megumi",
+        email: "fushiguro.megumi@gmail.com",
+        order: "#4844326",
+        date: "08 February, 2024",
+        amount: "$2,314.00",
+        status: "Due"
+    },
+    {
+        id: "INV-#2744327",
+        customer: "Nitta Akari",
+        email: "nitta.akari@gmail.com",
+        order: "#2744327",
+        date: "09 February, 2024",
+        amount: "$1,223.00",
+        status: "Paid"
+    },
+    {
+        id: "INV-#3544328",
+        customer: "Inumaki Toge",
+        email: "inumaki.toge@gmail.com",
+        order: "#3544328",
+        date: "10 February, 2024",
+        amount: "$1,754.00",
+        status: "Paid"
+    }
+];
+
+function getStatusColor(status: string) {
+    switch (status) {
+        case "Paid":
+            return "teal";
+        case "Refunded":
+            return "gray";
+        case "Cancelled":
+            return "gray";
+        case "Due":
+            return "red";
+        default:
+            return "blue";
+    }
+}
+
+function InvoiceListPage() {
+    return (
+        <Stack gap="md">
+            <Group justify="space-between">
+                <div>
+                    <Group gap="xs" mb={4}>
+                        <Text size="sm" c="dimmed">
+                            Home
+                        </Text>
+                        <Text size="sm" c="dimmed">
+                            /
+                        </Text>
+                        <Text size="sm">Invoice list</Text>
+                    </Group>
+                    <Title order={2}>Invoice list</Title>
+                </div>
+                <Group>
+                    <Button variant="outline" leftSection={<Upload size={16} />}>
+                        Export
+                    </Button>
+                    <Button variant="outline" leftSection={<Download size={16} />}>
+                        Import
+                    </Button>
+                </Group>
+            </Group>
+
+            <Group justify="space-between">
+                <Group>
+                    <Button leftSection={<Plus size={16} />}>Generate new invoice</Button>
+                    <TextInput placeholder="Search" leftSection={<Search size={16} />} w={200} />
+                </Group>
+                <Button variant="outline" leftSection={<Calendar size={16} />}>
+                    Date Range
+                </Button>
+            </Group>
+
+            <Card withBorder shadow="sm" radius="md" p={0}>
+                <table style={{ width: "100%", borderCollapse: "collapse" }}>
+                    <thead>
+                        <tr
+                            style={{
+                                borderBottom: "1px solid var(--mantine-color-gray-3)",
+                                backgroundColor: "var(--mantine-color-gray-0)"
+                            }}
+                        >
+                            <th style={{ padding: "12px 16px", textAlign: "left", width: 40 }}>
+                                <input type="checkbox" />
+                            </th>
+                            <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 500, fontSize: 14 }}>
+                                Invoice
+                            </th>
+                            <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 500, fontSize: 14 }}>
+                                Customer
+                            </th>
+                            <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 500, fontSize: 14 }}>
+                                Order
+                            </th>
+                            <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 500, fontSize: 14 }}>
+                                Date
+                            </th>
+                            <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 500, fontSize: 14 }}>
+                                Amount
+                            </th>
+                            <th style={{ padding: "12px 16px", textAlign: "left", fontWeight: 500, fontSize: 14 }}>
+                                Status
+                            </th>
+                            <th style={{ padding: "12px 16px", textAlign: "right", fontWeight: 500, fontSize: 14 }}>
+                                Action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {invoices.map(invoice => (
+                            <tr
+                                key={invoice.id}
+                                style={{ borderBottom: "1px solid var(--mantine-color-gray-2)" }}
+                            >
+                                <td style={{ padding: "12px 16px" }}>
+                                    <input type="checkbox" />
+                                </td>
+                                <td style={{ padding: "12px 16px" }}>
+                                    <Text size="sm" c="blue" fw={500}>
+                                        {invoice.id}
+                                    </Text>
+                                </td>
+                                <td style={{ padding: "12px 16px" }}>
+                                    <Group gap="sm">
+                                        <Avatar size="sm" radius="xl" color="cyan">
+                                            {invoice.customer
+                                                .split(" ")
+                                                .map(n => n[0])
+                                                .join("")}
+                                        </Avatar>
+                                        <div>
+                                            <Text size="sm" fw={500}>
+                                                {invoice.customer}
+                                            </Text>
+                                            <Text size="xs" c="dimmed">
+                                                {invoice.email}
+                                            </Text>
+                                        </div>
+                                    </Group>
+                                </td>
+                                <td style={{ padding: "12px 16px" }}>
+                                    <Text size="sm" c="blue">
+                                        {invoice.order}
+                                    </Text>
+                                </td>
+                                <td style={{ padding: "12px 16px" }}>
+                                    <Text size="sm">{invoice.date}</Text>
+                                </td>
+                                <td style={{ padding: "12px 16px" }}>
+                                    <Text size="sm" fw={500}>
+                                        {invoice.amount}
+                                    </Text>
+                                </td>
+                                <td style={{ padding: "12px 16px" }}>
+                                    <Badge variant="light" color={getStatusColor(invoice.status)}>
+                                        {invoice.status}
+                                    </Badge>
+                                </td>
+                                <td style={{ padding: "12px 16px", textAlign: "right" }}>
+                                    <Group gap={4} justify="flex-end">
+                                        <ActionIcon variant="subtle" color="gray" size="sm">
+                                            <Download size={14} />
+                                        </ActionIcon>
+                                        <ActionIcon variant="subtle" color="gray" size="sm">
+                                            <MoreHorizontal size={14} />
+                                        </ActionIcon>
+                                    </Group>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+                <Group justify="space-between" p="md">
+                    <Text size="sm" c="dimmed">
+                        Showing 1–8 out of 23 items{" "}
+                        <Text component="span" size="sm" c="blue" style={{ cursor: "pointer" }}>
+                            Show all
+                        </Text>
+                    </Text>
+                    <Group gap={4}>
+                        <ActionIcon variant="subtle" color="gray" size="sm">
+                            <ChevronsLeft size={14} />
+                        </ActionIcon>
+                        <ActionIcon variant="subtle" color="gray" size="sm">
+                            <ChevronLeft size={14} />
+                        </ActionIcon>
+                        <ActionIcon variant="filled" color="blue" size="sm" radius="xl">
+                            <Text size="xs">1</Text>
+                        </ActionIcon>
+                        <ActionIcon variant="subtle" color="gray" size="sm">
+                            <Text size="xs">2</Text>
+                        </ActionIcon>
+                        <ActionIcon variant="subtle" color="gray" size="sm">
+                            <Text size="xs">3</Text>
+                        </ActionIcon>
+                        <ActionIcon variant="subtle" color="gray" size="sm">
+                            <ChevronRight size={14} />
+                        </ActionIcon>
+                        <ActionIcon variant="subtle" color="gray" size="sm">
+                            <ChevronsRight size={14} />
+                        </ActionIcon>
+                    </Group>
+                </Group>
+            </Card>
+        </Stack>
+    );
+}
+
 function ProductsPage() {
     return (
         <Stack gap="md">
@@ -296,10 +571,12 @@ function App() {
             case 1:
                 return <OrdersPage />;
             case 2:
-                return <ProductsPage />;
+                return <InvoiceListPage />;
             case 3:
-                return <CustomersPage />;
+                return <ProductsPage />;
             case 4:
+                return <CustomersPage />;
+            case 5:
                 return <SettingsPage />;
             default:
                 return <DashboardPage />;
