@@ -11,6 +11,9 @@ export interface TextContainerProps {
     style?: CSSProperties;
     tabIndex?: number;
     text: string;
+    size: string;
+    color: string;
+    fw: string;
 }
 
 export interface TextPreviewProps {
@@ -25,4 +28,7 @@ export interface TextPreviewProps {
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
     text: string;
+    size: string;
+    color: string;
+    fw: string;
 }

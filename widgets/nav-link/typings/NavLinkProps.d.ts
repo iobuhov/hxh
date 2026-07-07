@@ -10,7 +10,8 @@ export interface NavLinkContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    label: string;
+    active?: boolean;
 }
 
 export interface NavLinkPreviewProps {
@@ -24,5 +25,6 @@ export interface NavLinkPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    label: string;
+    active: boolean;
 }

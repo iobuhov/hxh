@@ -1,3 +1,31 @@
+/* Nav link styles */
+.nav-link {
+  border-radius: var(--mantine-radius-md);
+}
+
+.nav-link-collapsed {
+  justify-content: center;
+  overflow: hidden;
+  gap: 0;
+}
+
+.nav-link-collapsed .mantine-NavLink-body {
+  visibility: hidden;
+  width: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  flex: 0;
+}
+
+.nav-link-collapsed .mantine-NavLink-section[data-position="right"] {
+  display: none;
+}
+
+.nav-link-collapsed .mantine-NavLink-section[data-position="left"] {
+  margin-right: 0;
+}
+
 /* Icon size utilities */
 .icon-xs {
   width: 12px;

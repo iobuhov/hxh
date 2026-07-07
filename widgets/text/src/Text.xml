@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.text.Text"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<widget id="com.mendix.finch.widget.text.Text" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Text</name>
     <description>Display text</description>
     <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
             <property key="text" type="string" required="false">
                 <caption>Text</caption>
-                <description />
+                <description>Text content</description>
+            </property>
+            <property key="size" type="string" required="false" defaultValue="md">
+                <caption>Size</caption>
+                <description>Controls font-size and line-height</description>
+            </property>
+            <property key="color" type="string" required="false">
+                <caption>Color</caption>
+                <description>Text color (e.g. dimmed, red, blue)</description>
+            </property>
+            <property key="fw" type="string" required="false">
+                <caption>Font Weight</caption>
+                <description>Font weight (e.g. 500, 700, bold)</description>
             </property>
         </propertyGroup>
     </properties>

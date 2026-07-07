@@ -3,14 +3,17 @@
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Framework Team
  */
-import { CSSProperties } from "react";
+import { ComponentType, CSSProperties, ReactNode } from "react";
 
 export interface CardContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    children?: ReactNode;
+    padding: string;
+    shadow: string;
+    withBorder?: boolean;
 }
 
 export interface CardPreviewProps {
@@ -24,5 +27,8 @@ export interface CardPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    children: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
+    padding: string;
+    shadow: string;
+    withBorder: boolean;
 }

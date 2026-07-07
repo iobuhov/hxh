@@ -20,6 +20,8 @@
         "update-xml": "yaml-to-xml src/text.yaml src/Text.xml"
     },
     "dependencies": {
+        "@mantine/core": "catalog:",
+        "@mantine/hooks": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
         "classnames": "catalog:",
         "mendix": "catalog:",

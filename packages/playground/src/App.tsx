@@ -247,12 +247,20 @@ function OrdersPage() {
     return (
         <Stack gap="md">
             <Title order={2}>Orders</Title>
-            <Card withBorder shadow="sm" radius="md" padding="lg">
-                <Text size="lg" fw={500} mb="md">
-                    Recent Orders
-                </Text>
-                <Text c="dimmed">Orders page content coming soon...</Text>
-            </Card>
+            {Array.from({ length: 20 }, (_, i) => (
+                <Card key={i} withBorder shadow="sm" radius="md" padding="lg">
+                    <Text size="lg" fw={500} mb="md">
+                        Order #{1000 + i}
+                    </Text>
+                    <Text c="dimmed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                    </Text>
+                </Card>
+            ))}
         </Stack>
     );
 }
@@ -585,14 +593,18 @@ function App() {
 
     return (
         <AppShell
+            layout="alt"
             header={{ height: 60 }}
             navbar={{
-                width: collapsed ? 60 : 260,
+                width: collapsed ? 69 : 260,
                 breakpoint: "sm"
             }}
             padding="md"
             styles={{
                 navbar: {
+                    transition: "none"
+                },
+                header: {
                     transition: "none"
                 },
                 main: {
@@ -637,22 +649,17 @@ function App() {
                 </Group>
             </AppShell.Header>
 
-            <AppShell.Navbar p="xs">
+            <AppShell.Navbar px={12} py={8}>
                 <Stack gap={4}>
-                    {navItems.map((item, index) =>
-                        collapsed ? (
-                            <Tooltip key={item.label} label={item.label} position="right" withArrow>
-                                <NavLink
-                                    active={index === active}
-                                    label=""
-                                    leftSection={<item.icon size={20} />}
-                                    onClick={() => setActive(index)}
-                                    variant="filled"
-                                />
-                            </Tooltip>
-                        ) : (
+                    {navItems.map((item, index) => (
+                        <Tooltip
+                            key={item.label}
+                            label={item.label}
+                            position="right"
+                            withArrow
+                            disabled={!collapsed}
+                        >
                             <NavLink
-                                key={item.label}
                                 active={index === active}
                                 label={item.label}
                                 leftSection={<item.icon size={20} />}
@@ -665,9 +672,10 @@ function App() {
                                 }
                                 onClick={() => setActive(index)}
                                 variant="filled"
+                                className={collapsed ? "nav-link nav-link-collapsed" : "nav-link"}
                             />
-                        )
-                    )}
+                        </Tooltip>
+                    ))}
                 </Stack>
             </AppShell.Navbar>
 

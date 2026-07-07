@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.group.Group"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<widget id="com.mendix.finch.widget.group.Group" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Group</name>
     <description>Compose elements and components in a horizontal flex container</description>
     <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="children" type="widgets" required="false">
+                <caption>Children</caption>
+                <description>Group content</description>
+            </property>
+            <property key="gap" type="string" required="false" defaultValue="md">
+                <caption>Gap</caption>
+                <description>Key of theme.spacing or any valid CSS value for gap</description>
+            </property>
+            <property key="justify" type="string" required="false" defaultValue="flex-start">
+                <caption>Justify</caption>
+                <description>Controls justify-content CSS property</description>
             </property>
         </propertyGroup>
     </properties>

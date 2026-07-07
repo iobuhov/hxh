@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.simplegrid.SimpleGrid"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<widget id="com.mendix.finch.widget.simplegrid.SimpleGrid" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>SimpleGrid</name>
     <description>Responsive grid in which each item takes equal amount of space</description>
     <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="children" type="widgets" required="false">
+                <caption>Children</caption>
+                <description>Grid content</description>
+            </property>
+            <property key="cols" type="integer" required="false" defaultValue="1">
+                <caption>Cols</caption>
+                <description>Number of columns</description>
+            </property>
+            <property key="spacing" type="string" required="false" defaultValue="md">
+                <caption>Spacing</caption>
+                <description>Spacing between columns</description>
             </property>
         </propertyGroup>
     </properties>

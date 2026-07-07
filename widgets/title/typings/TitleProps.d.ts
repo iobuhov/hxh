@@ -11,6 +11,7 @@ export interface TitleContainerProps {
     style?: CSSProperties;
     tabIndex?: number;
     text: string;
+    order?: number;
 }
 
 export interface TitlePreviewProps {
@@ -25,4 +26,5 @@ export interface TitlePreviewProps {
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
     text: string;
+    order: number | null;
 }
