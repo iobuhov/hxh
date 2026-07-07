@@ -11,7 +11,7 @@ const cli = cac("finch");
 
 cli.command("build", "Build the module").action(async () => {
     await clean();
-    await syncWidgets();
+    // await syncWidgets();
     await css();
     await copyWidgets();
 });
