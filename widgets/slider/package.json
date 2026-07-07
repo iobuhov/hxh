@@ -20,7 +20,6 @@
         "update-xml": "yaml-to-xml src/slider.yaml src/Slider.xml"
     },
     "dependencies": {
-        "@mendix/pluggable-widgets-tools": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
         "classnames": "catalog:",
         "mendix": "catalog:",

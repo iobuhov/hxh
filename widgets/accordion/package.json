@@ -17,7 +17,6 @@
         "update-xml": "yaml-to-xml src/accordion.yaml src/Accordion.xml"
     },
     "dependencies": {
-        "@mendix/pluggable-widgets-tools": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
         "@mendix/yaml-to-xml-converter": "workspace:*",
         "classnames": "catalog:",

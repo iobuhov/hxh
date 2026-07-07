@@ -20,7 +20,6 @@
         "update-xml": "yaml-to-xml src/angleslider.yaml src/AngleSlider.xml"
     },
     "dependencies": {
-        "@mendix/pluggable-widgets-tools": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
         "@mendix/yaml-to-xml-converter": "workspace:*",
         "classnames": "catalog:",
