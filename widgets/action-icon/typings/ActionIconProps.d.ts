@@ -10,7 +10,15 @@ export interface ActionIconContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    autoContrast?: boolean;
+    children: string;
+    color: string;
+    disabled?: boolean;
+    gradient: string;
+    loaderProps: string;
+    loading?: boolean;
+    radius: string;
+    size: string;
 }
 
 export interface ActionIconPreviewProps {
@@ -24,5 +32,13 @@ export interface ActionIconPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    autoContrast: boolean;
+    children: string;
+    color: string;
+    disabled: boolean;
+    gradient: string;
+    loaderProps: string;
+    loading: boolean;
+    radius: string;
+    size: string;
 }

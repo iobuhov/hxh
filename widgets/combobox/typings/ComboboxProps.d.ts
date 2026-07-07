@@ -4,13 +4,58 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue } from "mendix";
+
+export type FloatingStrategyEnum = "absolute" | "fixed";
+
+export type PositionEnum = "top" | "bottom" | "left" | "right" | "top-start" | "top-end" | "bottom-start" | "bottom-end" | "left-start" | "left-end" | "right-start" | "right-end";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export type WidthEnum = "target" | "max-content" | "min-content";
 
 export interface ComboboxContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    arrowOffset?: number;
+    arrowPosition: string;
+    arrowRadius?: number;
+    arrowSize?: number;
+    children: string;
+    disabled?: boolean;
+    dropdownPadding: string;
+    floatingStrategy?: FloatingStrategyEnum;
+    hideDetached?: boolean;
+    keepMounted?: boolean;
+    middlewares: string;
+    offset: string;
+    onClose?: ActionValue;
+    onDismiss?: ActionValue;
+    onEnterTransitionEnd?: ActionValue;
+    onExitTransitionEnd?: ActionValue;
+    onOpen?: ActionValue;
+    onOptionSubmit?: ActionValue;
+    onPositionChange?: ActionValue;
+    overlayProps: string;
+    portalProps: string;
+    position?: PositionEnum;
+    positionDependencies: string;
+    preventPositionChangeWhenVisible?: boolean;
+    radius: string;
+    readOnly?: boolean;
+    resetSelectionOnOptionHover?: boolean;
+    returnFocus?: boolean;
+    shadow: string;
+    size?: SizeEnum;
+    store: string;
+    transitionProps: string;
+    width?: WidthEnum;
+    withArrow?: boolean;
+    withOverlay?: boolean;
+    withinPortal?: boolean;
+    zIndex: string;
 }
 
 export interface ComboboxPreviewProps {
@@ -24,5 +69,41 @@ export interface ComboboxPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    arrowOffset: number | null;
+    arrowPosition: string;
+    arrowRadius: number | null;
+    arrowSize: number | null;
+    children: string;
+    disabled: boolean;
+    dropdownPadding: string;
+    floatingStrategy: FloatingStrategyEnum;
+    hideDetached: boolean;
+    keepMounted: boolean;
+    middlewares: string;
+    offset: string;
+    onClose: {} | null;
+    onDismiss: {} | null;
+    onEnterTransitionEnd: {} | null;
+    onExitTransitionEnd: {} | null;
+    onOpen: {} | null;
+    onOptionSubmit: {} | null;
+    onPositionChange: {} | null;
+    overlayProps: string;
+    portalProps: string;
+    position: PositionEnum;
+    positionDependencies: string;
+    preventPositionChangeWhenVisible: boolean;
+    radius: string;
+    readOnly: boolean;
+    resetSelectionOnOptionHover: boolean;
+    returnFocus: boolean;
+    shadow: string;
+    size: SizeEnum;
+    store: string;
+    transitionProps: string;
+    width: WidthEnum;
+    withArrow: boolean;
+    withOverlay: boolean;
+    withinPortal: boolean;
+    zIndex: string;
 }

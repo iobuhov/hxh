@@ -4,13 +4,21 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue, DynamicValue, WebIcon } from "mendix";
 
 export interface AlertContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    autoContrast?: boolean;
+    closeButtonLabel: string;
+    color: string;
+    icon?: DynamicValue<WebIcon>;
+    onClose?: ActionValue;
+    radius: string;
+    title: string;
+    withCloseButton?: boolean;
 }
 
 export interface AlertPreviewProps {
@@ -24,5 +32,12 @@ export interface AlertPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    autoContrast: boolean;
+    closeButtonLabel: string;
+    color: string;
+    icon: { type: "glyph"; iconClass: string; } | { type: "image"; imageUrl: string; iconUrl: string; } | { type: "icon"; iconClass: string; } | undefined;
+    onClose: {} | null;
+    radius: string;
+    title: string;
+    withCloseButton: boolean;
 }

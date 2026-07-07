@@ -19,7 +19,7 @@
                 <caption>Shadow</caption>
                 <description>Key of theme.shadows or any valid CSS value to set box-shadow</description>
             </property>
-            <property key="withBorder" type="boolean" required="false" defaultValue="true">
+            <property key="withBorder" type="boolean" required="true" defaultValue="true">
                 <caption>With Border</caption>
                 <description>Adds border to the card</description>
             </property>

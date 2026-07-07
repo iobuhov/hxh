@@ -11,7 +11,7 @@
                 <caption>Label</caption>
                 <description>Main link label</description>
             </property>
-            <property key="active" type="boolean" required="false" defaultValue="false">
+            <property key="active" type="boolean" required="true" defaultValue="false">
                 <caption>Active</caption>
                 <description>Determines whether the link should have active styles</description>
             </property>

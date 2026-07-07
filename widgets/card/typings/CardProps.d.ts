@@ -13,7 +13,7 @@ export interface CardContainerProps {
     children?: ReactNode;
     padding: string;
     shadow: string;
-    withBorder?: boolean;
+    withBorder: boolean;
 }
 
 export interface CardPreviewProps {

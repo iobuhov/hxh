@@ -4,13 +4,30 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue, DynamicValue, WebIcon } from "mendix";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export type TypeEnum = "checkbox" | "radio";
 
 export interface ChipContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    autoContrast?: boolean;
+    checked?: boolean;
+    children: string;
+    color: string;
+    defaultChecked?: boolean;
+    icon?: DynamicValue<WebIcon>;
+    id: string;
+    onChange?: ActionValue;
+    radius: string;
+    rootRef: string;
+    size?: SizeEnum;
+    type?: TypeEnum;
+    wrapperProps: string;
 }
 
 export interface ChipPreviewProps {
@@ -24,5 +41,17 @@ export interface ChipPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    autoContrast: boolean;
+    checked: boolean;
+    children: string;
+    color: string;
+    defaultChecked: boolean;
+    icon: { type: "glyph"; iconClass: string; } | { type: "image"; imageUrl: string; iconUrl: string; } | { type: "icon"; iconClass: string; } | undefined;
+    id: string;
+    onChange: {} | null;
+    radius: string;
+    rootRef: string;
+    size: SizeEnum;
+    type: TypeEnum;
+    wrapperProps: string;
 }

@@ -11,7 +11,7 @@ export interface TitleContainerProps {
     style?: CSSProperties;
     tabIndex?: number;
     text: string;
-    order?: number;
+    order: number;
 }
 
 export interface TitlePreviewProps {

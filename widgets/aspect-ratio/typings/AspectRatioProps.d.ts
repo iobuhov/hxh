@@ -4,13 +4,14 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { Big } from "big.js";
 
 export interface AspectRatioContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    ratio?: Big;
 }
 
 export interface AspectRatioPreviewProps {
@@ -24,5 +25,5 @@ export interface AspectRatioPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    ratio: number | null;
 }

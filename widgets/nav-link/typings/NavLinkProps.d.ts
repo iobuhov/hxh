@@ -11,7 +11,7 @@ export interface NavLinkContainerProps {
     style?: CSSProperties;
     tabIndex?: number;
     label: string;
-    active?: boolean;
+    active: boolean;
 }
 
 export interface NavLinkPreviewProps {

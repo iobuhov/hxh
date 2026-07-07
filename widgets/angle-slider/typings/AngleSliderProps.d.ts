@@ -4,13 +4,29 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue } from "mendix";
 
 export interface AngleSliderContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    defaultValue?: number;
+    disabled?: boolean;
+    formatLabel?: ActionValue;
+    hiddenInputProps: string;
+    marks: string;
+    name: string;
+    onChange?: ActionValue;
+    onChangeEnd?: ActionValue;
+    onScrubEnd?: ActionValue;
+    onScrubStart?: ActionValue;
+    restrictToMarks?: boolean;
+    size?: number;
+    step?: number;
+    thumbSize?: number;
+    value?: number;
+    withLabel?: boolean;
 }
 
 export interface AngleSliderPreviewProps {
@@ -24,5 +40,20 @@ export interface AngleSliderPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    defaultValue: number | null;
+    disabled: boolean;
+    formatLabel: {} | null;
+    hiddenInputProps: string;
+    marks: string;
+    name: string;
+    onChange: {} | null;
+    onChangeEnd: {} | null;
+    onScrubEnd: {} | null;
+    onScrubStart: {} | null;
+    restrictToMarks: boolean;
+    size: number | null;
+    step: number | null;
+    thumbSize: number | null;
+    value: number | null;
+    withLabel: boolean;
 }

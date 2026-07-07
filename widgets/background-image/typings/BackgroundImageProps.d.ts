@@ -10,7 +10,8 @@ export interface BackgroundImageContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    radius: string;
+    src: string;
 }
 
 export interface BackgroundImagePreviewProps {
@@ -24,5 +25,6 @@ export interface BackgroundImagePreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    radius: string;
+    src: string;
 }

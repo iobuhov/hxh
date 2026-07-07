@@ -4,13 +4,31 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { DynamicValue, WebIcon } from "mendix";
+
+export type LabelPositionEnum = "left" | "right";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface CheckboxContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    autoContrast?: boolean;
+    color: string;
+    description: string;
+    error: string;
+    icon?: DynamicValue<WebIcon>;
+    iconColor: string;
+    id: string;
+    indeterminate?: boolean;
+    label: string;
+    labelPosition?: LabelPositionEnum;
+    radius: string;
+    rootRef: string;
+    size?: SizeEnum;
+    wrapperProps: string;
 }
 
 export interface CheckboxPreviewProps {
@@ -24,5 +42,18 @@ export interface CheckboxPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    autoContrast: boolean;
+    color: string;
+    description: string;
+    error: string;
+    icon: { type: "glyph"; iconClass: string; } | { type: "image"; imageUrl: string; iconUrl: string; } | { type: "icon"; iconClass: string; } | undefined;
+    iconColor: string;
+    id: string;
+    indeterminate: boolean;
+    label: string;
+    labelPosition: LabelPositionEnum;
+    radius: string;
+    rootRef: string;
+    size: SizeEnum;
+    wrapperProps: string;
 }

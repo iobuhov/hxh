@@ -10,7 +10,11 @@ export interface ColorSwatchContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    children: string;
+    color: string;
+    radius: string;
+    size: string;
+    withShadow?: boolean;
 }
 
 export interface ColorSwatchPreviewProps {
@@ -24,5 +28,9 @@ export interface ColorSwatchPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    children: string;
+    color: string;
+    radius: string;
+    size: string;
+    withShadow: boolean;
 }

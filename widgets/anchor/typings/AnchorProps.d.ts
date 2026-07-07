@@ -5,12 +5,21 @@
  */
 import { CSSProperties } from "react";
 
+export type UnderlineEnum = "always" | "hover" | "not-hover" | "never";
+
 export interface AnchorContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    color: string;
+    gradient: string;
+    inherit?: boolean;
+    inline?: boolean;
+    lineClamp?: number;
+    size: string;
+    truncate: string;
+    underline?: UnderlineEnum;
 }
 
 export interface AnchorPreviewProps {
@@ -24,5 +33,12 @@ export interface AnchorPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    color: string;
+    gradient: string;
+    inherit: boolean;
+    inline: boolean;
+    lineClamp: number | null;
+    size: string;
+    truncate: string;
+    underline: UnderlineEnum;
 }

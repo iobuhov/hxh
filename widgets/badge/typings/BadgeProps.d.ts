@@ -5,12 +5,23 @@
  */
 import { CSSProperties } from "react";
 
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
 export interface BadgeContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    autoContrast?: boolean;
+    children: string;
+    circle?: boolean;
+    color: string;
+    fullWidth?: boolean;
+    gradient: string;
+    leftSection: string;
+    radius: string;
+    rightSection: string;
+    size?: SizeEnum;
 }
 
 export interface BadgePreviewProps {
@@ -24,5 +35,14 @@ export interface BadgePreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    autoContrast: boolean;
+    children: string;
+    circle: boolean;
+    color: string;
+    fullWidth: boolean;
+    gradient: string;
+    leftSection: string;
+    radius: string;
+    rightSection: string;
+    size: SizeEnum;
 }

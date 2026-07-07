@@ -4,7 +4,7 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
-import { ActionValue, DynamicValue, ListActionValue, ListExpressionValue, ListValue, ObjectItem } from "mendix";
+import { DynamicValue, ListValue, ListActionValue, ListExpressionValue } from "mendix";
 
 export interface BreadcrumbsContainerProps {
     name: string;

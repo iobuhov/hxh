@@ -10,7 +10,19 @@ export interface ButtonContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    autoContrast?: boolean;
+    children: string;
+    color: string;
+    disabled?: boolean;
+    fullWidth?: boolean;
+    gradient: string;
+    justify: string;
+    leftSection: string;
+    loaderProps: string;
+    loading?: boolean;
+    radius: string;
+    rightSection: string;
+    size: string;
 }
 
 export interface ButtonPreviewProps {
@@ -24,5 +36,17 @@ export interface ButtonPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    autoContrast: boolean;
+    children: string;
+    color: string;
+    disabled: boolean;
+    fullWidth: boolean;
+    gradient: string;
+    justify: string;
+    leftSection: string;
+    loaderProps: string;
+    loading: boolean;
+    radius: string;
+    rightSection: string;
+    size: string;
 }

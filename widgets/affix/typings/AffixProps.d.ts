@@ -10,7 +10,10 @@ export interface AffixContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    portalProps: string;
+    position: string;
+    withinPortal?: boolean;
+    zIndex: string;
 }
 
 export interface AffixPreviewProps {
@@ -24,5 +27,8 @@ export interface AffixPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    portalProps: string;
+    position: string;
+    withinPortal: boolean;
+    zIndex: string;
 }

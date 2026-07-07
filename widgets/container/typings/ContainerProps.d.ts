@@ -5,12 +5,16 @@
  */
 import { CSSProperties } from "react";
 
+export type StrategyEnum = "block" | "grid";
+
 export interface ContainerContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    fluid?: boolean;
+    size: string;
+    strategy?: StrategyEnum;
 }
 
 export interface ContainerPreviewProps {
@@ -24,5 +28,7 @@ export interface ContainerPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    fluid: boolean;
+    size: string;
+    strategy: StrategyEnum;
 }

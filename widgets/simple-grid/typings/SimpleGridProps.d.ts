@@ -11,7 +11,7 @@ export interface SimpleGridContainerProps {
     style?: CSSProperties;
     tabIndex?: number;
     children?: ReactNode;
-    cols?: number;
+    cols: number;
     spacing: string;
 }
 

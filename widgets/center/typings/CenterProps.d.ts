@@ -10,7 +10,8 @@ export interface CenterContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    children: string;
+    inline?: boolean;
 }
 
 export interface CenterPreviewProps {
@@ -24,5 +25,6 @@ export interface CenterPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    children: string;
+    inline: boolean;
 }
