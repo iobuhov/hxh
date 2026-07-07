@@ -4,6 +4,11 @@ packages:
   - widgets/mantine/*
   - modules/*
 
+allowBuilds:
+  '@parcel/watcher': true
+  core-js: true
+  esbuild: true
+
 catalog:
   '@eslint/js': ^9.32.0
   '@mantine/core': 9.4.1
@@ -22,10 +27,6 @@ catalog:
   react-dom: ^18.0.0
 
 enableGlobalVirtualStore: false
-
-onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - core-js
 
 overrides:
   '@types/big.js': 'catalog:'

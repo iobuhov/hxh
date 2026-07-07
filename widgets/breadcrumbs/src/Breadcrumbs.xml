@@ -2,7 +2,7 @@
 <widget
     id="com.mendix.finch.widget.breadcrumbs.Breadcrumbs"
     pluginWidget="true"
-    needsEntityContext="true"
+    needsEntityContext="false"
     offlineCapable="true"
     supportedPlatform="Web"
     xmlns="http://www.mendix.com/widget/1.0/"
@@ -15,9 +15,21 @@
     <icon />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of breadcrumb items</description>
+            </property>
+            <property key="label" type="textTemplate" dataSource="datasource">
+                <caption>Label</caption>
+                <description>Text displayed for each breadcrumb</description>
+            </property>
+            <property key="action" type="action" dataSource="datasource" required="false">
+                <caption>On click</caption>
+                <description>Navigation action per item (leave empty for current page)</description>
+            </property>
+            <property key="separator" type="textTemplate" required="false">
+                <caption>Separator</caption>
+                <description>Character or text between breadcrumb items</description>
             </property>
         </propertyGroup>
     </properties>

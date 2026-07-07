@@ -4,13 +4,17 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue, DynamicValue, ListActionValue, ListExpressionValue, ListValue, ObjectItem } from "mendix";
 
 export interface BreadcrumbsContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    datasource: ListValue;
+    label: ListExpressionValue<string>;
+    action?: ListActionValue;
+    separator?: DynamicValue<string>;
 }
 
 export interface BreadcrumbsPreviewProps {
@@ -24,5 +28,8 @@ export interface BreadcrumbsPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    datasource: {} | { caption: string } | { type: string } | null;
+    label: string;
+    action: {} | null;
+    separator: string;
 }

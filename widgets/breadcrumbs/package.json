@@ -20,6 +20,8 @@
         "update-xml": "yaml-to-xml src/breadcrumbs.yaml src/Breadcrumbs.xml"
     },
     "dependencies": {
+        "@mantine/core": "catalog:",
+        "@mantine/hooks": "catalog:",
         "@mendix/pluggable-widgets-tools": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
         "classnames": "catalog:",
