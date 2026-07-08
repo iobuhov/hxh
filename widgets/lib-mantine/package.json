@@ -2,7 +2,7 @@
     "name": "@mendix/lib-mantine",
     "widgetName": "LibMantine",
     "version": "0.1.0",
-    "description": "This is transitive widget that just used to host mantine code",
+    "description": "Shared Mantine UI library. Place once on the layout to load Mantine runtime.",
     "copyright": "© 2025 Illia Obukhau",
     "author": "Illia Obukhau",
     "engines": {

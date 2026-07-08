@@ -18,7 +18,7 @@ cli.command("build", "Build the module").action(async () => {
 
 cli.command("dev", "Build and watch for changes").action(async () => {
     await clean();
-    await syncWidgets();
+    // await syncWidgets();
     await watchCss();
     await watchWidgets();
     log("Press Ctrl+C to stop watching");

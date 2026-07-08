@@ -1,0 +1,20 @@
+:root {
+    color-scheme: dark;
+:host {
+  color-scheme: var(--mantine-color-scheme);
+    --mantine-font-family: Open Sans, sans-serif;
+    --mantine-font-family-headings: Open Sans, sans-serif;
+    --mantine-color-scheme: dark;
+    --mantine-color-body: #1a1b1e;
+    --mantine-color-text: #c1c2c5;
+    --mantine-color-dimmed: #909296;
+    --mantine-color-bright: #fff;
+    --mantine-color-anchor: #4dabf7;
+    --mantine-color-default: #25262b;
+    --mantine-color-default-hover: #2c2e33;
+    --mantine-color-default-color: #fff;
+    --mantine-color-default-border: #373a40;
+    --mantine-primary-color-filled: #15aabf;
+    --mantine-primary-color-light: rgba(21, 170, 191, 0.15);
+    --mantine-primary-color-light-color: #15aabf;
+}

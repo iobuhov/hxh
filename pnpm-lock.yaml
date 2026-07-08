@@ -21,6 +21,9 @@ catalogs:
     eslint:
       specifier: ^9.32.0
       version: 9.32.0
+    lucide-react:
+      specifier: ^1.23.0
+      version: 1.23.0
     mendix:
       specifier: ^10.21.2
       version: 10.24.75382
@@ -54,6 +57,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:packages/prettier-config-web-widgets
+      lucide-static:
+        specifier: ^1.23.0
+        version: 1.23.0
       prettier:
         specifier: 'catalog:'
         version: 3.6.2
@@ -75,12 +81,21 @@ importers:
       '@mendix/card':
         specifier: workspace:*
         version: link:../../widgets/card
+      '@mendix/flex':
+        specifier: workspace:*
+        version: link:../../widgets/flex
       '@mendix/group':
         specifier: workspace:*
         version: link:../../widgets/group
+      '@mendix/lib-lucide':
+        specifier: workspace:*
+        version: link:../../widgets/lib-lucide
       '@mendix/lib-mantine':
         specifier: workspace:*
         version: link:../../widgets/lib-mantine
+      '@mendix/lucide-icon':
+        specifier: workspace:*
+        version: link:../../widgets/lucide-icon
       '@mendix/nav-link':
         specifier: workspace:*
         version: link:../../widgets/nav-link
@@ -795,6 +810,9 @@ importers:
 
   widgets/flex:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -964,6 +982,24 @@ importers:
         specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
         version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
+  widgets/lib-lucide:
+    dependencies:
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      lucide-react:
+        specifier: 'catalog:'
+        version: 1.23.0(react@19.2.7)
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+
   widgets/lib-mantine:
     dependencies:
       '@mantine/core':
@@ -1023,6 +1059,24 @@ importers:
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+
+  widgets/lucide-icon:
+    dependencies:
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      lucide-react:
+        specifier: 'catalog:'
+        version: 1.23.0(react@19.2.7)
       mendix:
         specifier: 'catalog:'
         version: 10.24.75382
@@ -3687,6 +3741,9 @@ packages:
     resolution: {integrity: sha512-38BpJcD0JhFosxHApP/BYsBetLpQFRoTRzEzstM/XCc3jsAG7wqaY1lgVwxiUe3xqYE+lNxo2PkCmYwXWrwwIw==}
     peerDependencies:
       react: ^19.0.0
+
+  lucide-static@1.23.0:
+    resolution: {integrity: sha512-V4tqLEHfvsptGaAZMD8sFJKeGsz2nTAU0+ctxTX3afao/5bs+mhrvvGDmvQmyI7YhQwpIFodZmnkPTMYyGzH4Q==}
 
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
@@ -6910,6 +6967,8 @@ snapshots:
   lucide-react@1.23.0(react@19.2.7):
     dependencies:
       react: 19.2.7
+
+  lucide-static@1.23.0: {}
 
   magic-string@0.30.17:
     dependencies:

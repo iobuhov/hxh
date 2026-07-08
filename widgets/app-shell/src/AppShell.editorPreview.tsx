@@ -1,57 +1,52 @@
-import { AppShell, MantineProvider } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
-import { createElement, ReactElement } from "react";
+import { createElement, ReactElement, useEffect, useState } from "react";
 import { AppShellPreviewProps } from "../typings/AppShellProps";
 
-const Shell = ({
-    children,
-    header,
-    navbar
-}: {
-    children: React.ReactNode;
-    header?: React.ReactNode;
-    navbar?: React.ReactNode;
-}) => {
-    const [opened] = useDisclosure();
-
-    return (
-        <AppShell
-            layout="alt"
-            header={{ height: 60 }}
-            navbar={{ width: 300, breakpoint: "sm", collapsed: { mobile: !opened } }}
-            padding="md"
-        >
-            <AppShell.Header>{header}</AppShell.Header>
-            <AppShell.Navbar>{navbar}</AppShell.Navbar>
-            <AppShell.Main>{children}</AppShell.Main>
-        </AppShell>
+function useColorScheme(): "light" | "dark" {
+    const [scheme, setScheme] = useState<"light" | "dark">(() =>
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
     );
-};
+
+    useEffect(() => {
+        const mq = window.matchMedia("(prefers-color-scheme: dark)");
+        const handler = (e: MediaQueryListEvent) => setScheme(e.matches ? "dark" : "light");
+        mq.addEventListener("change", handler);
+        return () => mq.removeEventListener("change", handler);
+    }, []);
+
+    return scheme;
+}
 
 export function preview({ children, navbar, header }: AppShellPreviewProps): ReactElement {
     const Main = children.renderer;
     const Navbar = navbar.renderer;
     const Header = header.renderer;
+    const colorScheme = useColorScheme();
+    const isDark = colorScheme === "dark";
 
-    const theme = (window.parent as any).mantineSharedTheme;
+    const bg = isDark ? "#1a1b1e" : "#fff";
+    const border = isDark ? "#373a40" : "#dee2e6";
+    const text = isDark ? "#c1c2c5" : "#000";
+
     return (
-        <MantineProvider theme={theme}>
-            <Shell
-                navbar={
-                    <Navbar caption="Navbar">
-                        <div />
-                    </Navbar>
-                }
-                header={
+        <div style={{ display: "flex", minHeight: 400, color: text, fontFamily: "Open Sans, sans-serif" }}>
+            <style>{`.finch-appshell-preview__main div[data-drop-zone] > div { min-height: unset; }`}</style>
+            <div style={{ width: 260, borderRight: `1px solid ${border}`, padding: 8, background: bg }}>
+                <Navbar caption="Navbar">
+                    <div />
+                </Navbar>
+            </div>
+            <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
+                <div style={{ height: 60, borderBottom: `1px solid ${border}`, padding: 8, background: bg }}>
                     <Header caption="Header">
                         <div />
                     </Header>
-                }
-            >
-                <Main caption="Main">
-                    <div style={{ display: "contents" }} />
-                </Main>
-            </Shell>
-        </MantineProvider>
+                </div>
+                <div className="finch-appshell-preview__main" style={{ flex: 1, padding: 16, background: bg }}>
+                    <Main caption="Main">
+                        <div style={{ display: "contents" }} />
+                    </Main>
+                </div>
+            </div>
+        </div>
     );
 }

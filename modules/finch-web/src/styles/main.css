@@ -1,5 +1,19 @@
 @import "@mantine/core/styles.css";
 
+/* TODO: PE variables for editor dark mode
+body:not(#_) {
+    --peViewportBackgroundColor: var(--mantine-color-body);
+    --peStructureModeCanvasBackgroundColor: var(--mantine-color-body);
+    --peStructureModeDefaultBackgroundColor: #25262b;
+    --pePlaceholderBackground: #2c2e33;
+    --pePlaceholderColor: #909296;
+    --pePlaceholderBorder: 1px dashed #373a40;
+    --peCustomWidgetDefaultPreviewBackgroundColor: #25262b;
+    --peCustomWidgetDefaultPreviewBorder: 1px solid #373a40;
+    --peCustomWidgetDefaultPreviewColor: #c1c2c5;
+}
+*/
+
 :root:has(.mantine-root[data-mantine-color-scheme="dark"]) {
     --mantine-color-scheme: dark;
     --mantine-primary-color-contrast: var(--mantine-color-white);
@@ -273,4 +287,56 @@
 
 :where(.mantine-root.preview) .mantine-AppShell-navbar {
     --vh-override: 100dvh;
+}
+
+/* AppShell navbar padding */
+.mantine-AppShell-navbar {
+    padding: 8px 12px;
+}
+
+/* Mendix navigation tree styled as Mantine NavLink */
+.mx-navigationtree ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.mx-navigationtree li {
+    margin: 0;
+    padding: 0;
+}
+
+.mx-navigationtree a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: var(--mantine-radius-md);
+    color: var(--mantine-color-text);
+    text-decoration: none;
+    font-size: var(--mantine-font-size-sm);
+    transition: background-color 150ms ease;
+}
+
+.mx-navigationtree a:hover {
+    background-color: var(--mantine-color-default-hover);
+}
+
+.mx-navigationtree a.active,
+.mx-navigationtree a[aria-current] {
+    background-color: var(--mantine-primary-color-light);
+    color: var(--mantine-primary-color-light-color);
+    font-weight: 500;
+}
+
+.mx-navigationtree .glyphicon {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

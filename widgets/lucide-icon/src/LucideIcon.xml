@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="com.mendix.finch.widget.lucideicon.LucideIcon" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>LucideIcon</name>
+    <description>Renders a Lucide icon by name</description>
+    <studioProCategory>Finch</studioProCategory>
+    <studioCategory />
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="icon" type="string" required="false" defaultValue="circle">
+                <caption>Icon</caption>
+                <description>Lucide icon name (e.g. "layout-dashboard", "shopping-cart")</description>
+            </property>
+            <property key="size" type="integer" required="true" defaultValue="20">
+                <caption>Size</caption>
+                <description>Icon size in pixels</description>
+            </property>
+            <property key="color" type="string" required="false">
+                <caption>Color</caption>
+                <description>Icon color (CSS value, defaults to currentColor)</description>
+            </property>
+            <property key="strokeWidth" type="string" required="false" defaultValue="2">
+                <caption>Stroke Width</caption>
+                <description>Icon stroke width</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

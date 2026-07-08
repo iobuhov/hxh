@@ -10,7 +10,7 @@
     xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
 >
     <name>LibMantine</name>
-    <description>This is transitive widget that just used to host mantine code</description>
+    <description>Shared Mantine UI library. Place once on the layout to load Mantine runtime.</description>
     <studioProCategory>Finch</studioProCategory>
     <icon />
     <properties>

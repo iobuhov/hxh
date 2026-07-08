@@ -1,23 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.flex.Flex"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<widget id="com.mendix.finch.widget.flex.Flex" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Flex</name>
     <description>Compose elements in a flex container</description>
     <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="children" type="widgets" required="false">
+                <caption>Children</caption>
+                <description>Flex container content</description>
+            </property>
+            <property key="direction" type="string" required="false" defaultValue="row">
+                <caption>Direction</caption>
+                <description>Flex direction (row, column, row-reverse, column-reverse)</description>
+            </property>
+            <property key="gap" type="string" required="false" defaultValue="md">
+                <caption>Gap</caption>
+                <description>Gap between items (xs, sm, md, lg, xl or CSS value)</description>
+            </property>
+            <property key="align" type="string" required="false" defaultValue="stretch">
+                <caption>Align</caption>
+                <description>align-items (flex-start, center, flex-end, stretch, baseline)</description>
+            </property>
+            <property key="justify" type="string" required="false" defaultValue="flex-start">
+                <caption>Justify</caption>
+                <description>justify-content (flex-start, center, flex-end, space-between, space-around)</description>
+            </property>
+            <property key="wrap" type="string" required="false" defaultValue="nowrap">
+                <caption>Wrap</caption>
+                <description>flex-wrap (nowrap, wrap, wrap-reverse)</description>
             </property>
         </propertyGroup>
     </properties>

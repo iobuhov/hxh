@@ -1,6 +1,6 @@
 import { ReactElement, createElement } from "react";
 import { NavLinkPreviewProps } from "../typings/NavLinkProps";
 
-export function preview({ text }: NavLinkPreviewProps): ReactElement {
-    return <div>Preview {text}</div>;
+export function preview({ label }: NavLinkPreviewProps): ReactElement {
+    return <div style={{ padding: "8px 12px" }}>{label || "NavLink"}</div>;
 }

@@ -20,6 +20,7 @@ catalog:
   '@types/react': ^19.0.0
   classnames: ^2.5.1
   eslint: ^9.32.0
+  lucide-react: ^1.23.0
   mendix: ^10.21.2
   prettier: ^3.6.2
   react: ^19.0.0

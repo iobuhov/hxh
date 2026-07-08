@@ -20,6 +20,7 @@
         "update-xml": "yaml-to-xml src/flex.yaml src/Flex.xml"
     },
     "dependencies": {
+        "@mantine/core": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
         "classnames": "catalog:",
         "mendix": "catalog:",
