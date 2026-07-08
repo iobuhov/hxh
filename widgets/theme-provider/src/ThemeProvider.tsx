@@ -6,7 +6,7 @@ export function ThemeProvider(props: ThemeProviderContainerProps): ReactElement 
     const [theme] = useState(() => {
         const theme = createTheme({
             fontFamily: "Open Sans, sans-serif",
-            primaryColor: "cyan"
+            primaryColor: "teal"
         });
         return theme;
     });

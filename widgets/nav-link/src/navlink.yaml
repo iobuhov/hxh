@@ -76,7 +76,7 @@ widget:
         caption: Variant
         description: Controls active link appearance
         required: true
-        default: light
+        default: filled
         enumerationValues:
           filled: Filled
           light: Light

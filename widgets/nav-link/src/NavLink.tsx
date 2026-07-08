@@ -41,7 +41,7 @@ export function NavLink(props: NavLinkContainerProps): ReactElement {
             href={component === "a" ? props.href || undefined : undefined}
             active={isActive}
             disabled={props.disabled}
-            variant={props.variant || "light"}
+            variant={props.variant || "filled"}
             color={props.color || undefined}
             noWrap={props.noWrap}
             autoContrast={props.autoContrast}

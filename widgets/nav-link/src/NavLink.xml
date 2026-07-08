@@ -52,7 +52,7 @@
             </property>
         </propertyGroup>
         <propertyGroup caption="Appearance">
-            <property key="variant" type="enumeration" required="true" defaultValue="light">
+            <property key="variant" type="enumeration" required="true" defaultValue="filled">
                 <caption>Variant</caption>
                 <description>Controls active link appearance</description>
                 <enumerationValues>
