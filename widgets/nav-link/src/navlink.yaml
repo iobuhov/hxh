@@ -1,82 +1,124 @@
-active:
-  originalType: boolean
-  group: General
-  caption: Active
-  description: Determines whether the link should have active styles
-  default: "false"
-autoContrast:
-  originalType: boolean
-  group: General
-  caption: Auto Contrast
-  description: If set, adjusts text color based on background color for filled variant
-children:
-  originalType: React.ReactNode
-  group: General
-  caption: Children
-  description: Child NavLink components
-childrenOffset:
-  originalType: MantineSpacing
-  group: General
-  caption: Children Offset
-  description: Key of theme.spacing or any valid CSS value to set collapsed links
-    padding-left
-  default: "'lg'"
-color:
-  originalType: MantineColor
-  group: General
-  caption: Color
-  description: Key of theme.colors of any valid CSS color to control active styles
-  default: theme.primaryColor
-defaultOpened:
-  originalType: boolean
-  group: General
-  caption: Default Opened
-  description: Uncontrolled nested items collapse initial state
-description:
-  originalType: React.ReactNode
-  group: General
-  caption: Description
-  description: Link description, displayed below the label
-disableRightSectionRotation:
-  originalType: boolean
-  group: General
-  caption: Disable Right Section Rotation
-  description: If set, right section will not be rotated when collapse is opened
-  default: "false"
-disabled:
-  originalType: boolean
-  group: General
-  caption: Disabled
-  description: If set, disabled styles will be added to the root element
-  default: "false"
-label:
-  originalType: React.ReactNode
-  group: General
-  caption: Label
-  description: Main link label
-leftSection:
-  originalType: React.ReactNode
-  group: General
-  caption: Left Section
-  description: Section displayed on the left side of the label
-noWrap:
-  originalType: boolean
-  group: General
-  caption: No Wrap
-  description: If set, label and description do not wrap to the next line
-  default: "false"
-onChange:
-  originalType: "((opened: boolean) => void)"
-  group: General
-  caption: On Change
-  description: Called when open state changes
-opened:
-  originalType: boolean
-  group: General
-  caption: Opened
-  description: Controlled nested items collapse state
-rightSection:
-  originalType: React.ReactNode
-  group: General
-  caption: Right Section
-  description: Section displayed on the right side of the label
+widget:
+  id: com.mendix.finch.widget.navlink.NavLink
+  name: NavLink
+  description: Navigation link with optional nesting and icon support
+  pluginWidget: true
+  offlineCapable: false
+  studioProCategory: Finch
+
+  properties:
+    General:
+      label:
+        type: string
+        caption: Label
+        description: Main link label
+        required: false
+
+      description:
+        type: string
+        caption: Description
+        description: Link description, displayed below the label
+        required: false
+
+      disabled:
+        type: boolean
+        caption: Disabled
+        description: If set, disabled styles will be added
+        required: true
+        default: "false"
+
+      href:
+        type: string
+        caption: Href
+        description: URL for anchor element (only used when component is "a")
+        required: false
+
+      componentType:
+        type: enumeration
+        caption: Component Type
+        description: "Root element type: anchor or button"
+        required: true
+        default: anchor
+        enumerationValues:
+          anchor: Anchor (a)
+          button: Button
+
+      onClick:
+        type: action
+        caption: On Click
+        description: Action triggered when the link is clicked
+        required: false
+
+    Icon:
+      icon:
+        type: string
+        caption: Icon
+        description: Lucide icon name (e.g. "layout-dashboard", "settings")
+        required: false
+
+      iconSize:
+        type: integer
+        caption: Icon Size
+        description: Icon size in pixels
+        required: true
+        default: "20"
+
+      iconStrokeWidth:
+        type: string
+        caption: Icon Stroke Width
+        description: Icon stroke width
+        required: false
+        default: "2"
+
+    Appearance:
+      variant:
+        type: enumeration
+        caption: Variant
+        description: Controls active link appearance
+        required: true
+        default: light
+        enumerationValues:
+          filled: Filled
+          light: Light
+          subtle: Subtle
+
+      color:
+        type: string
+        caption: Color
+        description: Key of theme.colors or any valid CSS color for active styles
+        required: false
+
+      noWrap:
+        type: boolean
+        caption: No Wrap
+        description: If set, label and description are truncated with ellipsis
+        required: true
+        default: "false"
+
+      autoContrast:
+        type: boolean
+        caption: Auto Contrast
+        description: Adjusts text color based on background for filled variant
+        required: true
+        default: "false"
+
+    Nesting:
+      children:
+        type: widgets
+        caption: Children
+        description: Nested NavLink widgets (creates expandable section)
+        required: false
+
+      defaultOpened:
+        type: boolean
+        caption: Default Opened
+        description: Whether nested children are expanded by default
+        required: true
+        default: "false"
+
+      childrenOffset:
+        type: string
+        caption: Children Offset
+        description: Controls indentation of nested NavLink components
+        required: false
+        default: lg

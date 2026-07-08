@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
 <widget id="com.mendix.finch.widget.navlink.NavLink" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>NavLink</name>
-    <description>Navigation link</description>
+    <description>Navigation link with optional nesting and icon support</description>
     <studioProCategory>Finch</studioProCategory>
     <studioCategory />
     <helpUrl />
@@ -11,9 +12,80 @@
                 <caption>Label</caption>
                 <description>Main link label</description>
             </property>
-            <property key="active" type="boolean" required="true" defaultValue="false">
-                <caption>Active</caption>
-                <description>Determines whether the link should have active styles</description>
+            <property key="description" type="string" required="false">
+                <caption>Description</caption>
+                <description>Link description, displayed below the label</description>
+            </property>
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
+                <caption>Disabled</caption>
+                <description>If set, disabled styles will be added</description>
+            </property>
+            <property key="href" type="string" required="false">
+                <caption>Href</caption>
+                <description>URL for anchor element (only used when component is "a")</description>
+            </property>
+            <property key="componentType" type="enumeration" required="true" defaultValue="anchor">
+                <caption>Component Type</caption>
+                <description>Root element type: anchor or button</description>
+                <enumerationValues>
+                    <enumerationValue key="anchor">Anchor (a)</enumerationValue>
+                    <enumerationValue key="button">Button</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="onClick" type="action" required="false">
+                <caption>On Click</caption>
+                <description>Action triggered when the link is clicked</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Icon">
+            <property key="icon" type="string" required="false">
+                <caption>Icon</caption>
+                <description>Lucide icon name (e.g. "layout-dashboard", "settings")</description>
+            </property>
+            <property key="iconSize" type="integer" required="true" defaultValue="20">
+                <caption>Icon Size</caption>
+                <description>Icon size in pixels</description>
+            </property>
+            <property key="iconStrokeWidth" type="string" required="false" defaultValue="2">
+                <caption>Icon Stroke Width</caption>
+                <description>Icon stroke width</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="variant" type="enumeration" required="true" defaultValue="light">
+                <caption>Variant</caption>
+                <description>Controls active link appearance</description>
+                <enumerationValues>
+                    <enumerationValue key="filled">Filled</enumerationValue>
+                    <enumerationValue key="light">Light</enumerationValue>
+                    <enumerationValue key="subtle">Subtle</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="color" type="string" required="false">
+                <caption>Color</caption>
+                <description>Key of theme.colors or any valid CSS color for active styles</description>
+            </property>
+            <property key="noWrap" type="boolean" required="true" defaultValue="false">
+                <caption>No Wrap</caption>
+                <description>If set, label and description are truncated with ellipsis</description>
+            </property>
+            <property key="autoContrast" type="boolean" required="true" defaultValue="false">
+                <caption>Auto Contrast</caption>
+                <description>Adjusts text color based on background for filled variant</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Nesting">
+            <property key="children" type="widgets" required="false">
+                <caption>Children</caption>
+                <description>Nested NavLink widgets (creates expandable section)</description>
+            </property>
+            <property key="defaultOpened" type="boolean" required="true" defaultValue="false">
+                <caption>Default Opened</caption>
+                <description>Whether nested children are expanded by default</description>
+            </property>
+            <property key="childrenOffset" type="string" required="false" defaultValue="lg">
+                <caption>Children Offset</caption>
+                <description>Controls indentation of nested NavLink components</description>
             </property>
         </propertyGroup>
     </properties>

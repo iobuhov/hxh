@@ -3,7 +3,12 @@
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Framework Team
  */
-import { CSSProperties } from "react";
+import { ComponentType, CSSProperties, ReactNode } from "react";
+import { ActionValue } from "mendix";
+
+export type ComponentTypeEnum = "anchor" | "button";
+
+export type VariantEnum = "filled" | "light" | "subtle";
 
 export interface NavLinkContainerProps {
     name: string;
@@ -11,7 +16,21 @@ export interface NavLinkContainerProps {
     style?: CSSProperties;
     tabIndex?: number;
     label: string;
-    active: boolean;
+    description: string;
+    disabled: boolean;
+    href: string;
+    componentType: ComponentTypeEnum;
+    onClick?: ActionValue;
+    icon: string;
+    iconSize: number;
+    iconStrokeWidth: string;
+    variant: VariantEnum;
+    color: string;
+    noWrap: boolean;
+    autoContrast: boolean;
+    children?: ReactNode;
+    defaultOpened: boolean;
+    childrenOffset: string;
 }
 
 export interface NavLinkPreviewProps {
@@ -26,5 +45,19 @@ export interface NavLinkPreviewProps {
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
     label: string;
-    active: boolean;
+    description: string;
+    disabled: boolean;
+    href: string;
+    componentType: ComponentTypeEnum;
+    onClick: {} | null;
+    icon: string;
+    iconSize: number | null;
+    iconStrokeWidth: string;
+    variant: VariantEnum;
+    color: string;
+    noWrap: boolean;
+    autoContrast: boolean;
+    children: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
+    defaultOpened: boolean;
+    childrenOffset: string;
 }

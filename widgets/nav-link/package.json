@@ -24,6 +24,7 @@
         "@mantine/hooks": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
         "classnames": "catalog:",
+        "lucide-react": "catalog:",
         "mendix": "catalog:",
         "mpx": "*"
     },
