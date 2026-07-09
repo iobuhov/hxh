@@ -1,0 +1,44 @@
+widget:
+  id: com.mendix.finch.widget.datalistbox.DataListBox
+  name: DataListBox
+  description: Accessible listbox with keyboard navigation and selection
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  studioProCategory: Finch
+
+  properties:
+    General:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of items
+
+      content:
+        type: widgets
+        dataSource: datasource
+        caption: Content
+        description: Widgets rendered per item (use Text with slot prop for ARIA labelling)
+
+      ariaLabel:
+        type: string
+        caption: Aria Label
+        description: Accessible name for the listbox
+        required: false
+
+    Selection:
+      itemSelection:
+        type: selection
+        dataSource: datasource
+        caption: Selection
+        description: Single item selection
+        selectionTypes:
+          - Single
+
+    Events:
+      onSelectionChange:
+        type: action
+        caption: On Selection Change
+        description: Action triggered when selection changes
+        required: false

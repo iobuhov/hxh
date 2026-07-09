@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.datalistbox.DataListBox"
-    pluginWidget="true"
-    needsEntityContext="false"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.datalistbox.DataListBox" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web">
     <name>DataListBox</name>
     <description>Accessible listbox with keyboard navigation and selection</description>
     <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
             <property key="datasource" type="datasource" isList="true">
@@ -29,9 +22,18 @@
             </property>
         </propertyGroup>
         <propertyGroup caption="Selection">
-            <property key="onSelectionChange" type="action" dataSource="datasource" required="false">
+            <property key="itemSelection" type="selection" dataSource="datasource">
+                <caption>Selection</caption>
+                <description>Single item selection</description>
+                <selectionTypes>
+                    <selectionType name="Single" />
+                </selectionTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onSelectionChange" type="action" required="false">
                 <caption>On Selection Change</caption>
-                <description>Action triggered when an item is selected</description>
+                <description>Action triggered when selection changes</description>
             </property>
         </propertyGroup>
     </properties>

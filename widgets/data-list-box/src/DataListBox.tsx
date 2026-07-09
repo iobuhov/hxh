@@ -1,10 +1,10 @@
 import { ReactElement, createElement, useState, useRef, useCallback, useId } from "react";
+import { ObjectItem } from "mendix";
 import { SlotContext, SlotContextValue } from "../../finch-context/finch-context.main.mjs";
 import { DataListBoxContainerProps } from "../typings/DataListBoxProps";
 
 export function DataListBox(props: DataListBoxContainerProps): ReactElement | null {
-    const { datasource, content, ariaLabel, onSelectionChange } = props;
-    const [selectedIndex, setSelectedIndex] = useState<number>(-1);
+    const { datasource, content, ariaLabel, itemSelection, onSelectionChange } = props;
     const [focusedIndex, setFocusedIndex] = useState<number>(0);
     const containerRef = useRef<HTMLDivElement>(null);
     const baseId = useId();
@@ -12,17 +12,13 @@ export function DataListBox(props: DataListBoxContainerProps): ReactElement | nu
     const items = datasource.status === "available" ? (datasource.items ?? []) : [];
 
     const select = useCallback(
-        (index: number) => {
-            setSelectedIndex(index);
-            const item = items[index];
-            if (item && onSelectionChange) {
-                const action = onSelectionChange.get(item);
-                if (action.canExecute) {
-                    action.execute();
-                }
+        (item: ObjectItem) => {
+            itemSelection.setSelection(item);
+            if (onSelectionChange?.canExecute) {
+                onSelectionChange.execute();
             }
         },
-        [items, onSelectionChange]
+        [itemSelection, onSelectionChange]
     );
 
     const handleKeyDown = useCallback(
@@ -49,7 +45,9 @@ export function DataListBox(props: DataListBoxContainerProps): ReactElement | nu
                 case "Enter":
                 case " ":
                     e.preventDefault();
-                    select(focusedIndex);
+                    if (items[focusedIndex]) {
+                        select(items[focusedIndex]);
+                    }
                     return;
                 default:
                     return;
@@ -81,7 +79,7 @@ export function DataListBox(props: DataListBoxContainerProps): ReactElement | nu
             {items.map((item, index) => {
                 const optionId = `${baseId}-option-${index}`;
                 const labelId = `${baseId}-option-${index}-label`;
-                const isSelected = index === selectedIndex;
+                const isSelected = itemSelection.selection?.id === item.id;
                 const isFocused = index === focusedIndex;
 
                 const slotValue: SlotContextValue = {
@@ -98,7 +96,7 @@ export function DataListBox(props: DataListBoxContainerProps): ReactElement | nu
                             aria-labelledby={labelId}
                             data-focused={isFocused || undefined}
                             data-selected={isSelected || undefined}
-                            onClick={() => select(index)}
+                            onClick={() => select(item)}
                         >
                             {content.get(item)}
                         </div>

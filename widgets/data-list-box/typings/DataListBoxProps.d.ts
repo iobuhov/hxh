@@ -4,7 +4,7 @@
  * @author Mendix Widgets Framework Team
  */
 import { ComponentType, CSSProperties, ReactNode } from "react";
-import { ListValue, ListActionValue, ListWidgetValue } from "mendix";
+import { ActionValue, ListValue, ListWidgetValue, SelectionSingleValue } from "mendix";
 
 export interface DataListBoxContainerProps {
     name: string;
@@ -14,7 +14,8 @@ export interface DataListBoxContainerProps {
     datasource: ListValue;
     content: ListWidgetValue;
     ariaLabel: string;
-    onSelectionChange?: ListActionValue;
+    itemSelection: SelectionSingleValue;
+    onSelectionChange?: ActionValue;
 }
 
 export interface DataListBoxPreviewProps {
@@ -31,5 +32,6 @@ export interface DataListBoxPreviewProps {
     datasource: {} | { caption: string } | { type: string } | null;
     content: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
     ariaLabel: string;
+    itemSelection: "Single";
     onSelectionChange: {} | null;
 }
