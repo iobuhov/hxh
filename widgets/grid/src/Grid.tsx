@@ -15,7 +15,7 @@ export function Grid(props: GridContainerProps): ReactElement {
         <MantineGrid
             className={props.class || undefined}
             columns={props.columns}
-            gutter={props.gutter || undefined}
+            gap={props.gap || undefined}
             grow={props.grow}
             align={props.align}
             justify={JUSTIFY_MAP[props.justify]}

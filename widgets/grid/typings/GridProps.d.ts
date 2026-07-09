@@ -16,7 +16,7 @@ export interface GridContainerProps {
     tabIndex?: number;
     children?: ReactNode;
     columns: number;
-    gutter: string;
+    gap: string;
     grow: boolean;
     align: AlignEnum;
     justify: JustifyEnum;
@@ -35,7 +35,7 @@ export interface GridPreviewProps {
     translate: (text: string) => string;
     children: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
     columns: number | null;
-    gutter: string;
+    gap: string;
     grow: boolean;
     align: AlignEnum;
     justify: JustifyEnum;

@@ -21,9 +21,9 @@ widget:
         description: Number of columns in each row
         default: "12"
 
-      gutter:
+      gap:
         type: string
-        caption: Gutter
+        caption: Gap
         description: Spacing between columns (xs, sm, md, lg, xl or CSS value)
         required: false
         default: md
