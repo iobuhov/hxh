@@ -36,15 +36,15 @@
                     <enumerationValue key="end">End</enumerationValue>
                 </enumerationValues>
             </property>
-            <property key="justify" type="enumeration" required="true" defaultValue="flex-start">
+            <property key="justify" type="enumeration" required="true" defaultValue="flexStart">
                 <caption>Justify</caption>
                 <description>Horizontal distribution of columns</description>
                 <enumerationValues>
-                    <enumerationValue key="flex-start">Start</enumerationValue>
+                    <enumerationValue key="flexStart">Start</enumerationValue>
                     <enumerationValue key="center">Center</enumerationValue>
-                    <enumerationValue key="flex-end">End</enumerationValue>
-                    <enumerationValue key="space-between">Space Between</enumerationValue>
-                    <enumerationValue key="space-around">Space Around</enumerationValue>
+                    <enumerationValue key="flexEnd">End</enumerationValue>
+                    <enumerationValue key="spaceBetween">Space Between</enumerationValue>
+                    <enumerationValue key="spaceAround">Space Around</enumerationValue>
                 </enumerationValues>
             </property>
         </propertyGroup>

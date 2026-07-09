@@ -1,6 +1,14 @@
 import { ReactElement, createElement } from "react";
 import { Grid as MantineGrid } from "../../mantine/mantine.main.mjs";
-import { GridContainerProps } from "../typings/GridProps";
+import { GridContainerProps, JustifyEnum } from "../typings/GridProps";
+
+const JUSTIFY_MAP: Record<JustifyEnum, string> = {
+    flexStart: "flex-start",
+    center: "center",
+    flexEnd: "flex-end",
+    spaceBetween: "space-between",
+    spaceAround: "space-around"
+};
 
 export function Grid(props: GridContainerProps): ReactElement {
     return (
@@ -10,7 +18,7 @@ export function Grid(props: GridContainerProps): ReactElement {
             gutter={props.gutter || "md"}
             grow={props.grow}
             align={props.align}
-            justify={props.justify}
+            justify={JUSTIFY_MAP[props.justify]}
         >
             {props.children}
         </MantineGrid>

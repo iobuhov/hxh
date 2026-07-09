@@ -7,7 +7,7 @@ import { ComponentType, CSSProperties, ReactNode } from "react";
 
 export type AlignEnum = "stretch" | "start" | "center" | "end";
 
-export type JustifyEnum = "flex-start" | "center" | "flex-end" | "space-between" | "space-around";
+export type JustifyEnum = "flexStart" | "center" | "flexEnd" | "spaceBetween" | "spaceAround";
 
 export interface GridContainerProps {
     name: string;

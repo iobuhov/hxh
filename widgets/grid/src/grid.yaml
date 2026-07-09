@@ -53,10 +53,10 @@ widget:
         caption: Justify
         description: Horizontal distribution of columns
         required: true
-        default: flex-start
+        default: flexStart
         enumerationValues:
-          flex-start: Start
+          flexStart: Start
           center: Center
-          flex-end: End
-          space-between: Space Between
-          space-around: Space Around
+          flexEnd: End
+          spaceBetween: Space Between
+          spaceAround: Space Around
