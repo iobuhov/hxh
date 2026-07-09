@@ -90,6 +90,12 @@ importers:
       '@mendix/flex':
         specifier: workspace:*
         version: link:../../widgets/flex
+      '@mendix/grid':
+        specifier: workspace:*
+        version: link:../../widgets/grid
+      '@mendix/grid-col':
+        specifier: workspace:*
+        version: link:../../widgets/grid-col
       '@mendix/group':
         specifier: workspace:*
         version: link:../../widgets/group
