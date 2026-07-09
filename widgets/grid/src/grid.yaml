@@ -21,13 +21,6 @@ widget:
         description: Number of columns in each row
         default: "12"
 
-      gutter:
-        type: string
-        caption: Gutter
-        description: Spacing between columns (xs, sm, md, lg, xl or CSS value)
-        required: false
-        default: md
-
       grow:
         type: boolean
         caption: Grow

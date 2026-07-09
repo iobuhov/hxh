@@ -16,10 +16,6 @@
                 <caption>Columns</caption>
                 <description>Number of columns in each row</description>
             </property>
-            <property key="gutter" type="string" required="false" defaultValue="md">
-                <caption>Gutter</caption>
-                <description>Spacing between columns (xs, sm, md, lg, xl or CSS value)</description>
-            </property>
             <property key="grow" type="boolean" required="true" defaultValue="false">
                 <caption>Grow</caption>
                 <description>If set, columns in the last row expand to fill available space</description>
