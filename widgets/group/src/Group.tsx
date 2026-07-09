@@ -4,7 +4,12 @@ import { GroupContainerProps } from "../typings/GroupProps";
 
 export function Group(props: GroupContainerProps): ReactElement {
     return (
-        <MantineGroup gap={props.gap || "md"} justify={props.justify || "flex-start"}>
+        <MantineGroup
+            gap={props.gap || "md"}
+            justify={props.justify || "flex-start"}
+            className={props.class}
+            style={props.style}
+        >
             {props.children}
         </MantineGroup>
     );

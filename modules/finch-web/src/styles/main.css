@@ -340,3 +340,38 @@ body:not(#_) {
     align-items: center;
     justify-content: center;
 }
+
+/* Header Group - full height with horizontal padding */
+.header-group {
+    height: 100%;
+    padding-inline: var(--mantine-spacing-md);
+}
+
+/* NavToggle - inherit color from parent context */
+.finch-NavToggle-root {
+    color: inherit;
+}
+
+/* Collapsed navbar - shrink labels, keep height stable */
+.mantine-AppShell-navbar[data-collapsed] .mantine-NavLink-root {
+    justify-content: center;
+    overflow: hidden;
+    gap: 0;
+}
+
+.mantine-AppShell-navbar[data-collapsed] .mantine-NavLink-body {
+    visibility: hidden;
+    width: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    flex: 0;
+}
+
+.mantine-AppShell-navbar[data-collapsed] .mantine-NavLink-section[data-position="right"] {
+    display: none;
+}
+
+.mantine-AppShell-navbar[data-collapsed] .mantine-NavLink-section[data-position="left"] {
+    margin-right: 0;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="com.mendix.finch.widget.navtoggle.NavToggle" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>NavToggle</name>
+    <description>Toggle button for AppShell navbar with layout icons</description>
+    <studioProCategory>Finch</studioProCategory>
+    <studioCategory />
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="size" type="string" required="false" defaultValue="md">
+                <caption>Size</caption>
+                <description>Button size (sm, md, lg, xl)</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

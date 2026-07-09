@@ -10,7 +10,7 @@ export interface BurgerContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    size: string;
 }
 
 export interface BurgerPreviewProps {
@@ -24,5 +24,5 @@ export interface BurgerPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    size: string;
 }

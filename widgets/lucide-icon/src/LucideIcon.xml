@@ -24,5 +24,23 @@
                 <description>Icon stroke width</description>
             </property>
         </propertyGroup>
+        <propertyGroup caption="Theme Icon">
+            <property key="themeIcon" type="boolean" required="true" defaultValue="false">
+                <caption>Theme Icon</caption>
+                <description>Wrap icon in a ThemeIcon container</description>
+            </property>
+            <property key="themeIconVariant" type="string" required="false" defaultValue="light">
+                <caption>Variant</caption>
+                <description>ThemeIcon variant (light, filled, outline, subtle, gradient)</description>
+            </property>
+            <property key="themeIconColor" type="string" required="false" defaultValue="gray">
+                <caption>Color</caption>
+                <description>ThemeIcon color</description>
+            </property>
+            <property key="themeIconSize" type="string" required="false" defaultValue="sm">
+                <caption>Size</caption>
+                <description>ThemeIcon size (xs, sm, md, lg, xl)</description>
+            </property>
+        </propertyGroup>
     </properties>
 </widget>

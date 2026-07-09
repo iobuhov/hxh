@@ -15,6 +15,7 @@
     "dependencies": {
         "@mantine/core": "catalog:",
         "@mendix/app-shell": "workspace:*",
+        "@mendix/burger": "workspace:*",
         "@mendix/card": "workspace:*",
         "@mendix/flex": "workspace:*",
         "@mendix/group": "workspace:*",
@@ -22,6 +23,7 @@
         "@mendix/lib-mantine": "workspace:*",
         "@mendix/lucide-icon": "workspace:*",
         "@mendix/nav-link": "workspace:*",
+        "@mendix/nav-toggle": "workspace:*",
         "@mendix/simple-grid": "workspace:*",
         "@mendix/stack": "workspace:*",
         "@mendix/text": "workspace:*",

@@ -14,6 +14,10 @@ export interface LucideIconContainerProps {
     size: number;
     color: string;
     strokeWidth: string;
+    themeIcon: boolean;
+    themeIconVariant: string;
+    themeIconColor: string;
+    themeIconSize: string;
 }
 
 export interface LucideIconPreviewProps {
@@ -31,4 +35,8 @@ export interface LucideIconPreviewProps {
     size: number | null;
     color: string;
     strokeWidth: string;
+    themeIcon: boolean;
+    themeIconVariant: string;
+    themeIconColor: string;
+    themeIconSize: string;
 }

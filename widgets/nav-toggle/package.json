@@ -1,0 +1,30 @@
+{
+    "name": "@mendix/nav-toggle",
+    "widgetName": "NavToggle",
+    "version": "0.1.0",
+    "description": "Toggle button for AppShell navbar with layout icons",
+    "copyright": "© 2025 Illia Obukhau",
+    "author": "Illia Obukhau",
+    "engines": {
+        "node": ">=22"
+    },
+    "license": "Apache-2.0",
+    "config": {},
+    "packagePath": "com.mendix.finch.widget",
+    "scripts": {
+        "build": "mpx",
+        "dev": "mpx -w",
+        "lint": "pluggable-widgets-tools lint",
+        "test": "pluggable-widgets-tools test:unit:web --no-cache --ci",
+        "test:unit": "pluggable-widgets-tools test:unit:web --coverage"
+    },
+    "dependencies": {
+        "@mantine/core": "catalog:",
+        "@mendix/prettier-config-web-widgets": "workspace:*",
+        "classnames": "catalog:",
+        "lucide-react": "catalog:",
+        "mendix": "catalog:",
+        "mpx": "*"
+    },
+    "prettier": "@mendix/prettier-config-web-widgets"
+}

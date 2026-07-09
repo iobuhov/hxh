@@ -10,6 +10,7 @@ export function Flex(props: FlexContainerProps): ReactElement {
             align={props.align || "stretch"}
             justify={props.justify || "flex-start"}
             wrap={props.wrap || "nowrap"}
+            style={props.style}
         >
             {props.children}
         </MantineFlex>

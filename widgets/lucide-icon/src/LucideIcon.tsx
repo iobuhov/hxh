@@ -1,5 +1,6 @@
 import { ReactElement, createElement } from "react";
 import { icons } from "../../lucide/lucide.main.mjs";
+import { ThemeIcon } from "../../mantine/mantine.main.mjs";
 import { LucideIconContainerProps } from "../typings/LucideIconProps";
 
 function toPascalCase(str: string): string {
@@ -17,11 +18,25 @@ export function LucideIcon(props: LucideIconContainerProps): ReactElement {
         return <span title={`Icon "${props.icon}" not found`} />;
     }
 
-    return (
+    const icon = (
         <IconComponent
             size={props.size || 20}
             color={props.color || "currentColor"}
             strokeWidth={Number(props.strokeWidth) || 2}
         />
     );
+
+    if (props.themeIcon) {
+        return (
+            <ThemeIcon
+                variant={props.themeIconVariant || "light"}
+                color={props.themeIconColor || "gray"}
+                size={props.themeIconSize || "sm"}
+            >
+                {icon}
+            </ThemeIcon>
+        );
+    }
+
+    return icon;
 }

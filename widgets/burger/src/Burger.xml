@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.burger.Burger"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<widget id="com.mendix.finch.widget.burger.Burger" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>Burger</name>
-    <description>Open/close navigation button</description>
+    <description>Toggle button for AppShell navbar</description>
     <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="size" type="string" required="false" defaultValue="md">
+                <caption>Size</caption>
+                <description>Burger icon size (sm, md, lg, xl or number)</description>
             </property>
         </propertyGroup>
     </properties>
