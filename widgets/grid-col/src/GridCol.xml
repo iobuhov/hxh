@@ -12,9 +12,9 @@
                 <caption>Content</caption>
                 <description>Column content</description>
             </property>
-            <property key="span" type="integer" defaultValue="0">
+            <property key="span" type="string" required="false" defaultValue="auto">
                 <caption>Span</caption>
-                <description>Number of columns the cell should span (1-12, or 0 for auto)</description>
+                <description>Columns to span: number (1-12), 'auto', or 'content'</description>
             </property>
             <property key="offset" type="integer" defaultValue="0">
                 <caption>Offset</caption>

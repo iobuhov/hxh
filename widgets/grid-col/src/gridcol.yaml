@@ -16,10 +16,11 @@ widget:
         required: false
 
       span:
-        type: integer
+        type: string
         caption: Span
-        description: Number of columns the cell should span (1-12, or 0 for auto)
-        default: "0"
+        description: "Columns to span: number (1-12), 'auto', or 'content'"
+        required: false
+        default: auto
 
       offset:
         type: integer

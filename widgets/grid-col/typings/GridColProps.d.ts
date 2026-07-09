@@ -11,7 +11,7 @@ export interface GridColContainerProps {
     style?: CSSProperties;
     tabIndex?: number;
     children?: ReactNode;
-    span: number;
+    span: string;
     offset: number;
     order: number;
 }
@@ -28,7 +28,7 @@ export interface GridColPreviewProps {
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
     children: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
-    span: number | null;
+    span: string;
     offset: number | null;
     order: number | null;
 }
