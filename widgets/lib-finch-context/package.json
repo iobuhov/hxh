@@ -1,0 +1,24 @@
+{
+    "name": "@mendix/lib-finch-context",
+    "widgetName": "LibFinchContext",
+    "version": "0.1.0",
+    "description": "Shared Finch slot context. Place once on the layout to enable slot-based ARIA wiring.",
+    "copyright": "© 2025 Illia Obukhau",
+    "author": "Illia Obukhau",
+    "engines": {
+        "node": ">=22"
+    },
+    "license": "Apache-2.0",
+    "config": {},
+    "packagePath": "com.mendix.finch.widget",
+    "scripts": {
+        "build": "mpx",
+        "dev": "mpx -w"
+    },
+    "dependencies": {
+        "@mendix/prettier-config-web-widgets": "workspace:*",
+        "mendix": "catalog:",
+        "mpx": "*"
+    },
+    "prettier": "@mendix/prettier-config-web-widgets"
+}

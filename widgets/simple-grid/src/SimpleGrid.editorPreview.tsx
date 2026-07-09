@@ -9,7 +9,6 @@ export function preview({ children, cols, spacing, styleObject }: SimpleGridPrev
 
     return (
         <div className="mantine-SimpleGrid-root">
-            <style>{`.mantine-SimpleGrid-root [data-drop-zone="true"] { display: contents; }`}</style>
             <div
                 style={{
                     display: "grid",
@@ -19,7 +18,7 @@ export function preview({ children, cols, spacing, styleObject }: SimpleGridPrev
                 }}
             >
                 <Children>
-                    <div />
+                    <div style={{ display: "contents" }} />
                 </Children>
             </div>
         </div>

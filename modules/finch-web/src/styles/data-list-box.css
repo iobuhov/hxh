@@ -1,0 +1,11 @@
+.mantine-DataListBox-option[data-focused] {
+    outline: 2px solid var(--mantine-primary-color-filled);
+    outline-offset: -2px;
+    border-radius: var(--mantine-radius-sm);
+}
+
+.mantine-DataListBox-option[data-selected] {
+    background: var(--mantine-primary-color-light);
+    color: var(--mantine-primary-color-light-color);
+    border-radius: var(--mantine-radius-sm);
+}

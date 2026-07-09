@@ -1,0 +1,11 @@
+{
+    "name": "@mendix/finch-context-stub",
+    "version": "1.0.0",
+    "description": "Dev-time stub for finch-context shared module",
+    "author": "",
+    "license": "ISC",
+    "main": "index.js",
+    "scripts": {},
+    "dependencies": {},
+    "keywords": []
+}

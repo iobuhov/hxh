@@ -84,12 +84,18 @@ importers:
       '@mendix/card':
         specifier: workspace:*
         version: link:../../widgets/card
+      '@mendix/data-list-box':
+        specifier: workspace:*
+        version: link:../../widgets/data-list-box
       '@mendix/flex':
         specifier: workspace:*
         version: link:../../widgets/flex
       '@mendix/group':
         specifier: workspace:*
         version: link:../../widgets/group
+      '@mendix/lib-finch-context':
+        specifier: workspace:*
+        version: link:../../widgets/lib-finch-context
       '@mendix/lib-lucide':
         specifier: workspace:*
         version: link:../../widgets/lib-lucide
@@ -105,6 +111,9 @@ importers:
       '@mendix/nav-toggle':
         specifier: workspace:*
         version: link:../../widgets/nav-toggle
+      '@mendix/scroll-area':
+        specifier: workspace:*
+        version: link:../../widgets/scroll-area
       '@mendix/simple-grid':
         specifier: workspace:*
         version: link:../../widgets/simple-grid
@@ -745,6 +754,27 @@ importers:
         specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
         version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
+  widgets/data-list-box:
+    dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+
   widgets/dialog:
     dependencies:
       '@mendix/prettier-config-web-widgets':
@@ -819,6 +849,8 @@ importers:
       mpx:
         specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
         version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+
+  widgets/finch-context: {}
 
   widgets/flex:
     dependencies:
@@ -987,6 +1019,18 @@ importers:
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+
+  widgets/lib-finch-context:
+    dependencies:
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
       mendix:
         specifier: 'catalog:'
         version: 10.24.75382
@@ -1437,6 +1481,27 @@ importers:
 
   widgets/ring-progress:
     dependencies:
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+
+  widgets/scroll-area:
+    dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets

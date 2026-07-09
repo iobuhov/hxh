@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="com.mendix.finch.widget.scrollarea.ScrollArea"
+    pluginWidget="true"
+    needsEntityContext="false"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
+    <name>ScrollArea</name>
+    <description>Area with custom scrollbars</description>
+    <studioProCategory>Finch</studioProCategory>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="children" type="widgets" required="false">
+                <caption>Content</caption>
+                <description>Scrollable content</description>
+            </property>
+            <property key="h" type="string" required="false">
+                <caption>Height</caption>
+                <description>Height of the scroll area (e.g. 300, 100%)</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Scrollbar">
+            <property key="type" type="enumeration" required="true" defaultValue="hover">
+                <caption>Type</caption>
+                <description>Scrollbar visibility behavior</description>
+                <enumerationValues>
+                    <enumerationValue key="hover">Hover</enumerationValue>
+                    <enumerationValue key="scroll">Scroll</enumerationValue>
+                    <enumerationValue key="auto">Auto</enumerationValue>
+                    <enumerationValue key="always">Always</enumerationValue>
+                    <enumerationValue key="never">Never</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="scrollbars" type="enumeration" required="true" defaultValue="y">
+                <caption>Scrollbars</caption>
+                <description>Which scrollbars to display</description>
+                <enumerationValues>
+                    <enumerationValue key="xy">Both</enumerationValue>
+                    <enumerationValue key="x">Horizontal only</enumerationValue>
+                    <enumerationValue key="y">Vertical only</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="offsetScrollbars" type="boolean" required="true" defaultValue="false">
+                <caption>Offset Scrollbars</caption>
+                <description>Add padding to offset scrollbars</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

@@ -1,0 +1,28 @@
+{
+    "name": "@mendix/data-list-box",
+    "widgetName": "DataListBox",
+    "version": "0.1.0",
+    "description": "Accessible listbox with keyboard navigation and selection",
+    "copyright": "© 2025 Illia Obukhau",
+    "author": "Illia Obukhau",
+    "engines": {
+        "node": ">=22"
+    },
+    "license": "Apache-2.0",
+    "config": {},
+    "packagePath": "com.mendix.finch.widget",
+    "scripts": {
+        "build": "mpx",
+        "dev": "mpx -w",
+        "update-xml": "yaml-to-xml src/datalistbox.yaml src/DataListBox.xml"
+    },
+    "dependencies": {
+        "@mantine/core": "catalog:",
+        "@mantine/hooks": "catalog:",
+        "@mendix/prettier-config-web-widgets": "workspace:*",
+        "classnames": "catalog:",
+        "mendix": "catalog:",
+        "mpx": "*"
+    },
+    "prettier": "@mendix/prettier-config-web-widgets"
+}

@@ -14,12 +14,16 @@ export async function css() {
         const themeSourcePath = join(projectPath, "themesource", __moduleName, "web");
         await mkdir(themeSourcePath, { recursive: true });
         await $`postcss src/styles/main.css -o ${themeSourcePath}/main.css`;
+        await fs.copy("src/styles/utility.css", join(themeSourcePath, "utility.css"));
+        await fs.copy("src/styles/data-list-box.css", join(themeSourcePath, "data-list-box.css"));
         await fs.copy("src/styles/main.scss", join(themeSourcePath, "main.scss"));
         await fs.copy("src/resources", join(projectPath, "themesource", __moduleName, "public", "resources"));
         log(pc.green("main.css built and copied to project theme source"));
     } else {
         // Copy to local dist
         await $`postcss src/styles/main.css -o dist/themesource/${__moduleName}/web/main.css`;
+        await fs.copy("src/styles/utility.css", `dist/themesource/${__moduleName}/web/utility.css`);
+        await fs.copy("src/styles/data-list-box.css", `dist/themesource/${__moduleName}/web/data-list-box.css`);
         await fs.copy("src/styles/main.scss", `dist/themesource/${__moduleName}/web/main.scss`);
         await fs.copy("src/resources", join("dist", "themesource", __moduleName, "public", "resources"));
         log(pc.green("main.css built"));

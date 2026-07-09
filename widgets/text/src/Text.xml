@@ -7,7 +7,7 @@
     <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
+            <property key="text" type="textTemplate" required="false">
                 <caption>Text</caption>
                 <description>Text content</description>
             </property>
@@ -22,6 +22,14 @@
             <property key="fw" type="string" required="false">
                 <caption>Font Weight</caption>
                 <description>Font weight (e.g. 500, 700, bold)</description>
+            </property>
+            <property key="slot" type="enumeration" required="true" defaultValue="none">
+                <caption>Slot</caption>
+                <description>Slot name for ARIA context</description>
+                <enumerationValues>
+                    <enumerationValue key="none">None</enumerationValue>
+                    <enumerationValue key="label">Label</enumerationValue>
+                </enumerationValues>
             </property>
         </propertyGroup>
     </properties>

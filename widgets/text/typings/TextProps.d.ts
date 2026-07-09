@@ -4,16 +4,20 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { DynamicValue } from "mendix";
+
+export type SlotEnum = "none" | "label";
 
 export interface TextContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    text?: DynamicValue<string>;
     size: string;
     color: string;
     fw: string;
+    slot: SlotEnum;
 }
 
 export interface TextPreviewProps {
@@ -31,4 +35,5 @@ export interface TextPreviewProps {
     size: string;
     color: string;
     fw: string;
+    slot: SlotEnum;
 }
