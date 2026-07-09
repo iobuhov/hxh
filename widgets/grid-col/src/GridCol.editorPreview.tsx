@@ -5,7 +5,7 @@ export function preview(props: GridColPreviewProps): ReactElement {
     return (
         <div className="mantine-Grid-col">
             <props.children.renderer>
-                <div />
+                <div style={{ display: "contents" }} />
             </props.children.renderer>
         </div>
     );
