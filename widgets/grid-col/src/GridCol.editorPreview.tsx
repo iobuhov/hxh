@@ -3,14 +3,20 @@ import { GridColPreviewProps } from "../typings/GridColProps";
 
 export function preview(props: GridColPreviewProps): ReactElement {
     const span = props.span ?? "12";
-    const gridColumn = span === "auto" ? "auto" : span === "content" ? "auto" : `span ${span}`;
+    const numSpan = Number(span);
+    const flexBasis =
+        span === "auto" || span === "content" || !Number.isFinite(numSpan)
+            ? undefined
+            : `calc(${(numSpan / 12) * 100}% - var(--mantine-spacing-md))`;
+    const flexGrow = span === "auto" ? 1 : 0;
 
     return (
         <div
             className="mantine-Grid-col"
             style={{
-                gridColumn,
-                gridColumnStart: props.offset ? `${(props.offset ?? 0) + 1}` : undefined,
+                flexBasis,
+                flexGrow,
+                flexShrink: 0,
                 order: props.order || undefined
             }}
         >
