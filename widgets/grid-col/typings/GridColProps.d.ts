@@ -1,28 +1,22 @@
 /**
- * This file was generated from Grid.xml
+ * This file was generated from GridCol.xml
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Framework Team
  */
 import { ComponentType, CSSProperties, ReactNode } from "react";
 
-export type AlignEnum = "stretch" | "start" | "center" | "end";
-
-export type JustifyEnum = "flex-start" | "center" | "flex-end" | "space-between" | "space-around";
-
-export interface GridContainerProps {
+export interface GridColContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
     children?: ReactNode;
-    columns: number;
-    gutter: string;
-    grow: boolean;
-    align: AlignEnum;
-    justify: JustifyEnum;
+    span: number;
+    offset: number;
+    order: number;
 }
 
-export interface GridPreviewProps {
+export interface GridColPreviewProps {
     /**
      * @deprecated Deprecated since version 9.18.0. Please use class property instead.
      */
@@ -34,9 +28,7 @@ export interface GridPreviewProps {
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
     children: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
-    columns: number | null;
-    gutter: string;
-    grow: boolean;
-    align: AlignEnum;
-    justify: JustifyEnum;
+    span: number | null;
+    offset: number | null;
+    order: number | null;
 }

@@ -1,47 +1,62 @@
-align:
-  originalType: AlignItems
-  group: General
-  caption: Align
-  description: Sets align-items
-  default: stretch
-breakpoints:
-  originalType: GridBreakpoints
-  group: General
-  caption: Breakpoints
-  description: Breakpoints values, only used with type="container"
-columns:
-  originalType: number
-  group: General
-  caption: Columns
-  description: Number of columns in each row
-  default: "12"
-grow:
-  originalType: boolean
-  group: General
-  caption: Grow
-  description: If set, columns in the last row expand to fill all available space
-  default: "false"
-gutter:
-  originalType: StyleProp<MantineSpacing>
-  group: General
-  caption: Gutter
-  description: Gutter between columns, key of theme.spacing or any valid CSS value
-  default: "'md'"
-justify:
-  originalType: JustifyContent
-  group: General
-  caption: Justify
-  description: Sets justify-content
-  default: flex-start
-overflow:
-  originalType: Overflow
-  group: General
-  caption: Overflow
-  description: Sets overflow CSS property on the root element
-  default: "'visible'"
-type:
-  originalType: '"media" | "container"'
-  group: General
-  caption: Type
-  description: Type of queries used for responsive styles
-  default: "'media'"
+widget:
+  id: com.mendix.finch.widget.grid.Grid
+  name: Grid
+  description: Responsive 12 columns grid system
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  studioProCategory: Finch
+
+  properties:
+    General:
+      children:
+        type: widgets
+        caption: Content
+        description: Grid columns (use GridColumn widgets)
+        required: false
+
+      columns:
+        type: integer
+        caption: Columns
+        description: Number of columns in each row
+        default: "12"
+
+      gutter:
+        type: string
+        caption: Gutter
+        description: Spacing between columns (xs, sm, md, lg, xl or CSS value)
+        required: false
+        default: md
+
+      grow:
+        type: boolean
+        caption: Grow
+        description: If set, columns in the last row expand to fill available space
+        default: "false"
+        required: true
+
+    Alignment:
+      align:
+        type: enumeration
+        caption: Align
+        description: Vertical alignment of columns
+        required: true
+        default: stretch
+        enumerationValues:
+          stretch: Stretch
+          start: Start
+          center: Center
+          end: End
+
+      justify:
+        type: enumeration
+        caption: Justify
+        description: Horizontal distribution of columns
+        required: true
+        default: flex-start
+        enumerationValues:
+          flex-start: Start
+          center: Center
+          flex-end: End
+          space-between: Space Between
+          space-around: Space Around

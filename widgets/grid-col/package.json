@@ -1,8 +1,8 @@
 {
-    "name": "@mendix/grid",
-    "widgetName": "Grid",
+    "name": "@mendix/grid-col",
+    "widgetName": "GridCol",
     "version": "0.1.0",
-    "description": "Responsive 12 columns grid system",
+    "description": "Grid column with configurable span",
     "copyright": "© 2025 Illia Obukhau",
     "author": "Illia Obukhau",
     "engines": {
@@ -14,7 +14,7 @@
     "scripts": {
         "build": "mpx",
         "dev": "mpx -w",
-        "update-xml": "yaml-to-xml src/grid.yaml src/Grid.xml"
+        "update-xml": "yaml-to-xml src/gridcol.yaml src/GridCol.xml"
     },
     "dependencies": {
         "@mantine/core": "catalog:",

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.gridcol.GridCol" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web">
+    <name>GridCol</name>
+    <description>Grid column with configurable span</description>
+    <studioProCategory>Finch</studioProCategory>
+    <studioCategory />
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="children" type="widgets" required="false">
+                <caption>Content</caption>
+                <description>Column content</description>
+            </property>
+            <property key="span" type="integer" defaultValue="0">
+                <caption>Span</caption>
+                <description>Number of columns the cell should span (1-12, or 0 for auto)</description>
+            </property>
+            <property key="offset" type="integer" defaultValue="0">
+                <caption>Offset</caption>
+                <description>Number of columns to offset from the start</description>
+            </property>
+            <property key="order" type="integer" defaultValue="0">
+                <caption>Order</caption>
+                <description>CSS order property for column reordering</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

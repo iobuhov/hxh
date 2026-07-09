@@ -1,9 +1,9 @@
 import { ReactElement, createElement } from "react";
-import { GridPreviewProps } from "../typings/GridProps";
+import { GridColPreviewProps } from "../typings/GridColProps";
 
-export function preview(props: GridPreviewProps): ReactElement {
+export function preview(props: GridColPreviewProps): ReactElement {
     return (
-        <div className="mantine-Grid-root">
+        <div className="mantine-Grid-col">
             <props.children.renderer>
                 <div />
             </props.children.renderer>

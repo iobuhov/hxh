@@ -18,6 +18,8 @@
         "@mendix/burger": "workspace:*",
         "@mendix/card": "workspace:*",
         "@mendix/flex": "workspace:*",
+        "@mendix/grid": "workspace:*",
+        "@mendix/grid-col": "workspace:*",
         "@mendix/group": "workspace:*",
         "@mendix/lib-finch-context": "workspace:*",
         "@mendix/lib-lucide": "workspace:*",

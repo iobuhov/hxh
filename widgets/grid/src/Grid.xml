@@ -1,23 +1,51 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.grid.Grid"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.grid.Grid" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web">
     <name>Grid</name>
     <description>Responsive 12 columns grid system</description>
     <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioCategory />
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="children" type="widgets" required="false">
+                <caption>Content</caption>
+                <description>Grid columns (use GridColumn widgets)</description>
+            </property>
+            <property key="columns" type="integer" defaultValue="12">
+                <caption>Columns</caption>
+                <description>Number of columns in each row</description>
+            </property>
+            <property key="gutter" type="string" required="false" defaultValue="md">
+                <caption>Gutter</caption>
+                <description>Spacing between columns (xs, sm, md, lg, xl or CSS value)</description>
+            </property>
+            <property key="grow" type="boolean" required="true" defaultValue="false">
+                <caption>Grow</caption>
+                <description>If set, columns in the last row expand to fill available space</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Alignment">
+            <property key="align" type="enumeration" required="true" defaultValue="stretch">
+                <caption>Align</caption>
+                <description>Vertical alignment of columns</description>
+                <enumerationValues>
+                    <enumerationValue key="stretch">Stretch</enumerationValue>
+                    <enumerationValue key="start">Start</enumerationValue>
+                    <enumerationValue key="center">Center</enumerationValue>
+                    <enumerationValue key="end">End</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="justify" type="enumeration" required="true" defaultValue="flex-start">
+                <caption>Justify</caption>
+                <description>Horizontal distribution of columns</description>
+                <enumerationValues>
+                    <enumerationValue key="flex-start">Start</enumerationValue>
+                    <enumerationValue key="center">Center</enumerationValue>
+                    <enumerationValue key="flex-end">End</enumerationValue>
+                    <enumerationValue key="space-between">Space Between</enumerationValue>
+                    <enumerationValue key="space-around">Space Around</enumerationValue>
+                </enumerationValues>
             </property>
         </propertyGroup>
     </properties>

@@ -1,0 +1,34 @@
+widget:
+  id: com.mendix.finch.widget.gridcol.GridCol
+  name: GridCol
+  description: Grid column with configurable span
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  studioProCategory: Finch
+
+  properties:
+    General:
+      children:
+        type: widgets
+        caption: Content
+        description: Column content
+        required: false
+
+      span:
+        type: integer
+        caption: Span
+        description: Number of columns the cell should span (1-12, or 0 for auto)
+        default: "0"
+
+      offset:
+        type: integer
+        caption: Offset
+        description: Number of columns to offset from the start
+        default: "0"
+
+      order:
+        type: integer
+        caption: Order
+        description: CSS order property for column reordering
+        default: "0"
