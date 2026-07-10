@@ -1,8 +1,8 @@
 {
-    "name": "@mendix/nav-link",
-    "widgetName": "NavLink",
+    "name": "@mendix/nav-separator",
+    "widgetName": "NavSeparator",
     "version": "0.1.0",
-    "description": "Navigation link",
+    "description": "Horizontal or vertical separator for navigation and menus",
     "copyright": "© 2025 Illia Obukhau",
     "author": "Illia Obukhau",
     "engines": {
@@ -17,7 +17,7 @@
         "lint": "pluggable-widgets-tools lint",
         "test": "pluggable-widgets-tools test:unit:web --no-cache --ci",
         "test:unit": "pluggable-widgets-tools test:unit:web --coverage",
-        "update-xml": "yaml-to-xml src/navlink.yaml src/NavLink.xml"
+        "update-xml": "yaml-to-xml src/navseparator.yaml src/NavSeparator.xml"
     },
     "dependencies": {
         "@mantine/core": "catalog:",
@@ -25,7 +25,6 @@
         "@mendix/prettier-config-web-widgets": "workspace:*",
         "@mendix/yaml-to-xml-converter": "workspace:*",
         "classnames": "catalog:",
-        "lucide-react": "catalog:",
         "mendix": "catalog:",
         "mpx": "*"
     },

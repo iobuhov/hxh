@@ -21,7 +21,7 @@
                             <caption>Header</caption>
                             <description>Text shown in the column header cell</description>
                         </property>
-                        <property key="content" type="widgets" required="false" dataSource="datasource">
+                        <property key="content" type="widgets" required="false" dataSource="../datasource">
                             <caption>Content</caption>
                             <description>Widgets rendered in the cell for each row</description>
                         </property>

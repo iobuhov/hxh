@@ -1,0 +1,63 @@
+widget:
+  id: com.mendix.finch.widget.navseparator.NavSeparator
+  name: NavSeparator
+  description: Horizontal or vertical separator (divider) for navigation and menus
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  studioProCategory: Finch / Navigation
+  studioCategory: Finch / Navigation
+  properties:
+    General:
+      label:
+        type: string
+        required: false
+        caption: Label
+        description: Optional text shown in the middle of the separator
+      orientation:
+        type: enumeration
+        required: true
+        default: horizontal
+        caption: Orientation
+        description: Direction of the separator
+        enumerationValues:
+          horizontal: Horizontal
+          vertical: Vertical
+    Appearance:
+      variant:
+        type: enumeration
+        required: true
+        default: solid
+        caption: Variant
+        description: Line style
+        enumerationValues:
+          solid: Solid
+          dashed: Dashed
+          dotted: Dotted
+      size:
+        type: enumeration
+        required: true
+        default: xs
+        caption: Size
+        description: Thickness of the line
+        enumerationValues:
+          xs: Extra small
+          sm: Small
+          md: Medium
+          lg: Large
+          xl: Extra large
+      labelPosition:
+        type: enumeration
+        required: true
+        default: center
+        caption: Label position
+        description: Position of the label along the line
+        enumerationValues:
+          left: Left
+          center: Center
+          right: Right
+      color:
+        type: string
+        required: false
+        caption: Color
+        description: Key of theme.colors or any valid CSS color

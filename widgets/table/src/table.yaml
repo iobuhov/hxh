@@ -29,7 +29,7 @@ widget:
               description: Text shown in the column header cell
             content:
               type: widgets
-              dataSource: datasource
+              dataSource: ../datasource
               required: false
               caption: Content
               description: Widgets rendered in the cell for each row

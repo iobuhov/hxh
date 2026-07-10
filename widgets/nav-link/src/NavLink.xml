@@ -2,7 +2,7 @@
 <!--This is an auto-generated XML file. Do not edit manually.-->
 <widget id="com.mendix.finch.widget.navlink.NavLink" pluginWidget="true" offlineCapable="false" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
     <name>NavLink</name>
-    <description>Navigation link with optional nesting and icon support</description>
+    <description>Navigation link with icon support</description>
     <studioProCategory>Finch</studioProCategory>
     <studioCategory />
     <helpUrl />
@@ -72,20 +72,6 @@
             <property key="autoContrast" type="boolean" required="true" defaultValue="false">
                 <caption>Auto Contrast</caption>
                 <description>Adjusts text color based on background for filled variant</description>
-            </property>
-        </propertyGroup>
-        <propertyGroup caption="Nesting">
-            <property key="children" type="widgets" required="false">
-                <caption>Children</caption>
-                <description>Nested NavLink widgets (creates expandable section)</description>
-            </property>
-            <property key="defaultOpened" type="boolean" required="true" defaultValue="false">
-                <caption>Default Opened</caption>
-                <description>Whether nested children are expanded by default</description>
-            </property>
-            <property key="childrenOffset" type="string" required="false" defaultValue="lg">
-                <caption>Children Offset</caption>
-                <description>Controls indentation of nested NavLink components</description>
             </property>
         </propertyGroup>
     </properties>

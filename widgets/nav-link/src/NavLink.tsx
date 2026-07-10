@@ -45,13 +45,9 @@ export function NavLink(props: NavLinkContainerProps): ReactElement {
             color={props.color || undefined}
             noWrap={props.noWrap}
             autoContrast={props.autoContrast}
-            defaultOpened={props.defaultOpened}
-            childrenOffset={props.childrenOffset || "lg"}
             leftSection={renderIcon(props.icon, props.iconSize || 20, Number(props.iconStrokeWidth) || 2)}
             onClick={props.onClick ? () => props.onClick?.execute() : undefined}
             style={{ borderRadius: "var(--mantine-radius-sm)" }}
-        >
-            {props.children}
-        </MantineNavLink>
+        />
     );
 }

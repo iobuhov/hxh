@@ -1,7 +1,7 @@
 widget:
   id: com.mendix.finch.widget.navlink.NavLink
   name: NavLink
-  description: Navigation link with optional nesting and icon support
+  description: Navigation link with icon support
   pluginWidget: true
   offlineCapable: false
   studioProCategory: Finch
@@ -101,24 +101,3 @@ widget:
         description: Adjusts text color based on background for filled variant
         required: true
         default: "false"
-
-    Nesting:
-      children:
-        type: widgets
-        caption: Children
-        description: Nested NavLink widgets (creates expandable section)
-        required: false
-
-      defaultOpened:
-        type: boolean
-        caption: Default Opened
-        description: Whether nested children are expanded by default
-        required: true
-        default: "false"
-
-      childrenOffset:
-        type: string
-        caption: Children Offset
-        description: Controls indentation of nested NavLink components
-        required: false
-        default: lg

@@ -1,0 +1,48 @@
+widget:
+  id: com.mendix.finch.widget.navgrouplabel.NavGroupLabel
+  name: NavGroupLabel
+  description: Section label used to name a group of navigation or menu items
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Navigation
+  studioCategory: Finch / Navigation
+  properties:
+    General:
+      text:
+        type: textTemplate
+        required: false
+        caption: Text
+        description: The group name to display
+    Appearance:
+      size:
+        type: enumeration
+        required: true
+        default: xs
+        caption: Size
+        description: Controls font size
+        enumerationValues:
+          xs: Extra small
+          sm: Small
+          md: Medium
+          lg: Large
+          xl: Extra large
+      color:
+        type: string
+        required: false
+        default: dimmed
+        caption: Color
+        description: Key of theme.colors, "dimmed", or any valid CSS color
+      fontWeight:
+        type: string
+        required: false
+        default: "700"
+        caption: Font weight
+        description: Font weight (e.g. 500, 700, bold)
+      uppercase:
+        type: boolean
+        required: true
+        default: true
+        caption: Uppercase
+        description: If set, the label is transformed to uppercase

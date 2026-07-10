@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.navseparator.NavSeparator" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web">
+    <name>NavSeparator</name>
+    <description>Horizontal or vertical separator (divider) for navigation and menus</description>
+    <studioProCategory>Finch / Navigation</studioProCategory>
+    <studioCategory>Finch / Navigation</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="label" type="string" required="false">
+                <caption>Label</caption>
+                <description>Optional text shown in the middle of the separator</description>
+            </property>
+            <property key="orientation" type="enumeration" required="true" defaultValue="horizontal">
+                <caption>Orientation</caption>
+                <description>Direction of the separator</description>
+                <enumerationValues>
+                    <enumerationValue key="horizontal">Horizontal</enumerationValue>
+                    <enumerationValue key="vertical">Vertical</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="variant" type="enumeration" required="true" defaultValue="solid">
+                <caption>Variant</caption>
+                <description>Line style</description>
+                <enumerationValues>
+                    <enumerationValue key="solid">Solid</enumerationValue>
+                    <enumerationValue key="dashed">Dashed</enumerationValue>
+                    <enumerationValue key="dotted">Dotted</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="size" type="enumeration" required="true" defaultValue="xs">
+                <caption>Size</caption>
+                <description>Thickness of the line</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="labelPosition" type="enumeration" required="true" defaultValue="center">
+                <caption>Label position</caption>
+                <description>Position of the label along the line</description>
+                <enumerationValues>
+                    <enumerationValue key="left">Left</enumerationValue>
+                    <enumerationValue key="center">Center</enumerationValue>
+                    <enumerationValue key="right">Right</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="color" type="string" required="false">
+                <caption>Color</caption>
+                <description>Key of theme.colors or any valid CSS color</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

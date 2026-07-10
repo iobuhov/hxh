@@ -3,7 +3,7 @@
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Framework Team
  */
-import { ComponentType, CSSProperties, ReactNode } from "react";
+import { CSSProperties } from "react";
 import { ActionValue } from "mendix";
 
 export type ComponentTypeEnum = "anchor" | "button";
@@ -28,9 +28,6 @@ export interface NavLinkContainerProps {
     color: string;
     noWrap: boolean;
     autoContrast: boolean;
-    children?: ReactNode;
-    defaultOpened: boolean;
-    childrenOffset: string;
 }
 
 export interface NavLinkPreviewProps {
@@ -57,7 +54,4 @@ export interface NavLinkPreviewProps {
     color: string;
     noWrap: boolean;
     autoContrast: boolean;
-    children: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
-    defaultOpened: boolean;
-    childrenOffset: string;
 }

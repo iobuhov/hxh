@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.navgrouplabel.NavGroupLabel" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
+    <name>NavGroupLabel</name>
+    <description>Section label used to name a group of navigation or menu items</description>
+    <studioProCategory>Finch / Navigation</studioProCategory>
+    <studioCategory>Finch / Navigation</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="text" type="textTemplate" required="false">
+                <caption>Text</caption>
+                <description>The group name to display</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="size" type="enumeration" required="true" defaultValue="xs">
+                <caption>Size</caption>
+                <description>Controls font size</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="color" type="string" required="false" defaultValue="dimmed">
+                <caption>Color</caption>
+                <description>Key of theme.colors, "dimmed", or any valid CSS color</description>
+            </property>
+            <property key="fontWeight" type="string" required="false" defaultValue="700">
+                <caption>Font weight</caption>
+                <description>Font weight (e.g. 500, 700, bold)</description>
+            </property>
+            <property key="uppercase" type="boolean" required="true" defaultValue="true">
+                <caption>Uppercase</caption>
+                <description>If set, the label is transformed to uppercase</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

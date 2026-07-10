@@ -123,9 +123,15 @@ importers:
       '@mendix/lucide-icon':
         specifier: workspace:*
         version: link:../../widgets/lucide-icon
+      '@mendix/nav-group-label':
+        specifier: workspace:*
+        version: link:../../widgets/nav-group-label
       '@mendix/nav-link':
         specifier: workspace:*
         version: link:../../widgets/nav-link
+      '@mendix/nav-separator':
+        specifier: workspace:*
+        version: link:../../widgets/nav-separator
       '@mendix/nav-toggle':
         specifier: workspace:*
         version: link:../../widgets/nav-toggle
@@ -1338,6 +1344,30 @@ importers:
         specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
         version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
+  widgets/nav-group-label:
+    dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+
   widgets/nav-link:
     dependencies:
       '@mantine/core':
@@ -1349,12 +1379,39 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
       lucide-react:
         specifier: 'catalog:'
         version: 1.23.0(react@19.2.7)
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+
+  widgets/nav-separator:
+    dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
       mendix:
         specifier: 'catalog:'
         version: 10.24.75382
