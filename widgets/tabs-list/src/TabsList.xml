@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.tabslist.TabsList" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web">
+    <name>TabsList</name>
+    <description>Tab strip rendered inside a Tabs widget</description>
+    <studioProCategory>Finch / Navigation</studioProCategory>
+    <studioCategory>Finch / Navigation</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="tabs" type="object" isList="true" required="false">
+                <caption>Tabs</caption>
+                <description>The tabs shown in the strip</description>
+                <properties>
+                    <propertyGroup caption="General">
+                        <property key="tabValue" type="string" required="true">
+                            <caption>Value</caption>
+                            <description>Unique value that links this tab to its TabPanel</description>
+                        </property>
+                        <property key="label" type="string" required="true">
+                            <caption>Label</caption>
+                            <description>Text shown on the tab</description>
+                        </property>
+                        <property key="iconPosition" type="enumeration" required="true" defaultValue="none">
+                            <caption>Icon position</caption>
+                            <description>Whether to show an icon on the tab and on which side</description>
+                            <enumerationValues>
+                                <enumerationValue key="none">None</enumerationValue>
+                                <enumerationValue key="left">Left</enumerationValue>
+                                <enumerationValue key="right">Right</enumerationValue>
+                            </enumerationValues>
+                        </property>
+                        <property key="icon" type="widgets" required="false">
+                            <caption>Icon</caption>
+                            <description>Icon widget shown on the tab when icon position is left or right</description>
+                        </property>
+                    </propertyGroup>
+                </properties>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="grow" type="boolean" required="true" defaultValue="false">
+                <caption>Grow</caption>
+                <description>If set, tabs stretch to take up all available space</description>
+            </property>
+            <property key="justify" type="enumeration" required="true" defaultValue="flexStart">
+                <caption>Justify</caption>
+                <description>Controls justify-content of the tab strip</description>
+                <enumerationValues>
+                    <enumerationValue key="flexStart">Start</enumerationValue>
+                    <enumerationValue key="center">Center</enumerationValue>
+                    <enumerationValue key="flexEnd">End</enumerationValue>
+                    <enumerationValue key="spaceBetween">Space between</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

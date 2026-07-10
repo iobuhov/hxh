@@ -36,7 +36,7 @@ overrides:
   '@types/jest': ^29.5.14
   '@types/node': ^22.13.10
   '@types/react': ^19.0.0
-  mpx: file:pkg/mendix-mpx-0.1.1.tgz
+  mpx: file:pkg/mendix-mpx-0.1.2.tgz
   react: ^19.0.0
   react-dom: ^19.0.0
 
@@ -78,6 +78,12 @@ importers:
       '@mendix/app-shell':
         specifier: workspace:*
         version: link:../../widgets/app-shell
+      '@mendix/avatar':
+        specifier: workspace:*
+        version: link:../../widgets/avatar
+      '@mendix/badge':
+        specifier: workspace:*
+        version: link:../../widgets/badge
       '@mendix/burger':
         specifier: workspace:*
         version: link:../../widgets/burger
@@ -87,6 +93,9 @@ importers:
       '@mendix/data-list-box':
         specifier: workspace:*
         version: link:../../widgets/data-list-box
+      '@mendix/fieldset':
+        specifier: workspace:*
+        version: link:../../widgets/fieldset
       '@mendix/flex':
         specifier: workspace:*
         version: link:../../widgets/flex
@@ -99,6 +108,9 @@ importers:
       '@mendix/group':
         specifier: workspace:*
         version: link:../../widgets/group
+      '@mendix/image':
+        specifier: workspace:*
+        version: link:../../widgets/image
       '@mendix/lib-finch-context':
         specifier: workspace:*
         version: link:../../widgets/lib-finch-context
@@ -117,18 +129,45 @@ importers:
       '@mendix/nav-toggle':
         specifier: workspace:*
         version: link:../../widgets/nav-toggle
+      '@mendix/number-input':
+        specifier: workspace:*
+        version: link:../../widgets/number-input
       '@mendix/scroll-area':
         specifier: workspace:*
         version: link:../../widgets/scroll-area
+      '@mendix/select':
+        specifier: workspace:*
+        version: link:../../widgets/select
       '@mendix/simple-grid':
         specifier: workspace:*
         version: link:../../widgets/simple-grid
       '@mendix/stack':
         specifier: workspace:*
         version: link:../../widgets/stack
+      '@mendix/tab-panel':
+        specifier: workspace:*
+        version: link:../../widgets/tab-panel
+      '@mendix/table':
+        specifier: workspace:*
+        version: link:../../widgets/table
+      '@mendix/tabs':
+        specifier: workspace:*
+        version: link:../../widgets/tabs
+      '@mendix/tabs-list':
+        specifier: workspace:*
+        version: link:../../widgets/tabs-list
       '@mendix/text':
         specifier: workspace:*
         version: link:../../widgets/text
+      '@mendix/text-input':
+        specifier: workspace:*
+        version: link:../../widgets/text-input
+      '@mendix/textarea':
+        specifier: workspace:*
+        version: link:../../widgets/textarea
+      '@mendix/theme-icon':
+        specifier: workspace:*
+        version: link:../../widgets/theme-icon
       '@mendix/theme-provider':
         specifier: workspace:*
         version: link:../../widgets/theme-provider
@@ -301,8 +340,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/action-icon:
     dependencies:
@@ -319,8 +358,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/affix:
     dependencies:
@@ -337,8 +376,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/alert:
     dependencies:
@@ -355,8 +394,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/anchor:
     dependencies:
@@ -373,8 +412,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/angle-slider:
     dependencies:
@@ -391,8 +430,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/app-shell:
     dependencies:
@@ -415,8 +454,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/aspect-ratio:
     dependencies:
@@ -433,8 +472,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/autocomplete:
     dependencies:
@@ -451,11 +490,17 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/avatar:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -469,8 +514,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/background-image:
     dependencies:
@@ -484,14 +529,23 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/badge:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -499,8 +553,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/blockquote:
     dependencies:
@@ -514,8 +568,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/breadcrumbs:
     dependencies:
@@ -535,8 +589,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/burger:
     dependencies:
@@ -556,8 +610,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/button:
     dependencies:
@@ -571,8 +625,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/card:
     dependencies:
@@ -592,8 +646,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/center:
     dependencies:
@@ -607,8 +661,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/checkbox:
     dependencies:
@@ -622,8 +676,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/chip:
     dependencies:
@@ -637,8 +691,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/close-button:
     dependencies:
@@ -652,8 +706,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/code:
     dependencies:
@@ -667,8 +721,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/color-input:
     dependencies:
@@ -682,8 +736,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/color-picker:
     dependencies:
@@ -697,8 +751,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/color-swatch:
     dependencies:
@@ -712,8 +766,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/combobox:
     dependencies:
@@ -727,8 +781,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/container:
     dependencies:
@@ -742,8 +796,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/copy-button:
     dependencies:
@@ -757,8 +811,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/data-list-box:
     dependencies:
@@ -781,8 +835,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/dialog:
     dependencies:
@@ -796,8 +850,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/drawer:
     dependencies:
@@ -811,14 +865,23 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/fieldset:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -826,8 +889,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/file-button:
     dependencies:
@@ -841,8 +904,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/file-input:
     dependencies:
@@ -856,8 +919,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/finch-context: {}
 
@@ -876,8 +939,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/floating-indicator:
     dependencies:
@@ -891,8 +954,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/grid:
     dependencies:
@@ -915,8 +978,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/grid-col:
     dependencies:
@@ -939,8 +1002,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/group:
     dependencies:
@@ -960,8 +1023,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/highlight:
     dependencies:
@@ -975,8 +1038,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/hover-card:
     dependencies:
@@ -990,14 +1053,23 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/image:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1005,8 +1077,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/indicator:
     dependencies:
@@ -1020,8 +1092,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/input:
     dependencies:
@@ -1035,8 +1107,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/json-input:
     dependencies:
@@ -1050,8 +1122,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/kbd:
     dependencies:
@@ -1065,8 +1137,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/lib-finch-context:
     dependencies:
@@ -1077,8 +1149,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/lib-lucide:
     dependencies:
@@ -1095,8 +1167,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/lib-mantine:
     dependencies:
@@ -1116,8 +1188,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/list:
     dependencies:
@@ -1131,8 +1203,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/loader:
     dependencies:
@@ -1146,8 +1218,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/loading-overlay:
     dependencies:
@@ -1161,8 +1233,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/lucide-icon:
     dependencies:
@@ -1179,8 +1251,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/mantine:
     dependencies:
@@ -1203,8 +1275,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/menu:
     dependencies:
@@ -1218,8 +1290,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/modal:
     dependencies:
@@ -1233,8 +1305,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/multi-select:
     dependencies:
@@ -1248,8 +1320,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/native-select:
     dependencies:
@@ -1263,8 +1335,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/nav-link:
     dependencies:
@@ -1287,8 +1359,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/nav-toggle:
     dependencies:
@@ -1308,8 +1380,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/notification:
     dependencies:
@@ -1323,8 +1395,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/number-formatter:
     dependencies:
@@ -1338,14 +1410,26 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/number-input:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
+      '@types/big.js':
+        specifier: ^6.2.2
+        version: 6.2.2
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1353,8 +1437,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/overlay:
     dependencies:
@@ -1368,8 +1452,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/pagination:
     dependencies:
@@ -1383,8 +1467,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/password-input:
     dependencies:
@@ -1398,8 +1482,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/pill:
     dependencies:
@@ -1413,8 +1497,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/pills-input:
     dependencies:
@@ -1428,8 +1512,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/pin-input:
     dependencies:
@@ -1443,8 +1527,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/popover:
     dependencies:
@@ -1458,8 +1542,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/progress:
     dependencies:
@@ -1473,8 +1557,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/radio:
     dependencies:
@@ -1488,8 +1572,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/range-slider:
     dependencies:
@@ -1503,8 +1587,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/rating:
     dependencies:
@@ -1518,8 +1602,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/ring-progress:
     dependencies:
@@ -1533,8 +1617,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/scroll-area:
     dependencies:
@@ -1554,8 +1638,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/segmented-control:
     dependencies:
@@ -1569,14 +1653,23 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/select:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1584,8 +1677,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/semi-circle-progress:
     dependencies:
@@ -1599,8 +1692,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/simple-grid:
     dependencies:
@@ -1620,8 +1713,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/skeleton:
     dependencies:
@@ -1635,8 +1728,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/slider:
     dependencies:
@@ -1650,8 +1743,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/spoiler:
     dependencies:
@@ -1665,8 +1758,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/stack:
     dependencies:
@@ -1686,8 +1779,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/stepper:
     dependencies:
@@ -1701,8 +1794,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/switch:
     dependencies:
@@ -1716,14 +1809,23 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
-  widgets/table:
+  widgets/tab-panel:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1731,8 +1833,32 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+
+  widgets/table:
+    dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/table-of-contents:
     dependencies:
@@ -1746,14 +1872,23 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/tabs:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1761,8 +1896,32 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+
+  widgets/tabs-list:
+    dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/tags-input:
     dependencies:
@@ -1776,8 +1935,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/text:
     dependencies:
@@ -1797,14 +1956,23 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/text-input:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1812,14 +1980,23 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/textarea:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1827,14 +2004,23 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/theme-icon:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1842,8 +2028,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/theme-provider:
     dependencies:
@@ -1866,8 +2052,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/timeline:
     dependencies:
@@ -1881,8 +2067,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/title:
     dependencies:
@@ -1902,8 +2088,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/tooltip:
     dependencies:
@@ -1917,8 +2103,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/tree:
     dependencies:
@@ -1932,8 +2118,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
   widgets/typography:
     dependencies:
@@ -1947,8 +2133,8 @@ importers:
         specifier: 'catalog:'
         version: 10.24.75382
       mpx:
-        specifier: file:../../pkg/mendix-mpx-0.1.1.tgz
-        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
 packages:
 
@@ -2257,9 +2443,9 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz':
-    resolution: {integrity: sha512-MbNn0DkWAX6E+xHpdaWcp2TBKhspKE8i6vAYGVukcZLdYTO3EX0nll9LA76YPaJU8EPLh3lqWQ9RpNliJF+c+w==, tarball: file:pkg/mendix-mpx-0.1.1.tgz}
-    version: 0.1.1
+  '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz':
+    resolution: {integrity: sha512-++R3wmZylaTe/wb8HhDepRvah9WKGodACmRPzZHeyvA6nXzzK/i+pzkiua9bfQ6J4FQor0z1ROAJBvUAMafkNA==, tarball: file:pkg/mendix-mpx-0.1.2.tgz}
+    version: 0.1.2
     hasBin: true
 
   '@napi-rs/wasm-runtime@0.2.12':
@@ -5535,7 +5721,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@mendix/mpx@file:pkg/mendix-mpx-0.1.1.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))':
+  '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))':
     dependencies:
       '@rollup/plugin-image': 3.0.3(rollup@3.29.5)
       '@rollup/plugin-url': 8.0.2(rollup@3.29.5)

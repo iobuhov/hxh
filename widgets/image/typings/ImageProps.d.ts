@@ -4,13 +4,22 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { DynamicValue } from "mendix";
+
+export type FitEnum = "cover" | "contain" | "fill" | "none" | "scaleDown";
 
 export interface ImageContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    src?: DynamicValue<string>;
+    alt: string;
+    fallbackSrc?: DynamicValue<string>;
+    fit: FitEnum;
+    radius: string;
+    width: string;
+    height: string;
 }
 
 export interface ImagePreviewProps {
@@ -24,5 +33,11 @@ export interface ImagePreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    src: string;
+    alt: string;
+    fallbackSrc: string;
+    fit: FitEnum;
+    radius: string;
+    width: string;
+    height: string;
 }

@@ -4,24 +4,26 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { DynamicValue } from "mendix";
+
+export type VariantEnum = "filled" | "light" | "outline" | "dot" | "transparent" | "default";
 
 export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export type RadiusEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface BadgeContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    autoContrast?: boolean;
-    children: string;
-    circle?: boolean;
+    content?: DynamicValue<string>;
     color: string;
-    fullWidth?: boolean;
-    gradient: string;
-    leftSection: string;
-    radius: string;
-    rightSection: string;
-    size?: SizeEnum;
+    fullWidth: boolean;
+    circle: boolean;
+    variant: VariantEnum;
+    size: SizeEnum;
+    radius: RadiusEnum;
 }
 
 export interface BadgePreviewProps {
@@ -35,14 +37,11 @@ export interface BadgePreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    autoContrast: boolean;
-    children: string;
-    circle: boolean;
+    content: string;
     color: string;
     fullWidth: boolean;
-    gradient: string;
-    leftSection: string;
-    radius: string;
-    rightSection: string;
+    circle: boolean;
+    variant: VariantEnum;
     size: SizeEnum;
+    radius: RadiusEnum;
 }

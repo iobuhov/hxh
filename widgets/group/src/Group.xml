@@ -19,6 +19,19 @@
                 <caption>Justify</caption>
                 <description>Controls justify-content CSS property</description>
             </property>
+            <property key="align" type="string" required="false" defaultValue="center">
+                <caption>Align</caption>
+                <description>Controls align-items CSS property</description>
+            </property>
+            <property key="wrap" type="enumeration" required="true" defaultValue="wrap">
+                <caption>Wrap</caption>
+                <description>Controls flex-wrap CSS property</description>
+                <enumerationValues>
+                    <enumerationValue key="nowrap">No wrap</enumerationValue>
+                    <enumerationValue key="wrap">Wrap</enumerationValue>
+                    <enumerationValue key="wrapReverse">Wrap reverse</enumerationValue>
+                </enumerationValues>
+            </property>
         </propertyGroup>
     </properties>
 </widget>

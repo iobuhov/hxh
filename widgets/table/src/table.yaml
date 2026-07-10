@@ -1,96 +1,99 @@
-borderColor:
-  originalType: MantineColor
-  group: General
-  caption: Border Color
-  description: Color of table borders, key of theme.colors or any valid CSS color
-captionSide:
-  originalType: '"bottom" | "top"'
-  group: General
-  caption: Caption Side
-  description: Side of the Table.Caption
-  default: bottom
-data:
-  originalType: TableData
-  group: General
-  caption: Data
-  description: Data used to generate table, ignored if children prop is set
-highlightOnHover:
-  originalType: boolean
-  group: General
-  caption: Highlight On Hover
-  description: If set, table rows background changes to highlightOnHoverColor when hovered
-  default: "false"
-highlightOnHoverColor:
-  originalType: MantineColor
-  group: General
-  caption: Highlight On Hover Color
-  description: Background color of table rows when hovered, key of theme.colors or
-    any valid CSS color
-horizontalSpacing:
-  originalType: MantineSpacing
-  group: General
-  caption: Horizontal Spacing
-  description: Horizontal cells spacing, key of theme.spacing or any valid CSS
-    value for padding, numbers are converted to rem
-  default: xs
-layout:
-  originalType: TableLayout
-  group: General
-  caption: Layout
-  description: Value of table-layout style
-  default: auto
-stickyHeader:
-  originalType: boolean
-  group: General
-  caption: Sticky Header
-  description: If set, Table.Thead is sticky
-  default: "false"
-stickyHeaderOffset:
-  originalType: string | number
-  group: General
-  caption: Sticky Header Offset
-  description: Offset from top at which Table.Thead should become sticky
-  default: "0"
-striped:
-  originalType: boolean | "odd" | "even"
-  group: General
-  caption: Striped
-  description: If set, every odd/even row background changes to strippedColor, if
-    set to true, then odd value will be used
-  default: "false"
-stripedColor:
-  originalType: MantineColor
-  group: General
-  caption: Striped Color
-  description: Background color of striped rows, key of theme.colors or any valid CSS color
-tabularNums:
-  originalType: boolean
-  group: General
-  caption: Tabular Nums
-  description: "If set, font-variant-numeric: tabular-nums style is applied"
-  default: "false"
-verticalSpacing:
-  originalType: MantineSpacing
-  group: General
-  caption: Vertical Spacing
-  description: Vertical cells spacing, key of theme.spacing or any valid CSS value
-    for padding, numbers are converted to rem
-  default: xs
-withColumnBorders:
-  originalType: boolean
-  group: General
-  caption: With Column Borders
-  description: If set, the table has borders between columns
-  default: "false"
-withRowBorders:
-  originalType: boolean
-  group: General
-  caption: With Row Borders
-  description: If set, the table has borders between rows
-  default: "true"
-withTableBorder:
-  originalType: boolean
-  group: General
-  caption: With Table Border
-  description: If set, the table has the outer border
-  default: "false"
+widget:
+  id: com.mendix.finch.widget.table.Table
+  name: Table
+  description: Data source driven table with headers and per-column cell templates
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  studioProCategory: Finch / Data
+  studioCategory: Finch / Data
+  properties:
+    General:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of rows shown in the table
+      columns:
+        type: object
+        isList: true
+        required: false
+        caption: Columns
+        description: Columns rendered in the table
+        properties:
+          General:
+            header:
+              type: string
+              required: false
+              caption: Header
+              description: Text shown in the column header cell
+            content:
+              type: widgets
+              dataSource: datasource
+              required: false
+              caption: Content
+              description: Widgets rendered in the cell for each row
+            textAlign:
+              type: enumeration
+              required: true
+              default: left
+              caption: Text align
+              description: Horizontal alignment of the header and cell content
+              enumerationValues:
+                left: Left
+                center: Center
+                right: Right
+            width:
+              type: string
+              required: false
+              caption: Width
+              description: Optional fixed column width as a CSS value
+    Appearance:
+      withTableBorder:
+        type: boolean
+        required: true
+        default: true
+        caption: With table border
+        description: If set, the table has the outer border
+      withColumnBorders:
+        type: boolean
+        required: true
+        default: false
+        caption: With column borders
+        description: If set, the table has borders between columns
+      withRowBorders:
+        type: boolean
+        required: true
+        default: true
+        caption: With row borders
+        description: If set, the table has borders between rows
+      striped:
+        type: boolean
+        required: true
+        default: false
+        caption: Striped
+        description: If set, every odd row background changes to the striped color
+      highlightOnHover:
+        type: boolean
+        required: true
+        default: true
+        caption: Highlight on hover
+        description: If set, table rows background changes when hovered
+      stickyHeader:
+        type: boolean
+        required: true
+        default: false
+        caption: Sticky header
+        description: If set, the table header is sticky
+      horizontalSpacing:
+        type: string
+        required: false
+        default: sm
+        caption: Horizontal spacing
+        description: Horizontal cells spacing, key of theme spacing or any valid CSS value
+      verticalSpacing:
+        type: string
+        required: false
+        default: sm
+        caption: Vertical spacing
+        description: Vertical cells spacing, key of theme spacing or any valid CSS value

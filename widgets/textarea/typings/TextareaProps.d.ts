@@ -4,13 +4,32 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue, EditableValue } from "mendix";
+
+export type ResizeEnum = "none" | "vertical" | "horizontal" | "both";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export type RadiusEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface TextareaContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    value: EditableValue<string>;
+    label: string;
+    description: string;
+    placeholder: string;
+    required: boolean;
+    disabled: boolean;
+    autosize: boolean;
+    minRows: number;
+    maxRows: number;
+    resize: ResizeEnum;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange?: ActionValue;
 }
 
 export interface TextareaPreviewProps {
@@ -24,5 +43,17 @@ export interface TextareaPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    value: string;
+    label: string;
+    description: string;
+    placeholder: string;
+    required: boolean;
+    disabled: boolean;
+    autosize: boolean;
+    minRows: number | null;
+    maxRows: number | null;
+    resize: ResizeEnum;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange: {} | null;
 }

@@ -4,13 +4,18 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { DynamicValue } from "mendix";
 
 export interface AvatarContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    src?: DynamicValue<string>;
+    userName: string;
+    size: string;
+    radius: string;
+    color: string;
 }
 
 export interface AvatarPreviewProps {
@@ -24,5 +29,9 @@ export interface AvatarPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    src: string;
+    userName: string;
+    size: string;
+    radius: string;
+    color: string;
 }

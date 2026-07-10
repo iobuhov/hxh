@@ -1,0 +1,62 @@
+widget:
+  id: com.mendix.finch.widget.tabslist.TabsList
+  name: TabsList
+  description: Tab strip rendered inside a Tabs widget
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  studioProCategory: Finch / Navigation
+  studioCategory: Finch / Navigation
+  properties:
+    General:
+      tabs:
+        type: object
+        isList: true
+        required: false
+        caption: Tabs
+        description: The tabs shown in the strip
+        properties:
+          General:
+            tabValue:
+              type: string
+              required: true
+              caption: Value
+              description: Unique value that links this tab to its TabPanel
+            label:
+              type: string
+              required: true
+              caption: Label
+              description: Text shown on the tab
+            iconPosition:
+              type: enumeration
+              required: true
+              default: none
+              caption: Icon position
+              description: Whether to show an icon on the tab and on which side
+              enumerationValues:
+                none: None
+                left: Left
+                right: Right
+            icon:
+              type: widgets
+              required: false
+              caption: Icon
+              description: Icon widget shown on the tab when icon position is left or right
+    Appearance:
+      grow:
+        type: boolean
+        required: true
+        default: false
+        caption: Grow
+        description: If set, tabs stretch to take up all available space
+      justify:
+        type: enumeration
+        required: true
+        default: flexStart
+        caption: Justify
+        description: Controls justify-content of the tab strip
+        enumerationValues:
+          flexStart: Start
+          center: Center
+          flexEnd: End
+          spaceBetween: Space between

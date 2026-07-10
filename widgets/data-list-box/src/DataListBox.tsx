@@ -55,6 +55,7 @@ export function DataListBox(props: DataListBoxContainerProps): ReactElement | nu
 
             setFocusedIndex(nextIndex);
             const el = document.getElementById(`${baseId}-option-${nextIndex}`);
+            el?.focus();
             el?.scrollIntoView({ block: "nearest" });
         },
         [focusedIndex, items.length, select, baseId]
@@ -64,16 +65,12 @@ export function DataListBox(props: DataListBoxContainerProps): ReactElement | nu
         return null;
     }
 
-    const activeDescendant = items.length > 0 ? `${baseId}-option-${focusedIndex}` : undefined;
-
     return (
         <div
             ref={containerRef}
             className={`mantine-DataListBox-root${props.class ? ` ${props.class}` : ""}`}
             role="listbox"
             aria-label={ariaLabel || undefined}
-            aria-activedescendant={activeDescendant}
-            tabIndex={0}
             onKeyDown={handleKeyDown}
         >
             {items.map((item, index) => {
@@ -94,9 +91,14 @@ export function DataListBox(props: DataListBoxContainerProps): ReactElement | nu
                             role="option"
                             aria-selected={isSelected}
                             aria-labelledby={labelId}
+                            tabIndex={isFocused ? 0 : -1}
                             data-focused={isFocused || undefined}
                             data-selected={isSelected || undefined}
-                            onClick={() => select(item)}
+                            onFocus={() => setFocusedIndex(index)}
+                            onClick={() => {
+                                setFocusedIndex(index);
+                                select(item);
+                            }}
                         >
                             {content.get(item)}
                         </div>

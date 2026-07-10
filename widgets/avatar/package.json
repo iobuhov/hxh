@@ -20,6 +20,8 @@
         "update-xml": "yaml-to-xml src/avatar.yaml src/Avatar.xml"
     },
     "dependencies": {
+        "@mantine/core": "catalog:",
+        "@mantine/hooks": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
         "@mendix/yaml-to-xml-converter": "workspace:*",
         "classnames": "catalog:",

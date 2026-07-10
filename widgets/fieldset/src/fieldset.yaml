@@ -1,11 +1,48 @@
-legend:
-  originalType: React.ReactNode
-  group: General
-  caption: Legend
-  description: Fieldset legend
-radius:
-  originalType: MantineRadius | number
-  group: General
-  caption: Radius
-  description: Key of theme.radius or any valid CSS value to set border-radius
-  default: theme.defaultRadius
+widget:
+  id: com.mendix.finch.widget.fieldset.Fieldset
+  name: Fieldset
+  description: Group related elements and inputs with an optional legend
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  properties:
+    General:
+      content:
+        type: widgets
+        required: false
+        caption: Content
+        description: Elements rendered inside the fieldset
+      legend:
+        type: string
+        required: false
+        caption: Legend
+        description: Text displayed in the fieldset legend. If empty, no legend is shown.
+    Appearance:
+      variant:
+        type: enumeration
+        required: true
+        default: default
+        caption: Variant
+        description: Visual variant of the fieldset
+        enumerationValues:
+          default: Default
+          filled: Filled
+          unstyled: Unstyled
+      radius:
+        type: enumeration
+        required: true
+        default: sm
+        caption: Radius
+        description: Border radius of the fieldset
+        enumerationValues:
+          xs: Extra small
+          sm: Small
+          md: Medium
+          lg: Large
+          xl: Extra large
+      disabled:
+        type: boolean
+        required: true
+        default: false
+        caption: Disabled
+        description: If set, all inputs inside the fieldset are disabled

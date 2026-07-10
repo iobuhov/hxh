@@ -5,6 +5,8 @@
  */
 import { ComponentType, CSSProperties, ReactNode } from "react";
 
+export type WrapEnum = "nowrap" | "wrap" | "wrapReverse";
+
 export interface GroupContainerProps {
     name: string;
     class: string;
@@ -13,6 +15,8 @@ export interface GroupContainerProps {
     children?: ReactNode;
     gap: string;
     justify: string;
+    align: string;
+    wrap: WrapEnum;
 }
 
 export interface GroupPreviewProps {
@@ -29,4 +33,6 @@ export interface GroupPreviewProps {
     children: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
     gap: string;
     justify: string;
+    align: string;
+    wrap: WrapEnum;
 }

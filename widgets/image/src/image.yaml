@@ -1,27 +1,55 @@
-fallbackSrc:
-  originalType: string
-  group: General
-  caption: Fallback Src
-  description: Image url used as a fallback if the image cannot be loaded
-fit:
-  originalType: ObjectFit
-  group: General
-  caption: Fit
-  description: Controls object-fit style
-  default: "'cover'"
-onError:
-  originalType: "((event: SyntheticEvent<HTMLImageElement, Event>) => void)"
-  group: General
-  caption: On Error
-  description: Called when image fails to load
-radius:
-  originalType: MantineRadius | number
-  group: General
-  caption: Radius
-  description: Key of theme.radius or any valid CSS value to set border-radius
-  default: "0"
-src:
-  originalType: any
-  group: General
-  caption: Src
-  description: Image url
+widget:
+  id: com.mendix.finch.widget.image.Image
+  name: Image
+  description: Display an image with optional fallback
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Media
+  studioCategory: Finch / Media
+  properties:
+    General:
+      src:
+        type: textTemplate
+        required: false
+        caption: Source
+        description: URL of the image to display
+      alt:
+        type: string
+        required: false
+        caption: Alt text
+        description: Alternative text describing the image
+      fallbackSrc:
+        type: textTemplate
+        required: false
+        caption: Fallback source
+        description: URL of an image shown when the main image fails to load
+    Appearance:
+      fit:
+        type: enumeration
+        required: true
+        default: cover
+        caption: Fit
+        description: Controls how the image is resized to fit its container (object-fit)
+        enumerationValues:
+          cover: Cover
+          contain: Contain
+          fill: Fill
+          none: None
+          scaleDown: Scale down
+      radius:
+        type: string
+        required: false
+        caption: Radius
+        description: Key of theme.radius or any valid CSS value to set border-radius
+      width:
+        type: string
+        required: false
+        caption: Width
+        description: CSS width value (e.g. 100%, 200px)
+      height:
+        type: string
+        required: false
+        caption: Height
+        description: CSS height value (e.g. auto, 200px)

@@ -20,7 +20,11 @@
         "update-xml": "yaml-to-xml src/numberinput.yaml src/NumberInput.xml"
     },
     "dependencies": {
+        "@mantine/core": "catalog:",
+        "@mantine/hooks": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
+        "@mendix/yaml-to-xml-converter": "workspace:*",
+        "@types/big.js": "catalog:",
         "classnames": "catalog:",
         "mendix": "catalog:",
         "mpx": "*"

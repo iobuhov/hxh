@@ -1,23 +1,129 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.numberinput.NumberInput"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.numberinput.NumberInput" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>NumberInput</name>
-    <description>Capture number from user</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Capture a number from the user</description>
+    <studioProCategory>Finch / Inputs</studioProCategory>
+    <studioCategory>Finch / Inputs</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="value" type="attribute" required="true">
+                <caption>Value</caption>
+                <description>Numeric attribute to capture and display</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                    <attributeType name="Long" />
+                    <attributeType name="Integer" />
+                </attributeTypes>
+            </property>
+            <property key="label" type="string" required="false">
+                <caption>Label</caption>
+                <description>Label displayed above the input</description>
+            </property>
+            <property key="description" type="string" required="false">
+                <caption>Description</caption>
+                <description>Helper text displayed below the label</description>
+            </property>
+            <property key="placeholder" type="string" required="false">
+                <caption>Placeholder</caption>
+                <description>Placeholder shown when the input is empty</description>
+            </property>
+            <property key="required" type="boolean" required="true" defaultValue="false">
+                <caption>Required</caption>
+                <description>Displays a red asterisk next to the label</description>
+            </property>
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
+                <caption>Disabled</caption>
+                <description>Disables the input. The input is also disabled when the value attribute is read-only.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Number format">
+            <property key="min" type="expression" required="false">
+                <caption>Min</caption>
+                <description>Minimum possible value. Leave empty for no minimum.</description>
+                <returnType type="Decimal" />
+            </property>
+            <property key="max" type="expression" required="false">
+                <caption>Max</caption>
+                <description>Maximum possible value. Leave empty for no maximum.</description>
+                <returnType type="Decimal" />
+            </property>
+            <property key="step" type="integer" required="true" defaultValue="1">
+                <caption>Step</caption>
+                <description>Amount to increment/decrement with the controls and arrow keys</description>
+            </property>
+            <property key="clampBehavior" type="enumeration" required="true" defaultValue="blur">
+                <caption>Clamp Behavior</caption>
+                <description>How the value is clamped to the min/max range</description>
+                <enumerationValues>
+                    <enumerationValue key="none">None</enumerationValue>
+                    <enumerationValue key="blur">On blur</enumerationValue>
+                    <enumerationValue key="strict">Strict</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="allowDecimal" type="boolean" required="true" defaultValue="true">
+                <caption>Allow Decimal</caption>
+                <description>If set, decimal values are allowed</description>
+            </property>
+            <property key="decimalScale" type="expression" required="false">
+                <caption>Decimal Scale</caption>
+                <description>Limits the number of digits after the decimal point. Leave empty for no limit.</description>
+                <returnType type="Integer" />
+            </property>
+            <property key="fixedDecimalScale" type="boolean" required="true" defaultValue="false">
+                <caption>Fixed Decimal Scale</caption>
+                <description>If set, trailing zeros are added to match the decimal scale</description>
+            </property>
+            <property key="allowNegative" type="boolean" required="true" defaultValue="true">
+                <caption>Allow Negative</caption>
+                <description>If set, negative values are allowed</description>
+            </property>
+            <property key="thousandSeparator" type="boolean" required="true" defaultValue="false">
+                <caption>Thousand Separator</caption>
+                <description>If set, thousands are grouped with a separator</description>
+            </property>
+            <property key="prefix" type="string" required="false">
+                <caption>Prefix</caption>
+                <description>Text added before the input value (e.g. "$")</description>
+            </property>
+            <property key="suffix" type="string" required="false">
+                <caption>Suffix</caption>
+                <description>Text added after the input value (e.g. " %")</description>
+            </property>
+            <property key="hideControls" type="boolean" required="true" defaultValue="false">
+                <caption>Hide Controls</caption>
+                <description>If set, the up/down controls are hidden</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="size" type="enumeration" required="true" defaultValue="sm">
+                <caption>Size</caption>
+                <description>Controls input height and horizontal padding</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="radius" type="enumeration" required="true" defaultValue="sm">
+                <caption>Radius</caption>
+                <description>Border radius of the input</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Action executed after the value changes</description>
             </property>
         </propertyGroup>
     </properties>

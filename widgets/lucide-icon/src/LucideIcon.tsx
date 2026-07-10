@@ -15,7 +15,7 @@ export function LucideIcon(props: LucideIconContainerProps): ReactElement {
     const IconComponent = (icons as Record<string, any>)[iconName];
 
     if (!IconComponent) {
-        return <span title={`Icon "${props.icon}" not found`} />;
+        return <span className={props.class} style={props.style} title={`Icon "${props.icon}" not found`} />;
     }
 
     const icon = (
@@ -23,12 +23,16 @@ export function LucideIcon(props: LucideIconContainerProps): ReactElement {
             size={props.size || 20}
             color={props.color || "currentColor"}
             strokeWidth={Number(props.strokeWidth) || 2}
+            className={props.themeIcon ? undefined : props.class}
+            style={props.themeIcon ? undefined : props.style}
         />
     );
 
     if (props.themeIcon) {
         return (
             <ThemeIcon
+                className={props.class}
+                style={props.style}
                 variant={props.themeIconVariant || "light"}
                 color={props.themeIconColor || "gray"}
                 size={props.themeIconSize || "sm"}

@@ -3,14 +3,22 @@
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Framework Team
  */
-import { CSSProperties } from "react";
+import { ComponentType, CSSProperties, ReactNode } from "react";
+
+export type VariantEnum = "default" | "filled" | "unstyled";
+
+export type RadiusEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface FieldsetContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    content?: ReactNode;
+    legend: string;
+    variant: VariantEnum;
+    radius: RadiusEnum;
+    disabled: boolean;
 }
 
 export interface FieldsetPreviewProps {
@@ -24,5 +32,9 @@ export interface FieldsetPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    content: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
+    legend: string;
+    variant: VariantEnum;
+    radius: RadiusEnum;
+    disabled: boolean;
 }

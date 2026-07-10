@@ -1,23 +1,79 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.table.Table"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.table.Table" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web">
     <name>Table</name>
-    <description>Render table with theme styles</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Data source driven table with headers and per-column cell templates</description>
+    <studioProCategory>Finch / Data</studioProCategory>
+    <studioCategory>Finch / Data</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of rows shown in the table</description>
+            </property>
+            <property key="columns" type="object" isList="true" required="false">
+                <caption>Columns</caption>
+                <description>Columns rendered in the table</description>
+                <properties>
+                    <propertyGroup caption="General">
+                        <property key="header" type="string" required="false">
+                            <caption>Header</caption>
+                            <description>Text shown in the column header cell</description>
+                        </property>
+                        <property key="content" type="widgets" required="false" dataSource="datasource">
+                            <caption>Content</caption>
+                            <description>Widgets rendered in the cell for each row</description>
+                        </property>
+                        <property key="textAlign" type="enumeration" required="true" defaultValue="left">
+                            <caption>Text align</caption>
+                            <description>Horizontal alignment of the header and cell content</description>
+                            <enumerationValues>
+                                <enumerationValue key="left">Left</enumerationValue>
+                                <enumerationValue key="center">Center</enumerationValue>
+                                <enumerationValue key="right">Right</enumerationValue>
+                            </enumerationValues>
+                        </property>
+                        <property key="width" type="string" required="false">
+                            <caption>Width</caption>
+                            <description>Optional fixed column width as a CSS value</description>
+                        </property>
+                    </propertyGroup>
+                </properties>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="withTableBorder" type="boolean" required="true" defaultValue="true">
+                <caption>With table border</caption>
+                <description>If set, the table has the outer border</description>
+            </property>
+            <property key="withColumnBorders" type="boolean" required="true" defaultValue="false">
+                <caption>With column borders</caption>
+                <description>If set, the table has borders between columns</description>
+            </property>
+            <property key="withRowBorders" type="boolean" required="true" defaultValue="true">
+                <caption>With row borders</caption>
+                <description>If set, the table has borders between rows</description>
+            </property>
+            <property key="striped" type="boolean" required="true" defaultValue="false">
+                <caption>Striped</caption>
+                <description>If set, every odd row background changes to the striped color</description>
+            </property>
+            <property key="highlightOnHover" type="boolean" required="true" defaultValue="true">
+                <caption>Highlight on hover</caption>
+                <description>If set, table rows background changes when hovered</description>
+            </property>
+            <property key="stickyHeader" type="boolean" required="true" defaultValue="false">
+                <caption>Sticky header</caption>
+                <description>If set, the table header is sticky</description>
+            </property>
+            <property key="horizontalSpacing" type="string" required="false" defaultValue="sm">
+                <caption>Horizontal spacing</caption>
+                <description>Horizontal cells spacing, key of theme spacing or any valid CSS value</description>
+            </property>
+            <property key="verticalSpacing" type="string" required="false" defaultValue="sm">
+                <caption>Vertical spacing</caption>
+                <description>Vertical cells spacing, key of theme spacing or any valid CSS value</description>
             </property>
         </propertyGroup>
     </properties>

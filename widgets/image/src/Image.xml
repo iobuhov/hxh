@@ -1,23 +1,49 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.image.Image"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.image.Image" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>Image</name>
-    <description>Image with optional fallback</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Display an image with optional fallback</description>
+    <studioProCategory>Finch / Media</studioProCategory>
+    <studioCategory>Finch / Media</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="src" type="textTemplate" required="false">
+                <caption>Source</caption>
+                <description>URL of the image to display</description>
+            </property>
+            <property key="alt" type="string" required="false">
+                <caption>Alt text</caption>
+                <description>Alternative text describing the image</description>
+            </property>
+            <property key="fallbackSrc" type="textTemplate" required="false">
+                <caption>Fallback source</caption>
+                <description>URL of an image shown when the main image fails to load</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="fit" type="enumeration" required="true" defaultValue="cover">
+                <caption>Fit</caption>
+                <description>Controls how the image is resized to fit its container (object-fit)</description>
+                <enumerationValues>
+                    <enumerationValue key="cover">Cover</enumerationValue>
+                    <enumerationValue key="contain">Contain</enumerationValue>
+                    <enumerationValue key="fill">Fill</enumerationValue>
+                    <enumerationValue key="none">None</enumerationValue>
+                    <enumerationValue key="scaleDown">Scale down</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="radius" type="string" required="false">
+                <caption>Radius</caption>
+                <description>Key of theme.radius or any valid CSS value to set border-radius</description>
+            </property>
+            <property key="width" type="string" required="false">
+                <caption>Width</caption>
+                <description>CSS width value (e.g. 100%, 200px)</description>
+            </property>
+            <property key="height" type="string" required="false">
+                <caption>Height</caption>
+                <description>CSS height value (e.g. auto, 200px)</description>
             </property>
         </propertyGroup>
     </properties>

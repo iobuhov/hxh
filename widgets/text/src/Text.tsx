@@ -10,6 +10,8 @@ export function Text(props: TextContainerProps): ReactElement {
     return (
         <MantineText
             id={slotProps.id || undefined}
+            className={props.class}
+            style={props.style}
             size={props.size || "md"}
             c={props.color || undefined}
             fw={props.fw ? Number(props.fw) : undefined}

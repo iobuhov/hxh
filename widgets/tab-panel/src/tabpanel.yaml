@@ -1,0 +1,27 @@
+widget:
+  id: com.mendix.finch.widget.tabpanel.TabPanel
+  name: TabPanel
+  description: Content panel for a single tab, placed inside a Tabs widget
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  studioProCategory: Finch / Navigation
+  studioCategory: Finch / Navigation
+  properties:
+    General:
+      tabValue:
+        type: string
+        required: true
+        caption: Tab value
+        description: Must match the value of the tab this panel belongs to
+      content:
+        type: widgets
+        required: false
+        caption: Content
+        description: Elements rendered when this tab is active
+      keepMounted:
+        type: boolean
+        required: true
+        default: false
+        caption: Keep mounted
+        description: If set, the panel stays in the DOM while inactive instead of being unmounted

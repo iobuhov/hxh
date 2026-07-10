@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.tabpanel.TabPanel" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web">
+    <name>TabPanel</name>
+    <description>Content panel for a single tab, placed inside a Tabs widget</description>
+    <studioProCategory>Finch / Navigation</studioProCategory>
+    <studioCategory>Finch / Navigation</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="tabValue" type="string" required="true">
+                <caption>Tab value</caption>
+                <description>Must match the value of the tab this panel belongs to</description>
+            </property>
+            <property key="content" type="widgets" required="false">
+                <caption>Content</caption>
+                <description>Elements rendered when this tab is active</description>
+            </property>
+            <property key="keepMounted" type="boolean" required="true" defaultValue="false">
+                <caption>Keep mounted</caption>
+                <description>If set, the panel stays in the DOM while inactive instead of being unmounted</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

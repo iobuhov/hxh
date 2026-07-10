@@ -1,23 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.tabs.Tabs"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.tabs.Tabs" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>Tabs</name>
-    <description>Switch between different views</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Tabs container that provides context for TabsList and TabPanel widgets</description>
+    <studioProCategory>Finch / Navigation</studioProCategory>
+    <studioCategory>Finch / Navigation</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="value" type="attribute" required="true">
+                <caption>Active tab</caption>
+                <description>String attribute holding the value of the currently active tab</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="content" type="widgets" required="false">
+                <caption>Content</caption>
+                <description>Place a TabsList and the TabPanel widgets here</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="variant" type="enumeration" required="true" defaultValue="default">
+                <caption>Variant</caption>
+                <description>Visual variant of the tabs</description>
+                <enumerationValues>
+                    <enumerationValue key="default">Default</enumerationValue>
+                    <enumerationValue key="outline">Outline</enumerationValue>
+                    <enumerationValue key="pills">Pills</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="orientation" type="enumeration" required="true" defaultValue="horizontal">
+                <caption>Orientation</caption>
+                <description>Tabs orientation</description>
+                <enumerationValues>
+                    <enumerationValue key="horizontal">Horizontal</enumerationValue>
+                    <enumerationValue key="vertical">Vertical</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="color" type="string" required="false">
+                <caption>Color</caption>
+                <description>Key of theme.colors or any valid CSS color for the active tab</description>
+            </property>
+            <property key="radius" type="string" required="false" defaultValue="sm">
+                <caption>Radius</caption>
+                <description>Key of theme.radius or any valid CSS value (used by the pills variant)</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onTabChange" type="action" required="false">
+                <caption>On Tab Change</caption>
+                <description>Action executed when the active tab changes</description>
             </property>
         </propertyGroup>
     </properties>

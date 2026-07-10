@@ -1,23 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.avatar.Avatar"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.avatar.Avatar" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>Avatar</name>
-    <description>Display user profile image, initials or fallback icon</description>
+    <description>Display a user profile image, initials or a fallback icon</description>
     <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <studioCategory>Finch</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="src" type="textTemplate" required="false">
+                <caption>Image source</caption>
+                <description>URL of the image to display. If empty, initials or a fallback icon are shown.</description>
+            </property>
+            <property key="userName" type="string" required="false">
+                <caption>Name</caption>
+                <description>Used as the alt text and to derive initials when no image is set</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="size" type="string" required="false" defaultValue="md">
+                <caption>Size</caption>
+                <description>Key of theme sizes (xs–xl) or a number of pixels</description>
+            </property>
+            <property key="radius" type="string" required="false">
+                <caption>Radius</caption>
+                <description>Key of theme.radius, a CSS value, or a percentage. Leave empty for a circular avatar.</description>
+            </property>
+            <property key="color" type="string" required="false">
+                <caption>Color</caption>
+                <description>Placeholder/initials color. Use "initials" for a color derived from the name.</description>
             </property>
         </propertyGroup>
     </properties>
