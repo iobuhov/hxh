@@ -32,9 +32,27 @@
                     <enumerationValue key="button">Button</enumerationValue>
                 </enumerationValues>
             </property>
+            <property key="mode" type="enumeration" required="true" defaultValue="link">
+                <caption>Mode</caption>
+                <description>Link: navigates on click. Collapse: toggles nested children.</description>
+                <enumerationValues>
+                    <enumerationValue key="link">Link</enumerationValue>
+                    <enumerationValue key="collapse">Collapse</enumerationValue>
+                </enumerationValues>
+            </property>
             <property key="onClick" type="action" required="false">
                 <caption>On Click</caption>
-                <description>Action triggered when the link is clicked</description>
+                <description>Action triggered when the link is clicked (ignored in Collapse mode)</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Collapse">
+            <property key="children" type="widgets" required="false">
+                <caption>Children</caption>
+                <description>Widgets revealed when the link is expanded (Collapse mode only)</description>
+            </property>
+            <property key="defaultOpened" type="boolean" required="true" defaultValue="false">
+                <caption>Default Opened</caption>
+                <description>If set, children are expanded on initial render</description>
             </property>
         </propertyGroup>
         <propertyGroup caption="Icon">

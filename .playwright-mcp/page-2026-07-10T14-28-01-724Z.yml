@@ -1,0 +1,87 @@
+- table [ref=e9]:
+  - rowgroup [ref=e10]:
+    - row "Robert Wolfkisser Engineer rob_wolf@gmail.com Email $22.0 / hr Rate Edit Menu" [ref=e11]:
+      - cell "Robert Wolfkisser Engineer" [ref=e12]:
+        - generic [ref=e15]:
+          - paragraph [ref=e16]: Robert Wolfkisser
+          - paragraph [ref=e17]: Engineer
+      - cell "rob_wolf@gmail.com Email" [ref=e18]:
+        - paragraph [ref=e19]: rob_wolf@gmail.com
+        - paragraph [ref=e20]: Email
+      - cell "$22.0 / hr Rate" [ref=e21]:
+        - paragraph [ref=e22]: $22.0 / hr
+        - paragraph [ref=e23]: Rate
+      - cell "Edit Menu" [ref=e24]:
+        - generic [ref=e25]:
+          - button "Edit" [ref=e26] [cursor=pointer]:
+            - img [ref=e28]
+          - button "Menu" [ref=e31] [cursor=pointer]:
+            - img [ref=e33]
+    - row "Jill Jailbreaker Engineer jj@breaker.com Email $45.0 / hr Rate Edit Menu" [ref=e37]:
+      - cell "Jill Jailbreaker Engineer" [ref=e38]:
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Jill Jailbreaker
+          - paragraph [ref=e43]: Engineer
+      - cell "jj@breaker.com Email" [ref=e44]:
+        - paragraph [ref=e45]: jj@breaker.com
+        - paragraph [ref=e46]: Email
+      - cell "$45.0 / hr Rate" [ref=e47]:
+        - paragraph [ref=e48]: $45.0 / hr
+        - paragraph [ref=e49]: Rate
+      - cell "Edit Menu" [ref=e50]:
+        - generic [ref=e51]:
+          - button "Edit" [ref=e52] [cursor=pointer]:
+            - img [ref=e54]
+          - button "Menu" [ref=e57] [cursor=pointer]:
+            - img [ref=e59]
+    - row "Henry Silkeater Designer henry@silkeater.io Email $76.0 / hr Rate Edit Menu" [ref=e63]:
+      - cell "Henry Silkeater Designer" [ref=e64]:
+        - generic [ref=e67]:
+          - paragraph [ref=e68]: Henry Silkeater
+          - paragraph [ref=e69]: Designer
+      - cell "henry@silkeater.io Email" [ref=e70]:
+        - paragraph [ref=e71]: henry@silkeater.io
+        - paragraph [ref=e72]: Email
+      - cell "$76.0 / hr Rate" [ref=e73]:
+        - paragraph [ref=e74]: $76.0 / hr
+        - paragraph [ref=e75]: Rate
+      - cell "Edit Menu" [ref=e76]:
+        - generic [ref=e77]:
+          - button "Edit" [ref=e78] [cursor=pointer]:
+            - img [ref=e80]
+          - button "Menu" [ref=e83] [cursor=pointer]:
+            - img [ref=e85]
+    - row "Bill Horsefighter Designer bhorsefighter@gmail.com Email $15.0 / hr Rate Edit Menu" [ref=e89]:
+      - cell "Bill Horsefighter Designer" [ref=e90]:
+        - generic [ref=e93]:
+          - paragraph [ref=e94]: Bill Horsefighter
+          - paragraph [ref=e95]: Designer
+      - cell "bhorsefighter@gmail.com Email" [ref=e96]:
+        - paragraph [ref=e97]: bhorsefighter@gmail.com
+        - paragraph [ref=e98]: Email
+      - cell "$15.0 / hr Rate" [ref=e99]:
+        - paragraph [ref=e100]: $15.0 / hr
+        - paragraph [ref=e101]: Rate
+      - cell "Edit Menu" [ref=e102]:
+        - generic [ref=e103]:
+          - button "Edit" [ref=e104] [cursor=pointer]:
+            - img [ref=e106]
+          - button "Menu" [ref=e109] [cursor=pointer]:
+            - img [ref=e111]
+    - row "Jeremy Footviewer Manager jeremy@foot.dev Email $98.0 / hr Rate Edit Menu" [ref=e115]:
+      - cell "Jeremy Footviewer Manager" [ref=e116]:
+        - generic [ref=e119]:
+          - paragraph [ref=e120]: Jeremy Footviewer
+          - paragraph [ref=e121]: Manager
+      - cell "jeremy@foot.dev Email" [ref=e122]:
+        - paragraph [ref=e123]: jeremy@foot.dev
+        - paragraph [ref=e124]: Email
+      - cell "$98.0 / hr Rate" [ref=e125]:
+        - paragraph [ref=e126]: $98.0 / hr
+        - paragraph [ref=e127]: Rate
+      - cell "Edit Menu" [ref=e128]:
+        - generic [ref=e129]:
+          - button "Edit" [ref=e130] [cursor=pointer]:
+            - img [ref=e132]
+          - button "Menu" [ref=e135] [cursor=pointer]:
+            - img [ref=e137]

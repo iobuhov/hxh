@@ -3,10 +3,12 @@
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Framework Team
  */
-import { CSSProperties } from "react";
+import { ComponentType, CSSProperties, ReactNode } from "react";
 import { ActionValue } from "mendix";
 
 export type ComponentTypeEnum = "anchor" | "button";
+
+export type ModeEnum = "link" | "collapse";
 
 export type VariantEnum = "filled" | "light" | "subtle";
 
@@ -20,7 +22,10 @@ export interface NavLinkContainerProps {
     disabled: boolean;
     href: string;
     componentType: ComponentTypeEnum;
+    mode: ModeEnum;
     onClick?: ActionValue;
+    children?: ReactNode;
+    defaultOpened: boolean;
     icon: string;
     iconSize: number;
     iconStrokeWidth: string;
@@ -46,7 +51,10 @@ export interface NavLinkPreviewProps {
     disabled: boolean;
     href: string;
     componentType: ComponentTypeEnum;
+    mode: ModeEnum;
     onClick: {} | null;
+    children: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
+    defaultOpened: boolean;
     icon: string;
     iconSize: number | null;
     iconStrokeWidth: string;

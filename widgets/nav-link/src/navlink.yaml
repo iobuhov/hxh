@@ -43,11 +43,35 @@ widget:
           anchor: Anchor (a)
           button: Button
 
+      mode:
+        type: enumeration
+        caption: Mode
+        description: "Link: navigates on click. Collapse: toggles nested children."
+        required: true
+        default: link
+        enumerationValues:
+          link: Link
+          collapse: Collapse
+
       onClick:
         type: action
         caption: On Click
-        description: Action triggered when the link is clicked
+        description: Action triggered when the link is clicked (ignored in Collapse mode)
         required: false
+
+    Collapse:
+      children:
+        type: widgets
+        caption: Children
+        description: Widgets revealed when the link is expanded (Collapse mode only)
+        required: false
+
+      defaultOpened:
+        type: boolean
+        caption: Default Opened
+        description: If set, children are expanded on initial render
+        required: true
+        default: "false"
 
     Icon:
       icon:

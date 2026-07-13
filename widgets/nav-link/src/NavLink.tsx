@@ -1,5 +1,5 @@
-import { ReactElement, createElement, useSyncExternalStore } from "react";
-import { NavLink as MantineNavLink } from "../../mantine/mantine.main.mjs";
+import { Fragment, ReactElement, createElement, useState, useSyncExternalStore } from "react";
+import { Collapse, NavLink as MantineNavLink } from "../../mantine/mantine.main.mjs";
 import { icons } from "../../lucide/lucide.main.mjs";
 import { NavLinkContainerProps } from "../typings/NavLinkProps";
 
@@ -30,24 +30,52 @@ function useIsActive(href: string | undefined): boolean {
 }
 
 export function NavLink(props: NavLinkContainerProps): ReactElement {
-    const component = props.componentType === "button" ? "button" : "a";
+    const collapsible = props.mode === "collapse";
+    const [opened, setOpened] = useState(props.defaultOpened);
+    const component = collapsible || props.componentType === "button" ? "button" : "a";
     const isActive = useIsActive(props.href);
 
     return (
-        <MantineNavLink
-            component={component}
-            label={props.label || ""}
-            description={props.description || undefined}
-            href={component === "a" ? props.href || undefined : undefined}
-            active={isActive}
-            disabled={props.disabled}
-            variant={props.variant || "filled"}
-            color={props.color || undefined}
-            noWrap={props.noWrap}
-            autoContrast={props.autoContrast}
-            leftSection={renderIcon(props.icon, props.iconSize || 20, Number(props.iconStrokeWidth) || 2)}
-            onClick={props.onClick ? () => props.onClick?.execute() : undefined}
-            style={{ borderRadius: "var(--mantine-radius-sm)" }}
-        />
+        <Fragment>
+            <MantineNavLink
+                component={component}
+                label={props.label || ""}
+                description={props.description || undefined}
+                href={component === "a" ? props.href || undefined : undefined}
+                active={!collapsible && isActive}
+                disabled={props.disabled}
+                variant={props.variant || "filled"}
+                color={props.color || undefined}
+                noWrap={props.noWrap}
+                autoContrast={props.autoContrast}
+                leftSection={renderIcon(props.icon, props.iconSize || 20, Number(props.iconStrokeWidth) || 2)}
+                rightSection={
+                    collapsible ? (
+                        <span
+                            style={{
+                                display: "flex",
+                                transition: "transform 200ms ease",
+                                transform: opened ? "rotate(90deg)" : undefined
+                            }}
+                        >
+                            {renderIcon("chevron-right", 16, Number(props.iconStrokeWidth) || 2)}
+                        </span>
+                    ) : undefined
+                }
+                onClick={
+                    collapsible
+                        ? () => setOpened(o => !o)
+                        : props.onClick
+                          ? () => props.onClick?.execute()
+                          : undefined
+                }
+                style={{ borderRadius: "var(--mantine-radius-sm)" }}
+            />
+            {collapsible && (
+                <Collapse in={opened}>
+                    <div style={{ paddingLeft: "var(--mantine-spacing-lg)" }}>{props.children}</div>
+                </Collapse>
+            )}
+        </Fragment>
     );
 }
