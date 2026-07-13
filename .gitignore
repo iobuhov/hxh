@@ -111,3 +111,6 @@ mantine/
 
 # Resources
 resources/icons
+
+# Playwright MCP session artifacts
+.playwright-mcp/
