@@ -1,0 +1,169 @@
+widget:
+  id: com.mendix.finch.widget.areachart.AreaChart
+  name: AreaChart
+  description: Area chart with one or more data series over a shared category axis
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Charts
+  studioCategory: Finch / Charts
+  properties:
+    Data:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of rows plotted along the category axis
+      categoryAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Category
+        description: Attribute read per row for the x-axis (dataKey)
+        attributeTypes:
+          - String
+          - Enum
+          - DateTime
+          - Integer
+          - Long
+          - Decimal
+      series:
+        type: object
+        isList: true
+        required: true
+        caption: Series
+        description: One entry per plotted data series
+        properties:
+          General:
+            valueAttribute:
+              type: attribute
+              dataSource: ../datasource
+              required: true
+              caption: Value
+              description: Numeric attribute read per row for this series
+              attributeTypes:
+                - Integer
+                - Long
+                - Decimal
+            name:
+              type: string
+              required: true
+              caption: Name
+              description: Series label shown in legend and tooltip
+            color:
+              type: string
+              required: true
+              default: blue.6
+              caption: Color
+              description: Key of theme.colors (e.g. blue.6) or any valid CSS color
+    Appearance:
+      type:
+        type: enumeration
+        required: true
+        default: default
+        caption: Type
+        description: Controls how areas are positioned relative to each other
+        enumerationValues:
+          default: Default
+          stacked: Stacked
+          percent: Percent
+          split: Split
+      curveType:
+        type: enumeration
+        required: true
+        default: monotone
+        caption: Curve type
+        description: Interpolation used between points
+        enumerationValues:
+          bump: Bump
+          linear: Linear
+          natural: Natural
+          monotone: Monotone
+          step: Step
+          stepBefore: Step before
+          stepAfter: Step after
+      orientation:
+        type: enumeration
+        required: true
+        default: horizontal
+        caption: Orientation
+        description: Chart orientation
+        enumerationValues:
+          horizontal: Horizontal
+          vertical: Vertical
+      gridAxis:
+        type: enumeration
+        required: true
+        default: x
+        caption: Grid axis
+        description: Which grid lines are displayed
+        enumerationValues:
+          x: X
+          y: Y
+          xy: XY
+          none: None
+      tickLine:
+        type: enumeration
+        required: true
+        default: 'y'
+        caption: Tick line
+        description: Which axes show tick lines
+        enumerationValues:
+          x: X
+          y: Y
+          xy: XY
+          none: None
+      height:
+        type: integer
+        required: true
+        default: 300
+        caption: Height
+        description: Chart height in pixels
+      unit:
+        type: string
+        required: false
+        caption: Unit
+        description: Unit displayed next to each y-axis tick
+      strokeWidth:
+        type: integer
+        required: true
+        default: 2
+        caption: Stroke width
+        description: Stroke width for the chart areas
+      withGradient:
+        type: boolean
+        required: true
+        default: false
+        caption: With gradient
+        description: Represent areas with a gradient instead of a solid color
+      withDots:
+        type: boolean
+        required: true
+        default: true
+        caption: With dots
+        description: Display dots on each data point
+      withLegend:
+        type: boolean
+        required: true
+        default: false
+        caption: With legend
+        description: Display the chart legend
+      withTooltip:
+        type: boolean
+        required: true
+        default: true
+        caption: With tooltip
+        description: Display the chart tooltip
+      withXAxis:
+        type: boolean
+        required: true
+        default: true
+        caption: With X axis
+        description: Display the x-axis
+      withYAxis:
+        type: boolean
+        required: true
+        default: true
+        caption: With Y axis
+        description: Display the y-axis

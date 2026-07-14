@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.radarchart.RadarChart" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
+    <name>RadarChart</name>
+    <description>Radar chart plotting one or more series across shared categories</description>
+    <studioProCategory>Finch / Charts</studioProCategory>
+    <studioCategory>Finch / Charts</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of rows plotted around the polar axis</description>
+            </property>
+            <property key="categoryAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Category</caption>
+                <description>Attribute read per row for the polar angle axis (dataKey)</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                    <attributeType name="Enum" />
+                    <attributeType name="DateTime" />
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="series" type="object" isList="true" required="true">
+                <caption>Series</caption>
+                <description>One entry per plotted data series</description>
+                <properties>
+                    <propertyGroup caption="General">
+                        <property key="valueAttribute" type="attribute" required="true" dataSource="../datasource">
+                            <caption>Value</caption>
+                            <description>Numeric attribute read per row for this series</description>
+                            <attributeTypes>
+                                <attributeType name="Integer" />
+                                <attributeType name="Long" />
+                                <attributeType name="Decimal" />
+                            </attributeTypes>
+                        </property>
+                        <property key="name" type="string" required="true">
+                            <caption>Name</caption>
+                            <description>Series label shown in legend and tooltip</description>
+                        </property>
+                        <property key="color" type="string" required="true" defaultValue="blue.6">
+                            <caption>Color</caption>
+                            <description>Key of theme.colors (e.g. blue.6) or any valid CSS color</description>
+                        </property>
+                    </propertyGroup>
+                </properties>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="height" type="integer" required="true" defaultValue="300">
+                <caption>Height</caption>
+                <description>Chart height in pixels</description>
+            </property>
+            <property key="withPolarGrid" type="boolean" required="true" defaultValue="true">
+                <caption>With polar grid</caption>
+                <description>Display the polar grid</description>
+            </property>
+            <property key="withPolarAngleAxis" type="boolean" required="true" defaultValue="true">
+                <caption>With polar angle axis</caption>
+                <description>Display the polar angle axis (category labels)</description>
+            </property>
+            <property key="withPolarRadiusAxis" type="boolean" required="true" defaultValue="false">
+                <caption>With polar radius axis</caption>
+                <description>Display the polar radius axis</description>
+            </property>
+            <property key="withDots" type="boolean" required="true" defaultValue="false">
+                <caption>With dots</caption>
+                <description>Display a dot at each data point</description>
+            </property>
+            <property key="withLegend" type="boolean" required="true" defaultValue="false">
+                <caption>With legend</caption>
+                <description>Display the chart legend</description>
+            </property>
+            <property key="withTooltip" type="boolean" required="true" defaultValue="false">
+                <caption>With tooltip</caption>
+                <description>Display the chart tooltip</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

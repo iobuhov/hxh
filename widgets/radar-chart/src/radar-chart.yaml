@@ -1,0 +1,102 @@
+widget:
+  id: com.mendix.finch.widget.radarchart.RadarChart
+  name: RadarChart
+  description: Radar chart plotting one or more series across shared categories
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Charts
+  studioCategory: Finch / Charts
+  properties:
+    Data:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of rows plotted around the polar axis
+      categoryAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Category
+        description: Attribute read per row for the polar angle axis (dataKey)
+        attributeTypes:
+          - String
+          - Enum
+          - DateTime
+          - Integer
+          - Long
+          - Decimal
+      series:
+        type: object
+        isList: true
+        required: true
+        caption: Series
+        description: One entry per plotted data series
+        properties:
+          General:
+            valueAttribute:
+              type: attribute
+              dataSource: ../datasource
+              required: true
+              caption: Value
+              description: Numeric attribute read per row for this series
+              attributeTypes:
+                - Integer
+                - Long
+                - Decimal
+            name:
+              type: string
+              required: true
+              caption: Name
+              description: Series label shown in legend and tooltip
+            color:
+              type: string
+              required: true
+              default: blue.6
+              caption: Color
+              description: Key of theme.colors (e.g. blue.6) or any valid CSS color
+    Appearance:
+      height:
+        type: integer
+        required: true
+        default: 300
+        caption: Height
+        description: Chart height in pixels
+      withPolarGrid:
+        type: boolean
+        required: true
+        default: true
+        caption: With polar grid
+        description: Display the polar grid
+      withPolarAngleAxis:
+        type: boolean
+        required: true
+        default: true
+        caption: With polar angle axis
+        description: Display the polar angle axis (category labels)
+      withPolarRadiusAxis:
+        type: boolean
+        required: true
+        default: false
+        caption: With polar radius axis
+        description: Display the polar radius axis
+      withDots:
+        type: boolean
+        required: true
+        default: false
+        caption: With dots
+        description: Display a dot at each data point
+      withLegend:
+        type: boolean
+        required: true
+        default: false
+        caption: With legend
+        description: Display the chart legend
+      withTooltip:
+        type: boolean
+        required: true
+        default: false
+        caption: With tooltip
+        description: Display the chart tooltip

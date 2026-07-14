@@ -1,0 +1,103 @@
+widget:
+  id: com.mendix.finch.widget.sankeychart.SankeyChart
+  name: SankeyChart
+  description: Sankey diagram showing flows between nodes
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Charts
+  studioCategory: Finch / Charts
+  properties:
+    Data:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of flow links; nodes are derived from the distinct source and target values
+      sourceAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Source
+        description: Attribute read per row for the link's source node name
+        attributeTypes:
+          - String
+          - Enum
+      targetAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Target
+        description: Attribute read per row for the link's target node name
+        attributeTypes:
+          - String
+          - Enum
+      valueAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Value
+        description: Numeric attribute read per row for the flow value
+        attributeTypes:
+          - Integer
+          - Long
+          - Decimal
+    Appearance:
+      height:
+        type: integer
+        required: true
+        default: 300
+        caption: Height
+        description: Chart height in pixels
+      nodeWidth:
+        type: integer
+        required: true
+        default: 10
+        caption: Node width
+        description: Width of each node in pixels
+      nodePadding:
+        type: integer
+        required: true
+        default: 10
+        caption: Node padding
+        description: Padding between nodes in pixels
+      iterations:
+        type: integer
+        required: true
+        default: 32
+        caption: Iterations
+        description: Number of layout relaxation iterations
+      linkOpacity:
+        type: decimal
+        required: true
+        default: '0.4'
+        caption: Link opacity
+        description: Opacity of the link fill
+      linkCurvature:
+        type: decimal
+        required: true
+        default: '0.5'
+        caption: Link curvature
+        description: Curvature of links between nodes
+      nodeColor:
+        type: string
+        required: false
+        caption: Node color
+        description: Default node color (theme key or CSS color)
+      linkColor:
+        type: string
+        required: false
+        caption: Link color
+        description: Default link color (theme key or CSS color)
+      textColor:
+        type: string
+        required: false
+        caption: Text color
+        description: Label text color (theme key or CSS color)
+      withTooltip:
+        type: boolean
+        required: true
+        default: true
+        caption: With tooltip
+        description: Display a tooltip when a node or link is hovered

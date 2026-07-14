@@ -139,6 +139,20 @@ export default function widgetGenerator(plop) {
                 templateFile: "templates/widget.xml.hbs"
             };
 
+            const widgetYAML = {
+                type: "add",
+                data,
+                path: `${baseDir}/src/{{packageDir}}.yaml`,
+                templateFile: "templates/widget.yaml.hbs"
+            };
+
+            const rollupConfig = {
+                type: "add",
+                data,
+                path: `${baseDir}/rollup.config.mjs`,
+                templateFile: "templates/rollup.config.hbs"
+            };
+
             const install = {
                 type: "install",
                 data
@@ -156,6 +170,8 @@ export default function widgetGenerator(plop) {
                 tsConfig,
                 widget,
                 widgetXML,
+                widgetYAML,
+                rollupConfig,
                 install
             ];
         }

@@ -1,0 +1,78 @@
+widget:
+  id: com.mendix.finch.widget.sparkline.Sparkline
+  name: Sparkline
+  description: Compact sparkline chart from a numeric sequence
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Charts
+  studioCategory: Finch / Charts
+  properties:
+    Data:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of rows read in order to build the numeric sequence
+      valueAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Value
+        description: Numeric attribute read per row for each point of the sparkline
+        attributeTypes:
+          - Integer
+          - Long
+          - Decimal
+    Appearance:
+      color:
+        type: string
+        required: true
+        default: blue.6
+        caption: Color
+        description: Key of theme.colors (e.g. blue.6) or any valid CSS color
+      curveType:
+        type: enumeration
+        required: true
+        default: linear
+        caption: Curve type
+        description: Type of the curve connecting the points
+        enumerationValues:
+          bump: Bump
+          linear: Linear
+          natural: Natural
+          monotone: Monotone
+          step: Step
+          stepBefore: Step before
+          stepAfter: Step after
+      strokeWidth:
+        type: decimal
+        required: true
+        default: '2'
+        caption: Stroke width
+        description: Width of the area stroke
+      fillOpacity:
+        type: decimal
+        required: true
+        default: '0.6'
+        caption: Fill opacity
+        description: Fill opacity of the area
+      withGradient:
+        type: boolean
+        required: true
+        default: true
+        caption: With gradient
+        description: Render the fill as a gradient
+      connectNulls:
+        type: boolean
+        required: true
+        default: true
+        caption: Connect nulls
+        description: Connect null values with the surrounding values
+      height:
+        type: integer
+        required: true
+        default: 60
+        caption: Height
+        description: Chart height in pixels

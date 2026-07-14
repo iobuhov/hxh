@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.bubblechart.BubbleChart" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
+    <name>BubbleChart</name>
+    <description>Bubble chart plotting x/y points sized by a third value</description>
+    <studioProCategory>Finch / Charts</studioProCategory>
+    <studioCategory>Finch / Charts</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of rows, each plotted as one bubble</description>
+            </property>
+            <property key="xAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>X value</caption>
+                <description>Attribute read per row for the x axis (category)</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                    <attributeType name="Enum" />
+                    <attributeType name="DateTime" />
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="yAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Y value</caption>
+                <description>Numeric attribute read per row for the y axis</description>
+                <attributeTypes>
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="zAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Z value</caption>
+                <description>Numeric attribute read per row that sizes each bubble</description>
+                <attributeTypes>
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="color" type="string" required="true" defaultValue="blue.6">
+                <caption>Color</caption>
+                <description>Key of theme.colors (e.g. blue.6) or any valid CSS color</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="label" type="string" required="false">
+                <caption>Label</caption>
+                <description>Chart label displayed next to the y axis</description>
+            </property>
+            <property key="rangeMin" type="integer" required="true" defaultValue="16">
+                <caption>Bubble size min</caption>
+                <description>Smallest rendered bubble size (z axis range minimum)</description>
+            </property>
+            <property key="rangeMax" type="integer" required="true" defaultValue="225">
+                <caption>Bubble size max</caption>
+                <description>Largest rendered bubble size (z axis range maximum)</description>
+            </property>
+            <property key="height" type="integer" required="true" defaultValue="60">
+                <caption>Height</caption>
+                <description>Chart height in pixels</description>
+            </property>
+            <property key="withTooltip" type="boolean" required="true" defaultValue="true">
+                <caption>With tooltip</caption>
+                <description>Display the chart tooltip</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

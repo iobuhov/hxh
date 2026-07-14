@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.piechart.PieChart" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
+    <name>PieChart</name>
+    <description>Pie chart showing a single series of labelled segments</description>
+    <studioProCategory>Finch / Charts</studioProCategory>
+    <studioCategory>Finch / Charts</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of rows, one segment per row</description>
+            </property>
+            <property key="nameAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Name</caption>
+                <description>Attribute read per row for the segment label</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                    <attributeType name="Enum" />
+                </attributeTypes>
+            </property>
+            <property key="valueAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Value</caption>
+                <description>Numeric attribute read per row for the segment value</description>
+                <attributeTypes>
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="colorAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Color</caption>
+                <description>Attribute read per row (theme color key e.g. blue.6 or any CSS color)</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="size" type="integer" required="true" defaultValue="160">
+                <caption>Size</caption>
+                <description>Chart width and height in pixels</description>
+            </property>
+            <property key="strokeWidth" type="integer" required="true" defaultValue="1">
+                <caption>Stroke width</caption>
+                <description>Width of segments stroke in pixels</description>
+            </property>
+            <property key="paddingAngle" type="integer" required="true" defaultValue="0">
+                <caption>Padding angle</caption>
+                <description>Padding between segments in degrees</description>
+            </property>
+            <property key="startAngle" type="integer" required="true" defaultValue="0">
+                <caption>Start angle</caption>
+                <description>Angle at which the chart starts (set to 180 for a semicircle)</description>
+            </property>
+            <property key="endAngle" type="integer" required="true" defaultValue="360">
+                <caption>End angle</caption>
+                <description>Angle at which the chart ends (set to 0 for a semicircle)</description>
+            </property>
+            <property key="labelsPosition" type="enumeration" required="true" defaultValue="outside">
+                <caption>Labels position</caption>
+                <description>Position of labels relative to the segment</description>
+                <enumerationValues>
+                    <enumerationValue key="inside">Inside</enumerationValue>
+                    <enumerationValue key="outside">Outside</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="labelsType" type="enumeration" required="true" defaultValue="value">
+                <caption>Labels type</caption>
+                <description>Type of labels to display</description>
+                <enumerationValues>
+                    <enumerationValue key="value">Value</enumerationValue>
+                    <enumerationValue key="percent">Percent</enumerationValue>
+                    <enumerationValue key="name">Name</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="tooltipDataSource" type="enumeration" required="true" defaultValue="all">
+                <caption>Tooltip data source</caption>
+                <description>Which data is displayed in the tooltip</description>
+                <enumerationValues>
+                    <enumerationValue key="all">All</enumerationValue>
+                    <enumerationValue key="segment">Segment</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="withLabels" type="boolean" required="true" defaultValue="false">
+                <caption>With labels</caption>
+                <description>Display a label for each segment</description>
+            </property>
+            <property key="withLabelsLine" type="boolean" required="true" defaultValue="true">
+                <caption>With labels line</caption>
+                <description>Connect each segment to its label with a line</description>
+            </property>
+            <property key="withTooltip" type="boolean" required="true" defaultValue="false">
+                <caption>With tooltip</caption>
+                <description>Display the chart tooltip</description>
+            </property>
+            <property key="withLegend" type="boolean" required="true" defaultValue="false">
+                <caption>With legend</caption>
+                <description>Display the chart legend</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

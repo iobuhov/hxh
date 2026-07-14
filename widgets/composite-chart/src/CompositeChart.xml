@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.compositechart.CompositeChart" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
+    <name>CompositeChart</name>
+    <description>Composite chart combining bar, line and area series over a shared category axis</description>
+    <studioProCategory>Finch / Charts</studioProCategory>
+    <studioCategory>Finch / Charts</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of rows plotted along the category axis</description>
+            </property>
+            <property key="categoryAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Category</caption>
+                <description>Attribute read per row for the x-axis (dataKey)</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                    <attributeType name="Enum" />
+                    <attributeType name="DateTime" />
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="series" type="object" isList="true" required="true">
+                <caption>Series</caption>
+                <description>One entry per plotted data series</description>
+                <properties>
+                    <propertyGroup caption="General">
+                        <property key="valueAttribute" type="attribute" required="true" dataSource="../datasource">
+                            <caption>Value</caption>
+                            <description>Numeric attribute read per row for this series</description>
+                            <attributeTypes>
+                                <attributeType name="Integer" />
+                                <attributeType name="Long" />
+                                <attributeType name="Decimal" />
+                            </attributeTypes>
+                        </property>
+                        <property key="name" type="string" required="true">
+                            <caption>Name</caption>
+                            <description>Series label shown in legend and tooltip</description>
+                        </property>
+                        <property key="color" type="string" required="true" defaultValue="blue.6">
+                            <caption>Color</caption>
+                            <description>Key of theme.colors (e.g. blue.6) or any valid CSS color</description>
+                        </property>
+                        <property key="seriesType" type="enumeration" required="true" defaultValue="bar">
+                            <caption>Series type</caption>
+                            <description>How this series is rendered</description>
+                            <enumerationValues>
+                                <enumerationValue key="bar">Bar</enumerationValue>
+                                <enumerationValue key="line">Line</enumerationValue>
+                                <enumerationValue key="area">Area</enumerationValue>
+                            </enumerationValues>
+                        </property>
+                    </propertyGroup>
+                </properties>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="curveType" type="enumeration" required="true" defaultValue="monotone">
+                <caption>Curve type</caption>
+                <description>Type of the curve for line and area series</description>
+                <enumerationValues>
+                    <enumerationValue key="bump">Bump</enumerationValue>
+                    <enumerationValue key="linear">Linear</enumerationValue>
+                    <enumerationValue key="natural">Natural</enumerationValue>
+                    <enumerationValue key="monotone">Monotone</enumerationValue>
+                    <enumerationValue key="step">Step</enumerationValue>
+                    <enumerationValue key="stepBefore">Step before</enumerationValue>
+                    <enumerationValue key="stepAfter">Step after</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="gridAxis" type="enumeration" required="true" defaultValue="x">
+                <caption>Grid axis</caption>
+                <description>Which grid lines are displayed</description>
+                <enumerationValues>
+                    <enumerationValue key="x">X</enumerationValue>
+                    <enumerationValue key="y">Y</enumerationValue>
+                    <enumerationValue key="xy">XY</enumerationValue>
+                    <enumerationValue key="none">None</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="tickLine" type="enumeration" required="true" defaultValue="y">
+                <caption>Tick line</caption>
+                <description>Which axes show tick lines</description>
+                <enumerationValues>
+                    <enumerationValue key="x">X</enumerationValue>
+                    <enumerationValue key="y">Y</enumerationValue>
+                    <enumerationValue key="xy">XY</enumerationValue>
+                    <enumerationValue key="none">None</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="height" type="integer" required="true" defaultValue="300">
+                <caption>Height</caption>
+                <description>Chart height in pixels</description>
+            </property>
+            <property key="unit" type="string" required="false">
+                <caption>Unit</caption>
+                <description>Unit displayed next to each y-axis tick</description>
+            </property>
+            <property key="strokeWidth" type="decimal" required="true" defaultValue="2">
+                <caption>Stroke width</caption>
+                <description>Stroke width for the chart lines</description>
+            </property>
+            <property key="withDots" type="boolean" required="true" defaultValue="true">
+                <caption>With dots</caption>
+                <description>Display a dot at each data point on line and area series</description>
+            </property>
+            <property key="connectNulls" type="boolean" required="true" defaultValue="true">
+                <caption>Connect nulls</caption>
+                <description>Connect points that have null values</description>
+            </property>
+            <property key="withPointLabels" type="boolean" required="true" defaultValue="false">
+                <caption>With point labels</caption>
+                <description>Display a label at each data point</description>
+            </property>
+            <property key="withBarValueLabel" type="boolean" required="true" defaultValue="false">
+                <caption>With bar value label</caption>
+                <description>Display a label with the bar value on top of each bar</description>
+            </property>
+            <property key="withLegend" type="boolean" required="true" defaultValue="false">
+                <caption>With legend</caption>
+                <description>Display the chart legend</description>
+            </property>
+            <property key="withTooltip" type="boolean" required="true" defaultValue="true">
+                <caption>With tooltip</caption>
+                <description>Display the chart tooltip</description>
+            </property>
+            <property key="withXAxis" type="boolean" required="true" defaultValue="true">
+                <caption>With X axis</caption>
+                <description>Display the x-axis</description>
+            </property>
+            <property key="withYAxis" type="boolean" required="true" defaultValue="true">
+                <caption>With Y axis</caption>
+                <description>Display the y-axis</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

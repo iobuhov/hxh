@@ -1,0 +1,86 @@
+widget:
+  id: com.mendix.finch.widget.bubblechart.BubbleChart
+  name: BubbleChart
+  description: Bubble chart plotting x/y points sized by a third value
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Charts
+  studioCategory: Finch / Charts
+  properties:
+    Data:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of rows, each plotted as one bubble
+      xAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: X value
+        description: Attribute read per row for the x axis (category)
+        attributeTypes:
+          - String
+          - Enum
+          - DateTime
+          - Integer
+          - Long
+          - Decimal
+      yAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Y value
+        description: Numeric attribute read per row for the y axis
+        attributeTypes:
+          - Integer
+          - Long
+          - Decimal
+      zAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Z value
+        description: Numeric attribute read per row that sizes each bubble
+        attributeTypes:
+          - Integer
+          - Long
+          - Decimal
+      color:
+        type: string
+        required: true
+        default: blue.6
+        caption: Color
+        description: Key of theme.colors (e.g. blue.6) or any valid CSS color
+    Appearance:
+      label:
+        type: string
+        required: false
+        caption: Label
+        description: Chart label displayed next to the y axis
+      rangeMin:
+        type: integer
+        required: true
+        default: 16
+        caption: Bubble size min
+        description: Smallest rendered bubble size (z axis range minimum)
+      rangeMax:
+        type: integer
+        required: true
+        default: 225
+        caption: Bubble size max
+        description: Largest rendered bubble size (z axis range maximum)
+      height:
+        type: integer
+        required: true
+        default: 60
+        caption: Height
+        description: Chart height in pixels
+      withTooltip:
+        type: boolean
+        required: true
+        default: true
+        caption: With tooltip
+        description: Display the chart tooltip

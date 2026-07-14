@@ -1,0 +1,94 @@
+widget:
+  id: com.mendix.finch.widget.funnelchart.FunnelChart
+  name: FunnelChart
+  description: Funnel chart showing a single series of labelled segments
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Charts
+  studioCategory: Finch / Charts
+  properties:
+    Data:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of rows, one segment per row
+      nameAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Name
+        description: Attribute read per row for the segment label
+        attributeTypes:
+          - String
+          - Enum
+      valueAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Value
+        description: Numeric attribute read per row for the segment value
+        attributeTypes:
+          - Integer
+          - Long
+          - Decimal
+      colorAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Color
+        description: Attribute read per row (theme color key e.g. blue.6 or any CSS color)
+        attributeTypes:
+          - String
+    Appearance:
+      size:
+        type: integer
+        required: true
+        default: 300
+        caption: Size
+        description: Chart width and height in pixels
+      strokeWidth:
+        type: integer
+        required: true
+        default: 1
+        caption: Stroke width
+        description: Width of segments stroke in pixels
+      labelsPosition:
+        type: enumeration
+        required: true
+        default: right
+        caption: Labels position
+        description: Position of labels relative to the segment
+        enumerationValues:
+          right: Right
+          left: Left
+          inside: Inside
+      tooltipDataSource:
+        type: enumeration
+        required: true
+        default: all
+        caption: Tooltip data source
+        description: Which data is displayed in the tooltip
+        enumerationValues:
+          all: All
+          segment: Segment
+      withLabels:
+        type: boolean
+        required: true
+        default: false
+        caption: With labels
+        description: Display a label for each segment
+      withTooltip:
+        type: boolean
+        required: true
+        default: true
+        caption: With tooltip
+        description: Display the chart tooltip
+      withLegend:
+        type: boolean
+        required: true
+        default: false
+        caption: With legend
+        description: Display the chart legend

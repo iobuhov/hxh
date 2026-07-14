@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.scatterchart.ScatterChart" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
+    <name>ScatterChart</name>
+    <description>Scatter chart plotting x/y coordinate points</description>
+    <studioProCategory>Finch / Charts</studioProCategory>
+    <studioCategory>Finch / Charts</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of rows, each plotted as one x/y point in the series</description>
+            </property>
+            <property key="xAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>X value</caption>
+                <description>Numeric attribute read per row for the x axis</description>
+                <attributeTypes>
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="yAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Y value</caption>
+                <description>Numeric attribute read per row for the y axis</description>
+                <attributeTypes>
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="seriesName" type="string" required="true" defaultValue="Series">
+                <caption>Series name</caption>
+                <description>Series label shown in legend and tooltip</description>
+            </property>
+            <property key="color" type="string" required="true" defaultValue="blue.6">
+                <caption>Color</caption>
+                <description>Key of theme.colors (e.g. blue.6) or any valid CSS color</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="xAxisLabel" type="string" required="false">
+                <caption>X axis label</caption>
+                <description>Label displayed below the x axis</description>
+            </property>
+            <property key="yAxisLabel" type="string" required="false">
+                <caption>Y axis label</caption>
+                <description>Label displayed beside the y axis</description>
+            </property>
+            <property key="unitX" type="string" required="false">
+                <caption>X unit</caption>
+                <description>Unit displayed after values on the x axis and in the tooltip</description>
+            </property>
+            <property key="unitY" type="string" required="false">
+                <caption>Y unit</caption>
+                <description>Unit displayed after values on the y axis and in the tooltip</description>
+            </property>
+            <property key="height" type="integer" required="true" defaultValue="300">
+                <caption>Height</caption>
+                <description>Chart height in pixels</description>
+            </property>
+            <property key="withLegend" type="boolean" required="true" defaultValue="false">
+                <caption>With legend</caption>
+                <description>Display the chart legend</description>
+            </property>
+            <property key="withTooltip" type="boolean" required="true" defaultValue="true">
+                <caption>With tooltip</caption>
+                <description>Display the chart tooltip</description>
+            </property>
+            <property key="withXAxis" type="boolean" required="true" defaultValue="true">
+                <caption>With X axis</caption>
+                <description>Display the x axis</description>
+            </property>
+            <property key="withYAxis" type="boolean" required="true" defaultValue="true">
+                <caption>With Y axis</caption>
+                <description>Display the y axis</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

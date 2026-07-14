@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.sparkline.Sparkline" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
+    <name>Sparkline</name>
+    <description>Compact sparkline chart from a numeric sequence</description>
+    <studioProCategory>Finch / Charts</studioProCategory>
+    <studioCategory>Finch / Charts</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of rows read in order to build the numeric sequence</description>
+            </property>
+            <property key="valueAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Value</caption>
+                <description>Numeric attribute read per row for each point of the sparkline</description>
+                <attributeTypes>
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="color" type="string" required="true" defaultValue="blue.6">
+                <caption>Color</caption>
+                <description>Key of theme.colors (e.g. blue.6) or any valid CSS color</description>
+            </property>
+            <property key="curveType" type="enumeration" required="true" defaultValue="linear">
+                <caption>Curve type</caption>
+                <description>Type of the curve connecting the points</description>
+                <enumerationValues>
+                    <enumerationValue key="bump">Bump</enumerationValue>
+                    <enumerationValue key="linear">Linear</enumerationValue>
+                    <enumerationValue key="natural">Natural</enumerationValue>
+                    <enumerationValue key="monotone">Monotone</enumerationValue>
+                    <enumerationValue key="step">Step</enumerationValue>
+                    <enumerationValue key="stepBefore">Step before</enumerationValue>
+                    <enumerationValue key="stepAfter">Step after</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="strokeWidth" type="decimal" required="true" defaultValue="2">
+                <caption>Stroke width</caption>
+                <description>Width of the area stroke</description>
+            </property>
+            <property key="fillOpacity" type="decimal" required="true" defaultValue="0.6">
+                <caption>Fill opacity</caption>
+                <description>Fill opacity of the area</description>
+            </property>
+            <property key="withGradient" type="boolean" required="true" defaultValue="true">
+                <caption>With gradient</caption>
+                <description>Render the fill as a gradient</description>
+            </property>
+            <property key="connectNulls" type="boolean" required="true" defaultValue="true">
+                <caption>Connect nulls</caption>
+                <description>Connect null values with the surrounding values</description>
+            </property>
+            <property key="height" type="integer" required="true" defaultValue="60">
+                <caption>Height</caption>
+                <description>Chart height in pixels</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

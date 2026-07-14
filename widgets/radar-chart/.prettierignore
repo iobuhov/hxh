@@ -1,0 +1,5 @@
+tests/testProject/
+typings/*.d.ts
+dist
+.turbo
+project

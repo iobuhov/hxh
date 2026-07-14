@@ -13,8 +13,10 @@
         "watch-css": "tsx tasks/cli.mts watch-css"
     },
     "dependencies": {
+        "@mantine/charts": "catalog:",
         "@mantine/core": "catalog:",
         "@mendix/app-shell": "workspace:*",
+        "@mendix/area-chart": "workspace:*",
         "@mendix/avatar": "workspace:*",
         "@mendix/badge": "workspace:*",
         "@mendix/burger": "workspace:*",
@@ -27,6 +29,7 @@
         "@mendix/group": "workspace:*",
         "@mendix/lib-finch-context": "workspace:*",
         "@mendix/lib-lucide": "workspace:*",
+        "@mendix/lib-mantine-charts": "workspace:*",
         "@mendix/lib-mantine": "workspace:*",
         "@mendix/data-list-box": "workspace:*",
         "@mendix/lucide-icon": "workspace:*",

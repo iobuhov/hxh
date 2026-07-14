@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.sankeychart.SankeyChart" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
+    <name>SankeyChart</name>
+    <description>Sankey diagram showing flows between nodes</description>
+    <studioProCategory>Finch / Charts</studioProCategory>
+    <studioCategory>Finch / Charts</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of flow links; nodes are derived from the distinct source and target values</description>
+            </property>
+            <property key="sourceAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Source</caption>
+                <description>Attribute read per row for the link's source node name</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                    <attributeType name="Enum" />
+                </attributeTypes>
+            </property>
+            <property key="targetAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Target</caption>
+                <description>Attribute read per row for the link's target node name</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                    <attributeType name="Enum" />
+                </attributeTypes>
+            </property>
+            <property key="valueAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Value</caption>
+                <description>Numeric attribute read per row for the flow value</description>
+                <attributeTypes>
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="height" type="integer" required="true" defaultValue="300">
+                <caption>Height</caption>
+                <description>Chart height in pixels</description>
+            </property>
+            <property key="nodeWidth" type="integer" required="true" defaultValue="10">
+                <caption>Node width</caption>
+                <description>Width of each node in pixels</description>
+            </property>
+            <property key="nodePadding" type="integer" required="true" defaultValue="10">
+                <caption>Node padding</caption>
+                <description>Padding between nodes in pixels</description>
+            </property>
+            <property key="iterations" type="integer" required="true" defaultValue="32">
+                <caption>Iterations</caption>
+                <description>Number of layout relaxation iterations</description>
+            </property>
+            <property key="linkOpacity" type="decimal" required="true" defaultValue="0.4">
+                <caption>Link opacity</caption>
+                <description>Opacity of the link fill</description>
+            </property>
+            <property key="linkCurvature" type="decimal" required="true" defaultValue="0.5">
+                <caption>Link curvature</caption>
+                <description>Curvature of links between nodes</description>
+            </property>
+            <property key="nodeColor" type="string" required="false">
+                <caption>Node color</caption>
+                <description>Default node color (theme key or CSS color)</description>
+            </property>
+            <property key="linkColor" type="string" required="false">
+                <caption>Link color</caption>
+                <description>Default link color (theme key or CSS color)</description>
+            </property>
+            <property key="textColor" type="string" required="false">
+                <caption>Text color</caption>
+                <description>Label text color (theme key or CSS color)</description>
+            </property>
+            <property key="withTooltip" type="boolean" required="true" defaultValue="true">
+                <caption>With tooltip</caption>
+                <description>Display a tooltip when a node or link is hovered</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

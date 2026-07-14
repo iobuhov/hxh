@@ -1,0 +1,100 @@
+widget:
+  id: com.mendix.finch.widget.scatterchart.ScatterChart
+  name: ScatterChart
+  description: Scatter chart plotting x/y coordinate points
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Charts
+  studioCategory: Finch / Charts
+  properties:
+    Data:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of rows, each plotted as one x/y point in the series
+      xAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: X value
+        description: Numeric attribute read per row for the x axis
+        attributeTypes:
+          - Integer
+          - Long
+          - Decimal
+      yAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Y value
+        description: Numeric attribute read per row for the y axis
+        attributeTypes:
+          - Integer
+          - Long
+          - Decimal
+      seriesName:
+        type: string
+        required: true
+        default: Series
+        caption: Series name
+        description: Series label shown in legend and tooltip
+      color:
+        type: string
+        required: true
+        default: blue.6
+        caption: Color
+        description: Key of theme.colors (e.g. blue.6) or any valid CSS color
+    Appearance:
+      xAxisLabel:
+        type: string
+        required: false
+        caption: X axis label
+        description: Label displayed below the x axis
+      yAxisLabel:
+        type: string
+        required: false
+        caption: Y axis label
+        description: Label displayed beside the y axis
+      unitX:
+        type: string
+        required: false
+        caption: X unit
+        description: Unit displayed after values on the x axis and in the tooltip
+      unitY:
+        type: string
+        required: false
+        caption: Y unit
+        description: Unit displayed after values on the y axis and in the tooltip
+      height:
+        type: integer
+        required: true
+        default: 300
+        caption: Height
+        description: Chart height in pixels
+      withLegend:
+        type: boolean
+        required: true
+        default: false
+        caption: With legend
+        description: Display the chart legend
+      withTooltip:
+        type: boolean
+        required: true
+        default: true
+        caption: With tooltip
+        description: Display the chart tooltip
+      withXAxis:
+        type: boolean
+        required: true
+        default: true
+        caption: With X axis
+        description: Display the x axis
+      withYAxis:
+        type: boolean
+        required: true
+        default: true
+        caption: With Y axis
+        description: Display the y axis

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.barslist.BarsList" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
+    <name>BarsList</name>
+    <description>List of labelled bars showing values as proportional widths</description>
+    <studioProCategory>Finch / Charts</studioProCategory>
+    <studioCategory>Finch / Charts</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of rows, one bar per row</description>
+            </property>
+            <property key="nameAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Name</caption>
+                <description>Attribute read per row for the bar label</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                    <attributeType name="Enum" />
+                </attributeTypes>
+            </property>
+            <property key="valueAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Value</caption>
+                <description>Numeric attribute read per row for the bar value</description>
+                <attributeTypes>
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="colorAttribute" type="attribute" required="false" dataSource="datasource">
+                <caption>Color</caption>
+                <description>Optional attribute with a theme color key (e.g. blue.6) or CSS color per bar</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                    <attributeType name="Enum" />
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="barsLabel" type="string" required="false">
+                <caption>Bars label</caption>
+                <description>Label displayed above the bars column</description>
+            </property>
+            <property key="valueLabel" type="string" required="false">
+                <caption>Value label</caption>
+                <description>Label displayed above the values column</description>
+            </property>
+            <property key="barColor" type="string" required="false">
+                <caption>Default bar color</caption>
+                <description>Default bar background color when a row has no color (theme key or CSS color)</description>
+            </property>
+            <property key="barTextColor" type="string" required="false">
+                <caption>Bar text color</caption>
+                <description>Bar text color, overrides autoContrast</description>
+            </property>
+            <property key="barHeight" type="integer" required="true" defaultValue="32">
+                <caption>Bar height</caption>
+                <description>Bar height in pixels</description>
+            </property>
+            <property key="minBarSize" type="integer" required="true" defaultValue="0">
+                <caption>Minimum bar size</caption>
+                <description>Minimum bar width in pixels</description>
+            </property>
+            <property key="autoContrast" type="boolean" required="true" defaultValue="false">
+                <caption>Auto contrast</caption>
+                <description>Adjust text color based on background color</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

@@ -1,0 +1,80 @@
+widget:
+  id: com.mendix.finch.widget.treemap.Treemap
+  name: Treemap
+  description: Treemap showing values as sized, colored rectangles
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Charts
+  studioCategory: Finch / Charts
+  properties:
+    Data:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of rows, one rectangle per row (flat, non-nested)
+      nameAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Name
+        description: Attribute read per row for the rectangle label
+        attributeTypes:
+          - String
+          - Enum
+      valueAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Value
+        description: Numeric attribute read per row, controls rectangle size
+        attributeTypes:
+          - Integer
+          - Long
+          - Decimal
+      colorAttribute:
+        type: attribute
+        dataSource: datasource
+        required: false
+        caption: Color
+        description: Optional attribute with a theme color key (e.g. blue.6) or CSS color per rectangle
+        attributeTypes:
+          - String
+          - Enum
+    Appearance:
+      height:
+        type: integer
+        required: true
+        default: 300
+        caption: Height
+        description: Chart height in pixels
+      strokeWidth:
+        type: integer
+        required: true
+        default: 1
+        caption: Stroke width
+        description: Width of the rectangle stroke in pixels
+      textColor:
+        type: string
+        required: false
+        caption: Text color
+        description: Label text color (theme key or CSS color)
+      strokeColor:
+        type: string
+        required: false
+        caption: Stroke color
+        description: Rectangle stroke color (theme key or CSS color)
+      withTooltip:
+        type: boolean
+        required: true
+        default: true
+        caption: With tooltip
+        description: Display a tooltip when a rectangle is hovered
+      autoContrast:
+        type: boolean
+        required: true
+        default: false
+        caption: Auto contrast
+        description: Adjust label text color based on background color

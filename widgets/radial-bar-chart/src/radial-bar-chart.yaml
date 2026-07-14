@@ -1,0 +1,98 @@
+widget:
+  id: com.mendix.finch.widget.radialbarchart.RadialBarChart
+  name: RadialBarChart
+  description: Radial bar chart showing a single series of labelled segments
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Charts
+  studioCategory: Finch / Charts
+  properties:
+    Data:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of rows, one bar per row
+      nameAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Name
+        description: Attribute read per row for the bar label
+        attributeTypes:
+          - String
+          - Enum
+      valueAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Value
+        description: Numeric attribute read per row for the bar value
+        attributeTypes:
+          - Integer
+          - Long
+          - Decimal
+      colorAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Color
+        description: Attribute read per row (theme color key e.g. blue.6 or any CSS color)
+        attributeTypes:
+          - String
+    Appearance:
+      height:
+        type: integer
+        required: true
+        default: 300
+        caption: Height
+        description: Chart height in pixels
+      barSize:
+        type: integer
+        required: true
+        default: 20
+        caption: Bar size
+        description: Size of bars in pixels
+      startAngle:
+        type: integer
+        required: true
+        default: 90
+        caption: Start angle
+        description: Angle at which the chart starts
+      endAngle:
+        type: integer
+        required: true
+        default: -270
+        caption: End angle
+        description: Angle at which the chart ends
+      emptyBackgroundColor:
+        type: string
+        required: false
+        caption: Empty background color
+        description: Color of the empty background (theme color key or any CSS color)
+      withBackground:
+        type: boolean
+        required: true
+        default: true
+        caption: With background
+        description: Display the empty bars area
+      withLabels:
+        type: boolean
+        required: true
+        default: false
+        caption: With labels
+        description: Display a label for each bar
+      withTooltip:
+        type: boolean
+        required: true
+        default: true
+        caption: With tooltip
+        description: Display the chart tooltip
+      withLegend:
+        type: boolean
+        required: true
+        default: false
+        caption: With legend
+        description: Display the chart legend

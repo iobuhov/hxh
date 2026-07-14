@@ -1,0 +1,84 @@
+widget:
+  id: com.mendix.finch.widget.barslist.BarsList
+  name: BarsList
+  description: List of labelled bars showing values as proportional widths
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Charts
+  studioCategory: Finch / Charts
+  properties:
+    Data:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of rows, one bar per row
+      nameAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Name
+        description: Attribute read per row for the bar label
+        attributeTypes:
+          - String
+          - Enum
+      valueAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Value
+        description: Numeric attribute read per row for the bar value
+        attributeTypes:
+          - Integer
+          - Long
+          - Decimal
+      colorAttribute:
+        type: attribute
+        dataSource: datasource
+        required: false
+        caption: Color
+        description: Optional attribute with a theme color key (e.g. blue.6) or CSS color per bar
+        attributeTypes:
+          - String
+          - Enum
+    Appearance:
+      barsLabel:
+        type: string
+        required: false
+        caption: Bars label
+        description: Label displayed above the bars column
+      valueLabel:
+        type: string
+        required: false
+        caption: Value label
+        description: Label displayed above the values column
+      barColor:
+        type: string
+        required: false
+        caption: Default bar color
+        description: Default bar background color when a row has no color (theme key or CSS color)
+      barTextColor:
+        type: string
+        required: false
+        caption: Bar text color
+        description: Bar text color, overrides autoContrast
+      barHeight:
+        type: integer
+        required: true
+        default: 32
+        caption: Bar height
+        description: Bar height in pixels
+      minBarSize:
+        type: integer
+        required: true
+        default: 0
+        caption: Minimum bar size
+        description: Minimum bar width in pixels
+      autoContrast:
+        type: boolean
+        required: true
+        default: false
+        caption: Auto contrast
+        description: Adjust text color based on background color

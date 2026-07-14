@@ -16,11 +16,14 @@
         "dev": "mpx -w",
         "lint": "pluggable-widgets-tools lint",
         "test": "pluggable-widgets-tools test:unit:web --no-cache --ci",
-        "test:unit": "pluggable-widgets-tools test:unit:web --coverage"
+        "test:unit": "pluggable-widgets-tools test:unit:web --coverage",
+        "update-xml": "yaml-to-xml src/{{packageDir}}.yaml src/{{widgetName}}.xml"
     },
     "dependencies": {
-        "@mendix/pluggable-widgets-tools": "catalog:",
+        "@mantine/core": "catalog:",
+        "@mantine/hooks": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
+        "@mendix/yaml-to-xml-converter": "workspace:*",
         "classnames": "catalog:",
         "mendix": "catalog:",
         "mpx": "*"

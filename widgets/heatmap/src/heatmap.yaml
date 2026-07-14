@@ -1,0 +1,94 @@
+widget:
+  id: com.mendix.finch.widget.heatmap.Heatmap
+  name: Heatmap
+  description: Calendar heatmap coloring days by value
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Charts
+  studioCategory: Finch / Charts
+  properties:
+    Data:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of rows, one calendar day per row
+      dateAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Date
+        description: DateTime attribute read per row, mapped to a calendar day (YYYY-MM-DD)
+        attributeTypes:
+          - DateTime
+      valueAttribute:
+        type: attribute
+        dataSource: datasource
+        required: true
+        caption: Value
+        description: Numeric attribute read per row for that day's value
+        attributeTypes:
+          - Integer
+          - Long
+          - Decimal
+    Appearance:
+      startDate:
+        type: string
+        required: false
+        caption: Start date
+        description: Heatmap start date in YYYY-MM-DD format (current date - 1 year by default)
+      endDate:
+        type: string
+        required: false
+        caption: End date
+        description: Heatmap end date in YYYY-MM-DD format (current date by default)
+      rectSize:
+        type: integer
+        required: true
+        default: 10
+        caption: Rect size
+        description: Size of each day rectangle in pixels
+      gap:
+        type: integer
+        required: true
+        default: 1
+        caption: Gap
+        description: Gap between rectangles in pixels
+      rectRadius:
+        type: integer
+        required: true
+        default: 2
+        caption: Rect radius
+        description: Corner radius of each rectangle in pixels
+      withMonthLabels:
+        type: boolean
+        required: true
+        default: true
+        caption: With month labels
+        description: Display month labels
+      withWeekdayLabels:
+        type: boolean
+        required: true
+        default: true
+        caption: With weekday labels
+        description: Display weekday labels
+      withOutsideDates:
+        type: boolean
+        required: true
+        default: true
+        caption: With outside dates
+        description: Display trailing dates outside the range to fill empty space
+      withTooltip:
+        type: boolean
+        required: true
+        default: true
+        caption: With tooltip
+        description: Display a tooltip on rect hover
+      withLegend:
+        type: boolean
+        required: true
+        default: false
+        caption: With legend
+        description: Display a legend with color levels below the heatmap

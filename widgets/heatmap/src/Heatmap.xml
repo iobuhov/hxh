@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.heatmap.Heatmap" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
+    <name>Heatmap</name>
+    <description>Calendar heatmap coloring days by value</description>
+    <studioProCategory>Finch / Charts</studioProCategory>
+    <studioCategory>Finch / Charts</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of rows, one calendar day per row</description>
+            </property>
+            <property key="dateAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Date</caption>
+                <description>DateTime attribute read per row, mapped to a calendar day (YYYY-MM-DD)</description>
+                <attributeTypes>
+                    <attributeType name="DateTime" />
+                </attributeTypes>
+            </property>
+            <property key="valueAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Value</caption>
+                <description>Numeric attribute read per row for that day's value</description>
+                <attributeTypes>
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="startDate" type="string" required="false">
+                <caption>Start date</caption>
+                <description>Heatmap start date in YYYY-MM-DD format (current date - 1 year by default)</description>
+            </property>
+            <property key="endDate" type="string" required="false">
+                <caption>End date</caption>
+                <description>Heatmap end date in YYYY-MM-DD format (current date by default)</description>
+            </property>
+            <property key="rectSize" type="integer" required="true" defaultValue="10">
+                <caption>Rect size</caption>
+                <description>Size of each day rectangle in pixels</description>
+            </property>
+            <property key="gap" type="integer" required="true" defaultValue="1">
+                <caption>Gap</caption>
+                <description>Gap between rectangles in pixels</description>
+            </property>
+            <property key="rectRadius" type="integer" required="true" defaultValue="2">
+                <caption>Rect radius</caption>
+                <description>Corner radius of each rectangle in pixels</description>
+            </property>
+            <property key="withMonthLabels" type="boolean" required="true" defaultValue="true">
+                <caption>With month labels</caption>
+                <description>Display month labels</description>
+            </property>
+            <property key="withWeekdayLabels" type="boolean" required="true" defaultValue="true">
+                <caption>With weekday labels</caption>
+                <description>Display weekday labels</description>
+            </property>
+            <property key="withOutsideDates" type="boolean" required="true" defaultValue="true">
+                <caption>With outside dates</caption>
+                <description>Display trailing dates outside the range to fill empty space</description>
+            </property>
+            <property key="withTooltip" type="boolean" required="true" defaultValue="true">
+                <caption>With tooltip</caption>
+                <description>Display a tooltip on rect hover</description>
+            </property>
+            <property key="withLegend" type="boolean" required="true" defaultValue="false">
+                <caption>With legend</caption>
+                <description>Display a legend with color levels below the heatmap</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

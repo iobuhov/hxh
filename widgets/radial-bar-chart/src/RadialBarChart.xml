@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.radialbarchart.RadialBarChart" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
+    <name>RadialBarChart</name>
+    <description>Radial bar chart showing a single series of labelled segments</description>
+    <studioProCategory>Finch / Charts</studioProCategory>
+    <studioCategory>Finch / Charts</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of rows, one bar per row</description>
+            </property>
+            <property key="nameAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Name</caption>
+                <description>Attribute read per row for the bar label</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                    <attributeType name="Enum" />
+                </attributeTypes>
+            </property>
+            <property key="valueAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Value</caption>
+                <description>Numeric attribute read per row for the bar value</description>
+                <attributeTypes>
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="colorAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Color</caption>
+                <description>Attribute read per row (theme color key e.g. blue.6 or any CSS color)</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="height" type="integer" required="true" defaultValue="300">
+                <caption>Height</caption>
+                <description>Chart height in pixels</description>
+            </property>
+            <property key="barSize" type="integer" required="true" defaultValue="20">
+                <caption>Bar size</caption>
+                <description>Size of bars in pixels</description>
+            </property>
+            <property key="startAngle" type="integer" required="true" defaultValue="90">
+                <caption>Start angle</caption>
+                <description>Angle at which the chart starts</description>
+            </property>
+            <property key="endAngle" type="integer" required="true" defaultValue="-270">
+                <caption>End angle</caption>
+                <description>Angle at which the chart ends</description>
+            </property>
+            <property key="emptyBackgroundColor" type="string" required="false">
+                <caption>Empty background color</caption>
+                <description>Color of the empty background (theme color key or any CSS color)</description>
+            </property>
+            <property key="withBackground" type="boolean" required="true" defaultValue="true">
+                <caption>With background</caption>
+                <description>Display the empty bars area</description>
+            </property>
+            <property key="withLabels" type="boolean" required="true" defaultValue="false">
+                <caption>With labels</caption>
+                <description>Display a label for each bar</description>
+            </property>
+            <property key="withTooltip" type="boolean" required="true" defaultValue="true">
+                <caption>With tooltip</caption>
+                <description>Display the chart tooltip</description>
+            </property>
+            <property key="withLegend" type="boolean" required="true" defaultValue="false">
+                <caption>With legend</caption>
+                <description>Display the chart legend</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

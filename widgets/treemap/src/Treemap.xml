@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.treemap.Treemap" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
+    <name>Treemap</name>
+    <description>Treemap showing values as sized, colored rectangles</description>
+    <studioProCategory>Finch / Charts</studioProCategory>
+    <studioCategory>Finch / Charts</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="Data">
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of rows, one rectangle per row (flat, non-nested)</description>
+            </property>
+            <property key="nameAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Name</caption>
+                <description>Attribute read per row for the rectangle label</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                    <attributeType name="Enum" />
+                </attributeTypes>
+            </property>
+            <property key="valueAttribute" type="attribute" required="true" dataSource="datasource">
+                <caption>Value</caption>
+                <description>Numeric attribute read per row, controls rectangle size</description>
+                <attributeTypes>
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="Decimal" />
+                </attributeTypes>
+            </property>
+            <property key="colorAttribute" type="attribute" required="false" dataSource="datasource">
+                <caption>Color</caption>
+                <description>Optional attribute with a theme color key (e.g. blue.6) or CSS color per rectangle</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                    <attributeType name="Enum" />
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="height" type="integer" required="true" defaultValue="300">
+                <caption>Height</caption>
+                <description>Chart height in pixels</description>
+            </property>
+            <property key="strokeWidth" type="integer" required="true" defaultValue="1">
+                <caption>Stroke width</caption>
+                <description>Width of the rectangle stroke in pixels</description>
+            </property>
+            <property key="textColor" type="string" required="false">
+                <caption>Text color</caption>
+                <description>Label text color (theme key or CSS color)</description>
+            </property>
+            <property key="strokeColor" type="string" required="false">
+                <caption>Stroke color</caption>
+                <description>Rectangle stroke color (theme key or CSS color)</description>
+            </property>
+            <property key="withTooltip" type="boolean" required="true" defaultValue="true">
+                <caption>With tooltip</caption>
+                <description>Display a tooltip when a rectangle is hovered</description>
+            </property>
+            <property key="autoContrast" type="boolean" required="true" defaultValue="false">
+                <caption>Auto contrast</caption>
+                <description>Adjust label text color based on background color</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

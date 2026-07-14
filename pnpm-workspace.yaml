@@ -11,6 +11,7 @@ allowBuilds:
 
 catalog:
   '@eslint/js': ^9.32.0
+  '@mantine/charts': 9.4.1
   '@mantine/core': 9.4.1
   '@mantine/hooks': 9.4.1
   '@prettier/plugin-xml': ^3.4.2
@@ -25,6 +26,7 @@ catalog:
   prettier: ^3.6.2
   react: ^19.0.0
   react-dom: ^19.0.0
+  recharts: ^3.2.1
 
 enableGlobalVirtualStore: false
 
@@ -36,6 +38,7 @@ overrides:
   mpx: file:pkg/mendix-mpx-0.1.2.tgz
   react: 'catalog:'
   react-dom: 'catalog:'
+  use-sync-external-store: 'workspace:*'
 
 publicHoistPattern:
   - '*prettier*'

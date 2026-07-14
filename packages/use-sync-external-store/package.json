@@ -1,0 +1,21 @@
+{
+    "name": "use-sync-external-store",
+    "version": "1.6.0",
+    "private": true,
+    "description": "ESM-native drop-in for use-sync-external-store. React 19 has useSyncExternalStore built in, so this avoids the upstream CJS build's require(\"react\") calls that break ESM bundling for the Mendix client.",
+    "license": "MIT",
+    "type": "module",
+    "exports": {
+        ".": "./shim/index.js",
+        "./shim": "./shim/index.js",
+        "./shim/index.js": "./shim/index.js",
+        "./shim/with-selector": "./shim/with-selector.js",
+        "./shim/with-selector.js": "./shim/with-selector.js",
+        "./with-selector": "./with-selector.js",
+        "./with-selector.js": "./with-selector.js",
+        "./package.json": "./package.json"
+    },
+    "peerDependencies": {
+        "react": "^19.0.0"
+    }
+}
