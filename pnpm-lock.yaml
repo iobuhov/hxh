@@ -85,33 +85,138 @@ importers:
       '@mantine/core':
         specifier: 'catalog:'
         version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mendix/accordion':
+        specifier: workspace:*
+        version: link:../../widgets/accordion
+      '@mendix/action-icon':
+        specifier: workspace:*
+        version: link:../../widgets/action-icon
+      '@mendix/affix':
+        specifier: workspace:*
+        version: link:../../widgets/affix
+      '@mendix/alert':
+        specifier: workspace:*
+        version: link:../../widgets/alert
+      '@mendix/anchor':
+        specifier: workspace:*
+        version: link:../../widgets/anchor
+      '@mendix/angle-slider':
+        specifier: workspace:*
+        version: link:../../widgets/angle-slider
       '@mendix/app-shell':
         specifier: workspace:*
         version: link:../../widgets/app-shell
       '@mendix/area-chart':
         specifier: workspace:*
         version: link:../../widgets/area-chart
+      '@mendix/aspect-ratio':
+        specifier: workspace:*
+        version: link:../../widgets/aspect-ratio
+      '@mendix/autocomplete':
+        specifier: workspace:*
+        version: link:../../widgets/autocomplete
       '@mendix/avatar':
         specifier: workspace:*
         version: link:../../widgets/avatar
+      '@mendix/background-image':
+        specifier: workspace:*
+        version: link:../../widgets/background-image
       '@mendix/badge':
         specifier: workspace:*
         version: link:../../widgets/badge
+      '@mendix/bar-chart':
+        specifier: workspace:*
+        version: link:../../widgets/bar-chart
+      '@mendix/bars-list':
+        specifier: workspace:*
+        version: link:../../widgets/bars-list
+      '@mendix/blockquote':
+        specifier: workspace:*
+        version: link:../../widgets/blockquote
+      '@mendix/breadcrumbs':
+        specifier: workspace:*
+        version: link:../../widgets/breadcrumbs
+      '@mendix/bubble-chart':
+        specifier: workspace:*
+        version: link:../../widgets/bubble-chart
       '@mendix/burger':
         specifier: workspace:*
         version: link:../../widgets/burger
+      '@mendix/button':
+        specifier: workspace:*
+        version: link:../../widgets/button
       '@mendix/card':
         specifier: workspace:*
         version: link:../../widgets/card
+      '@mendix/center':
+        specifier: workspace:*
+        version: link:../../widgets/center
+      '@mendix/checkbox':
+        specifier: workspace:*
+        version: link:../../widgets/checkbox
+      '@mendix/chip':
+        specifier: workspace:*
+        version: link:../../widgets/chip
+      '@mendix/close-button':
+        specifier: workspace:*
+        version: link:../../widgets/close-button
+      '@mendix/code':
+        specifier: workspace:*
+        version: link:../../widgets/code
+      '@mendix/color-input':
+        specifier: workspace:*
+        version: link:../../widgets/color-input
+      '@mendix/color-picker':
+        specifier: workspace:*
+        version: link:../../widgets/color-picker
+      '@mendix/color-swatch':
+        specifier: workspace:*
+        version: link:../../widgets/color-swatch
+      '@mendix/combobox':
+        specifier: workspace:*
+        version: link:../../widgets/combobox
+      '@mendix/composite-chart':
+        specifier: workspace:*
+        version: link:../../widgets/composite-chart
+      '@mendix/container':
+        specifier: workspace:*
+        version: link:../../widgets/container
+      '@mendix/copy-button':
+        specifier: workspace:*
+        version: link:../../widgets/copy-button
       '@mendix/data-list-box':
         specifier: workspace:*
         version: link:../../widgets/data-list-box
+      '@mendix/dialog':
+        specifier: workspace:*
+        version: link:../../widgets/dialog
+      '@mendix/donut-chart':
+        specifier: workspace:*
+        version: link:../../widgets/donut-chart
+      '@mendix/drawer':
+        specifier: workspace:*
+        version: link:../../widgets/drawer
       '@mendix/fieldset':
         specifier: workspace:*
         version: link:../../widgets/fieldset
+      '@mendix/file-button':
+        specifier: workspace:*
+        version: link:../../widgets/file-button
+      '@mendix/file-input':
+        specifier: workspace:*
+        version: link:../../widgets/file-input
       '@mendix/flex':
         specifier: workspace:*
         version: link:../../widgets/flex
+      '@mendix/floating-indicator':
+        specifier: workspace:*
+        version: link:../../widgets/floating-indicator
+      '@mendix/for-each':
+        specifier: workspace:*
+        version: link:../../widgets/for-each
+      '@mendix/funnel-chart':
+        specifier: workspace:*
+        version: link:../../widgets/funnel-chart
       '@mendix/grid':
         specifier: workspace:*
         version: link:../../widgets/grid
@@ -121,9 +226,30 @@ importers:
       '@mendix/group':
         specifier: workspace:*
         version: link:../../widgets/group
+      '@mendix/heatmap':
+        specifier: workspace:*
+        version: link:../../widgets/heatmap
+      '@mendix/highlight':
+        specifier: workspace:*
+        version: link:../../widgets/highlight
+      '@mendix/hover-card':
+        specifier: workspace:*
+        version: link:../../widgets/hover-card
       '@mendix/image':
         specifier: workspace:*
         version: link:../../widgets/image
+      '@mendix/indicator':
+        specifier: workspace:*
+        version: link:../../widgets/indicator
+      '@mendix/input':
+        specifier: workspace:*
+        version: link:../../widgets/input
+      '@mendix/json-input':
+        specifier: workspace:*
+        version: link:../../widgets/json-input
+      '@mendix/kbd':
+        specifier: workspace:*
+        version: link:../../widgets/kbd
       '@mendix/lib-finch-context':
         specifier: workspace:*
         version: link:../../widgets/lib-finch-context
@@ -136,9 +262,36 @@ importers:
       '@mendix/lib-mantine-charts':
         specifier: workspace:*
         version: link:../../widgets/lib-mantine-charts
+      '@mendix/line-chart':
+        specifier: workspace:*
+        version: link:../../widgets/line-chart
+      '@mendix/list':
+        specifier: workspace:*
+        version: link:../../widgets/list
+      '@mendix/loader':
+        specifier: workspace:*
+        version: link:../../widgets/loader
+      '@mendix/loading-overlay':
+        specifier: workspace:*
+        version: link:../../widgets/loading-overlay
       '@mendix/lucide-icon':
         specifier: workspace:*
         version: link:../../widgets/lucide-icon
+      '@mendix/mark':
+        specifier: workspace:*
+        version: link:../../widgets/mark
+      '@mendix/menu':
+        specifier: workspace:*
+        version: link:../../widgets/menu
+      '@mendix/modal':
+        specifier: workspace:*
+        version: link:../../widgets/modal
+      '@mendix/multi-select':
+        specifier: workspace:*
+        version: link:../../widgets/multi-select
+      '@mendix/native-select':
+        specifier: workspace:*
+        version: link:../../widgets/native-select
       '@mendix/nav-group-label':
         specifier: workspace:*
         version: link:../../widgets/nav-group-label
@@ -151,33 +304,120 @@ importers:
       '@mendix/nav-toggle':
         specifier: workspace:*
         version: link:../../widgets/nav-toggle
+      '@mendix/notification':
+        specifier: workspace:*
+        version: link:../../widgets/notification
+      '@mendix/number-formatter':
+        specifier: workspace:*
+        version: link:../../widgets/number-formatter
       '@mendix/number-input':
         specifier: workspace:*
         version: link:../../widgets/number-input
+      '@mendix/overlay':
+        specifier: workspace:*
+        version: link:../../widgets/overlay
+      '@mendix/pagination':
+        specifier: workspace:*
+        version: link:../../widgets/pagination
+      '@mendix/password-input':
+        specifier: workspace:*
+        version: link:../../widgets/password-input
+      '@mendix/pie-chart':
+        specifier: workspace:*
+        version: link:../../widgets/pie-chart
+      '@mendix/pill':
+        specifier: workspace:*
+        version: link:../../widgets/pill
+      '@mendix/pills-input':
+        specifier: workspace:*
+        version: link:../../widgets/pills-input
+      '@mendix/pin-input':
+        specifier: workspace:*
+        version: link:../../widgets/pin-input
+      '@mendix/popover':
+        specifier: workspace:*
+        version: link:../../widgets/popover
+      '@mendix/progress':
+        specifier: workspace:*
+        version: link:../../widgets/progress
+      '@mendix/radar-chart':
+        specifier: workspace:*
+        version: link:../../widgets/radar-chart
+      '@mendix/radial-bar-chart':
+        specifier: workspace:*
+        version: link:../../widgets/radial-bar-chart
+      '@mendix/radio':
+        specifier: workspace:*
+        version: link:../../widgets/radio
+      '@mendix/range-slider':
+        specifier: workspace:*
+        version: link:../../widgets/range-slider
+      '@mendix/rating':
+        specifier: workspace:*
+        version: link:../../widgets/rating
+      '@mendix/ring-progress':
+        specifier: workspace:*
+        version: link:../../widgets/ring-progress
+      '@mendix/sankey-chart':
+        specifier: workspace:*
+        version: link:../../widgets/sankey-chart
+      '@mendix/scatter-chart':
+        specifier: workspace:*
+        version: link:../../widgets/scatter-chart
       '@mendix/scroll-area':
         specifier: workspace:*
         version: link:../../widgets/scroll-area
+      '@mendix/segmented-control':
+        specifier: workspace:*
+        version: link:../../widgets/segmented-control
       '@mendix/select':
         specifier: workspace:*
         version: link:../../widgets/select
+      '@mendix/semi-circle-progress':
+        specifier: workspace:*
+        version: link:../../widgets/semi-circle-progress
       '@mendix/simple-grid':
         specifier: workspace:*
         version: link:../../widgets/simple-grid
+      '@mendix/skeleton':
+        specifier: workspace:*
+        version: link:../../widgets/skeleton
+      '@mendix/slider':
+        specifier: workspace:*
+        version: link:../../widgets/slider
+      '@mendix/sparkline':
+        specifier: workspace:*
+        version: link:../../widgets/sparkline
+      '@mendix/spoiler':
+        specifier: workspace:*
+        version: link:../../widgets/spoiler
       '@mendix/stack':
         specifier: workspace:*
         version: link:../../widgets/stack
+      '@mendix/stepper':
+        specifier: workspace:*
+        version: link:../../widgets/stepper
+      '@mendix/switch':
+        specifier: workspace:*
+        version: link:../../widgets/switch
       '@mendix/tab-panel':
         specifier: workspace:*
         version: link:../../widgets/tab-panel
       '@mendix/table':
         specifier: workspace:*
         version: link:../../widgets/table
+      '@mendix/table-of-contents':
+        specifier: workspace:*
+        version: link:../../widgets/table-of-contents
       '@mendix/tabs':
         specifier: workspace:*
         version: link:../../widgets/tabs
       '@mendix/tabs-list':
         specifier: workspace:*
         version: link:../../widgets/tabs-list
+      '@mendix/tags-input':
+        specifier: workspace:*
+        version: link:../../widgets/tags-input
       '@mendix/text':
         specifier: workspace:*
         version: link:../../widgets/text
@@ -193,9 +433,24 @@ importers:
       '@mendix/theme-provider':
         specifier: workspace:*
         version: link:../../widgets/theme-provider
+      '@mendix/timeline':
+        specifier: workspace:*
+        version: link:../../widgets/timeline
       '@mendix/title':
         specifier: workspace:*
         version: link:../../widgets/title
+      '@mendix/tooltip':
+        specifier: workspace:*
+        version: link:../../widgets/tooltip
+      '@mendix/tree':
+        specifier: workspace:*
+        version: link:../../widgets/tree
+      '@mendix/treemap':
+        specifier: workspace:*
+        version: link:../../widgets/treemap
+      '@mendix/typography':
+        specifier: workspace:*
+        version: link:../../widgets/typography
     devDependencies:
       '@tsconfig/node22':
         specifier: ^22.0.2
@@ -1179,6 +1434,30 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+
+  widgets/for-each:
+    dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1

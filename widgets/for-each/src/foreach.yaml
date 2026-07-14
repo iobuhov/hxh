@@ -1,0 +1,22 @@
+widget:
+  id: com.mendix.finch.widget.foreach.ForEach
+  name: ForEach
+  description: Renders content widgets once per data source item
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  studioProCategory: Finch
+
+  properties:
+    General:
+      datasource:
+        type: datasource
+        isList: true
+        caption: Data source
+        description: List of items to iterate over
+
+      content:
+        type: widgets
+        dataSource: datasource
+        caption: Content
+        description: Widgets rendered for each item, bound to the current item

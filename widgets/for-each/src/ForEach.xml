@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.foreach.ForEach" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web">
+    <name>ForEach</name>
+    <description>Renders content widgets once per data source item</description>
+    <studioProCategory>Finch</studioProCategory>
+    <studioCategory />
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description>List of items to iterate over</description>
+            </property>
+            <property key="content" type="widgets" dataSource="datasource">
+                <caption>Content</caption>
+                <description>Widgets rendered for each item, bound to the current item</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
