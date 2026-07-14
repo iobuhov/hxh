@@ -4,13 +4,30 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue, EditableValue } from "mendix";
+
+export type TypeEnum = "alphanumeric" | "number";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export type RadiusEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface PinInputContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    value: EditableValue<string>;
+    length: number;
+    type: TypeEnum;
+    mask: boolean;
+    placeholder: string;
+    oneTimeCode: boolean;
+    disabled: boolean;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange?: ActionValue;
+    onComplete?: ActionValue;
 }
 
 export interface PinInputPreviewProps {
@@ -24,5 +41,15 @@ export interface PinInputPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    value: string;
+    length: number | null;
+    type: TypeEnum;
+    mask: boolean;
+    placeholder: string;
+    oneTimeCode: boolean;
+    disabled: boolean;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange: {} | null;
+    onComplete: {} | null;
 }

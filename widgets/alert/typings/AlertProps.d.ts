@@ -4,21 +4,26 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
-import { ActionValue, DynamicValue, WebIcon } from "mendix";
+import { ActionValue } from "mendix";
+
+export type ColorEnum = "gray" | "red" | "pink" | "grape" | "violet" | "indigo" | "blue" | "cyan" | "teal" | "green" | "lime" | "yellow" | "orange";
+
+export type VariantEnum = "default" | "light" | "filled" | "outline";
+
+export type RadiusEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface AlertContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    autoContrast?: boolean;
-    closeButtonLabel: string;
-    color: string;
-    icon?: DynamicValue<WebIcon>;
-    onClose?: ActionValue;
-    radius: string;
     title: string;
-    withCloseButton?: boolean;
+    message: string;
+    color: ColorEnum;
+    variant: VariantEnum;
+    radius: RadiusEnum;
+    withCloseButton: boolean;
+    onClose?: ActionValue;
 }
 
 export interface AlertPreviewProps {
@@ -32,12 +37,11 @@ export interface AlertPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    autoContrast: boolean;
-    closeButtonLabel: string;
-    color: string;
-    icon: { type: "glyph"; iconClass: string; } | { type: "image"; imageUrl: string; iconUrl: string; } | { type: "icon"; iconClass: string; } | undefined;
-    onClose: {} | null;
-    radius: string;
     title: string;
+    message: string;
+    color: ColorEnum;
+    variant: VariantEnum;
+    radius: RadiusEnum;
     withCloseButton: boolean;
+    onClose: {} | null;
 }

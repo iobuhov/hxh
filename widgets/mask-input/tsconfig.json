@@ -1,0 +1,7 @@
+{
+    "extends": "@mendix/tsconfig/tsconfig.base.json",
+    "compilerOptions": {
+        "baseUrl": "./"
+    },
+    "include": ["./src", "./typings"]
+}

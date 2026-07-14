@@ -4,13 +4,31 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue, EditableValue } from "mendix";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export type RadiusEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface JsonInputContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    value: EditableValue<string>;
+    label: string;
+    description: string;
+    placeholder: string;
+    formatOnBlur: boolean;
+    autosize: boolean;
+    minRows?: number;
+    maxRows?: number;
+    validationError: string;
+    required: boolean;
+    disabled: boolean;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange?: ActionValue;
 }
 
 export interface JsonInputPreviewProps {
@@ -24,5 +42,18 @@ export interface JsonInputPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    value: string;
+    label: string;
+    description: string;
+    placeholder: string;
+    formatOnBlur: boolean;
+    autosize: boolean;
+    minRows: number | null;
+    maxRows: number | null;
+    validationError: string;
+    required: boolean;
+    disabled: boolean;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange: {} | null;
 }

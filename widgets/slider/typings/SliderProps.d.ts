@@ -4,13 +4,29 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue, EditableValue } from "mendix";
+import { Big } from "big.js";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export type RadiusEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface SliderContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    value: EditableValue<Big>;
+    disabled: boolean;
+    min: number;
+    max: number;
+    step: number;
+    inverted: boolean;
+    color: string;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange?: ActionValue;
+    onChangeEnd?: ActionValue;
 }
 
 export interface SliderPreviewProps {
@@ -24,5 +40,15 @@ export interface SliderPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    value: string;
+    disabled: boolean;
+    min: number | null;
+    max: number | null;
+    step: number | null;
+    inverted: boolean;
+    color: string;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange: {} | null;
+    onChangeEnd: {} | null;
 }

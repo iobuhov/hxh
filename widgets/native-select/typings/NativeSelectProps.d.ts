@@ -4,13 +4,29 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue, EditableValue, ListValue, ListAttributeValue, ListExpressionValue } from "mendix";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export type RadiusEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface NativeSelectContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    value: EditableValue<string>;
+    optionsSource: ListValue;
+    optionValue: ListAttributeValue<string>;
+    optionLabel: ListExpressionValue<string>;
+    label: string;
+    description: string;
+    placeholder: string;
+    required: boolean;
+    disabled: boolean;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange?: ActionValue;
 }
 
 export interface NativeSelectPreviewProps {
@@ -24,5 +40,16 @@ export interface NativeSelectPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    value: string;
+    optionsSource: {} | { caption: string } | { type: string } | null;
+    optionValue: string;
+    optionLabel: string;
+    label: string;
+    description: string;
+    placeholder: string;
+    required: boolean;
+    disabled: boolean;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange: {} | null;
 }

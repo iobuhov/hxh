@@ -1,38 +1,48 @@
-label:
-  originalType: React.ReactNode
-  group: General
-  caption: Label
-  description: Label displayed in the center of the ring
-rootColor:
-  originalType: MantineColor
-  group: General
-  caption: Root Color
-  description: Color of the root section, key of theme.colors or CSS color value
-roundCaps:
-  originalType: boolean
-  group: General
-  caption: Round Caps
-  description: Sets whether the edges of the progress circle are rounded
-sections:
-  originalType: RingProgressSection[]
-  group: General
-  caption: Sections
-  description: Ring sections
-size:
-  originalType: number
-  group: General
-  caption: Size
-  description: Width and height of the progress ring
-  default: "120"
-thickness:
-  originalType: number
-  group: General
-  caption: Thickness
-  description: Ring thickness
-  default: "12"
-transitionDuration:
-  originalType: number
-  group: General
-  caption: Transition Duration
-  description: Transition duration of filled section styles changes in ms
-  default: "0"
+widget:
+  id: com.mendix.finch.widget.ringprogress.RingProgress
+  name: RingProgress
+  description: Display progress as a circular ring
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Feedback
+  studioCategory: Finch / Feedback
+  properties:
+    General:
+      value:
+        type: attribute
+        required: true
+        caption: Value
+        description: Numeric attribute (0-100) representing the progress
+        attributeTypes: [Decimal, Long, Integer]
+      label:
+        type: string
+        required: false
+        caption: Label
+        description: Text displayed in the center of the ring
+      roundCaps:
+        type: boolean
+        required: true
+        default: false
+        caption: Round Caps
+        description: If set, the edges of the progress ring are rounded
+    Appearance:
+      color:
+        type: string
+        required: true
+        default: blue
+        caption: Color
+        description: Key of theme.colors or any valid CSS color for the filled section
+      size:
+        type: integer
+        required: true
+        default: 120
+        caption: Size
+        description: Width and height of the progress ring in pixels
+      thickness:
+        type: integer
+        required: true
+        default: 12
+        caption: Thickness
+        description: Ring thickness in pixels

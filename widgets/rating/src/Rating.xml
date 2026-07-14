@@ -1,23 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.rating.Rating"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.rating.Rating" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>Rating</name>
-    <description>Pick and display rating</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Capture a rating value with a row of symbols</description>
+    <studioProCategory>Finch / Inputs</studioProCategory>
+    <studioCategory>Finch / Inputs</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="value" type="attribute" required="true">
+                <caption>Value</caption>
+                <description>Numeric attribute to capture and display</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                    <attributeType name="Long" />
+                    <attributeType name="Integer" />
+                </attributeTypes>
+            </property>
+            <property key="count" type="integer" required="true" defaultValue="5">
+                <caption>Count</caption>
+                <description>Number of symbols</description>
+            </property>
+            <property key="fractions" type="integer" required="true" defaultValue="1">
+                <caption>Fractions</caption>
+                <description>Number of fractions each symbol can be divided into</description>
+            </property>
+            <property key="readOnly" type="boolean" required="true" defaultValue="false">
+                <caption>Read Only</caption>
+                <description>If set, the user cannot interact with the component</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="color" type="string" required="false">
+                <caption>Color</caption>
+                <description>Key of theme.colors or any valid CSS color for the symbols</description>
+            </property>
+            <property key="size" type="enumeration" required="true" defaultValue="sm">
+                <caption>Size</caption>
+                <description>Controls symbol size</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Action executed when the value changes</description>
             </property>
         </propertyGroup>
     </properties>

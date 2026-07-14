@@ -1,59 +1,77 @@
 widget:
   id: com.mendix.finch.widget.Alert
   name: Alert
-  description: Attract user attention with important static message
+  description: Attract user attention with an important static message
   pluginWidget: true
-  offlineCapable: false
-  
+  offlineCapable: true
+  supportedPlatform: Web
+  studioProCategory: Finch / Feedback
+  studioCategory: Finch / Feedback
   properties:
     General:
-      autoContrast:
-        type: boolean
-        caption: Auto Contrast
-        description: If set, adjusts text color based on background color for filled variant
-        required: false
-        
-      closeButtonLabel:
-        type: string
-        caption: Close Button Label
-        description: Close button aria-label
-        required: false
-        
-      color:
-        type: string
-        caption: Color
-        description: Key of theme.colors or any valid CSS color
-        required: false
-        default: theme.primaryColor
-        
-      icon:
-        type: icon
-        caption: Icon
-        description: Icon displayed next to the title
-        required: false
-        
-      onClose:
-        type: action
-        caption: On Close
-        description: Called when the close button is clicked
-        required: false
-        
-      radius:
-        type: string
-        caption: Radius
-        description: Key of theme.radius or any valid CSS value to set border-radius
-        required: false
-        default: theme.defaultRadius
-        
       title:
         type: string
-        caption: Title
-        description: Alert title
         required: false
-        
+        caption: Title
+        description: Alert title displayed above the message
+      message:
+        type: string
+        required: true
+        caption: Message
+        description: Alert body text
+    Appearance:
+      color:
+        type: enumeration
+        required: true
+        default: blue
+        caption: Color
+        description: Alert color
+        enumerationValues:
+          gray: Gray
+          red: Red
+          pink: Pink
+          grape: Grape
+          violet: Violet
+          indigo: Indigo
+          blue: Blue
+          cyan: Cyan
+          teal: Teal
+          green: Green
+          lime: Lime
+          yellow: Yellow
+          orange: Orange
+      variant:
+        type: enumeration
+        required: true
+        default: light
+        caption: Variant
+        description: Visual style of the alert
+        enumerationValues:
+          default: Default
+          light: Light
+          filled: Filled
+          outline: Outline
+      radius:
+        type: enumeration
+        required: true
+        default: sm
+        caption: Radius
+        description: Border radius of the alert
+        enumerationValues:
+          xs: Extra small
+          sm: Small
+          md: Medium
+          lg: Large
+          xl: Extra large
       withCloseButton:
         type: boolean
-        caption: With Close Button
-        description: Determines whether close button should be displayed
-        required: false
+        required: true
         default: false
+        caption: With Close Button
+        description: Determines whether a close button should be displayed
+    Events:
+      onClose:
+        type: action
+        required: false
+        caption: On Close
+        description: Action executed when the close button is clicked

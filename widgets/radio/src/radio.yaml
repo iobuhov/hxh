@@ -1,67 +1,104 @@
-autoContrast:
-  originalType: boolean
-  group: General
-  caption: Auto Contrast
-  description: If set, adjusts text color based on background color for filled variant
-color:
-  originalType: MantineColor
-  group: General
-  caption: Color
-  description: Key of theme.colors or any valid CSS color to set input color in
-    checked state
-  default: theme.primaryColor
-description:
-  originalType: React.ReactNode
-  group: General
-  caption: Description
-  description: Description displayed below the label
-error:
-  originalType: React.ReactNode
-  group: General
-  caption: Error
-  description: Error displayed below the label
-icon:
-  originalType: FC<RadioIconProps>
-  group: General
-  caption: Icon
-  description: A component that replaces default check icon
-iconColor:
-  originalType: MantineColor
-  group: General
-  caption: Icon Color
-  description: Key of theme.colors or any valid CSS color to set icon color, by
-    default value depends on theme.autoContrast
-label:
-  originalType: React.ReactNode
-  group: General
-  caption: Label
-  description: Content of the label associated with the radio
-labelPosition:
-  originalType: '"left" | "right"'
-  group: General
-  caption: Label Position
-  description: Position of the label relative to the input
-  default: "'right'"
-radius:
-  originalType: MantineRadius | number
-  group: General
-  caption: Radius
-  description: Key of theme.radius or any valid CSS value to set border-radius,
-  default: "'xl'"
-rootRef:
-  originalType: ForwardedRef<HTMLDivElement>
-  group: General
-  caption: Root Ref
-  description: Assigns ref of the root element
-size:
-  originalType: MantineSize | (string & {})
-  group: General
-  caption: Size
-  description: Controls size of the component
-  default: "'sm'"
-wrapperProps:
-  originalType: (Omit<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement>, "ref"> & DataAttributes)
-  group: General
-  caption: Wrapper Props
-  description: Props passed down to the root element
+widget:
+  id: com.mendix.finch.widget.radio.Radio
+  name: Radio
+  description: Pick a single option from a set of radio buttons backed by a data source
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Inputs
+  studioCategory: Finch / Inputs
+  properties:
+    General:
+      value:
+        type: attribute
+        required: true
+        caption: Value
+        description: Attribute that stores the value of the selected option
+        attributeTypes: [String]
+      optionsSource:
+        type: datasource
+        isList: true
+        caption: Options
+        description: Data source providing the selectable options
+      optionValue:
+        type: attribute
+        dataSource: optionsSource
+        caption: Option value
+        description: Attribute on each option holding its value (matched against Value)
+        attributeTypes: [String]
+      optionLabel:
+        type: textTemplate
+        dataSource: optionsSource
+        caption: Option label
+        description: Text shown next to each radio button
+      label:
+        type: string
+        required: false
+        caption: Label
+        description: Label displayed above the group
+      description:
+        type: string
+        required: false
+        caption: Description
+        description: Helper text displayed below the label
+      required:
+        type: boolean
+        required: true
+        default: false
+        caption: Required
+        description: Displays a red asterisk next to the label
+      disabled:
+        type: boolean
+        required: true
+        default: false
+        caption: Disabled
+        description: Disables the input. Also disabled when the value attribute is read-only.
+    Appearance:
+      orientation:
+        type: enumeration
+        required: true
+        default: vertical
+        caption: Orientation
+        description: Layout direction of the radio buttons
+        enumerationValues:
+          vertical: Vertical
+          horizontal: Horizontal
+      color:
+        type: enumeration
+        required: true
+        default: blue
+        caption: Color
+        description: Color of the radio button in its checked state
+        enumerationValues:
+          blue: Blue
+          gray: Gray
+          red: Red
+          pink: Pink
+          grape: Grape
+          violet: Violet
+          indigo: Indigo
+          cyan: Cyan
+          teal: Teal
+          green: Green
+          lime: Lime
+          yellow: Yellow
+          orange: Orange
+      size:
+        type: enumeration
+        required: true
+        default: sm
+        caption: Size
+        description: Controls the size of the radio buttons
+        enumerationValues:
+          xs: Extra small
+          sm: Small
+          md: Medium
+          lg: Large
+          xl: Extra large
+    Events:
+      onChange:
+        type: action
+        required: false
+        caption: On Change
+        description: Action executed when the selection changes

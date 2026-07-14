@@ -1,0 +1,84 @@
+widget:
+  id: com.mendix.finch.widget.maskinput.MaskInput
+  name: MaskInput
+  description: Capture string input constrained by a mask
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Inputs
+  studioCategory: Finch / Inputs
+  properties:
+    General:
+      value:
+        type: attribute
+        required: true
+        caption: Value
+        description: String attribute to capture and display
+        attributeTypes: [String]
+      mask:
+        type: string
+        required: true
+        default: "+1 (000) 000-0000"
+        caption: Mask
+        description: >-
+          Mask pattern. Use 0 for digits, a for letters, * for any character.
+          Other characters are treated as fixed separators.
+      label:
+        type: string
+        required: false
+        caption: Label
+        description: Label displayed above the input
+      description:
+        type: string
+        required: false
+        caption: Description
+        description: Helper text displayed below the label
+      placeholder:
+        type: string
+        required: false
+        caption: Placeholder
+        description: Placeholder shown when the input is empty
+      required:
+        type: boolean
+        required: true
+        default: false
+        caption: Required
+        description: Displays a red asterisk next to the label
+      disabled:
+        type: boolean
+        required: true
+        default: false
+        caption: Disabled
+        description: Disables the input. The input is also disabled when the value attribute is read-only.
+    Appearance:
+      size:
+        type: enumeration
+        required: true
+        default: sm
+        caption: Size
+        description: Controls input height and horizontal padding
+        enumerationValues:
+          xs: Extra small
+          sm: Small
+          md: Medium
+          lg: Large
+          xl: Extra large
+      radius:
+        type: enumeration
+        required: true
+        default: sm
+        caption: Radius
+        description: Border radius of the input
+        enumerationValues:
+          xs: Extra small
+          sm: Small
+          md: Medium
+          lg: Large
+          xl: Extra large
+    Events:
+      onChange:
+        type: action
+        required: false
+        caption: On Change
+        description: Action executed when the input loses focus after the value changes

@@ -1,23 +1,96 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.radio.Radio"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.radio.Radio" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>Radio</name>
-    <description>Wrapper for input type radio</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Pick a single option from a set of radio buttons backed by a data source</description>
+    <studioProCategory>Finch / Inputs</studioProCategory>
+    <studioCategory>Finch / Inputs</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="value" type="attribute" required="true">
+                <caption>Value</caption>
+                <description>Attribute that stores the value of the selected option</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="optionsSource" type="datasource" isList="true">
+                <caption>Options</caption>
+                <description>Data source providing the selectable options</description>
+            </property>
+            <property key="optionValue" type="attribute" dataSource="optionsSource">
+                <caption>Option value</caption>
+                <description>Attribute on each option holding its value (matched against Value)</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="optionLabel" type="textTemplate" dataSource="optionsSource">
+                <caption>Option label</caption>
+                <description>Text shown next to each radio button</description>
+            </property>
+            <property key="label" type="string" required="false">
+                <caption>Label</caption>
+                <description>Label displayed above the group</description>
+            </property>
+            <property key="description" type="string" required="false">
+                <caption>Description</caption>
+                <description>Helper text displayed below the label</description>
+            </property>
+            <property key="required" type="boolean" required="true" defaultValue="false">
+                <caption>Required</caption>
+                <description>Displays a red asterisk next to the label</description>
+            </property>
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
+                <caption>Disabled</caption>
+                <description>Disables the input. Also disabled when the value attribute is read-only.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="orientation" type="enumeration" required="true" defaultValue="vertical">
+                <caption>Orientation</caption>
+                <description>Layout direction of the radio buttons</description>
+                <enumerationValues>
+                    <enumerationValue key="vertical">Vertical</enumerationValue>
+                    <enumerationValue key="horizontal">Horizontal</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="color" type="enumeration" required="true" defaultValue="blue">
+                <caption>Color</caption>
+                <description>Color of the radio button in its checked state</description>
+                <enumerationValues>
+                    <enumerationValue key="blue">Blue</enumerationValue>
+                    <enumerationValue key="gray">Gray</enumerationValue>
+                    <enumerationValue key="red">Red</enumerationValue>
+                    <enumerationValue key="pink">Pink</enumerationValue>
+                    <enumerationValue key="grape">Grape</enumerationValue>
+                    <enumerationValue key="violet">Violet</enumerationValue>
+                    <enumerationValue key="indigo">Indigo</enumerationValue>
+                    <enumerationValue key="cyan">Cyan</enumerationValue>
+                    <enumerationValue key="teal">Teal</enumerationValue>
+                    <enumerationValue key="green">Green</enumerationValue>
+                    <enumerationValue key="lime">Lime</enumerationValue>
+                    <enumerationValue key="yellow">Yellow</enumerationValue>
+                    <enumerationValue key="orange">Orange</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="size" type="enumeration" required="true" defaultValue="sm">
+                <caption>Size</caption>
+                <description>Controls the size of the radio buttons</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Action executed when the selection changes</description>
             </property>
         </propertyGroup>
     </properties>

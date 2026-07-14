@@ -4,13 +4,23 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue, EditableValue } from "mendix";
+import { Big } from "big.js";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface RatingContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    value: EditableValue<Big>;
+    count: number;
+    fractions: number;
+    readOnly: boolean;
+    color: string;
+    size: SizeEnum;
+    onChange?: ActionValue;
 }
 
 export interface RatingPreviewProps {
@@ -24,5 +34,11 @@ export interface RatingPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    value: string;
+    count: number | null;
+    fractions: number | null;
+    readOnly: boolean;
+    color: string;
+    size: SizeEnum;
+    onChange: {} | null;
 }

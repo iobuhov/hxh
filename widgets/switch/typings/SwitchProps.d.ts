@@ -4,13 +4,30 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue, EditableValue } from "mendix";
+
+export type LabelPositionEnum = "left" | "right";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export type RadiusEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface SwitchContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    value: EditableValue<boolean>;
+    label: string;
+    description: string;
+    onLabel: string;
+    offLabel: string;
+    disabled: boolean;
+    labelPosition: LabelPositionEnum;
+    color: string;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange?: ActionValue;
 }
 
 export interface SwitchPreviewProps {
@@ -24,5 +41,15 @@ export interface SwitchPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    value: string;
+    label: string;
+    description: string;
+    onLabel: string;
+    offLabel: string;
+    disabled: boolean;
+    labelPosition: LabelPositionEnum;
+    color: string;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange: {} | null;
 }

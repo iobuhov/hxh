@@ -1,23 +1,53 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.loader.Loader"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.Loader" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web">
     <name>Loader</name>
-    <description>Indicate loading state</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Indicate a loading state</description>
+    <studioProCategory>Finch / Feedback</studioProCategory>
+    <studioCategory>Finch / Feedback</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="type" type="enumeration" required="true" defaultValue="oval">
+                <caption>Type</caption>
+                <description>Loader animation type</description>
+                <enumerationValues>
+                    <enumerationValue key="oval">Oval</enumerationValue>
+                    <enumerationValue key="bars">Bars</enumerationValue>
+                    <enumerationValue key="dots">Dots</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="size" type="enumeration" required="true" defaultValue="md">
+                <caption>Size</caption>
+                <description>Controls width and height of the loader</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="color" type="enumeration" required="true" defaultValue="blue">
+                <caption>Color</caption>
+                <description>Loader color</description>
+                <enumerationValues>
+                    <enumerationValue key="gray">Gray</enumerationValue>
+                    <enumerationValue key="red">Red</enumerationValue>
+                    <enumerationValue key="pink">Pink</enumerationValue>
+                    <enumerationValue key="grape">Grape</enumerationValue>
+                    <enumerationValue key="violet">Violet</enumerationValue>
+                    <enumerationValue key="indigo">Indigo</enumerationValue>
+                    <enumerationValue key="blue">Blue</enumerationValue>
+                    <enumerationValue key="cyan">Cyan</enumerationValue>
+                    <enumerationValue key="teal">Teal</enumerationValue>
+                    <enumerationValue key="green">Green</enumerationValue>
+                    <enumerationValue key="lime">Lime</enumerationValue>
+                    <enumerationValue key="yellow">Yellow</enumerationValue>
+                    <enumerationValue key="orange">Orange</enumerationValue>
+                </enumerationValues>
             </property>
         </propertyGroup>
     </properties>

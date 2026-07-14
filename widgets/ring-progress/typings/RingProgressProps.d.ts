@@ -4,13 +4,20 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { EditableValue } from "mendix";
+import { Big } from "big.js";
 
 export interface RingProgressContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    value: EditableValue<Big>;
+    label: string;
+    roundCaps: boolean;
+    color: string;
+    size: number;
+    thickness: number;
 }
 
 export interface RingProgressPreviewProps {
@@ -24,5 +31,10 @@ export interface RingProgressPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    value: string;
+    label: string;
+    roundCaps: boolean;
+    color: string;
+    size: number | null;
+    thickness: number | null;
 }

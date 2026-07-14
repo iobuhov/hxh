@@ -1,23 +1,89 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.jsoninput.JsonInput"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.jsoninput.JsonInput" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>JsonInput</name>
-    <description>Capture json data from user</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Capture and validate JSON input from the user</description>
+    <studioProCategory>Finch / Inputs</studioProCategory>
+    <studioCategory>Finch / Inputs</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="value" type="attribute" required="true">
+                <caption>Value</caption>
+                <description>String attribute to capture and display</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="label" type="string" required="false">
+                <caption>Label</caption>
+                <description>Label displayed above the input</description>
+            </property>
+            <property key="description" type="string" required="false">
+                <caption>Description</caption>
+                <description>Helper text displayed below the label</description>
+            </property>
+            <property key="placeholder" type="string" required="false">
+                <caption>Placeholder</caption>
+                <description>Placeholder shown when the input is empty</description>
+            </property>
+            <property key="formatOnBlur" type="boolean" required="true" defaultValue="true">
+                <caption>Format On Blur</caption>
+                <description>Determines whether the value should be formatted on blur</description>
+            </property>
+            <property key="autosize" type="boolean" required="true" defaultValue="false">
+                <caption>Autosize</caption>
+                <description>If set, enables textarea height growing with its content</description>
+            </property>
+            <property key="minRows" type="integer" required="false">
+                <caption>Min Rows</caption>
+                <description>Minimum rows of autosize textarea, ignored if autosize is not set</description>
+            </property>
+            <property key="maxRows" type="integer" required="false">
+                <caption>Max Rows</caption>
+                <description>Maximum rows for autosize textarea to grow, ignored if autosize is not set</description>
+            </property>
+            <property key="validationError" type="string" required="false">
+                <caption>Validation Error</caption>
+                <description>Error message displayed when the value is not valid JSON</description>
+            </property>
+            <property key="required" type="boolean" required="true" defaultValue="false">
+                <caption>Required</caption>
+                <description>Displays a red asterisk next to the label</description>
+            </property>
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
+                <caption>Disabled</caption>
+                <description>Disables the input. The input is also disabled when the value attribute is read-only.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="size" type="enumeration" required="true" defaultValue="sm">
+                <caption>Size</caption>
+                <description>Controls input height and horizontal padding</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="radius" type="enumeration" required="true" defaultValue="sm">
+                <caption>Radius</caption>
+                <description>Border radius of the input</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Action executed when the input loses focus after the value changes</description>
             </property>
         </propertyGroup>
     </properties>

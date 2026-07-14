@@ -1,6 +1,6 @@
 import { ReactElement, createElement } from "react";
 import { PasswordInputPreviewProps } from "../typings/PasswordInputProps";
 
-export function preview({ text }: PasswordInputPreviewProps): ReactElement {
-    return <div>Preview {text}</div>;
+export function preview({ label }: PasswordInputPreviewProps): ReactElement {
+    return <div>{label || "PasswordInput"}</div>;
 }

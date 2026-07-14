@@ -280,6 +280,9 @@ importers:
       '@mendix/mark':
         specifier: workspace:*
         version: link:../../widgets/mark
+      '@mendix/mask-input':
+        specifier: workspace:*
+        version: link:../../widgets/mask-input
       '@mendix/menu':
         specifier: workspace:*
         version: link:../../widgets/menu
@@ -681,6 +684,12 @@ importers:
 
   widgets/alert:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
@@ -1850,12 +1859,21 @@ importers:
 
   widgets/json-input:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2030,12 +2048,21 @@ importers:
 
   widgets/loader:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2112,6 +2139,33 @@ importers:
         specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
         version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
 
+  widgets/mask-input:
+    dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
+      '@mendix/prettier-config-web-widgets':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
+      classnames:
+        specifier: 'catalog:'
+        version: 2.5.1
+      mendix:
+        specifier: 'catalog:'
+        version: 10.24.75382
+      mpx:
+        specifier: file:../../pkg/mendix-mpx-0.1.2.tgz
+        version: '@mendix/mpx@file:pkg/mendix-mpx-0.1.2.tgz(picomatch@4.0.5)(rollup@3.29.5)(ts-node@10.9.2(@types/node@22.16.5)(typescript@6.0.3))'
+
   widgets/menu:
     dependencies:
       '@mendix/prettier-config-web-widgets':
@@ -2168,12 +2222,21 @@ importers:
 
   widgets/native-select:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2396,12 +2459,21 @@ importers:
 
   widgets/password-input:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2486,12 +2558,21 @@ importers:
 
   widgets/pin-input:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2528,6 +2609,9 @@ importers:
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2612,12 +2696,21 @@ importers:
 
   widgets/radio:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2636,6 +2729,9 @@ importers:
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2654,6 +2750,9 @@ importers:
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2672,6 +2771,9 @@ importers:
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2891,6 +2993,9 @@ importers:
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -3005,6 +3110,9 @@ importers:
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1

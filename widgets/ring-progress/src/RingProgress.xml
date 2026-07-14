@@ -1,23 +1,43 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.ringprogress.RingProgress"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.ringprogress.RingProgress" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>RingProgress</name>
-    <description>Give user feedback for status of the task with circle diagram</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Display progress as a circular ring</description>
+    <studioProCategory>Finch / Feedback</studioProCategory>
+    <studioCategory>Finch / Feedback</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="value" type="attribute" required="true">
+                <caption>Value</caption>
+                <description>Numeric attribute (0-100) representing the progress</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                    <attributeType name="Long" />
+                    <attributeType name="Integer" />
+                </attributeTypes>
+            </property>
+            <property key="label" type="string" required="false">
+                <caption>Label</caption>
+                <description>Text displayed in the center of the ring</description>
+            </property>
+            <property key="roundCaps" type="boolean" required="true" defaultValue="false">
+                <caption>Round Caps</caption>
+                <description>If set, the edges of the progress ring are rounded</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="color" type="string" required="true" defaultValue="blue">
+                <caption>Color</caption>
+                <description>Key of theme.colors or any valid CSS color for the filled section</description>
+            </property>
+            <property key="size" type="integer" required="true" defaultValue="120">
+                <caption>Size</caption>
+                <description>Width and height of the progress ring in pixels</description>
+            </property>
+            <property key="thickness" type="integer" required="true" defaultValue="12">
+                <caption>Thickness</caption>
+                <description>Ring thickness in pixels</description>
             </property>
         </propertyGroup>
     </properties>

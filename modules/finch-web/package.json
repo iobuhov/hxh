@@ -136,7 +136,8 @@
         "@mendix/timeline": "workspace:*",
         "@mendix/tooltip": "workspace:*",
         "@mendix/tree": "workspace:*",
-        "@mendix/typography": "workspace:*"
+        "@mendix/typography": "workspace:*",
+        "@mendix/mask-input": "workspace:*"
     },
     "devDependencies": {
         "@tsconfig/node22": "^22.0.2",

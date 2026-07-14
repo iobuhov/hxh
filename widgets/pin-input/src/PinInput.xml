@@ -1,23 +1,81 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.pininput.PinInput"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.pininput.PinInput" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>PinInput</name>
-    <description>Capture pin code or one time password from the user</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Capture a PIN or verification code from the user</description>
+    <studioProCategory>Finch / Inputs</studioProCategory>
+    <studioCategory>Finch / Inputs</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="value" type="attribute" required="true">
+                <caption>Value</caption>
+                <description>String attribute to capture and display</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="length" type="integer" required="true" defaultValue="4">
+                <caption>Length</caption>
+                <description>Number of inputs</description>
+            </property>
+            <property key="type" type="enumeration" required="true" defaultValue="alphanumeric">
+                <caption>Type</caption>
+                <description>Determines which values can be entered</description>
+                <enumerationValues>
+                    <enumerationValue key="alphanumeric">Alphanumeric</enumerationValue>
+                    <enumerationValue key="number">Number</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="mask" type="boolean" required="true" defaultValue="false">
+                <caption>Mask</caption>
+                <description>Changes input type to password, hiding entered characters</description>
+            </property>
+            <property key="placeholder" type="string" required="true" defaultValue="○">
+                <caption>Placeholder</caption>
+                <description>Placeholder shown in each empty input</description>
+            </property>
+            <property key="oneTimeCode" type="boolean" required="true" defaultValue="false">
+                <caption>One Time Code</caption>
+                <description>Sets autocomplete="one-time-code" attribute on all inputs</description>
+            </property>
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
+                <caption>Disabled</caption>
+                <description>Disables all inputs. The inputs are also disabled when the value attribute is read-only.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="size" type="enumeration" required="true" defaultValue="sm">
+                <caption>Size</caption>
+                <description>Controls inputs width and height</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="radius" type="enumeration" required="true" defaultValue="sm">
+                <caption>Radius</caption>
+                <description>Border radius of the inputs</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Action executed when the value changes</description>
+            </property>
+            <property key="onComplete" type="action" required="false">
+                <caption>On Complete</caption>
+                <description>Action executed when all inputs have a value</description>
             </property>
         </propertyGroup>
     </properties>

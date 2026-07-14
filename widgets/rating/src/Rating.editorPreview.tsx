@@ -1,6 +1,6 @@
 import { ReactElement, createElement } from "react";
 import { RatingPreviewProps } from "../typings/RatingProps";
 
-export function preview({ text }: RatingPreviewProps): ReactElement {
-    return <div>Preview {text}</div>;
+export function preview(_props: RatingPreviewProps): ReactElement {
+    return <div className="mantine-Rating-root">★★★★★</div>;
 }

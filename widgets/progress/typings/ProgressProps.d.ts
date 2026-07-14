@@ -4,13 +4,24 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { EditableValue } from "mendix";
+import { Big } from "big.js";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export type RadiusEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface ProgressContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    value: EditableValue<Big>;
+    striped: boolean;
+    animated: boolean;
+    color: string;
+    size: SizeEnum;
+    radius: RadiusEnum;
 }
 
 export interface ProgressPreviewProps {
@@ -24,5 +35,10 @@ export interface ProgressPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    value: string;
+    striped: boolean;
+    animated: boolean;
+    color: string;
+    size: SizeEnum;
+    radius: RadiusEnum;
 }

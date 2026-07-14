@@ -1,30 +1,54 @@
-children:
-  originalType: React.ReactNode
-  group: General
-  caption: Children
-  description: Overrides default loader with given content
-color:
-  originalType: MantineColor
-  group: General
-  caption: Color
-  description: Key of theme.colors or any valid CSS color
-  default: theme.primaryColor
-loaders:
-  originalType: Partial<Record<(string & {}) | "bars" | "dots" | "oval",
-    MantineLoaderComponent>>
-  group: General
-  caption: Loaders
-  description: Object of loaders components, can be customized via default props or inline.
-size:
-  originalType: number | MantineSize | (string & {})
-  group: General
-  caption: Size
-  description: Controls width and height of the loader. Loader has predefined
-    xs-xl values. Numbers are converted to rem.
-  default: "'md'"
-type:
-  originalType: (string & {}) | "bars" | "dots" | "oval"
-  group: General
-  caption: Type
-  description: Loader type, key of loaders prop
-  default: "'oval'"
+widget:
+  id: com.mendix.finch.widget.Loader
+  name: Loader
+  description: Indicate a loading state
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  studioProCategory: Finch / Feedback
+  studioCategory: Finch / Feedback
+  properties:
+    General:
+      type:
+        type: enumeration
+        required: true
+        default: oval
+        caption: Type
+        description: Loader animation type
+        enumerationValues:
+          oval: Oval
+          bars: Bars
+          dots: Dots
+    Appearance:
+      size:
+        type: enumeration
+        required: true
+        default: md
+        caption: Size
+        description: Controls width and height of the loader
+        enumerationValues:
+          xs: Extra small
+          sm: Small
+          md: Medium
+          lg: Large
+          xl: Extra large
+      color:
+        type: enumeration
+        required: true
+        default: blue
+        caption: Color
+        description: Loader color
+        enumerationValues:
+          gray: Gray
+          red: Red
+          pink: Pink
+          grape: Grape
+          violet: Violet
+          indigo: Indigo
+          blue: Blue
+          cyan: Cyan
+          teal: Teal
+          green: Green
+          lime: Lime
+          yellow: Yellow
+          orange: Orange

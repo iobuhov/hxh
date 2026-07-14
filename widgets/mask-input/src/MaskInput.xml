@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.maskinput.MaskInput" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
+    <name>MaskInput</name>
+    <description>Capture string input constrained by a mask</description>
+    <studioProCategory>Finch / Inputs</studioProCategory>
+    <studioCategory>Finch / Inputs</studioCategory>
+    <helpUrl />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="value" type="attribute" required="true">
+                <caption>Value</caption>
+                <description>String attribute to capture and display</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="mask" type="string" required="true" defaultValue="+1 (000) 000-0000">
+                <caption>Mask</caption>
+                <description>Mask pattern. Use 0 for digits, a for letters, * for any character. Other characters are treated as fixed separators.</description>
+            </property>
+            <property key="label" type="string" required="false">
+                <caption>Label</caption>
+                <description>Label displayed above the input</description>
+            </property>
+            <property key="description" type="string" required="false">
+                <caption>Description</caption>
+                <description>Helper text displayed below the label</description>
+            </property>
+            <property key="placeholder" type="string" required="false">
+                <caption>Placeholder</caption>
+                <description>Placeholder shown when the input is empty</description>
+            </property>
+            <property key="required" type="boolean" required="true" defaultValue="false">
+                <caption>Required</caption>
+                <description>Displays a red asterisk next to the label</description>
+            </property>
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
+                <caption>Disabled</caption>
+                <description>Disables the input. The input is also disabled when the value attribute is read-only.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="size" type="enumeration" required="true" defaultValue="sm">
+                <caption>Size</caption>
+                <description>Controls input height and horizontal padding</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="radius" type="enumeration" required="true" defaultValue="sm">
+                <caption>Radius</caption>
+                <description>Border radius of the input</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Action executed when the input loses focus after the value changes</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

@@ -1,23 +1,84 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.nativeselect.NativeSelect"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.nativeselect.NativeSelect" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>NativeSelect</name>
-    <description>Native select element based on Input</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Pick a single option from a native select element backed by a data source</description>
+    <studioProCategory>Finch / Inputs</studioProCategory>
+    <studioCategory>Finch / Inputs</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="value" type="attribute" required="true">
+                <caption>Value</caption>
+                <description>Attribute that stores the value of the selected option</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="optionsSource" type="datasource" isList="true">
+                <caption>Options</caption>
+                <description>Data source providing the selectable options</description>
+            </property>
+            <property key="optionValue" type="attribute" dataSource="optionsSource">
+                <caption>Option value</caption>
+                <description>Attribute on each option holding its value (matched against Value)</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="optionLabel" type="textTemplate" dataSource="optionsSource">
+                <caption>Option label</caption>
+                <description>Text shown for each option in the dropdown</description>
+            </property>
+            <property key="label" type="string" required="false">
+                <caption>Label</caption>
+                <description>Label displayed above the input</description>
+            </property>
+            <property key="description" type="string" required="false">
+                <caption>Description</caption>
+                <description>Helper text displayed below the label</description>
+            </property>
+            <property key="placeholder" type="string" required="false">
+                <caption>Placeholder</caption>
+                <description>Placeholder shown as a disabled first option when nothing is selected</description>
+            </property>
+            <property key="required" type="boolean" required="true" defaultValue="false">
+                <caption>Required</caption>
+                <description>Displays a red asterisk next to the label</description>
+            </property>
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
+                <caption>Disabled</caption>
+                <description>Disables the input. Also disabled when the value attribute is read-only.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="size" type="enumeration" required="true" defaultValue="sm">
+                <caption>Size</caption>
+                <description>Controls input height and horizontal padding</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="radius" type="enumeration" required="true" defaultValue="sm">
+                <caption>Radius</caption>
+                <description>Border radius of the input</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Action executed when the selection changes</description>
             </property>
         </propertyGroup>
     </properties>

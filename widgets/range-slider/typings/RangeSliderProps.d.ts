@@ -4,13 +4,30 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue, EditableValue } from "mendix";
+import { Big } from "big.js";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export type RadiusEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface RangeSliderContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    fromValue: EditableValue<Big>;
+    toValue: EditableValue<Big>;
+    disabled: boolean;
+    min: number;
+    max: number;
+    step: number;
+    minRange: number;
+    color: string;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange?: ActionValue;
+    onChangeEnd?: ActionValue;
 }
 
 export interface RangeSliderPreviewProps {
@@ -24,5 +41,16 @@ export interface RangeSliderPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    fromValue: string;
+    toValue: string;
+    disabled: boolean;
+    min: number | null;
+    max: number | null;
+    step: number | null;
+    minRange: number | null;
+    color: string;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    onChange: {} | null;
+    onChangeEnd: {} | null;
 }

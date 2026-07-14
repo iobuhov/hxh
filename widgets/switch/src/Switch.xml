@@ -1,23 +1,81 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.switch.Switch"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.switch.Switch" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>Switch</name>
-    <description>Capture boolean input from user</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Capture a boolean value with an on/off switch</description>
+    <studioProCategory>Finch / Inputs</studioProCategory>
+    <studioCategory>Finch / Inputs</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="value" type="attribute" required="true">
+                <caption>Value</caption>
+                <description>Boolean attribute to capture and display</description>
+                <attributeTypes>
+                    <attributeType name="Boolean" />
+                </attributeTypes>
+            </property>
+            <property key="label" type="string" required="false">
+                <caption>Label</caption>
+                <description>Label displayed next to the switch</description>
+            </property>
+            <property key="description" type="string" required="false">
+                <caption>Description</caption>
+                <description>Helper text displayed below the label</description>
+            </property>
+            <property key="onLabel" type="string" required="false">
+                <caption>On Label</caption>
+                <description>Inner label shown when the switch is in the checked state</description>
+            </property>
+            <property key="offLabel" type="string" required="false">
+                <caption>Off Label</caption>
+                <description>Inner label shown when the switch is in the unchecked state</description>
+            </property>
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
+                <caption>Disabled</caption>
+                <description>Disables the switch. Also disabled when the value attribute is read-only.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="labelPosition" type="enumeration" required="true" defaultValue="right">
+                <caption>Label Position</caption>
+                <description>Position of the label relative to the switch</description>
+                <enumerationValues>
+                    <enumerationValue key="left">Left</enumerationValue>
+                    <enumerationValue key="right">Right</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="color" type="string" required="false">
+                <caption>Color</caption>
+                <description>Key of theme.colors or any valid CSS color for the checked state</description>
+            </property>
+            <property key="size" type="enumeration" required="true" defaultValue="sm">
+                <caption>Size</caption>
+                <description>Controls size of the switch</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="radius" type="enumeration" required="true" defaultValue="xl">
+                <caption>Radius</caption>
+                <description>Border radius of the switch track</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Action executed after the value changes</description>
             </property>
         </propertyGroup>
     </properties>

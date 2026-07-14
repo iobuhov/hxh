@@ -5,12 +5,20 @@
  */
 import { CSSProperties } from "react";
 
+export type TypeEnum = "oval" | "bars" | "dots";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export type ColorEnum = "gray" | "red" | "pink" | "grape" | "violet" | "indigo" | "blue" | "cyan" | "teal" | "green" | "lime" | "yellow" | "orange";
+
 export interface LoaderContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    type: TypeEnum;
+    size: SizeEnum;
+    color: ColorEnum;
 }
 
 export interface LoaderPreviewProps {
@@ -24,5 +32,7 @@ export interface LoaderPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    type: TypeEnum;
+    size: SizeEnum;
+    color: ColorEnum;
 }

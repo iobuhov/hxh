@@ -1,23 +1,81 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.slider.Slider"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.slider.Slider" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>Slider</name>
-    <description>Slider component</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Capture a numeric value by dragging a slider</description>
+    <studioProCategory>Finch / Inputs</studioProCategory>
+    <studioCategory>Finch / Inputs</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="value" type="attribute" required="true">
+                <caption>Value</caption>
+                <description>Numeric attribute to capture and display</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                    <attributeType name="Long" />
+                    <attributeType name="Integer" />
+                </attributeTypes>
+            </property>
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
+                <caption>Disabled</caption>
+                <description>Disables the slider. Also disabled when the value attribute is read-only.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Range">
+            <property key="min" type="integer" required="true" defaultValue="0">
+                <caption>Min</caption>
+                <description>Minimum possible value</description>
+            </property>
+            <property key="max" type="integer" required="true" defaultValue="100">
+                <caption>Max</caption>
+                <description>Maximum possible value</description>
+            </property>
+            <property key="step" type="integer" required="true" defaultValue="1">
+                <caption>Step</caption>
+                <description>Amount to increment/decrement with drag and arrow keys</description>
+            </property>
+            <property key="inverted" type="boolean" required="true" defaultValue="false">
+                <caption>Inverted</caption>
+                <description>If set, the track value representation is inverted</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="color" type="string" required="false">
+                <caption>Color</caption>
+                <description>Key of theme.colors or any valid CSS color for the track and thumb</description>
+            </property>
+            <property key="size" type="enumeration" required="true" defaultValue="md">
+                <caption>Size</caption>
+                <description>Controls size of the track</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="radius" type="enumeration" required="true" defaultValue="xl">
+                <caption>Radius</caption>
+                <description>Border radius of the track</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Action executed each time the value changes</description>
+            </property>
+            <property key="onChangeEnd" type="action" required="false">
+                <caption>On Change End</caption>
+                <description>Action executed when the user stops dragging or changes value with arrows</description>
             </property>
         </propertyGroup>
     </properties>
