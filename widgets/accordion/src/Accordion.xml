@@ -31,6 +31,9 @@
             <property key="defaultValue" type="attribute" required="false">
                 <caption>Default Value</caption>
                 <description>Uncontrolled component default value</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
             </property>
             <property key="disableChevronRotation" type="boolean" required="false">
                 <caption>Disable Chevron Rotation</caption>
@@ -70,6 +73,9 @@
             <property key="value" type="attribute" required="false">
                 <caption>Value</caption>
                 <description>Controlled component value</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
             </property>
         </propertyGroup>
     </properties>

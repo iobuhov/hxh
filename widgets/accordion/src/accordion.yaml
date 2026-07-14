@@ -42,6 +42,7 @@ widget:
         caption: Default Value
         description: Uncontrolled component default value
         required: false
+        attributeTypes: [String]
         
       disableChevronRotation:
         type: boolean
@@ -99,3 +100,4 @@ widget:
         caption: Value
         description: Controlled component value
         required: false
+        attributeTypes: [String]
