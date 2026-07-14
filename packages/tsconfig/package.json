@@ -1,0 +1,11 @@
+{
+    "name": "@mendix/tsconfig",
+    "version": "1.0.0",
+    "description": "Shared TypeScript config for Finch web widgets",
+    "copyright": "© 2025 Illia Obukhau",
+    "license": "Apache-2.0",
+    "private": true,
+    "files": [
+        "tsconfig.base.json"
+    ]
+}

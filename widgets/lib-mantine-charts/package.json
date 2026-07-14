@@ -23,6 +23,7 @@
         "@mantine/core": "catalog:",
         "@mantine/hooks": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
+        "@mendix/tsconfig": "workspace:*",
         "classnames": "catalog:",
         "mendix": "catalog:",
         "mpx": "*",

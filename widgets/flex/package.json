@@ -22,6 +22,7 @@
     "dependencies": {
         "@mantine/core": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
+        "@mendix/tsconfig": "workspace:*",
         "classnames": "catalog:",
         "mendix": "catalog:",
         "mpx": "*"

@@ -19,9 +19,10 @@
         "test:unit": "pluggable-widgets-tools test:unit:web --coverage"
     },
     "dependencies": {
-        "lucide-react": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
+        "@mendix/tsconfig": "workspace:*",
         "classnames": "catalog:",
+        "lucide-react": "catalog:",
         "mendix": "catalog:",
         "mpx": "*"
     },

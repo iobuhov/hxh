@@ -589,6 +589,8 @@ importers:
         specifier: ^2.5.10
         version: 2.5.19(prettier@3.6.2)
 
+  packages/tsconfig: {}
+
   packages/use-sync-external-store:
     dependencies:
       react:
@@ -619,6 +621,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -637,6 +642,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -655,6 +663,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -673,6 +684,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -691,6 +705,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -709,6 +726,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -733,6 +753,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -763,6 +786,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -784,6 +810,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -802,6 +831,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -826,6 +858,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -844,6 +879,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -865,6 +903,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -895,6 +936,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -928,6 +972,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -949,6 +996,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -970,6 +1020,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -997,6 +1050,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -1024,6 +1080,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1039,6 +1098,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1060,6 +1122,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1075,6 +1140,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1090,6 +1158,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1105,6 +1176,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1120,6 +1194,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1135,6 +1212,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1150,6 +1230,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1165,6 +1248,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1180,6 +1266,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1195,6 +1284,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1222,6 +1314,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -1243,6 +1338,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1258,6 +1356,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1279,6 +1380,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -1297,6 +1401,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1324,6 +1431,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -1345,6 +1455,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1366,6 +1479,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -1384,6 +1500,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1399,6 +1518,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1419,6 +1541,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1434,6 +1559,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1455,6 +1583,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -1485,6 +1616,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -1512,6 +1646,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -1536,6 +1673,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -1560,6 +1700,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1587,6 +1730,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -1608,6 +1754,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1623,6 +1772,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1644,6 +1796,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -1662,6 +1817,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1677,6 +1835,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1692,6 +1853,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1707,6 +1871,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1722,6 +1889,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       mendix:
         specifier: 'catalog:'
         version: 10.24.75382
@@ -1734,6 +1904,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1758,6 +1931,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1782,6 +1958,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1812,6 +1991,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -1833,6 +2015,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1848,6 +2033,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1863,6 +2051,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1878,6 +2069,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1905,6 +2099,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1920,6 +2117,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1935,6 +2135,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1950,6 +2153,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1965,6 +2171,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -1986,6 +2195,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2010,6 +2222,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2037,6 +2252,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2058,6 +2276,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2076,6 +2297,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2091,6 +2315,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2112,6 +2339,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2133,6 +2363,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2148,6 +2381,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2163,6 +2399,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2190,6 +2429,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2211,6 +2453,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2226,6 +2471,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2241,6 +2489,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2256,6 +2507,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2271,6 +2525,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2298,6 +2555,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2331,6 +2591,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2352,6 +2615,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2367,6 +2633,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2382,6 +2651,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2397,6 +2669,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2424,6 +2699,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2457,6 +2735,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2484,6 +2765,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2499,6 +2783,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2520,6 +2807,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2538,6 +2828,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2559,6 +2852,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2574,6 +2870,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2589,6 +2888,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2616,6 +2918,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2637,6 +2942,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2658,6 +2966,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2673,6 +2984,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2688,6 +3002,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2709,6 +3026,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2733,6 +3053,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2751,6 +3074,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2772,6 +3098,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2796,6 +3125,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2814,6 +3146,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2835,6 +3170,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2856,6 +3194,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2880,6 +3221,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2904,6 +3248,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2928,6 +3275,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -2946,6 +3296,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2967,6 +3320,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2982,6 +3338,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2997,6 +3356,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -3024,6 +3386,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       '@mendix/yaml-to-xml-converter':
         specifier: workspace:*
         version: link:../../packages/yaml-to-xml-converter
@@ -3045,6 +3410,9 @@ importers:
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
+      '@mendix/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
       classnames:
         specifier: 'catalog:'
         version: 2.5.1

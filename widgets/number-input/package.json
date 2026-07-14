@@ -23,6 +23,7 @@
         "@mantine/core": "catalog:",
         "@mantine/hooks": "catalog:",
         "@mendix/prettier-config-web-widgets": "workspace:*",
+        "@mendix/tsconfig": "workspace:*",
         "@mendix/yaml-to-xml-converter": "workspace:*",
         "@types/big.js": "catalog:",
         "classnames": "catalog:",
