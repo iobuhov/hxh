@@ -1,7 +1,8 @@
 {
-    "$schema": "https://turbo.build/schema.json",
+    "$schema": "https://v2-10-4.turborepo.dev/schema.json",
     "globalDependencies": ["**/.env.*local"],
     "concurrency": "128",
+    "ui": "tui",
     "tasks": {
         "build": {
             "dependsOn": ["^build"],

@@ -51,13 +51,7 @@ export function NavLink(props: NavLinkContainerProps): ReactElement {
                 leftSection={renderIcon(props.icon, props.iconSize || 20, Number(props.iconStrokeWidth) || 2)}
                 rightSection={
                     collapsible ? (
-                        <span
-                            style={{
-                                display: "flex",
-                                transition: "transform 200ms ease",
-                                transform: opened ? "rotate(90deg)" : undefined
-                            }}
-                        >
+                        <span style={{ display: "flex", transform: opened ? "rotate(90deg)" : undefined }}>
                             {renderIcon("chevron-right", 16, Number(props.iconStrokeWidth) || 2)}
                         </span>
                     ) : undefined
@@ -72,7 +66,7 @@ export function NavLink(props: NavLinkContainerProps): ReactElement {
                 style={{ borderRadius: "var(--mantine-radius-sm)" }}
             />
             {collapsible && (
-                <Collapse in={opened}>
+                <Collapse expanded={opened} transitionDuration={0}>
                     <div style={{ paddingLeft: "var(--mantine-spacing-lg)" }}>{props.children}</div>
                 </Collapse>
             )}
