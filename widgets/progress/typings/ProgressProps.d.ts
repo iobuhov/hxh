@@ -4,8 +4,10 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
-import { EditableValue } from "mendix";
+import { EditableValue, ListValue, ListAttributeValue, ListExpressionValue } from "mendix";
 import { Big } from "big.js";
+
+export type ModeEnum = "single" | "sections";
 
 export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
@@ -16,7 +18,12 @@ export interface ProgressContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    value: EditableValue<Big>;
+    mode: ModeEnum;
+    value?: EditableValue<Big>;
+    sections?: ListValue;
+    sectionValue?: ListAttributeValue<Big>;
+    sectionColor?: ListExpressionValue<string>;
+    sectionLabel?: ListExpressionValue<string>;
     striped: boolean;
     animated: boolean;
     color: string;
@@ -35,7 +42,12 @@ export interface ProgressPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
+    mode: ModeEnum;
     value: string;
+    sections: {} | { caption: string } | { type: string } | null;
+    sectionValue: string;
+    sectionColor: string;
+    sectionLabel: string;
     striped: boolean;
     animated: boolean;
     color: string;

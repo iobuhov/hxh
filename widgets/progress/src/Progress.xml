@@ -2,13 +2,23 @@
 <!--This is an auto-generated XML file. Do not edit manually.-->
 <widget id="com.mendix.finch.widget.progress.Progress" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>Progress</name>
-    <description>Display a horizontal progress bar</description>
+    <description>Display a horizontal progress bar, optionally split into multiple sections</description>
     <studioProCategory>Finch / Feedback</studioProCategory>
     <studioCategory>Finch / Feedback</studioCategory>
     <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="value" type="attribute" required="true">
+            <property key="mode" type="enumeration" required="true" defaultValue="single">
+                <caption>Mode</caption>
+                <description>Render a single bar from one value, or multiple sections from a data source</description>
+                <enumerationValues>
+                    <enumerationValue key="single">Single value</enumerationValue>
+                    <enumerationValue key="sections">Sections</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Single value">
+            <property key="value" type="attribute" required="false">
                 <caption>Value</caption>
                 <description>Numeric attribute (0-100) representing the progress</description>
                 <attributeTypes>
@@ -17,6 +27,32 @@
                     <attributeType name="Integer" />
                 </attributeTypes>
             </property>
+        </propertyGroup>
+        <propertyGroup caption="Sections">
+            <property key="sections" type="datasource" isList="true" required="false">
+                <caption>Sections</caption>
+                <description>Data source providing the sections of the bar</description>
+            </property>
+            <property key="sectionValue" type="attribute" required="false" dataSource="sections">
+                <caption>Section value</caption>
+                <description>Numeric attribute (0-100) for each section width</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                    <attributeType name="Long" />
+                    <attributeType name="Integer" />
+                </attributeTypes>
+            </property>
+            <property key="sectionColor" type="expression" required="false" dataSource="sections">
+                <caption>Section color</caption>
+                <description>Key of theme.colors or any valid CSS color for each section</description>
+                <returnType type="String" />
+            </property>
+            <property key="sectionLabel" type="textTemplate" required="false" dataSource="sections">
+                <caption>Section label</caption>
+                <description>Optional label shown inside each section</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
             <property key="striped" type="boolean" required="true" defaultValue="false">
                 <caption>Striped</caption>
                 <description>If set, the bar is displayed with stripes</description>
@@ -25,11 +61,9 @@
                 <caption>Animated</caption>
                 <description>If set, the stripes are animated (implies striped)</description>
             </property>
-        </propertyGroup>
-        <propertyGroup caption="Appearance">
             <property key="color" type="string" required="false">
                 <caption>Color</caption>
-                <description>Key of theme.colors or any valid CSS color for the bar</description>
+                <description>Key of theme.colors or any valid CSS color for the bar (single value mode)</description>
             </property>
             <property key="size" type="enumeration" required="true" defaultValue="md">
                 <caption>Size</caption>

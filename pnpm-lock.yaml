@@ -2612,6 +2612,12 @@ importers:
 
   widgets/progress:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets

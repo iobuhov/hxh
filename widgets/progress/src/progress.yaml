@@ -1,7 +1,7 @@
 widget:
   id: com.mendix.finch.widget.progress.Progress
   name: Progress
-  description: Display a horizontal progress bar
+  description: Display a horizontal progress bar, optionally split into multiple sections
   pluginWidget: true
   offlineCapable: true
   supportedPlatform: Web
@@ -10,12 +10,50 @@ widget:
   studioCategory: Finch / Feedback
   properties:
     General:
+      mode:
+        type: enumeration
+        required: true
+        default: single
+        caption: Mode
+        description: Render a single bar from one value, or multiple sections from a data source
+        enumerationValues:
+          single: Single value
+          sections: Sections
+    Single value:
       value:
         type: attribute
-        required: true
+        required: false
         caption: Value
         description: Numeric attribute (0-100) representing the progress
         attributeTypes: [Decimal, Long, Integer]
+    Sections:
+      sections:
+        type: datasource
+        isList: true
+        required: false
+        caption: Sections
+        description: Data source providing the sections of the bar
+      sectionValue:
+        type: attribute
+        dataSource: sections
+        required: false
+        caption: Section value
+        description: Numeric attribute (0-100) for each section width
+        attributeTypes: [Decimal, Long, Integer]
+      sectionColor:
+        type: expression
+        dataSource: sections
+        required: false
+        caption: Section color
+        description: Key of theme.colors or any valid CSS color for each section
+        returnType: String
+      sectionLabel:
+        type: textTemplate
+        dataSource: sections
+        required: false
+        caption: Section label
+        description: Optional label shown inside each section
+    Appearance:
       striped:
         type: boolean
         required: true
@@ -28,12 +66,11 @@ widget:
         default: false
         caption: Animated
         description: If set, the stripes are animated (implies striped)
-    Appearance:
       color:
         type: string
         required: false
         caption: Color
-        description: Key of theme.colors or any valid CSS color for the bar
+        description: Key of theme.colors or any valid CSS color for the bar (single value mode)
       size:
         type: enumeration
         required: true
