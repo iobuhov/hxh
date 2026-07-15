@@ -1,26 +1,76 @@
-displayAfterTransitionEnd:
-  originalType: boolean
-  group: General
-  caption: Display After Transition End
-  description: >-
-    If set, the indicator is displayed after transition ends.
-
-    Should be set if the component is used inside a container that has
-    transform: scale(n) styles.
-parent:
-  originalType: HTMLElement | null
-  group: General
-  caption: Parent
-  description: Parent element with relative position based on which indicator
-    position is calculated
-target:
-  originalType: HTMLElement | null
-  group: General
-  caption: Target
-  description: Target element over which indicator is displayed
-transitionDuration:
-  originalType: string | number
-  group: General
-  caption: Transition Duration
-  description: Transition duration in ms
-  default: "150"
+widget:
+  id: com.mendix.finch.widget.floatingindicator.FloatingIndicator
+  name: FloatingIndicator
+  description: Display a floating indicator over the active control in a group
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Navigation
+  studioCategory: Finch / Navigation
+  properties:
+    General:
+      value:
+        type: attribute
+        required: true
+        caption: Value
+        description: String attribute holding the value of the active control
+        attributeTypes: [String]
+      controls:
+        type: object
+        isList: true
+        required: false
+        caption: Controls
+        description: The controls shown in the group
+        properties:
+          General:
+            controlValue:
+              type: string
+              required: true
+              caption: Value
+              description: Unique value assigned to this control when it is active
+            label:
+              type: string
+              required: true
+              caption: Label
+              description: Text shown on the control
+            iconPosition:
+              type: enumeration
+              required: true
+              default: none
+              caption: Icon position
+              description: Whether to show an icon on the control and on which side
+              enumerationValues:
+                none: None
+                left: Left
+                right: Right
+            icon:
+              type: widgets
+              required: false
+              caption: Icon
+              description: Icon widget shown on the control when icon position is left or right
+    Events:
+      onChange:
+        type: action
+        required: false
+        caption: On Change
+        description: Action executed after a control is clicked and the value changes
+    Appearance:
+      grow:
+        type: boolean
+        required: true
+        default: false
+        caption: Grow
+        description: If set, controls stretch to take up all available space
+      radius:
+        type: string
+        required: false
+        default: theme.defaultRadius
+        caption: Radius
+        description: Key of theme.radius or any valid CSS value to set border-radius
+      transitionDuration:
+        type: string
+        required: false
+        default: "150"
+        caption: Transition Duration
+        description: Indicator transition duration in ms

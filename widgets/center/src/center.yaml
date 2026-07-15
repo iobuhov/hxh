@@ -17,4 +17,5 @@ widget:
         type: boolean
         caption: Inline
         description: If set, inline-flex is used instead of flex
-        required: false
+        required: true
+        default: false

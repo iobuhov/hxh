@@ -3,14 +3,36 @@
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Framework Team
  */
-import { CSSProperties } from "react";
+import { ComponentType, CSSProperties, ReactNode } from "react";
+import { ActionValue, EditableValue } from "mendix";
+
+export type IconPositionEnum = "none" | "left" | "right";
+
+export interface ControlsType {
+    controlValue: string;
+    label: string;
+    iconPosition: IconPositionEnum;
+    icon?: ReactNode;
+}
+
+export interface ControlsPreviewType {
+    controlValue: string;
+    label: string;
+    iconPosition: IconPositionEnum;
+    icon: { widgetCount: number; renderer: ComponentType<{ children: ReactNode; caption?: string }> };
+}
 
 export interface FloatingIndicatorContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    value: EditableValue<string>;
+    controls: ControlsType[];
+    onChange?: ActionValue;
+    grow: boolean;
+    radius: string;
+    transitionDuration: string;
 }
 
 export interface FloatingIndicatorPreviewProps {
@@ -24,5 +46,10 @@ export interface FloatingIndicatorPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    value: string;
+    controls: ControlsPreviewType[];
+    onChange: {} | null;
+    grow: boolean;
+    radius: string;
+    transitionDuration: string;
 }

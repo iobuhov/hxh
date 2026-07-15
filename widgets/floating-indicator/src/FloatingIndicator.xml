@@ -1,23 +1,68 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.floatingindicator.FloatingIndicator"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.floatingindicator.FloatingIndicator" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>FloatingIndicator</name>
-    <description>Display a floating indicator over a group of elements</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Display a floating indicator over the active control in a group</description>
+    <studioProCategory>Finch / Navigation</studioProCategory>
+    <studioCategory>Finch / Navigation</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="value" type="attribute" required="true">
+                <caption>Value</caption>
+                <description>String attribute holding the value of the active control</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="controls" type="object" isList="true" required="false">
+                <caption>Controls</caption>
+                <description>The controls shown in the group</description>
+                <properties>
+                    <propertyGroup caption="General">
+                        <property key="controlValue" type="string" required="true">
+                            <caption>Value</caption>
+                            <description>Unique value assigned to this control when it is active</description>
+                        </property>
+                        <property key="label" type="string" required="true">
+                            <caption>Label</caption>
+                            <description>Text shown on the control</description>
+                        </property>
+                        <property key="iconPosition" type="enumeration" required="true" defaultValue="none">
+                            <caption>Icon position</caption>
+                            <description>Whether to show an icon on the control and on which side</description>
+                            <enumerationValues>
+                                <enumerationValue key="none">None</enumerationValue>
+                                <enumerationValue key="left">Left</enumerationValue>
+                                <enumerationValue key="right">Right</enumerationValue>
+                            </enumerationValues>
+                        </property>
+                        <property key="icon" type="widgets" required="false">
+                            <caption>Icon</caption>
+                            <description>Icon widget shown on the control when icon position is left or right</description>
+                        </property>
+                    </propertyGroup>
+                </properties>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Action executed after a control is clicked and the value changes</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="grow" type="boolean" required="true" defaultValue="false">
+                <caption>Grow</caption>
+                <description>If set, controls stretch to take up all available space</description>
+            </property>
+            <property key="radius" type="string" required="false" defaultValue="theme.defaultRadius">
+                <caption>Radius</caption>
+                <description>Key of theme.radius or any valid CSS value to set border-radius</description>
+            </property>
+            <property key="transitionDuration" type="string" required="false" defaultValue="150">
+                <caption>Transition Duration</caption>
+                <description>Indicator transition duration in ms</description>
             </property>
         </propertyGroup>
     </properties>

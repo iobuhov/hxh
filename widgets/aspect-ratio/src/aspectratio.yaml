@@ -11,5 +11,5 @@ widget:
         type: decimal
         caption: Ratio
         description: Aspect ratio, for example, 16 / 9, 4 / 3, 1920 / 1080
-        required: false
+        required: true
         default: 1

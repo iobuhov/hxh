@@ -8,7 +8,7 @@ import { ActionValue, DynamicValue, EditableValue, WebIcon } from "mendix";
 
 export type ChevronPositionEnum = "left" | "right";
 
-export type OrderEnum = "2" | "3" | "4" | "5" | "6";
+export type OrderEnum = "h2" | "h3" | "h4" | "h5" | "h6";
 
 export interface AccordionContainerProps {
     name: string;
@@ -17,16 +17,16 @@ export interface AccordionContainerProps {
     tabIndex?: number;
     chevron?: DynamicValue<WebIcon>;
     chevronIconSize: string;
-    chevronPosition?: ChevronPositionEnum;
+    chevronPosition: ChevronPositionEnum;
     chevronSize: string;
     defaultValue?: EditableValue<string>;
-    disableChevronRotation?: boolean;
-    loop?: boolean;
-    multiple?: boolean;
+    disableChevronRotation: boolean;
+    loop: boolean;
+    multiple: boolean;
     onChange?: ActionValue;
-    order?: OrderEnum;
+    order: OrderEnum;
     radius: string;
-    transitionDuration?: number;
+    transitionDuration: number;
     value?: EditableValue<string>;
 }
 

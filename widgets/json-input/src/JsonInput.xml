@@ -35,11 +35,11 @@
                 <caption>Autosize</caption>
                 <description>If set, enables textarea height growing with its content</description>
             </property>
-            <property key="minRows" type="integer" required="false">
+            <property key="minRows" type="string" required="false">
                 <caption>Min Rows</caption>
                 <description>Minimum rows of autosize textarea, ignored if autosize is not set</description>
             </property>
-            <property key="maxRows" type="integer" required="false">
+            <property key="maxRows" type="string" required="false">
                 <caption>Max Rows</caption>
                 <description>Maximum rows for autosize textarea to grow, ignored if autosize is not set</description>
             </property>

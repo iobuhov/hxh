@@ -14,7 +14,7 @@ export interface ColorSwatchContainerProps {
     color: string;
     radius: string;
     size: string;
-    withShadow?: boolean;
+    withShadow: boolean;
 }
 
 export interface ColorSwatchPreviewProps {

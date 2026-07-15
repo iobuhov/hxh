@@ -12,9 +12,9 @@ export interface ContainerContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    fluid?: boolean;
+    fluid: boolean;
     size: string;
-    strategy?: StrategyEnum;
+    strategy: StrategyEnum;
 }
 
 export interface ContainerPreviewProps {

@@ -12,7 +12,7 @@ export interface AffixContainerProps {
     tabIndex?: number;
     portalProps: string;
     position: string;
-    withinPortal?: boolean;
+    withinPortal: boolean;
     zIndex: string;
 }
 

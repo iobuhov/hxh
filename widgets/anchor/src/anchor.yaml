@@ -24,15 +24,15 @@ widget:
         caption: Inherit
         description: Determines whether font properties should be inherited from the parent
         default: false
-        required: false
+        required: true
       inline:
         type: boolean
         caption: Inline
         description: Sets line-height to 1 for centering
         default: false
-        required: false
+        required: true
       lineClamp:
-        type: integer
+        type: string
         caption: Line Clamp
         description: Number of lines after which Text will be truncated
         required: false
@@ -53,9 +53,9 @@ widget:
         caption: Underline
         description: "Defines when text-decoration: underline styles are applied."
         default: hover
-        required: false
+        required: true
         enumerationValues:
           always: Always
           hover: Hover
-          not-hover: Not Hover
+          notHover: Not Hover
           never: Never

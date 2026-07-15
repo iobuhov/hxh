@@ -10,13 +10,13 @@ export interface ActionIconContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    autoContrast?: boolean;
+    autoContrast: boolean;
     children: string;
     color: string;
-    disabled?: boolean;
+    disabled: boolean;
     gradient: string;
     loaderProps: string;
-    loading?: boolean;
+    loading: boolean;
     radius: string;
     size: string;
 }

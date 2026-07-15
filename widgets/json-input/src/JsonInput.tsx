@@ -32,8 +32,8 @@ export function JsonInput(props: JsonInputContainerProps): ReactElement {
             placeholder={props.placeholder || undefined}
             formatOnBlur={props.formatOnBlur}
             autosize={props.autosize}
-            minRows={props.minRows ?? undefined}
-            maxRows={props.maxRows ?? undefined}
+            minRows={props.minRows ? Number(props.minRows) : undefined}
+            maxRows={props.maxRows ? Number(props.maxRows) : undefined}
             validationError={props.validationError || undefined}
             withAsterisk={props.required}
             disabled={props.disabled || value.readOnly}

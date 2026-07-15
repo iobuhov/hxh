@@ -1565,12 +1565,21 @@ importers:
 
   widgets/floating-indicator:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1
@@ -2882,12 +2891,21 @@ importers:
 
   widgets/segmented-control:
     dependencies:
+      '@mantine/core':
+        specifier: 'catalog:'
+        version: 9.4.1(@mantine/hooks@9.4.1(react@19.2.7))(@types/react@19.2.17)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      '@mantine/hooks':
+        specifier: 'catalog:'
+        version: 9.4.1(react@19.2.7)
       '@mendix/prettier-config-web-widgets':
         specifier: workspace:*
         version: link:../../packages/prettier-config-web-widgets
       '@mendix/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@mendix/yaml-to-xml-converter':
+        specifier: workspace:*
+        version: link:../../packages/yaml-to-xml-converter
       classnames:
         specifier: 'catalog:'
         version: 2.5.1

@@ -1,6 +1,40 @@
 import { FloatingIndicatorPreviewProps } from "../typings/FloatingIndicatorProps";
 import { Properties } from "../typings/editor-types";
 
-export function getProperties(_values: FloatingIndicatorPreviewProps, schema: Properties): Properties {
-    return schema;
+// The nested property/group types are not exported from editor-types, so we traverse loosely.
+/* eslint-disable @typescript-eslint/no-explicit-any */
+function findProperty(groups: Properties, key: string): any {
+    for (const group of groups as any[]) {
+        const found = group.properties?.find((prop: any) => prop.key === key);
+        if (found) {
+            return found;
+        }
+        if (group.propertyGroups) {
+            const nested = findProperty(group.propertyGroups, key);
+            if (nested) {
+                return nested;
+            }
+        }
+    }
+    return undefined;
+}
+
+export function getProperties(values: FloatingIndicatorPreviewProps, defaultProperties: Properties): Properties {
+    const controlsProperty = findProperty(defaultProperties, "controls");
+
+    values.controls.forEach((control, index) => {
+        if (control.iconPosition !== "none") {
+            return;
+        }
+        // Hide the per-row icon DropZone when no icon is used, so it is neither shown
+        // in the properties panel nor required to be rendered in the preview.
+        const row = controlsProperty?.objects?.[index];
+        row?.properties.forEach((group: any) => {
+            if (group.properties) {
+                group.properties = group.properties.filter((prop: any) => prop.key !== "icon");
+            }
+        });
+    });
+
+    return defaultProperties;
 }

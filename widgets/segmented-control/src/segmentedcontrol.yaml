@@ -1,89 +1,148 @@
-autoContrast:
-  originalType: boolean
-  group: General
-  caption: Auto Contrast
-  description: If set, adjusts text color based on background color for filled variant
-color:
-  originalType: MantineColor
-  group: General
-  caption: Color
-  description: Key of theme.colors or any valid CSS color, changes color of
-    indicator, by default color is based on current color scheme
-data:
-  originalType: (string | SegmentedControlItem)[]
-  group: General
-  caption: Data
-  description: Data based on which controls are rendered
-defaultValue:
-  originalType: string
-  group: General
-  caption: Default Value
-  description: Uncontrolled component default value
-disabled:
-  originalType: boolean
-  group: General
-  caption: Disabled
-  description: Determines whether the component is disabled
-fullWidth:
-  originalType: boolean
-  group: General
-  caption: Full Width
-  description: Determines whether the component should take 100% width of its parent
-  default: "false"
-name:
-  originalType: string
-  group: General
-  caption: Name
-  description: Name of the radio group, by default random name is generated
-onChange:
-  originalType: "((value: string) => void)"
-  group: General
-  caption: On Change
-  description: Called when value changes
-orientation:
-  originalType: '"horizontal" | "vertical"'
-  group: General
-  caption: Orientation
-  description: Component orientation
-  default: "'horizontal'"
-radius:
-  originalType: MantineRadius | number
-  group: General
-  caption: Radius
-  description: Key of theme.radius or any valid CSS value to set border-radius,
-    numbers are converted to rem
-  default: theme.defaultRadius
-readOnly:
-  originalType: boolean
-  group: General
-  caption: Read Only
-  description: If set to false, prevents changing the value
-size:
-  originalType: MantineSize | (string & {})
-  group: General
-  caption: Size
-  description: Controls font-size, padding and height properties
-  default: "'sm'"
-transitionDuration:
-  originalType: number
-  group: General
-  caption: Transition Duration
-  description: Indicator transition-duration in ms, set 0 to turn off transitions
-  default: "200"
-transitionTimingFunction:
-  originalType: string
-  group: General
-  caption: Transition Timing Function
-  description: Indicator transition-timing-function property
-  default: ease
-value:
-  originalType: string
-  group: General
-  caption: Value
-  description: Controlled component value
-withItemsBorders:
-  originalType: boolean
-  group: General
-  caption: With Items Borders
-  description: Determines whether there should be borders between items
-  default: "true"
+widget:
+  id: com.mendix.finch.widget.segmentedcontrol.SegmentedControl
+  name: SegmentedControl
+  description: Pick a single option from a horizontal or vertical segmented button group
+  pluginWidget: true
+  offlineCapable: true
+  supportedPlatform: Web
+  needsEntityContext: true
+  studioProCategory: Finch / Inputs
+  studioCategory: Finch / Inputs
+  properties:
+    General:
+      value:
+        type: attribute
+        required: true
+        caption: Value
+        description: String attribute that stores the value of the selected segment
+        attributeTypes: [String]
+      dataSourceType:
+        type: enumeration
+        required: true
+        default: static
+        caption: Items source
+        description: Where the segments come from
+        enumerationValues:
+          static: Static
+          datasource: Data source
+    Static items:
+      staticItems:
+        type: object
+        isList: true
+        required: false
+        caption: Items
+        description: Segments shown when Items source is Static
+        properties:
+          General:
+            itemValue:
+              type: string
+              required: true
+              caption: Value
+              description: Unique value stored in the attribute when this segment is active
+            itemLabel:
+              type: string
+              required: true
+              caption: Label
+              description: Text shown on the segment
+            itemDisabled:
+              type: boolean
+              required: true
+              default: false
+              caption: Disabled
+              description: Disables this segment
+    Data source items:
+      optionsSource:
+        type: datasource
+        isList: true
+        required: false
+        caption: Options
+        description: Data source providing the segments when Items source is Data source
+      optionValue:
+        type: attribute
+        dataSource: optionsSource
+        required: false
+        caption: Option value
+        description: Attribute on each option holding its value (matched against Value)
+        attributeTypes: [String]
+      optionLabel:
+        type: textTemplate
+        dataSource: optionsSource
+        required: false
+        caption: Option label
+        description: Text shown for each segment
+    Behavior:
+      disabled:
+        type: boolean
+        required: true
+        default: false
+        caption: Disabled
+        description: Disables the whole control. Also disabled when the value attribute is read-only.
+      readOnly:
+        type: boolean
+        required: true
+        default: false
+        caption: Read only
+        description: Prevents changing the value while still showing the current selection
+    Appearance:
+      orientation:
+        type: enumeration
+        required: true
+        default: horizontal
+        caption: Orientation
+        description: Segments layout direction
+        enumerationValues:
+          horizontal: Horizontal
+          vertical: Vertical
+      fullWidth:
+        type: boolean
+        required: true
+        default: false
+        caption: Full width
+        description: If set, the control takes 100% width of its parent
+      withItemsBorders:
+        type: boolean
+        required: true
+        default: true
+        caption: With item borders
+        description: Determines whether there should be borders between segments
+      color:
+        type: string
+        required: false
+        caption: Color
+        description: Key of theme.colors or any valid CSS color for the indicator, by default based on color scheme
+      size:
+        type: enumeration
+        required: true
+        default: sm
+        caption: Size
+        description: Controls font-size, padding and height
+        enumerationValues:
+          xs: Extra small
+          sm: Small
+          md: Medium
+          lg: Large
+          xl: Extra large
+      radius:
+        type: enumeration
+        required: true
+        default: sm
+        caption: Radius
+        description: Border radius of the control
+        enumerationValues:
+          xs: Extra small
+          sm: Small
+          md: Medium
+          lg: Large
+          xl: Extra large
+      transitionDuration:
+        type: string
+        required: false
+        default: "200"
+        caption: Transition duration
+        description: Indicator transition duration in ms, set 0 to turn off animation
+    Events:
+      onChange:
+        type: action
+        required: false
+        caption: On Change
+        description: Action executed when the selected segment changes

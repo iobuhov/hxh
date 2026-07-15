@@ -11,7 +11,7 @@ widget:
         type: boolean
         caption: Fluid
         description: If set, the container takes 100% width of its parent and size prop is ignored.
-        required: false
+        required: true
         default: false
 
       size:
@@ -27,7 +27,7 @@ widget:
         type: enumeration
         caption: Strategy
         description: Centering strategy
-        required: false
+        required: true
         default: block
         enumerationValues:
           block: block

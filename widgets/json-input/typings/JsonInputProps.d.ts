@@ -21,8 +21,8 @@ export interface JsonInputContainerProps {
     placeholder: string;
     formatOnBlur: boolean;
     autosize: boolean;
-    minRows?: number;
-    maxRows?: number;
+    minRows: string;
+    maxRows: string;
     validationError: string;
     required: boolean;
     disabled: boolean;
@@ -48,8 +48,8 @@ export interface JsonInputPreviewProps {
     placeholder: string;
     formatOnBlur: boolean;
     autosize: boolean;
-    minRows: number | null;
-    maxRows: number | null;
+    minRows: string;
+    maxRows: string;
     validationError: string;
     required: boolean;
     disabled: boolean;

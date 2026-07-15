@@ -16,15 +16,15 @@
                 <caption>Gradient</caption>
                 <description>Gradient configuration, ignored when variant is not gradient</description>
             </property>
-            <property key="inherit" type="boolean" required="false" defaultValue="false">
+            <property key="inherit" type="boolean" required="true" defaultValue="false">
                 <caption>Inherit</caption>
                 <description>Determines whether font properties should be inherited from the parent</description>
             </property>
-            <property key="inline" type="boolean" required="false" defaultValue="false">
+            <property key="inline" type="boolean" required="true" defaultValue="false">
                 <caption>Inline</caption>
                 <description>Sets line-height to 1 for centering</description>
             </property>
-            <property key="lineClamp" type="integer" required="false">
+            <property key="lineClamp" type="string" required="false">
                 <caption>Line Clamp</caption>
                 <description>Number of lines after which Text will be truncated</description>
             </property>
@@ -36,13 +36,13 @@
                 <caption>Truncate</caption>
                 <description>Side on which Text must be truncated, if true, text is truncated from the start</description>
             </property>
-            <property key="underline" type="enumeration" required="false" defaultValue="hover">
+            <property key="underline" type="enumeration" required="true" defaultValue="hover">
                 <caption>Underline</caption>
                 <description>Defines when text-decoration: underline styles are applied.</description>
                 <enumerationValues>
                     <enumerationValue key="always">Always</enumerationValue>
                     <enumerationValue key="hover">Hover</enumerationValue>
-                    <enumerationValue key="not-hover">Not Hover</enumerationValue>
+                    <enumerationValue key="notHover">Not Hover</enumerationValue>
                     <enumerationValue key="never">Never</enumerationValue>
                 </enumerationValues>
             </property>

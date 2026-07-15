@@ -37,5 +37,5 @@ widget:
         type: boolean
         caption: With Shadow
         description: Determines whether the swatch should have inner box-shadow
-        required: false
+        required: true
         default: true

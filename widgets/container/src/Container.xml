@@ -8,7 +8,7 @@
     <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="fluid" type="boolean" required="false" defaultValue="false">
+            <property key="fluid" type="boolean" required="true" defaultValue="false">
                 <caption>Fluid</caption>
                 <description>If set, the container takes 100% width of its parent and size prop is ignored.</description>
             </property>
@@ -16,7 +16,7 @@
                 <caption>Size</caption>
                 <description>max-width of the container, value is not responsive – it is the same for all screen sizes. Numbers are converted to rem. Ignored when fluid prop is set.</description>
             </property>
-            <property key="strategy" type="enumeration" required="false" defaultValue="block">
+            <property key="strategy" type="enumeration" required="true" defaultValue="block">
                 <caption>Strategy</caption>
                 <description>Centering strategy</description>
                 <enumerationValues>

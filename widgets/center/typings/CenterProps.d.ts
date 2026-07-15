@@ -11,7 +11,7 @@ export interface CenterContainerProps {
     style?: CSSProperties;
     tabIndex?: number;
     children: string;
-    inline?: boolean;
+    inline: boolean;
 }
 
 export interface CenterPreviewProps {

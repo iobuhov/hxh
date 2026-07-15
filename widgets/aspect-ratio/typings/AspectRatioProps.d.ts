@@ -11,7 +11,7 @@ export interface AspectRatioContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    ratio?: Big;
+    ratio: Big;
 }
 
 export interface AspectRatioPreviewProps {

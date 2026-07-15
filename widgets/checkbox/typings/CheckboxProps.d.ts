@@ -15,19 +15,19 @@ export interface CheckboxContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    autoContrast?: boolean;
+    autoContrast: boolean;
     color: string;
     description: string;
     error: string;
     icon?: DynamicValue<WebIcon>;
     iconColor: string;
     id: string;
-    indeterminate?: boolean;
+    indeterminate: boolean;
     label: string;
-    labelPosition?: LabelPositionEnum;
+    labelPosition: LabelPositionEnum;
     radius: string;
     rootRef: string;
-    size?: SizeEnum;
+    size: SizeEnum;
     wrapperProps: string;
 }
 

@@ -8,7 +8,7 @@
     <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="ratio" type="decimal" required="false" defaultValue="1">
+            <property key="ratio" type="decimal" required="true" defaultValue="1">
                 <caption>Ratio</caption>
                 <description>Aspect ratio, for example, 16 / 9, 4 / 3, 1920 / 1080</description>
             </property>

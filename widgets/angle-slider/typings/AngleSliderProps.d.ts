@@ -11,22 +11,22 @@ export interface AngleSliderContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    defaultValue?: number;
-    disabled?: boolean;
+    defaultValue: string;
+    disabled: boolean;
     formatLabel?: ActionValue;
     hiddenInputProps: string;
     marks: string;
-    name: string;
+    inputName: string;
     onChange?: ActionValue;
     onChangeEnd?: ActionValue;
     onScrubEnd?: ActionValue;
     onScrubStart?: ActionValue;
-    restrictToMarks?: boolean;
-    size?: number;
-    step?: number;
-    thumbSize?: number;
-    value?: number;
-    withLabel?: boolean;
+    restrictToMarks: boolean;
+    size: string;
+    step: number;
+    thumbSize: string;
+    value: string;
+    withLabel: boolean;
 }
 
 export interface AngleSliderPreviewProps {
@@ -40,20 +40,20 @@ export interface AngleSliderPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    defaultValue: number | null;
+    defaultValue: string;
     disabled: boolean;
     formatLabel: {} | null;
     hiddenInputProps: string;
     marks: string;
-    name: string;
+    inputName: string;
     onChange: {} | null;
     onChangeEnd: {} | null;
     onScrubEnd: {} | null;
     onScrubStart: {} | null;
     restrictToMarks: boolean;
-    size: number | null;
+    size: string;
     step: number | null;
-    thumbSize: number | null;
-    value: number | null;
+    thumbSize: string;
+    value: string;
     withLabel: boolean;
 }

@@ -11,7 +11,7 @@ widget:
         type: integer
         caption: Arrow Offset
         description: Arrow offset in px
-        required: false
+        required: true
         default: 5
 
       arrowPosition:
@@ -24,14 +24,14 @@ widget:
         type: integer
         caption: Arrow Radius
         description: Arrow border-radius in px
-        required: false
+        required: true
         default: 0
 
       arrowSize:
         type: integer
         caption: Arrow Size
         description: Arrow size in px
-        required: false
+        required: true
         default: 7
 
       children:
@@ -44,7 +44,8 @@ widget:
         type: boolean
         caption: Disabled
         description: If set, popover dropdown will not be rendered
-        required: false
+        required: true
+        default: false
 
       dropdownPadding:
         type: string
@@ -57,7 +58,7 @@ widget:
         type: enumeration
         caption: Floating Strategy
         description: Changes floating ui position strategy
-        required: false
+        required: true
         default: absolute
         enumerationValues:
           absolute: absolute
@@ -67,7 +68,7 @@ widget:
         type: boolean
         caption: Hide Detached
         description: If set, the dropdown is hidden when the element is hidden with styles or not visible on the screen
-        required: false
+        required: true
         default: true
 
       keepMounted:
@@ -75,7 +76,8 @@ widget:
         caption: Keep Mounted
         description:
           If set, the dropdown is not unmounted from the DOM when hidden. display none styles are added instead.
-        required: false
+        required: true
+        default: false
 
       middlewares:
         type: string
@@ -149,21 +151,21 @@ widget:
         type: enumeration
         caption: Position
         description: Dropdown position relative to the target element
-        required: false
+        required: true
         default: bottom
         enumerationValues:
           top: top
           bottom: bottom
           left: left
           right: right
-          top-start: top-start
-          top-end: top-end
-          bottom-start: bottom-start
-          bottom-end: bottom-end
-          left-start: left-start
-          left-end: left-end
-          right-start: right-start
-          right-end: right-end
+          topStart: top-start
+          topEnd: top-end
+          bottomStart: bottom-start
+          bottomEnd: bottom-end
+          leftStart: left-start
+          leftEnd: left-end
+          rightStart: right-start
+          rightEnd: right-end
 
       positionDependencies:
         type: string
@@ -175,7 +177,8 @@ widget:
         type: boolean
         caption: Prevent Position Change When Visible
         description: Prevents popover from flipping/shifting when it the dropdown is visible
-        required: false
+        required: true
+        default: false
 
       radius:
         type: string
@@ -188,20 +191,21 @@ widget:
         type: boolean
         caption: Read Only
         description: Determines whether the Combobox value can be changed
-        required: false
+        required: true
+        default: false
 
       resetSelectionOnOptionHover:
         type: boolean
         caption: Reset Selection On Option Hover
         description: Determines whether selection should be reset when option is hovered
-        required: false
+        required: true
         default: false
 
       returnFocus:
         type: boolean
         caption: Return Focus
         description: Determines whether focus should be automatically returned to control when dropdown closes
-        required: false
+        required: true
         default: false
 
       shadow:
@@ -214,7 +218,7 @@ widget:
         type: enumeration
         caption: Size
         description: Controls items font-size and padding
-        required: false
+        required: true
         default: sm
         enumerationValues:
           xs: xs
@@ -240,32 +244,32 @@ widget:
         type: enumeration
         caption: Width
         description: Dropdown width, or 'target' to make dropdown width the same as target element
-        required: false
-        default: max-content
+        required: true
+        default: maxContent
         enumerationValues:
           target: target
-          max-content: max-content
-          min-content: min-content
+          maxContent: max-content
+          minContent: min-content
 
       withArrow:
         type: boolean
         caption: With Arrow
         description: Determines whether component should have an arrow
-        required: false
+        required: true
         default: false
 
       withOverlay:
         type: boolean
         caption: With Overlay
         description: Determines whether the overlay should be displayed when the dropdown is opened
-        required: false
+        required: true
         default: false
 
       withinPortal:
         type: boolean
         caption: Within Portal
         description: Determines whether dropdown should be rendered within the Portal
-        required: false
+        required: true
         default: true
 
       zIndex:

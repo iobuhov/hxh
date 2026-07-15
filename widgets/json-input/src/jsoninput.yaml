@@ -44,12 +44,12 @@ widget:
         caption: Autosize
         description: If set, enables textarea height growing with its content
       minRows:
-        type: integer
+        type: string
         required: false
         caption: Min Rows
         description: Minimum rows of autosize textarea, ignored if autosize is not set
       maxRows:
-        type: integer
+        type: string
         required: false
         caption: Max Rows
         description: Maximum rows for autosize textarea to grow, ignored if autosize is not set

@@ -16,7 +16,7 @@
                 <caption>Position</caption>
                 <description>Affix position on screen</description>
             </property>
-            <property key="withinPortal" type="boolean" required="false" defaultValue="true">
+            <property key="withinPortal" type="boolean" required="true" defaultValue="true">
                 <caption>Within Portal</caption>
                 <description>Determines whether the component is rendered within Portal</description>
             </property>

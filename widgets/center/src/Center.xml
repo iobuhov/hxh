@@ -12,7 +12,7 @@
                 <caption>Children</caption>
                 <description>Content to center</description>
             </property>
-            <property key="inline" type="boolean" required="false">
+            <property key="inline" type="boolean" required="true" defaultValue="false">
                 <caption>Inline</caption>
                 <description>If set, inline-flex is used instead of flex</description>
             </property>

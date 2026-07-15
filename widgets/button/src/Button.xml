@@ -8,7 +8,7 @@
     <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="autoContrast" type="boolean" required="false">
+            <property key="autoContrast" type="boolean" required="true" defaultValue="false">
                 <caption>Auto Contrast</caption>
                 <description>If set, adjusts text color based on background color for filled variant</description>
             </property>
@@ -20,11 +20,11 @@
                 <caption>Color</caption>
                 <description>Key of theme.colors or any valid CSS color</description>
             </property>
-            <property key="disabled" type="boolean" required="false">
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
                 <caption>Disabled</caption>
                 <description>Sets disabled attribute, applies disabled styles</description>
             </property>
-            <property key="fullWidth" type="boolean" required="false" defaultValue="false">
+            <property key="fullWidth" type="boolean" required="true" defaultValue="false">
                 <caption>Full Width</caption>
                 <description>If set, the button takes 100% width of its parent container</description>
             </property>
@@ -44,7 +44,7 @@
                 <caption>Loader Props</caption>
                 <description>Props added to the Loader component (only visible when loading prop is set)</description>
             </property>
-            <property key="loading" type="boolean" required="false">
+            <property key="loading" type="boolean" required="true" defaultValue="false">
                 <caption>Loading</caption>
                 <description>If set, the Loader component is displayed over the button</description>
             </property>

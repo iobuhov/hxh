@@ -8,7 +8,7 @@
     <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="autoContrast" type="boolean" required="false">
+            <property key="autoContrast" type="boolean" required="true" defaultValue="false">
                 <caption>Auto Contrast</caption>
                 <description>If set, adjusts text color based on background color for filled variant</description>
             </property>
@@ -16,15 +16,15 @@
                 <caption>Children</caption>
                 <description>Icon element</description>
             </property>
-            <property key="color" type="string" required="false" defaultValue="theme.primaryColor.">
+            <property key="color" type="string" required="false" defaultValue="theme.primaryColor">
                 <caption>Color</caption>
                 <description>Key of theme.colors or any valid CSS color.</description>
             </property>
-            <property key="disabled" type="boolean" required="false">
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
                 <caption>Disabled</caption>
                 <description>Sets disabled attribute, prevents interactions</description>
             </property>
-            <property key="gradient" type="string" required="false" defaultValue="theme.defaultGradient.">
+            <property key="gradient" type="string" required="false" defaultValue="theme.defaultGradient">
                 <caption>Gradient</caption>
                 <description>Gradient values used with variant="gradient".</description>
             </property>
@@ -32,7 +32,7 @@
                 <caption>Loader Props</caption>
                 <description>Props passed down to the Loader component. Ignored when loading prop is not set.</description>
             </property>
-            <property key="loading" type="boolean" required="false">
+            <property key="loading" type="boolean" required="true" defaultValue="false">
                 <caption>Loading</caption>
                 <description>If set, Loader component is displayed instead of the children</description>
             </property>
@@ -40,7 +40,7 @@
                 <caption>Radius</caption>
                 <description>Key of theme.radius or any valid CSS value to set border-radius. Numbers are converted to rem.</description>
             </property>
-            <property key="size" type="string" required="false" defaultValue="'md'.">
+            <property key="size" type="string" required="false" defaultValue="md">
                 <caption>Size</caption>
                 <description>Controls width and height of the button. Numbers are converted to rem.</description>
             </property>

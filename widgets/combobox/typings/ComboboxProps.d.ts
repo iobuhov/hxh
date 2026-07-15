@@ -8,27 +8,27 @@ import { ActionValue } from "mendix";
 
 export type FloatingStrategyEnum = "absolute" | "fixed";
 
-export type PositionEnum = "top" | "bottom" | "left" | "right" | "top-start" | "top-end" | "bottom-start" | "bottom-end" | "left-start" | "left-end" | "right-start" | "right-end";
+export type PositionEnum = "top" | "bottom" | "left" | "right" | "topStart" | "topEnd" | "bottomStart" | "bottomEnd" | "leftStart" | "leftEnd" | "rightStart" | "rightEnd";
 
 export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
 
-export type WidthEnum = "target" | "max-content" | "min-content";
+export type WidthEnum = "target" | "maxContent" | "minContent";
 
 export interface ComboboxContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    arrowOffset?: number;
+    arrowOffset: number;
     arrowPosition: string;
-    arrowRadius?: number;
-    arrowSize?: number;
+    arrowRadius: number;
+    arrowSize: number;
     children: string;
-    disabled?: boolean;
+    disabled: boolean;
     dropdownPadding: string;
-    floatingStrategy?: FloatingStrategyEnum;
-    hideDetached?: boolean;
-    keepMounted?: boolean;
+    floatingStrategy: FloatingStrategyEnum;
+    hideDetached: boolean;
+    keepMounted: boolean;
     middlewares: string;
     offset: string;
     onClose?: ActionValue;
@@ -40,21 +40,21 @@ export interface ComboboxContainerProps {
     onPositionChange?: ActionValue;
     overlayProps: string;
     portalProps: string;
-    position?: PositionEnum;
+    position: PositionEnum;
     positionDependencies: string;
-    preventPositionChangeWhenVisible?: boolean;
+    preventPositionChangeWhenVisible: boolean;
     radius: string;
-    readOnly?: boolean;
-    resetSelectionOnOptionHover?: boolean;
-    returnFocus?: boolean;
+    readOnly: boolean;
+    resetSelectionOnOptionHover: boolean;
+    returnFocus: boolean;
     shadow: string;
-    size?: SizeEnum;
+    size: SizeEnum;
     store: string;
     transitionProps: string;
-    width?: WidthEnum;
-    withArrow?: boolean;
-    withOverlay?: boolean;
-    withinPortal?: boolean;
+    width: WidthEnum;
+    withArrow: boolean;
+    withOverlay: boolean;
+    withinPortal: boolean;
     zIndex: string;
 }
 

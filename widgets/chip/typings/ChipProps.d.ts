@@ -15,18 +15,18 @@ export interface ChipContainerProps {
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    autoContrast?: boolean;
-    checked?: boolean;
+    autoContrast: boolean;
+    checked: boolean;
     children: string;
     color: string;
-    defaultChecked?: boolean;
+    defaultChecked: boolean;
     icon?: DynamicValue<WebIcon>;
     id: string;
     onChange?: ActionValue;
     radius: string;
     rootRef: string;
-    size?: SizeEnum;
-    type?: TypeEnum;
+    size: SizeEnum;
+    type: TypeEnum;
     wrapperProps: string;
 }
 

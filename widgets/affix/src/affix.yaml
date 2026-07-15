@@ -24,7 +24,7 @@ widget:
         type: boolean
         caption: Within Portal
         description: Determines whether the component is rendered within Portal
-        required: false
+        required: true
         default: true
 
       zIndex:

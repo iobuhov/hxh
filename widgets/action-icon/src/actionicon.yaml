@@ -11,8 +11,9 @@ widget:
         type: boolean
         caption: Auto Contrast
         description: If set, adjusts text color based on background color for filled variant
-        required: false
-        
+        required: true
+        default: false
+
       children:
         type: string
         caption: Children
@@ -24,20 +25,21 @@ widget:
         caption: Color
         description: Key of theme.colors or any valid CSS color.
         required: false
-        default: theme.primaryColor.
+        default: theme.primaryColor
         
       disabled:
         type: boolean
         caption: Disabled
         description: Sets disabled attribute, prevents interactions
-        required: false
+        required: true
+        default: false
         
       gradient:
         type: string
         caption: Gradient
         description: Gradient values used with variant="gradient".
         required: false
-        default: theme.defaultGradient.
+        default: theme.defaultGradient
         
       loaderProps:
         type: string
@@ -49,7 +51,8 @@ widget:
         type: boolean
         caption: Loading
         description: If set, Loader component is displayed instead of the children
-        required: false
+        required: true
+        default: false
         
       radius:
         type: string
@@ -63,4 +66,4 @@ widget:
         caption: Size
         description: Controls width and height of the button. Numbers are converted to rem.
         required: false
-        default: 'md'.
+        default: 'md'

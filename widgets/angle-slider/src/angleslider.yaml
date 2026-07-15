@@ -8,16 +8,17 @@ widget:
   properties:
     General:
       defaultValue:
-        type: integer
+        type: string
         caption: Default Value
         description: Uncontrolled component default value
         required: false
-        
+
       disabled:
         type: boolean
         caption: Disabled
         description: Sets data-disabled attribute, disables interactions
-        required: false
+        required: true
+        default: false
         
       formatLabel:
         type: action
@@ -37,7 +38,7 @@ widget:
         description: Array of marks displayed on the slider
         required: false
         
-      name:
+      inputName:
         type: string
         caption: Name
         description: Hidden input name, use with uncontrolled component
@@ -71,38 +72,38 @@ widget:
         type: boolean
         caption: Restrict To Marks
         description: If set, the selection is allowed only from the given marks array
-        required: false
+        required: true
         default: false
-        
+
       size:
-        type: integer
+        type: string
         caption: Size
         description: Slider size in px
         required: false
-        default: 60px
-        
+        default: 60
+
       step:
         type: integer
         caption: Step
         description: Step between values
-        required: false
+        required: true
         default: 1
-        
+
       thumbSize:
-        type: integer
+        type: string
         caption: Thumb Size
         description: Size of the thumb in px. Calculated based on the size value by default.
         required: false
-        
+
       value:
-        type: integer
+        type: string
         caption: Value
         description: Controlled component value
         required: false
-        
+
       withLabel:
         type: boolean
         caption: With Label
         description: If set, the label is displayed inside the slider
-        required: false
+        required: true
         default: true

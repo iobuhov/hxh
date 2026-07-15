@@ -4,13 +4,49 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
+import { ActionValue, EditableValue, ListValue, ListAttributeValue, ListExpressionValue } from "mendix";
+
+export type DataSourceTypeEnum = "static" | "datasource";
+
+export interface StaticItemsType {
+    itemValue: string;
+    itemLabel: string;
+    itemDisabled: boolean;
+}
+
+export type OrientationEnum = "horizontal" | "vertical";
+
+export type SizeEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export type RadiusEnum = "xs" | "sm" | "md" | "lg" | "xl";
+
+export interface StaticItemsPreviewType {
+    itemValue: string;
+    itemLabel: string;
+    itemDisabled: boolean;
+}
 
 export interface SegmentedControlContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    text: string;
+    value: EditableValue<string>;
+    dataSourceType: DataSourceTypeEnum;
+    staticItems: StaticItemsType[];
+    optionsSource?: ListValue;
+    optionValue?: ListAttributeValue<string>;
+    optionLabel?: ListExpressionValue<string>;
+    disabled: boolean;
+    readOnly: boolean;
+    orientation: OrientationEnum;
+    fullWidth: boolean;
+    withItemsBorders: boolean;
+    color: string;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    transitionDuration: string;
+    onChange?: ActionValue;
 }
 
 export interface SegmentedControlPreviewProps {
@@ -24,5 +60,20 @@ export interface SegmentedControlPreviewProps {
     readOnly: boolean;
     renderMode: "design" | "xray" | "structure";
     translate: (text: string) => string;
-    text: string;
+    value: string;
+    dataSourceType: DataSourceTypeEnum;
+    staticItems: StaticItemsPreviewType[];
+    optionsSource: {} | { caption: string } | { type: string } | null;
+    optionValue: string;
+    optionLabel: string;
+    disabled: boolean;
+    readOnly: boolean;
+    orientation: OrientationEnum;
+    fullWidth: boolean;
+    withItemsBorders: boolean;
+    color: string;
+    size: SizeEnum;
+    radius: RadiusEnum;
+    transitionDuration: string;
+    onChange: {} | null;
 }

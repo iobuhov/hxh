@@ -8,11 +8,11 @@
     <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="defaultValue" type="integer" required="false">
+            <property key="defaultValue" type="string" required="false">
                 <caption>Default Value</caption>
                 <description>Uncontrolled component default value</description>
             </property>
-            <property key="disabled" type="boolean" required="false">
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
                 <caption>Disabled</caption>
                 <description>Sets data-disabled attribute, disables interactions</description>
             </property>
@@ -28,7 +28,7 @@
                 <caption>Marks</caption>
                 <description>Array of marks displayed on the slider</description>
             </property>
-            <property key="name" type="string" required="false">
+            <property key="inputName" type="string" required="false">
                 <caption>Name</caption>
                 <description>Hidden input name, use with uncontrolled component</description>
             </property>
@@ -48,27 +48,27 @@
                 <caption>On Scrub Start</caption>
                 <description>Called in onMouseDown and onTouchStart</description>
             </property>
-            <property key="restrictToMarks" type="boolean" required="false" defaultValue="false">
+            <property key="restrictToMarks" type="boolean" required="true" defaultValue="false">
                 <caption>Restrict To Marks</caption>
                 <description>If set, the selection is allowed only from the given marks array</description>
             </property>
-            <property key="size" type="integer" required="false" defaultValue="60px">
+            <property key="size" type="string" required="false" defaultValue="60">
                 <caption>Size</caption>
                 <description>Slider size in px</description>
             </property>
-            <property key="step" type="integer" required="false" defaultValue="1">
+            <property key="step" type="integer" required="true" defaultValue="1">
                 <caption>Step</caption>
                 <description>Step between values</description>
             </property>
-            <property key="thumbSize" type="integer" required="false">
+            <property key="thumbSize" type="string" required="false">
                 <caption>Thumb Size</caption>
                 <description>Size of the thumb in px. Calculated based on the size value by default.</description>
             </property>
-            <property key="value" type="integer" required="false">
+            <property key="value" type="string" required="false">
                 <caption>Value</caption>
                 <description>Controlled component value</description>
             </property>
-            <property key="withLabel" type="boolean" required="false" defaultValue="true">
+            <property key="withLabel" type="boolean" required="true" defaultValue="true">
                 <caption>With Label</caption>
                 <description>If set, the label is displayed inside the slider</description>
             </property>

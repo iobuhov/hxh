@@ -8,7 +8,7 @@
     <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="arrowOffset" type="integer" required="false" defaultValue="5">
+            <property key="arrowOffset" type="integer" required="true" defaultValue="5">
                 <caption>Arrow Offset</caption>
                 <description>Arrow offset in px</description>
             </property>
@@ -16,11 +16,11 @@
                 <caption>Arrow Position</caption>
                 <description>Arrow position</description>
             </property>
-            <property key="arrowRadius" type="integer" required="false" defaultValue="0">
+            <property key="arrowRadius" type="integer" required="true" defaultValue="0">
                 <caption>Arrow Radius</caption>
                 <description>Arrow border-radius in px</description>
             </property>
-            <property key="arrowSize" type="integer" required="false" defaultValue="7">
+            <property key="arrowSize" type="integer" required="true" defaultValue="7">
                 <caption>Arrow Size</caption>
                 <description>Arrow size in px</description>
             </property>
@@ -28,7 +28,7 @@
                 <caption>Children</caption>
                 <description>Combobox content</description>
             </property>
-            <property key="disabled" type="boolean" required="false">
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
                 <caption>Disabled</caption>
                 <description>If set, popover dropdown will not be rendered</description>
             </property>
@@ -36,7 +36,7 @@
                 <caption>Dropdown Padding</caption>
                 <description>Controls padding of the dropdown</description>
             </property>
-            <property key="floatingStrategy" type="enumeration" required="false" defaultValue="absolute">
+            <property key="floatingStrategy" type="enumeration" required="true" defaultValue="absolute">
                 <caption>Floating Strategy</caption>
                 <description>Changes floating ui position strategy</description>
                 <enumerationValues>
@@ -44,11 +44,11 @@
                     <enumerationValue key="fixed">fixed</enumerationValue>
                 </enumerationValues>
             </property>
-            <property key="hideDetached" type="boolean" required="false" defaultValue="true">
+            <property key="hideDetached" type="boolean" required="true" defaultValue="true">
                 <caption>Hide Detached</caption>
                 <description>If set, the dropdown is hidden when the element is hidden with styles or not visible on the screen</description>
             </property>
-            <property key="keepMounted" type="boolean" required="false">
+            <property key="keepMounted" type="boolean" required="true" defaultValue="false">
                 <caption>Keep Mounted</caption>
                 <description>If set, the dropdown is not unmounted from the DOM when hidden. display none styles are added instead.</description>
             </property>
@@ -96,7 +96,7 @@
                 <caption>Portal Props</caption>
                 <description>Props to pass down to the Portal when withinPortal is true</description>
             </property>
-            <property key="position" type="enumeration" required="false" defaultValue="bottom">
+            <property key="position" type="enumeration" required="true" defaultValue="bottom">
                 <caption>Position</caption>
                 <description>Dropdown position relative to the target element</description>
                 <enumerationValues>
@@ -104,21 +104,21 @@
                     <enumerationValue key="bottom">bottom</enumerationValue>
                     <enumerationValue key="left">left</enumerationValue>
                     <enumerationValue key="right">right</enumerationValue>
-                    <enumerationValue key="top-start">top-start</enumerationValue>
-                    <enumerationValue key="top-end">top-end</enumerationValue>
-                    <enumerationValue key="bottom-start">bottom-start</enumerationValue>
-                    <enumerationValue key="bottom-end">bottom-end</enumerationValue>
-                    <enumerationValue key="left-start">left-start</enumerationValue>
-                    <enumerationValue key="left-end">left-end</enumerationValue>
-                    <enumerationValue key="right-start">right-start</enumerationValue>
-                    <enumerationValue key="right-end">right-end</enumerationValue>
+                    <enumerationValue key="topStart">top-start</enumerationValue>
+                    <enumerationValue key="topEnd">top-end</enumerationValue>
+                    <enumerationValue key="bottomStart">bottom-start</enumerationValue>
+                    <enumerationValue key="bottomEnd">bottom-end</enumerationValue>
+                    <enumerationValue key="leftStart">left-start</enumerationValue>
+                    <enumerationValue key="leftEnd">left-end</enumerationValue>
+                    <enumerationValue key="rightStart">right-start</enumerationValue>
+                    <enumerationValue key="rightEnd">right-end</enumerationValue>
                 </enumerationValues>
             </property>
             <property key="positionDependencies" type="string" required="false">
                 <caption>Position Dependencies</caption>
                 <description>@deprecated : Do not use, will be removed in 9.0</description>
             </property>
-            <property key="preventPositionChangeWhenVisible" type="boolean" required="false">
+            <property key="preventPositionChangeWhenVisible" type="boolean" required="true" defaultValue="false">
                 <caption>Prevent Position Change When Visible</caption>
                 <description>Prevents popover from flipping/shifting when it the dropdown is visible</description>
             </property>
@@ -126,15 +126,15 @@
                 <caption>Radius</caption>
                 <description>Key of theme.radius or any valid CSS value to set border-radius</description>
             </property>
-            <property key="readOnly" type="boolean" required="false">
+            <property key="readOnly" type="boolean" required="true" defaultValue="false">
                 <caption>Read Only</caption>
                 <description>Determines whether the Combobox value can be changed</description>
             </property>
-            <property key="resetSelectionOnOptionHover" type="boolean" required="false" defaultValue="false">
+            <property key="resetSelectionOnOptionHover" type="boolean" required="true" defaultValue="false">
                 <caption>Reset Selection On Option Hover</caption>
                 <description>Determines whether selection should be reset when option is hovered</description>
             </property>
-            <property key="returnFocus" type="boolean" required="false" defaultValue="false">
+            <property key="returnFocus" type="boolean" required="true" defaultValue="false">
                 <caption>Return Focus</caption>
                 <description>Determines whether focus should be automatically returned to control when dropdown closes</description>
             </property>
@@ -142,7 +142,7 @@
                 <caption>Shadow</caption>
                 <description>Key of theme.shadows or any other valid CSS box-shadow value</description>
             </property>
-            <property key="size" type="enumeration" required="false" defaultValue="sm">
+            <property key="size" type="enumeration" required="true" defaultValue="sm">
                 <caption>Size</caption>
                 <description>Controls items font-size and padding</description>
                 <enumerationValues>
@@ -161,24 +161,24 @@
                 <caption>Transition Props</caption>
                 <description>Props passed down to the Transition component. Use to configure duration and animation type.</description>
             </property>
-            <property key="width" type="enumeration" required="false" defaultValue="max-content">
+            <property key="width" type="enumeration" required="true" defaultValue="maxContent">
                 <caption>Width</caption>
                 <description>Dropdown width, or 'target' to make dropdown width the same as target element</description>
                 <enumerationValues>
                     <enumerationValue key="target">target</enumerationValue>
-                    <enumerationValue key="max-content">max-content</enumerationValue>
-                    <enumerationValue key="min-content">min-content</enumerationValue>
+                    <enumerationValue key="maxContent">max-content</enumerationValue>
+                    <enumerationValue key="minContent">min-content</enumerationValue>
                 </enumerationValues>
             </property>
-            <property key="withArrow" type="boolean" required="false" defaultValue="false">
+            <property key="withArrow" type="boolean" required="true" defaultValue="false">
                 <caption>With Arrow</caption>
                 <description>Determines whether component should have an arrow</description>
             </property>
-            <property key="withOverlay" type="boolean" required="false" defaultValue="false">
+            <property key="withOverlay" type="boolean" required="true" defaultValue="false">
                 <caption>With Overlay</caption>
                 <description>Determines whether the overlay should be displayed when the dropdown is opened</description>
             </property>
-            <property key="withinPortal" type="boolean" required="false" defaultValue="true">
+            <property key="withinPortal" type="boolean" required="true" defaultValue="true">
                 <caption>Within Portal</caption>
                 <description>Determines whether dropdown should be rendered within the Portal</description>
             </property>

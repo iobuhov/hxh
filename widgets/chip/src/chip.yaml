@@ -11,13 +11,15 @@ widget:
         type: boolean
         caption: Auto Contrast
         description: If set, adjusts text color based on background color for filled variant
-        required: false
+        required: true
+        default: false
 
       checked:
         type: boolean
         caption: Checked
         description: Checked state for controlled component
-        required: false
+        required: true
+        default: false
 
       children:
         type: string
@@ -36,7 +38,8 @@ widget:
         type: boolean
         caption: Default Checked
         description: Default checked state for uncontrolled component
-        required: false
+        required: true
+        default: false
 
       icon:
         type: icon
@@ -73,7 +76,7 @@ widget:
         type: enumeration
         caption: Size
         description: Controls various properties related to component size
-        required: false
+        required: true
         default: sm
         enumerationValues:
           xs: xs
@@ -86,7 +89,7 @@ widget:
         type: enumeration
         caption: Type
         description: Chip input type
-        required: false
+        required: true
         default: checkbox
         enumerationValues:
           checkbox: checkbox

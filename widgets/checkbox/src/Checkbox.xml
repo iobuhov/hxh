@@ -8,7 +8,7 @@
     <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="autoContrast" type="boolean" required="false">
+            <property key="autoContrast" type="boolean" required="true" defaultValue="false">
                 <caption>Auto Contrast</caption>
                 <description>If set, adjusts text color based on background color for filled variant</description>
             </property>
@@ -36,7 +36,7 @@
                 <caption>Id</caption>
                 <description>Unique input id</description>
             </property>
-            <property key="indeterminate" type="boolean" required="false">
+            <property key="indeterminate" type="boolean" required="true" defaultValue="false">
                 <caption>Indeterminate</caption>
                 <description>Indeterminate state of the checkbox. If set, checked prop is ignored.</description>
             </property>
@@ -44,7 +44,7 @@
                 <caption>Label</caption>
                 <description>label associated with the checkbox</description>
             </property>
-            <property key="labelPosition" type="enumeration" required="false" defaultValue="right">
+            <property key="labelPosition" type="enumeration" required="true" defaultValue="right">
                 <caption>Label Position</caption>
                 <description>Position of the label relative to the input</description>
                 <enumerationValues>
@@ -60,7 +60,7 @@
                 <caption>Root Ref</caption>
                 <description>Root element ref</description>
             </property>
-            <property key="size" type="enumeration" required="false" defaultValue="sm">
+            <property key="size" type="enumeration" required="true" defaultValue="sm">
                 <caption>Size</caption>
                 <description>Controls size of the component</description>
                 <enumerationValues>

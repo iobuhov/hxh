@@ -1,23 +1,130 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget
-    id="com.mendix.finch.widget.segmentedcontrol.SegmentedControl"
-    pluginWidget="true"
-    needsEntityContext="true"
-    offlineCapable="true"
-    supportedPlatform="Web"
-    xmlns="http://www.mendix.com/widget/1.0/"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
->
+<!--This is an auto-generated XML file. Do not edit manually.-->
+<widget id="com.mendix.finch.widget.segmentedcontrol.SegmentedControl" pluginWidget="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd" supportedPlatform="Web" needsEntityContext="true">
     <name>SegmentedControl</name>
-    <description>A linear set of two or more segments</description>
-    <studioProCategory>Finch</studioProCategory>
-    <icon />
+    <description>Pick a single option from a horizontal or vertical segmented button group</description>
+    <studioProCategory>Finch / Inputs</studioProCategory>
+    <studioCategory>Finch / Inputs</studioCategory>
+    <helpUrl />
     <properties>
         <propertyGroup caption="General">
-            <property key="text" type="string" required="false">
-                <caption>Text</caption>
-                <description />
+            <property key="value" type="attribute" required="true">
+                <caption>Value</caption>
+                <description>String attribute that stores the value of the selected segment</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="dataSourceType" type="enumeration" required="true" defaultValue="static">
+                <caption>Items source</caption>
+                <description>Where the segments come from</description>
+                <enumerationValues>
+                    <enumerationValue key="static">Static</enumerationValue>
+                    <enumerationValue key="datasource">Data source</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Static items">
+            <property key="staticItems" type="object" isList="true" required="false">
+                <caption>Items</caption>
+                <description>Segments shown when Items source is Static</description>
+                <properties>
+                    <propertyGroup caption="General">
+                        <property key="itemValue" type="string" required="true">
+                            <caption>Value</caption>
+                            <description>Unique value stored in the attribute when this segment is active</description>
+                        </property>
+                        <property key="itemLabel" type="string" required="true">
+                            <caption>Label</caption>
+                            <description>Text shown on the segment</description>
+                        </property>
+                        <property key="itemDisabled" type="boolean" required="true" defaultValue="false">
+                            <caption>Disabled</caption>
+                            <description>Disables this segment</description>
+                        </property>
+                    </propertyGroup>
+                </properties>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Data source items">
+            <property key="optionsSource" type="datasource" isList="true" required="false">
+                <caption>Options</caption>
+                <description>Data source providing the segments when Items source is Data source</description>
+            </property>
+            <property key="optionValue" type="attribute" required="false" dataSource="optionsSource">
+                <caption>Option value</caption>
+                <description>Attribute on each option holding its value (matched against Value)</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="optionLabel" type="textTemplate" required="false" dataSource="optionsSource">
+                <caption>Option label</caption>
+                <description>Text shown for each segment</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Behavior">
+            <property key="disabled" type="boolean" required="true" defaultValue="false">
+                <caption>Disabled</caption>
+                <description>Disables the whole control. Also disabled when the value attribute is read-only.</description>
+            </property>
+            <property key="readOnly" type="boolean" required="true" defaultValue="false">
+                <caption>Read only</caption>
+                <description>Prevents changing the value while still showing the current selection</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="orientation" type="enumeration" required="true" defaultValue="horizontal">
+                <caption>Orientation</caption>
+                <description>Segments layout direction</description>
+                <enumerationValues>
+                    <enumerationValue key="horizontal">Horizontal</enumerationValue>
+                    <enumerationValue key="vertical">Vertical</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="fullWidth" type="boolean" required="true" defaultValue="false">
+                <caption>Full width</caption>
+                <description>If set, the control takes 100% width of its parent</description>
+            </property>
+            <property key="withItemsBorders" type="boolean" required="true" defaultValue="true">
+                <caption>With item borders</caption>
+                <description>Determines whether there should be borders between segments</description>
+            </property>
+            <property key="color" type="string" required="false">
+                <caption>Color</caption>
+                <description>Key of theme.colors or any valid CSS color for the indicator, by default based on color scheme</description>
+            </property>
+            <property key="size" type="enumeration" required="true" defaultValue="sm">
+                <caption>Size</caption>
+                <description>Controls font-size, padding and height</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="radius" type="enumeration" required="true" defaultValue="sm">
+                <caption>Radius</caption>
+                <description>Border radius of the control</description>
+                <enumerationValues>
+                    <enumerationValue key="xs">Extra small</enumerationValue>
+                    <enumerationValue key="sm">Small</enumerationValue>
+                    <enumerationValue key="md">Medium</enumerationValue>
+                    <enumerationValue key="lg">Large</enumerationValue>
+                    <enumerationValue key="xl">Extra large</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="transitionDuration" type="string" required="false" defaultValue="200">
+                <caption>Transition duration</caption>
+                <description>Indicator transition duration in ms, set 0 to turn off animation</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChange" type="action" required="false">
+                <caption>On Change</caption>
+                <description>Action executed when the selected segment changes</description>
             </property>
         </propertyGroup>
     </properties>
