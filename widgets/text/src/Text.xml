@@ -23,6 +23,15 @@
                 <caption>Font Weight</caption>
                 <description>Font weight (e.g. 500, 700, bold)</description>
             </property>
+            <property key="truncate" type="enumeration" required="true" defaultValue="none">
+                <caption>Truncate</caption>
+                <description>Truncate overflowing text with an ellipsis on the given side</description>
+                <enumerationValues>
+                    <enumerationValue key="none">None</enumerationValue>
+                    <enumerationValue key="end">End</enumerationValue>
+                    <enumerationValue key="start">Start</enumerationValue>
+                </enumerationValues>
+            </property>
             <property key="slot" type="enumeration" required="true" defaultValue="none">
                 <caption>Slot</caption>
                 <description>Slot name for ARIA context</description>

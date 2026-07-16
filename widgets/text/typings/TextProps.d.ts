@@ -6,6 +6,8 @@
 import { CSSProperties } from "react";
 import { DynamicValue } from "mendix";
 
+export type TruncateEnum = "none" | "end" | "start";
+
 export type SlotEnum = "none" | "label";
 
 export interface TextContainerProps {
@@ -17,6 +19,7 @@ export interface TextContainerProps {
     size: string;
     color: string;
     fw: string;
+    truncate: TruncateEnum;
     slot: SlotEnum;
 }
 
@@ -35,5 +38,6 @@ export interface TextPreviewProps {
     size: string;
     color: string;
     fw: string;
+    truncate: TruncateEnum;
     slot: SlotEnum;
 }

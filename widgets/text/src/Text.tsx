@@ -15,6 +15,7 @@ export function Text(props: TextContainerProps): ReactElement {
             size={props.size || "md"}
             c={props.color || undefined}
             fw={props.fw ? Number(props.fw) : undefined}
+            truncate={props.truncate === "none" ? undefined : props.truncate}
         >
             {text}
         </MantineText>

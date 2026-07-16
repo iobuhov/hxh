@@ -42,5 +42,8 @@
                 <description>ThemeIcon size (xs, sm, md, lg, xl)</description>
             </property>
         </propertyGroup>
+        <propertyGroup caption="Common">
+            <systemProperty key="Visibility" />
+        </propertyGroup>
     </properties>
 </widget>

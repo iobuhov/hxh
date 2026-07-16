@@ -8,3 +8,11 @@
     height: 400px;
     overflow-y: auto;
 }
+
+.delta-up {
+    color: var(--mantine-color-lime-6, #66a80f);
+}
+
+.delta-down {
+    color: var(--mantine-color-red-6, #e03131);
+}
